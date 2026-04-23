@@ -1,0 +1,810 @@
+[
+  {
+    "id": "new-em",
+    "label": "New Engineering Manager",
+    "icon": "stairs",
+    "summary": "You just made (or are about to make) the jump from senior IC or Tech Lead into management. The first 12 months are an identity shift, not a promotion.",
+    "steps": [
+      {
+        "title": "Foundations",
+        "icon": "book",
+        "note": "Read these in your first 90 days. They are the field's shared vocabulary.",
+        "picks": [
+          {
+            "title": "The Manager's Path",
+            "desc": "Camille Fournier's stage-by-stage map from tech lead to CTO. Start with chapters 1–4.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "The Making of a Manager",
+            "desc": "Julie Zhuo's honest first-year-as-manager memoir. The book that says 'this is normal.'",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "Resilient Management",
+            "desc": "Lara Hogan's concrete playbook for new managers — frameworks for 1:1s, feedback, and your own resilience.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "Becoming a Manager",
+            "desc": "Linda Hill's research on the identity transition from IC to manager. Less tactical, more honest about the mental shift.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "People & Team",
+        "icon": "users",
+        "note": "Your job is now leverage through others. Learn the conversations that matter.",
+        "picks": [
+          {
+            "title": "Radical Candor",
+            "desc": "Kim Scott's framework for caring personally and challenging directly. The default vocabulary for feedback in tech.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "The Coaching Habit",
+            "desc": "Michael Bungay Stanier's seven coaching questions. Stops you from solving problems people need to solve themselves.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "High Output Management",
+            "desc": "Andy Grove's classic. Read for the chapters on 1:1s, leverage, and the meaning of 'output of a manager.'",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Lara Hogan — Blog & Templates",
+            "desc": "Free 1:1 templates, manager voltron, and feedback equation. Bookmark and re-use.",
+            "tags": ["BLOG", "ALL"]
+          }
+        ]
+      },
+      {
+        "title": "Strategy & Execution",
+        "icon": "compass",
+        "note": "Even a single team needs an outcome story.",
+        "picks": [
+          {
+            "title": "Measure What Matters",
+            "desc": "John Doerr's intro to OKRs. Skim for the mental model, ignore the corporate hagiography.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "An Elegant Puzzle",
+            "desc": "Will Larson's collection on engineering management at scale. New EMs read it for the chapters on first teams and prioritization.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "DORA — State of DevOps Reports",
+            "desc": "The annual industry baseline for delivery performance. Know the four metrics by name.",
+            "tags": ["REFERENCE", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stretch",
+        "icon": "star",
+        "note": "Reading for the next 12–24 months — running larger scope or making the next jump.",
+        "picks": [
+          {
+            "title": "The First 90 Days",
+            "desc": "Michael Watkins on every role transition. You'll re-read it before every promotion.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "Staff Engineer",
+            "desc": "Will Larson on the parallel IC track. You need to understand it to coach senior engineers.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Crucial Conversations",
+            "desc": "Patterson et al. on high-stakes dialogue. The first hard conversation will arrive sooner than you think.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stay Current",
+        "icon": "trend",
+        "note": "Three feeds and one community is enough.",
+        "picks": [
+          {
+            "title": "The Pragmatic Engineer",
+            "desc": "Gergely Orosz on engineering org practices at Big Tech. Tactical and current.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "LeadDev",
+            "desc": "Conferences, articles, and a Slack community for engineering leadership.",
+            "tags": ["COMMUNITY", "ALL"]
+          },
+          {
+            "title": "Rands in Repose",
+            "desc": "Michael Lopp's long-running blog. Where the genre got a lot of its voice.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "Lara Hogan",
+            "desc": "Templates and short essays on the mechanics of management.",
+            "tags": ["BLOG", "ALL"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "em",
+    "label": "Engineering Manager",
+    "icon": "users",
+    "summary": "Established EM running one or two teams. The job is now sustained execution, hiring, and growing the people you have.",
+    "steps": [
+      {
+        "title": "Foundations",
+        "icon": "book",
+        "note": "The reference shelf. Re-read selectively, not cover to cover.",
+        "picks": [
+          {
+            "title": "An Elegant Puzzle",
+            "desc": "Will Larson's reference for the working EM. Topical chapters you'll come back to.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "High Output Management",
+            "desc": "Still the canonical text on managerial leverage and meeting design.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Managing Humans",
+            "desc": "Michael Lopp's collected essays. Pattern-rich and irreverent — read for the people-debugging stories.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Manager's Path",
+            "desc": "Re-read chapters 5+ once you have a few EMs of experience.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "People & Team",
+        "icon": "users",
+        "note": "Team dynamics, calibrated feedback, psychological safety.",
+        "picks": [
+          {
+            "title": "The Five Dysfunctions of a Team",
+            "desc": "Patrick Lencioni's fable on trust, conflict, commitment, accountability, results. Useful for diagnosing a stuck team.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Crucial Conversations",
+            "desc": "The framework you'll reach for before every hard 1:1 and every cross-team escalation.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Fearless Organization",
+            "desc": "Amy Edmondson's research on psychological safety — what it is, what it isn't, how to measure it.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Trillion Dollar Coach",
+            "desc": "Bill Campbell's coaching playbook from inside Apple, Google, Intuit. Lighter, anecdotal, useful.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Strategy & Execution",
+        "icon": "compass",
+        "note": "Outcomes, planning, delivery metrics, and shape of work.",
+        "picks": [
+          {
+            "title": "Accelerate",
+            "desc": "Forsgren / Humble / Humble — the research behind DORA. The 'why' behind the four key metrics.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Team Topologies",
+            "desc": "Skelton & Pais — the four team types and three interaction modes. Reshapes how you think about team boundaries.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Escaping the Build Trap",
+            "desc": "Melissa Perri on shifting from feature factories to outcome teams. Read with your PM partner.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Measure What Matters",
+            "desc": "Re-read for OKRs at team scale.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stretch",
+        "icon": "star",
+        "note": "Director-prep — start reading these in year two or three of EM.",
+        "picks": [
+          {
+            "title": "The Software Engineer's Guidebook",
+            "desc": "Gergely Orosz on the IC track. Read so you can coach Staff+ candidates with credibility.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Empowered",
+            "desc": "Marty Cagan & Chris Jones on what it takes for product orgs to be empowered. Sets the bar for partnership at the next level.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Resilient Management",
+            "desc": "Re-read Lara Hogan's chapters on team scaling and manager calibration.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stay Current",
+        "icon": "trend",
+        "note": "",
+        "picks": [
+          {
+            "title": "The Pragmatic Engineer",
+            "desc": "Tactical, current, well-sourced engineering org content.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "LeadDev",
+            "desc": "Conference talks and Slack community for working EMs.",
+            "tags": ["COMMUNITY", "ALL"]
+          },
+          {
+            "title": "Engineering Enablement (Abi Noda)",
+            "desc": "Research-backed essays on developer experience and SPACE-style measurement.",
+            "tags": ["BLOG", "INTERMEDIATE"]
+          },
+          {
+            "title": "Lethain",
+            "desc": "Will Larson's blog. Short, structural, opinionated.",
+            "tags": ["BLOG", "ALL"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "director",
+    "label": "Director of Engineering",
+    "icon": "building",
+    "summary": "Manager of managers, three to eight teams. The job is org design, calibrating leaders, and connecting strategy to delivery.",
+    "steps": [
+      {
+        "title": "Foundations",
+        "icon": "book",
+        "note": "Re-read the EM canon at director altitude — different chapters, different lessons.",
+        "picks": [
+          {
+            "title": "The Manager's Path",
+            "desc": "Chapters 7–9 on managing managers and leading multiple teams.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "An Elegant Puzzle",
+            "desc": "Re-read for the org-design and strategic-execution chapters.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "The Effective Executive",
+            "desc": "Drucker's classic on managing time, contribution, and decisions. Where every modern playbook started.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Multipliers",
+            "desc": "Liz Wiseman on amplifying people's intelligence vs. diminishing it. Director failure modes laid bare.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "People & Team",
+        "icon": "users",
+        "note": "Your team is now other managers. Different shape, different signals.",
+        "picks": [
+          {
+            "title": "Trillion Dollar Coach",
+            "desc": "Coaching managers, not coding-it-yourself. Bill Campbell's leverage model.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Advantage",
+            "desc": "Lencioni on organizational health — cohesive leadership team as the multiplier.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Team Topologies",
+            "desc": "Re-read for team boundaries at multi-team scale, Conway and inverse-Conway.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Resilient Management",
+            "desc": "Hogan's framing of director-level energy management and feedback skip-levels.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Strategy & Execution",
+        "icon": "compass",
+        "note": "Cross-team strategy, throughput, and outcome stories the exec team can hear.",
+        "picks": [
+          {
+            "title": "Good Strategy / Bad Strategy",
+            "desc": "Richard Rumelt on the kernel of real strategy. The book that ruins corporate strategy decks for you.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Project to Product",
+            "desc": "Mik Kersten on flow metrics and shifting from project funding to product funding.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Working Backwards",
+            "desc": "Bryar & Carr on Amazon's PR/FAQ and 6-pager mechanics. Reusable far beyond Amazon.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Accelerate",
+            "desc": "Re-read for the org-level argument: high-performing orgs build differently, not just faster.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stretch",
+        "icon": "star",
+        "note": "VP-prep — scope, headcount, founder/exec partnership.",
+        "picks": [
+          {
+            "title": "The Hard Thing About Hard Things",
+            "desc": "Ben Horowitz on the operational reality of running a company through pain. CEO-flavored, but VPE-relevant.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "High Growth Handbook",
+            "desc": "Elad Gil's interviews with operators on scaling from 50 to 5000 people.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Scaling People",
+            "desc": "Claire Hughes Johnson's playbook from her time as Stripe COO. Operating mechanisms, not platitudes.",
+            "tags": ["BOOK", "ADVANCED"]
+          }
+        ]
+      },
+      {
+        "title": "Stay Current",
+        "icon": "trend",
+        "note": "",
+        "picks": [
+          {
+            "title": "The Pragmatic Engineer",
+            "desc": "Org practices and exec-level content from inside Big Tech.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "Lethain",
+            "desc": "Will Larson — director and VP-flavored essays.",
+            "tags": ["BLOG", "INTERMEDIATE"]
+          },
+          {
+            "title": "LeadDev",
+            "desc": "StaffPlus and Director tracks at the conference are particularly strong.",
+            "tags": ["COMMUNITY", "ALL"]
+          },
+          {
+            "title": "First Round Review",
+            "desc": "Long-form interviews with operators. Disproportionately useful at Director+.",
+            "tags": ["BLOG", "ALL"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vp-engineering",
+    "label": "VP of Engineering",
+    "icon": "megaphone",
+    "summary": "Engineering org leader and exec partner. The job is org design at scale, hiring senior leaders, budget, and translating between business and engineering.",
+    "steps": [
+      {
+        "title": "Foundations",
+        "icon": "book",
+        "note": "VP canon is operator-heavy and unevenly written. Pick the books with mechanism, not memoir.",
+        "picks": [
+          {
+            "title": "The Hard Thing About Hard Things",
+            "desc": "Horowitz on operating through pain. Read for the mechanics chapters, not the war stories.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Scaling People",
+            "desc": "Claire Hughes Johnson — the most concrete book in the VPE canon. Operating mechanisms, decision-making frameworks, hiring senior leaders.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "High Growth Handbook",
+            "desc": "Elad Gil's playbook for scaling 50 → 5000. Org structures, comp, layoffs, exec hires.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "The Effective Executive",
+            "desc": "Drucker. Still the foundation for executive time and attention.",
+            "tags": ["BOOK", "ADVANCED"]
+          }
+        ]
+      },
+      {
+        "title": "People & Team",
+        "icon": "users",
+        "note": "Senior leader hiring, exec team dynamics, culture interventions.",
+        "picks": [
+          {
+            "title": "The Advantage",
+            "desc": "Lencioni on building a cohesive leadership team. Where most VPE failures actually live.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "No Rules Rules",
+            "desc": "Hastings & Meyer — Netflix culture deck, in book form. A serious model to compare your own culture to.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "ReOrg",
+            "desc": "Heidari-Robinson & Heywood on doing reorganizations without destroying the company. Necessary VPE reading.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Powerful",
+            "desc": "Patty McCord's short, direct take on high-performing culture from inside Netflix.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Strategy & Execution",
+        "icon": "compass",
+        "note": "Strategic clarity that the rest of the company can act on.",
+        "picks": [
+          {
+            "title": "Good Strategy / Bad Strategy",
+            "desc": "Rumelt's kernel — diagnosis, guiding policy, coherent action. The strategic vocabulary you'll use weekly.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Playing to Win",
+            "desc": "Lafley & Martin on five strategic choices. Pairs with Rumelt as the modern strategy canon.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Working Backwards",
+            "desc": "Amazon's exec-level mechanisms — PR/FAQ, 6-pagers, single-threaded leaders. Steal liberally.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Accelerate",
+            "desc": "The argument you'll make to your CFO and CEO about why investment in engineering practice pays.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stretch",
+        "icon": "star",
+        "note": "CTO / GM / COO-prep — the next jump is rarely linear.",
+        "picks": [
+          {
+            "title": "The Pyramid Principle",
+            "desc": "Barbara Minto on structured executive writing. Read once, use forever.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The First 90 Days",
+            "desc": "Re-read for any future C-suite or BU-leader transition.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Tribal Leadership",
+            "desc": "Logan, King, Fischer-Wright on cultural stages. Useful for diagnosing why a 'good' org still feels stuck.",
+            "tags": ["BOOK", "ADVANCED"]
+          }
+        ]
+      },
+      {
+        "title": "Stay Current",
+        "icon": "trend",
+        "note": "",
+        "picks": [
+          {
+            "title": "First Round Review",
+            "desc": "The single best free source of operator-level executive content.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "Harvard Business Review",
+            "desc": "Curated. Skim the leadership and strategy sections; ignore the rest.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "The Pragmatic Engineer",
+            "desc": "The exec deep-dives are uniquely well-sourced.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "Reforge",
+            "desc": "Operator community and content programs. Strong on growth, product, and leadership.",
+            "tags": ["COMMUNITY", "ADVANCED"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cto",
+    "label": "CTO",
+    "icon": "spark",
+    "summary": "Technology executive — strategy, vision, board, and the technical bets that shape the company. Often paired with a VPE who runs operations.",
+    "steps": [
+      {
+        "title": "Foundations",
+        "icon": "book",
+        "note": "CTO canon is thin and scattered. These four anchor the role.",
+        "picks": [
+          {
+            "title": "The Hard Thing About Hard Things",
+            "desc": "Horowitz. The book that takes the gloss off being an exec.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Zero to One",
+            "desc": "Peter Thiel on building things that haven't existed. Sharpens strategic taste, even when you disagree.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Crossing the Chasm",
+            "desc": "Geoffrey Moore on early markets. Still the dominant frame for early-stage technology adoption.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Scaling People",
+            "desc": "Claire Hughes Johnson. CTOs hire and retain the senior leaders who execute the strategy.",
+            "tags": ["BOOK", "ADVANCED"]
+          }
+        ]
+      },
+      {
+        "title": "People & Team",
+        "icon": "users",
+        "note": "You influence through other leaders. The exec team is now your primary team.",
+        "picks": [
+          {
+            "title": "No Rules Rules",
+            "desc": "Hastings & Meyer — culture as competitive advantage, articulated.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Trillion Dollar Coach",
+            "desc": "Bill Campbell coached Apple, Google, Intuit execs. Read for the exec-coaching patterns.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Multipliers",
+            "desc": "Wiseman on amplifying intelligence. Particularly relevant when your IQ is no longer the most useful thing you bring.",
+            "tags": ["BOOK", "ADVANCED"]
+          }
+        ]
+      },
+      {
+        "title": "Strategy & Execution",
+        "icon": "compass",
+        "note": "Tech strategy, capital allocation, build-vs-buy at the company level.",
+        "picks": [
+          {
+            "title": "Good Strategy / Bad Strategy",
+            "desc": "The book the board wishes you'd read. Diagnosis → guiding policy → coherent action.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Playing to Win",
+            "desc": "Lafley & Martin. Five-question strategy that holds up at exec altitude.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Building Evolutionary Architectures",
+            "desc": "Ford / Parsons / Kua on architecture that adapts. CTO-relevant framing of tech debt and modernization.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Thoughtworks Technology Radar",
+            "desc": "Quarterly assessment of the tech landscape. The single best free CTO horizon-scan.",
+            "tags": ["REFERENCE", "ALL"]
+          }
+        ]
+      },
+      {
+        "title": "Stretch",
+        "icon": "star",
+        "note": "Strategy depth and executive longevity.",
+        "picks": [
+          {
+            "title": "The Innovator's Dilemma",
+            "desc": "Christensen on why successful companies miss disruptions. Still the most useful book on technology strategy.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "7 Powers",
+            "desc": "Hamilton Helmer on the seven business strategies that create durable advantage. Sharper than most strategy books.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Amp It Up",
+            "desc": "Frank Slootman on executive velocity. Short, opinionated, polarizing — read it as a counterpoint.",
+            "tags": ["BOOK", "ADVANCED"]
+          }
+        ]
+      },
+      {
+        "title": "Stay Current",
+        "icon": "trend",
+        "note": "",
+        "picks": [
+          {
+            "title": "Stratechery",
+            "desc": "Ben Thompson on the strategy and business of tech. The most-read strategy newsletter for a reason.",
+            "tags": ["BLOG", "ADVANCED"]
+          },
+          {
+            "title": "First Round Review",
+            "desc": "Operator-grade content for execs and founders.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "The Pragmatic Engineer",
+            "desc": "Org and platform deep-dives that inform CTO bets.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "Andreessen Horowitz",
+            "desc": "a16z's portfolio writing — uneven, but the operator essays land.",
+            "tags": ["BLOG", "ALL"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "staff-engineer",
+    "label": "Staff+ Engineer",
+    "icon": "code",
+    "summary": "Senior IC track parallel to management. Included for EMs who coach Staff+ candidates, and for ICs choosing between tracks.",
+    "steps": [
+      {
+        "title": "Foundations",
+        "icon": "book",
+        "note": "The defining texts for the modern Staff+ role.",
+        "picks": [
+          {
+            "title": "Staff Engineer",
+            "desc": "Will Larson's archetypes — Tech Lead, Architect, Solver, Right Hand — and the practices that work in each.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Staff Engineer's Path",
+            "desc": "Tanya Reilly's complement to Larson — pragmatic, tactical, well-illustrated.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Software Engineer's Guidebook",
+            "desc": "Gergely Orosz on the IC career arc, levels, and what each one actually demands.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "People & Team",
+        "icon": "users",
+        "note": "Influence without authority is the Staff+ job description.",
+        "picks": [
+          {
+            "title": "Crucial Conversations",
+            "desc": "Patterson et al. The Staff engineer's most-used skill is unblocking decisions, not writing code.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Coaching Habit",
+            "desc": "Stanier's seven questions. Useful when juniors come to you for answers you shouldn't give them.",
+            "tags": ["BOOK", "BEGINNER"]
+          },
+          {
+            "title": "Influence Without Authority",
+            "desc": "Cohen & Bradford — the foundational text on getting things done across boundaries you don't control.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Strategy & Execution",
+        "icon": "compass",
+        "note": "Technical depth that scales — and the practice of writing things down.",
+        "picks": [
+          {
+            "title": "A Philosophy of Software Design",
+            "desc": "John Ousterhout on complexity and modular design. Short, opinionated, durable.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "Designing Data-Intensive Applications",
+            "desc": "Kleppmann's reference for data systems. Read once, refer forever.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Software Engineering at Google",
+            "desc": "Winters / Manshreck / Wright on practices that hold up at extreme scale.",
+            "tags": ["BOOK", "ADVANCED"]
+          },
+          {
+            "title": "Team Topologies",
+            "desc": "Staff engineers shape team boundaries. Read to make those arguments well.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stretch",
+        "icon": "star",
+        "note": "Understand the manager track — for the pendulum, for partnership, or for the jump.",
+        "picks": [
+          {
+            "title": "An Elegant Puzzle",
+            "desc": "Read to understand what your EM is wrestling with. Makes you a better partner.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Manager's Path",
+            "desc": "If the IC/manager pendulum is on the table, start here.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          },
+          {
+            "title": "The Pyramid Principle",
+            "desc": "Minto's structured writing — Staff+ communication compounds when written well.",
+            "tags": ["BOOK", "INTERMEDIATE"]
+          }
+        ]
+      },
+      {
+        "title": "Stay Current",
+        "icon": "trend",
+        "note": "",
+        "picks": [
+          {
+            "title": "StaffEng",
+            "desc": "Will Larson's companion site to the book — interviews and patterns from working Staff+ engineers.",
+            "tags": ["REFERENCE", "ALL"]
+          },
+          {
+            "title": "Lethain",
+            "desc": "Larson's blog. Short structural essays that travel well to Staff+ audiences.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "The Pragmatic Engineer",
+            "desc": "Industry-wide context for the senior IC.",
+            "tags": ["BLOG", "ALL"]
+          },
+          {
+            "title": "LeadDev — StaffPlus",
+            "desc": "The conference and community track aimed specifically at Staff+ engineers.",
+            "tags": ["COMMUNITY", "ALL"]
+          }
+        ]
+      }
+    ]
+  }
+]

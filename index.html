@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Engineering Manager Hub — curated resources for engineering managers, directors, VPs, and CTOs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script>
+// Load JSON data files. Editing data/*.json is the primary workflow.
+window.__DATA_READY__ = (async () => {
+  const load = (p) => fetch(p, { cache: 'no-store' }).then(r => {
+    if (!r.ok) throw new Error(p + ' → ' + r.status);
+    return r.json();
+  });
+  const [resources, categories, paths, roadmap, taxonomy] = await Promise.all([
+    load('data/resources.json'),
+    load('data/categories.json'),
+    load('data/paths.json'),
+    load('data/roadmap.json'),
+    load('data/taxonomy.json'),
+  ]);
+  window.ARCH_RESOURCES = resources;
+  window.ARCH_CATEGORIES = categories;
+  window.ARCH_PATHS = paths;
+  window.ARCH_ROADMAP = roadmap;
+  window.ARCH_DOMAINS = taxonomy.domains;
+  window.ARCH_TYPES = taxonomy.types;
+  window.ARCH_LEVELS = taxonomy.levels;
+})().catch(err => {
+  document.getElementById('root').innerHTML =
+    '<div style="padding:40px;font-family:system-ui;color:#b00">' +
+    '<h2>Data load error</h2><p>' + err.message + '</p>' +
+    '<p>If you opened this file directly (file://), start a local server:<br>' +
+    '<code>cd EMHub &amp;&amp; python3 -m http.server 5173</code></p></div>';
+  throw err;
+});
+</script>
+<script type="text/babel" src="components/icons.jsx"></script>
+<script type="text/babel" src="components/sidebar.jsx"></script>
+<script type="text/babel" src="components/career.jsx"></script>
+
+<script>
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent": "#355b4e",
+  "density": 1
+}/*EDITMODE-END*/;
+window.__TWEAKS__ = TWEAK_DEFAULTS;
+</script>
+
+<script type="text/babel">
+const { useState, useEffect, useMemo, useRef } = React;
+
+function App() {
+  const [tweaks, setTweaks] = useState(window.__TWEAKS__);
+  const [editing, setEditing] = useState(false);
+  const [active, setActive] = useState('home');
+  const [query, setQuery] = useState('');
+  const [theme, setTheme] = useState(() => localStorage.getItem('arch-theme') || 'light');
+  const [selected, setSelected] = useState(null);
+  const [pathFilter, setPathFilter] = useState(null);
+  const [levelFilter, setLevelFilter] = useState('All');
+  const [conceptFilter, setConceptFilter] = useState(null);
+  const [sideOpen, setSideOpen] = useState(false);
+  const [saved, setSaved] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('arch-saved') || '[]'); } catch { return []; }
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('arch-theme', theme);
+  }, [theme]);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty('--accent', tweaks.accent);
+    root.style.setProperty('--tweak-density', tweaks.density);
+  }, [tweaks]);
+
+  useEffect(() => { localStorage.setItem('arch-saved', JSON.stringify(saved)); }, [saved]);
+
+  const searchRef = useRef(null);
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === '/' && document.activeElement !== searchRef.current) {
+        e.preventDefault(); searchRef.current?.focus();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  useEffect(() => {
+    const onMsg = (e) => {
+      const d = e.data || {};
+      if (d.type === '__activate_edit_mode') setEditing(true);
+      if (d.type === '__deactivate_edit_mode') setEditing(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const updateTweak = (patch) => {
+    const next = { ...tweaks, ...patch };
+    setTweaks(next);
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: patch }, '*');
+  };
+
+  const toggleSave = (id) => setSaved(s => s.includes(id) ? s.filter(x => x !== id) : [...s, id]);
+
+  // Compute counts for each category
+  const counts = useMemo(() => {
+    const all = window.ARCH_RESOURCES;
+    const map = {};
+    window.ARCH_CATEGORIES.forEach(c => {
+      if (c.kind === 'type') map[c.id] = all.filter(r => r.type === c.match).length;
+      else if (c.kind === 'domain') map[c.id] = all.filter(r => r.domain.includes(c.match)).length;
+    });
+    map.saved = saved.length;
+    return map;
+  }, [saved]);
+
+  // Resources for current category
+  const categoryResources = (catId) => {
+    const cat = window.ARCH_CATEGORIES.find(c => c.id === catId);
+    if (!cat) return [];
+    let list = window.ARCH_RESOURCES;
+    if (cat.kind === 'type') list = list.filter(r => r.type === cat.match);
+    else if (cat.kind === 'domain') list = list.filter(r => r.domain.includes(cat.match));
+    else if (cat.id === 'saved') list = list.filter(r => saved.includes(r.id));
+    if (query.trim()) {
+      const q = query.toLowerCase();
+      list = list.filter(r =>
+        r.title.toLowerCase().includes(q) ||
+        r.author.toLowerCase().includes(q) ||
+        r.blurb.toLowerCase().includes(q) ||
+        r.tags.some(t => t.toLowerCase().includes(q))
+      );
+    }
+    return list;
+  };
+
+  // Global search (when user is typing on home)
+  const searchResults = useMemo(() => {
+    if (!query.trim()) return null;
+    const q = query.toLowerCase();
+    return window.ARCH_RESOURCES.filter(r =>
+      r.title.toLowerCase().includes(q) ||
+      r.author.toLowerCase().includes(q) ||
+      r.blurb.toLowerCase().includes(q) ||
+      r.tags.some(t => t.toLowerCase().includes(q))
+    );
+  }, [query]);
+
+  // Hub: which categories to show (filtered by chosen career path)
+  const pathCategoryHints = {
+    'solution-architect':   ['books','frameworks','patterns','reference','courses','blogs','system-design','api-design'],
+    'enterprise-architect': ['frameworks','books','reference','enterprise','courses','blogs'],
+    'software-architect':   ['books','patterns','frameworks','tools','youtube','blogs','microservices','ddd','distributed','system-design'],
+    'cloud-architect':      ['cloud','frameworks','patterns','reference','courses','blogs','microservices','distributed'],
+    'data-architect':       ['data','books','reference','patterns','blogs','youtube','event-driven','distributed'],
+    'security-architect':   ['security','reference','frameworks','blogs'],
+    'ai-architect':         ['aiml','books','tools','reference','courses','blogs'],
+  };
+
+  const hubCategories = window.ARCH_CATEGORIES.filter(c =>
+    c.kind === 'type' || c.kind === 'domain'
+  );
+  const visibleCats = pathFilter
+    ? hubCategories.filter(c => (pathCategoryHints[pathFilter] || []).includes(c.id))
+    : hubCategories;
+
+  const totalResources = window.ARCH_RESOURCES.length;
+
+  return (
+    <div className="app">
+      <window.Sidebar
+        categories={window.ARCH_CATEGORIES}
+        active={active}
+        onSelect={(id) => { setActive(id); setPathFilter(null); }}
+        counts={counts}
+        open={sideOpen}
+        onClose={() => setSideOpen(false)}
+      />
+
+      <div className="main-col">
+        <div className="topbar">
+          <div className="search">
+            {window.SIcon.search}
+            <input
+              ref={searchRef}
+              placeholder="Search all resources…"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+            />
+            <kbd>/</kbd>
+          </div>
+          <div className="topbar-actions">
+            <button
+              className="icon-btn"
+              data-active={active === 'saved'}
+              onClick={() => setActive('saved')}
+              title="Saved"
+            >
+              {window.SIcon.bookmark(active === 'saved')}
+            </button>
+            <button
+              className="icon-btn"
+              onClick={() => setTheme(t => t === 'light' ? 'dark' : 'light')}
+              title="Toggle theme"
+            >
+              {theme === 'light' ? window.SIcon.moon : window.SIcon.sun}
+            </button>
+          </div>
+        </div>
+
+        <main className="main">
+          {/* HOME / HUB */}
+          {active === 'home' && !query.trim() && (
+            <>
+              <div className="hub-hero">
+                <h1>Engineering Manager Hub</h1>
+                <p>A curated library for engineering managers, directors, VPs, and CTOs — books, newsletters, courses, podcasts, frameworks, communities, and career paths.</p>
+                <div className="hub-stats">
+                  <div className="hub-stat"><div className="n">{totalResources}</div><div className="l">Resources</div></div>
+                  <div className="hub-stat"><div className="n">{window.ARCH_CATEGORIES.filter(c=>c.kind!=='special').length}</div><div className="l">Categories</div></div>
+                  <div className="hub-stat"><div className="n">{window.ARCH_PATHS.length}</div><div className="l">Career Paths</div></div>
+                </div>
+              </div>
+
+              <div className="path-filter">
+                <div className="label">Filter by career path</div>
+                <div className="path-pills">
+                  {window.ARCH_PATHS.map(p => (
+                    <button
+                      key={p.id}
+                      className="pill"
+                      data-active={pathFilter === p.id}
+                      onClick={() => setPathFilter(f => f === p.id ? null : p.id)}
+                    >
+                      <span className="p-icon">{window.SIcon[p.icon]}</span>
+                      {p.label}
+                    </button>
+                  ))}
+                </div>
+                {pathFilter && (
+                  <button className="clear-link" onClick={() => setPathFilter(null)}>Clear filter</button>
+                )}
+              </div>
+
+              <div className="cat-grid">
+                {visibleCats.map(c => {
+                  const count = counts[c.id] || 0;
+                  return (
+                    <button
+                      key={c.id}
+                      className="cat-card"
+                      data-empty={count === 0}
+                      disabled={count === 0}
+                      onClick={() => count > 0 && setActive(c.id)}
+                    >
+                      <span className="c-icon">{window.SIcon[c.icon]}</span>
+                      <span className="c-name">{c.label}</span>
+                      <span className="c-count">{count} {count === 1 ? 'resource' : 'resources'}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
+
+          {/* GLOBAL SEARCH RESULTS */}
+          {active === 'home' && query.trim() && (
+            <div className="cat-detail">
+              <div className="cat-head">
+                <h2>Search</h2>
+                <span className="subtitle">
+                  {searchResults?.length ?? 0} RESULT{(searchResults?.length ?? 0) === 1 ? '' : 'S'} FOR "{query}"
+                </span>
+              </div>
+              <div className="res-grid">
+                {searchResults?.length === 0 ? (
+                  <div className="empty">
+                    <div className="mono-line">// NO MATCHES</div>
+                    <p>Try a different term or browse by category.</p>
+                  </div>
+                ) : searchResults.map(r => (
+                  <window.ResourceCard key={r.id} r={r} saved={saved.includes(r.id)}
+                    onSave={toggleSave} onOpen={setSelected} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* CAREER PATH GUIDE */}
+          {active === 'career-path' && <window.CareerPath />}
+
+          {/* CATEGORY DETAIL */}
+          {active !== 'home' && active !== 'career-path' && (() => {
+            const cat = window.ARCH_CATEGORIES.find(c => c.id === active);
+            let list = categoryResources(active);
+            if (levelFilter !== 'All') list = list.filter(r => r.level === levelFilter || r.level === 'All');
+            if (conceptFilter) list = list.filter(r => (r.domain||[]).includes(conceptFilter));
+            const concepts = (window.ARCH_DOMAINS && window.ARCH_DOMAINS.concepts) || [];
+            return (
+              <div className="cat-detail">
+                <div className="cat-filters">
+                  <span className="flabel">Level</span>
+                  {['All','Beginner','Intermediate','Advanced'].map(l => (
+                    <button key={l} className="fchip" data-active={levelFilter === l} onClick={() => setLevelFilter(l)}>{l}</button>
+                  ))}
+                </div>
+                {concepts.length > 0 && cat?.group !== 'concept' && (
+                  <div className="cat-filters">
+                    <span className="flabel">Concept</span>
+                    <button className="fchip" data-active={!conceptFilter} onClick={() => setConceptFilter(null)}>All</button>
+                    {concepts.map(c => (
+                      <button key={c} className="fchip" data-active={conceptFilter === c} onClick={() => setConceptFilter(f => f === c ? null : c)}>{c}</button>
+                    ))}
+                  </div>
+                )}
+                <div className="cat-head">
+                  <button className="back" onClick={() => { setActive('home'); setQuery(''); setLevelFilter('All'); setConceptFilter(null); }}>
+                    {window.SIcon.back} Back
+                  </button>
+                  <span className="c-ico">{window.SIcon[cat?.icon]}</span>
+                  <h2>{cat?.label}</h2>
+                  <button className="filter-link" onClick={() => { setLevelFilter('All'); setPathFilter(null); setConceptFilter(null); }}>Reset filters ↻</button>
+                </div>
+                <div className="res-grid">
+                  {list.length === 0 ? (
+                    <div className="empty">
+                      <div className="mono-line">// EMPTY</div>
+                      <p>No resources here yet.{active === 'saved' ? ' Bookmark cards to save them.' : ''}</p>
+                    </div>
+                  ) : list.map(r => (
+                    <window.ResourceCard key={r.id} r={r} saved={saved.includes(r.id)}
+                      onSave={toggleSave} onOpen={setSelected} />
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
+        </main>
+
+        <footer className="footer">
+          // ARCH HUB · CURATED · NOT AFFILIATED · UPDATED APRIL 2026
+        </footer>
+      </div>
+
+      <window.DetailPanel
+        resource={selected}
+        saved={selected ? saved.includes(selected.id) : false}
+        onSave={toggleSave}
+        onClose={() => setSelected(null)}
+      />
+
+      <a
+        className="submit-pill"
+        href="mailto:emhub.resources@gmail.com?subject=EMHub%3A%20Resource%20submission&body=URL%3A%20%0D%0A%0D%0AWhy%20it%27s%20worth%20including%20(optional)%3A%0D%0A"
+        title="Email a resource URL to emhub.resources@gmail.com"
+      >
+        {window.SIcon.plus} Submit a Resource
+      </a>
+
+      {editing && <window.TweaksPanel state={tweaks} setState={updateTweak} />}
+    </div>
+  );
+}
+
+window.__DATA_READY__.then(() => {
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+});
+</script>
+</body>
+</html>

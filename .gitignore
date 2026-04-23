@@ -1,0 +1,37 @@
+# EMHub — public-only repo. Working files (research scripts, prompts,
+# staging dirs) are kept out of the public-facing repository.
+
+# Workflow scripts (server-side only — not part of the static site)
+*.py
+
+# Research prompts (curated prompt-engineering — kept local)
+RESEARCH_PROMPT*.md
+
+# Internal docs
+CLAUDE.md
+
+# Research workflow inputs / staging
+topics.json
+new_resources.txt
+new_resources.processed.txt
+data/incoming/
+data/dead_urls.json
+data/url_status_report.json
+
+# Vercel + agent local state
+.vercel
+.claude/
+memory/
+
+# Secrets — MUST NOT be committed
+.env
+.env.*
+*.key
+*.pem
+
+# Editor / OS noise
+.DS_Store
+.vscode/
+.idea/
+node_modules/
+screenshots/

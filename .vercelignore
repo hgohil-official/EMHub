@@ -1,0 +1,42 @@
+# Secrets — MUST NOT ship
+.env
+.env.*
+*.key
+*.pem
+
+# Server-side workflow tools (not part of the static site)
+enricher.py
+validate.py
+merge.py
+fix_incoming.py
+research_perplexity.py
+enhance_urls.py
+replace_by_url.py
+_check_upload.py
+
+# Research workflow inputs
+topics.json
+new_resources.txt
+new_resources.processed.txt
+data/incoming/
+data/dead_urls.json
+data/url_status_report.json
+check_urls.py
+
+# Dev + agent metadata
+.claude/
+memory/
+
+# Dev-only docs
+CLAUDE.md
+RESEARCH_PROMPT.md
+RESEARCH_PROMPT_PATHS.md
+RESEARCH_PROMPT_NEWSLETTERS_REPOS.md
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+screenshots/
+.vercel
+node_modules/

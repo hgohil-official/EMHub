@@ -1,0 +1,54 @@
+{
+  "domains": {
+    "practices": [
+      "People Management",
+      "Hiring",
+      "Performance & Development",
+      "Org Design",
+      "Strategy",
+      "Finance & Operations",
+      "Executive Communication",
+      "Engineering Excellence",
+      "Technical Leadership",
+      "Culture & Change"
+    ],
+    "concepts": [
+      "1:1s",
+      "Feedback",
+      "Coaching & Mentoring",
+      "Difficult Conversations",
+      "Career Ladders",
+      "Compensation",
+      "Interview Loops",
+      "OKRs",
+      "Roadmapping",
+      "Planning",
+      "Team Topologies",
+      "Platform Engineering",
+      "Team Health",
+      "DORA & SPACE",
+      "Incident Management",
+      "Tech Debt Management"
+    ]
+  },
+  "types": [
+    "Book",
+    "Framework",
+    "Blog",
+    "Newsletter",
+    "Course",
+    "Tool",
+    "Podcast",
+    "YouTube",
+    "Community",
+    "Reference",
+    "Conference",
+    "GH Repo"
+  ],
+  "levels": [
+    "Beginner",
+    "Intermediate",
+    "Advanced",
+    "All"
+  ]
+}

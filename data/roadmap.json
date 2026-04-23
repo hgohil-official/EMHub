@@ -1,0 +1,106 @@
+[
+  {
+    "id": "foundations",
+    "title": "Foundations",
+    "subtitle": "The identity and mechanics of being a manager",
+    "items": [
+      { "label": "What engineering managers actually do (vs. tech leads)", "required": true },
+      { "label": "The IC → manager identity transition", "required": true },
+      { "label": "Time and calendar design (maker vs. manager schedule)", "required": true },
+      { "label": "Managerial leverage and output", "required": true },
+      { "label": "Energy and sustainability — avoiding burnout", "required": false }
+    ]
+  },
+  {
+    "id": "conversations",
+    "title": "Conversations",
+    "subtitle": "The interactions that compound — 1:1s, feedback, hard talks",
+    "items": [
+      { "label": "Running effective 1:1s (cadence, agenda, listening)", "required": true },
+      { "label": "Giving feedback (SBI, Radical Candor, calibrated praise)", "required": true },
+      { "label": "Asking for and receiving feedback", "required": true },
+      { "label": "Setting and resetting expectations", "required": true },
+      { "label": "Coaching with the GROW model", "required": false },
+      { "label": "Difficult conversations (conflict, escalation)", "required": true },
+      { "label": "PIPs and managing out", "required": false }
+    ]
+  },
+  {
+    "id": "hiring-talent",
+    "title": "Hiring & Talent",
+    "subtitle": "Designing how people enter, level, and ramp",
+    "items": [
+      { "label": "Designing structured interview loops", "required": true },
+      { "label": "Calibrating the hiring bar and reducing bias", "required": true },
+      { "label": "Sourcing and outreach for senior engineers", "required": false },
+      { "label": "Leveling and offer construction", "required": true },
+      { "label": "Onboarding and 30/60/90-day plans", "required": true },
+      { "label": "Compensation, bands, and equity basics", "required": true }
+    ]
+  },
+  {
+    "id": "performance",
+    "title": "Performance & Development",
+    "subtitle": "Reviews, growth, and the long game of careers",
+    "items": [
+      { "label": "Performance reviews and calibration", "required": true },
+      { "label": "Career ladders and Staff+ archetypes", "required": true },
+      { "label": "Writing promotion cases", "required": true },
+      { "label": "Growth plans and IDPs", "required": true },
+      { "label": "Recognition and praise mechanics", "required": false },
+      { "label": "Managing underperformance", "required": true }
+    ]
+  },
+  {
+    "id": "team-org",
+    "title": "Team & Org Design",
+    "subtitle": "Boundaries, structures, and reorgs",
+    "items": [
+      { "label": "Team Topologies (4 team types, 3 interaction modes)", "required": true },
+      { "label": "Conway's Law and the inverse Conway maneuver", "required": true },
+      { "label": "Team size and scope (Dunbar, two-pizza)", "required": true },
+      { "label": "Manager of managers — skip-levels and calibration", "required": false },
+      { "label": "Reorgs without breaking the company", "required": false },
+      { "label": "Platform team scope and platform-as-product", "required": false }
+    ]
+  },
+  {
+    "id": "strategy-planning",
+    "title": "Strategy & Planning",
+    "subtitle": "From vision to next quarter",
+    "items": [
+      { "label": "Strategy vs. plan vs. roadmap (and Rumelt's kernel)", "required": true },
+      { "label": "Writing a tech strategy", "required": true },
+      { "label": "OKRs (and alternatives — NCTs, North Star)", "required": true },
+      { "label": "Quarterly and annual planning cycles", "required": true },
+      { "label": "Capacity and headcount planning", "required": true },
+      { "label": "Prioritization (RICE, ICE, opportunity scoring)", "required": false }
+    ]
+  },
+  {
+    "id": "engineering-excellence",
+    "title": "Engineering Excellence",
+    "subtitle": "Delivery, quality, and the operational discipline",
+    "items": [
+      { "label": "DORA four key metrics (lead time, deploy freq, MTTR, change-fail rate)", "required": true },
+      { "label": "SPACE framework for developer experience", "required": true },
+      { "label": "Incident management (SEV levels, IMAG, comms)", "required": true },
+      { "label": "Blameless postmortems and learning reviews", "required": true },
+      { "label": "Quality bar and code-review culture", "required": false },
+      { "label": "Tech debt tracking and modernization", "required": true }
+    ]
+  },
+  {
+    "id": "executive-influence",
+    "title": "Executive Influence",
+    "subtitle": "Communicating with execs, the board, and the business",
+    "items": [
+      { "label": "Writing exec memos (Amazon 6-pager, PR/FAQ)", "required": true },
+      { "label": "The Pyramid Principle for structured executive writing", "required": true },
+      { "label": "Board decks and strategic narratives", "required": false },
+      { "label": "Cross-functional influence without authority", "required": true },
+      { "label": "Engineering budgets, headcount, and FinOps basics", "required": true },
+      { "label": "Translating engineering investment to business value", "required": true }
+    ]
+  }
+]
