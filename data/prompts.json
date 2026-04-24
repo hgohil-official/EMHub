@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-24T15:07:59.495318",
-  "count": 33,
+  "generated_at": "2026-04-24T15:44:14.571532",
+  "count": 41,
   "practice_labels": {
     "people-hiring-performance": "People · Hiring · Performance",
     "strategy-planning": "Strategy & Planning",
@@ -1423,6 +1423,393 @@
       "format": "json",
       "status": "gold",
       "version": "3.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-retention-and-psych-safety-pack",
+      "entry_type": "prompt_pack",
+      "title": "Retention and Psych Safety Pack",
+      "slug": "retention-and-psych-safety-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "People Management",
+        "Performance & Development",
+        "Culture & Change"
+      ],
+      "concepts": [
+        "Team Health",
+        "Coaching & Mentoring"
+      ],
+      "summary": "Four prompts for retention and psych-safety work: retention-risk per-person assessment, retention-conversation script, psych-safety diagnostic synthesizer, and intervention designer.",
+      "why_it_matters": "Retention investment must happen BEFORE someone interviews. Psych-safety diagnostics matter only if the manager acts on them. These prompts produce the structured outputs that make both real.",
+      "when_to_use": [
+        "Quarterly retention-risk assessment per direct report",
+        "Drafting a retention conversation when someone is at risk",
+        "Synthesizing psych-safety diagnostic results",
+        "Designing interventions when psych-safety scores indicate concern"
+      ],
+      "not_for": [
+        "Replacing the actual conversation (these prep, not substitute)",
+        "Acting on single-source signal without triangulation"
+      ],
+      "source_inspiration": [
+        "Patty McCord — Powerful, on retention",
+        "Amy Edmondson — The Fearless Organization",
+        "Lara Hogan — BICEPS framework and retention conversations"
+      ],
+      "inputs_required": [
+        {
+          "name": "Per-person observation data",
+          "description": "What you've actually observed in 1:1s and behavior.",
+          "required": true
+        },
+        {
+          "name": "Survey results (if applicable)",
+          "description": "Psych safety or eNPS data.",
+          "required": false
+        },
+        {
+          "name": "Investment capacity",
+          "description": "What you can actually do (comp, scope, sponsorship).",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Per-person retention assessment",
+        "Retention conversation script",
+        "Psych safety synthesis",
+        "Intervention design"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Act on what you find.",
+          "prompts": [
+            "Surveying without acting makes things worse.",
+            "Retention conversations need to happen before interviewing starts.",
+            "Investment options vary; comp is rarely the only lever."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "retention-risk-per-person",
+          "name": "Retention-risk per-person assessment",
+          "use_case": "For each person on the team, assess retention risk based on observed signals; recommend action.",
+          "inputs": [
+            "Direct report context (level, tenure, scope, recent comp/promo history)",
+            "Observed signals (1:1 sentiment, behavior changes, slack activity, recent feedback)",
+            "Investment options available (comp adjustment authority, scope flexibility, sponsorship opportunities)"
+          ],
+          "output_format": [
+            "'Risk level' — low / medium / high / actively interviewing",
+            "'Why at risk' — specific signals, not vibes",
+            "'Confidence' — high / medium / low",
+            "'Their value' — what we lose specifically if they leave",
+            "'What we know about their motivations' — from actual conversations",
+            "'Investment options' — specific actions",
+            "'Recommended action' — invest / accept / observe with reasoning"
+          ],
+          "review_checklist": [
+            "Signals are specific observed behaviors, not interpretation",
+            "Their value is concrete (institutional knowledge, leadership, capability)",
+            "Investment options are real and achievable",
+            "Recommended action is honest (sometimes 'accept' is right)"
+          ],
+          "prompt": "You are assessing retention risk for one direct report. Honest signals; specific actions.\n\nContext\n- Direct report: {direct_report}\n- Observed signals: {signals}\n- Investment options available: {options}\n\nProduce seven sections:\n\n1. Risk level — low / medium / high / actively interviewing.\n\n2. Why at risk — specific signals: scope mismatch, comp gap, missed promo, manager friction, market pull, withdrawal in 1:1s. NOT 'seems unhappy'.\n\n3. Confidence — high / medium / low. Honest.\n\n4. Their value — what specifically the team loses if they leave: institutional knowledge in X area, leadership of Y, mentorship for Z, capability gap that's hard to backfill.\n\n5. What we know about their motivations — from actual conversations (career, comp, scope). Don't guess.\n\n6. Investment options — specific actions: scope change, comp adjustment, manager change, sponsorship, coaching, direct conversation. With cost and confidence-it-works.\n\n7. Recommended action — invest (which option), accept (with rationale), or observe (what you'd watch for).\n\nKeep total under 500 words. Specific signals; honest assessment."
+        },
+        {
+          "id": "retention-conversation",
+          "name": "Retention conversation script",
+          "use_case": "Draft the script for a retention conversation with someone at risk.",
+          "inputs": [
+            "Person at risk",
+            "Investment options the manager can credibly offer",
+            "What you suspect they need but haven't said",
+            "What you can NOT do (boundaries to be honest about)"
+          ],
+          "output_format": [
+            "'Opening' — frame the conversation honestly",
+            "'What you've noticed' — specific observations that prompted the conversation",
+            "'Listening prompts' — open questions to invite their actual concerns",
+            "'What you can offer' — specific commitments",
+            "'What you can't do' — honest about boundaries",
+            "'Their commitment' — what you're asking from them",
+            "'Follow-up cadence' — when you'll check back"
+          ],
+          "review_checklist": [
+            "Opening doesn't manipulate ('I just wanted to chat...')",
+            "Observations are specific behaviors",
+            "Listening prompts are genuinely open, not leading",
+            "What-you-can't-do is real (don't overpromise comp, scope you don't control)"
+          ],
+          "prompt": "You are preparing a retention conversation with a direct report at risk. Honest, not manipulative.\n\nContext\n- Person at risk: {person}\n- Investment options you can credibly offer: {options}\n- What you suspect they need but haven't said: {suspected_needs}\n- What you can NOT do: {boundaries}\n\nProduce seven sections:\n\n1. Opening — frame honestly. NOT 'I just wanted to chat'. YES 'I want to have a direct conversation about your role and what you need from this team. I've been noticing some things I want to check in on.'\n\n2. What you've noticed — specific observations that prompted this conversation. Behavior, not interpretation.\n\n3. Listening prompts — open questions to invite actual concerns: 'How are you feeling about your scope right now?' / 'Where are you growing? Where are you bored?' / 'If you could change one thing about this role, what would it be?'\n\n4. What you can offer — specific commitments: comp adjustment in next cycle (if you control), scope expansion in [project], sponsorship for [opportunity]. Real, not aspirational.\n\n5. What you can't do — honest. 'I can't move you off this team this quarter; the work needs continuity.' 'I can't promise the promotion this cycle.'\n\n6. Their commitment — what you're asking. Often: stay through next cycle to see if the changes land; have follow-up conversation in 60 days; let you know if recruiter outreach intensifies.\n\n7. Follow-up cadence — when you'll check back; what you're committing to do between now and then.\n\nKeep total under 600 words. Honest opening; real options; honest boundaries."
+        },
+        {
+          "id": "psych-safety-synthesizer",
+          "name": "Psych-safety diagnostic synthesizer",
+          "use_case": "Synthesize survey + observation data into psych-safety read with cause analysis.",
+          "inputs": [
+            "Survey scores (Edmondson 7-item + engineering items)",
+            "Manager observation notes from 4–6 week window",
+            "Recent context (events, changes, pressures)"
+          ],
+          "output_format": [
+            "'Overall read' — strong / mixed / concerning, with trend if baseline exists",
+            "'Where strong' — 2–3 dimensions with healthy signal",
+            "'Where weak' — 2–3 dimensions with concerning signal",
+            "'Likely causes' — diagnosed (manager behavior, individual, event, composition, workload, org)",
+            "'Specific evidence' — anchors for each cause hypothesis",
+            "'What needs investigating before acting' — gaps in your data"
+          ],
+          "review_checklist": [
+            "Overall read is honest (not 'mostly fine' if survey shows real concerns)",
+            "Cause diagnosis names specifics, not generalities",
+            "What-needs-investigating section is real (don't act on hypotheses)"
+          ],
+          "prompt": "You are synthesizing psych-safety diagnostic data into a read with cause analysis.\n\nContext\n- Survey scores: {survey_scores}\n- Observation notes: {observation_notes}\n- Recent context: {context}\n\nProduce six sections:\n\n1. Overall read — strong / mixed / concerning, with trend if baseline exists.\n\n2. Where strong — 2–3 dimensions where signal is healthy. Anchors.\n\n3. Where weak — 2–3 dimensions with concerning signal. Specific anchors.\n\n4. Likely causes — diagnosed: manager behavior (you or another), specific individual disrupting safety, recent event (layoff, failure, reorg), composition (underrepresented people having different experience), workload (chronic stress), org-level pattern (company culture caps team safety).\n\n5. Specific evidence — anchors for each cause hypothesis. Quote the data.\n\n6. What needs investigating before acting — gaps in your data. Often: 1:1 conversations to check whether the survey reflects current state.\n\nKeep total under 600 words. Honest read; specific causes; investigate before acting."
+        },
+        {
+          "id": "psych-safety-intervention-designer",
+          "name": "Psych-safety intervention designer",
+          "use_case": "Design specific interventions for diagnosed psych-safety weaknesses.",
+          "inputs": [
+            "Diagnosed cause(s) from synthesizer",
+            "Manager's authority and capacity",
+            "Team context"
+          ],
+          "output_format": [
+            "'Intervention per cause' — specific action for each diagnosed cause",
+            "'Manager-behavior interventions' — if you're the cause",
+            "'Individual interventions' — if a specific person is making the team unsafe",
+            "'Event-related interventions' — if recent event is the cause",
+            "'Composition interventions' — if underrepresented people are bearing the cost",
+            "'Workload interventions' — if chronic stress is the cause",
+            "'Org-level boundary' — what you can't fix at team level",
+            "'Re-measure date'"
+          ],
+          "review_checklist": [
+            "Each intervention matches its cause",
+            "Manager-behavior interventions are specific (not 'communicate better')",
+            "Individual interventions don't outsource to time",
+            "Org-level boundary is honest about what's beyond your scope"
+          ],
+          "prompt": "You are designing interventions for psych-safety weaknesses based on the synthesized diagnosis.\n\nContext\n- Diagnosed cause(s): {causes}\n- Your authority and capacity: {authority}\n- Team context: {team_context}\n\nProduce eight sections:\n\n1. Intervention per cause — specific action for each diagnosed cause; specific is the bar.\n\n2. Manager-behavior interventions (if you're the cause) — outside coach observation, asking for direct feedback in 1:1s, changing a specific behavior (waiting longer before speaking, naming and rewarding dissent).\n\n3. Individual interventions (if one person is making team unsafe) — direct conversation; don't outsource to time. Use the difficult-conversations script.\n\n4. Event-related interventions (recent layoff, failure, reorg) — explicit conversation about what changed, what's safe, what's not yet recovered.\n\n5. Composition interventions (underrepresented people bearing cost) — 1:1 attention, structural sponsorship, allyship in meetings.\n\n6. Workload interventions (chronic stress causing safety decay) — address the workload; psych safety is the symptom.\n\n7. Org-level boundary — what you can't fix at team level (company culture caps team safety). Surface to your manager; bound your interventions to what's possible.\n\n8. Re-measure date — when you'll check the diagnostic again. Typically 6 months.\n\nKeep total under 700 words. Specific interventions; honest boundary."
+        }
+      ],
+      "related_entries": [
+        "retention-risk-assessment (template)",
+        "psychological-safety-diagnostic (template)",
+        "1-1-coaching-pack (prompt pack)",
+        "difficult-conversations-pack (in difficult-conversations prompts)"
+      ],
+      "tags": [
+        "gold-standard",
+        "retention",
+        "psych-safety",
+        "team-health",
+        "interventions"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "30–90 minutes per prompt",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-skip-level-synthesis-pack",
+      "entry_type": "prompt_pack",
+      "title": "Skip-Level Synthesis Pack",
+      "slug": "skip-level-synthesis-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Management",
+        "Org Design"
+      ],
+      "concepts": [
+        "Team Health"
+      ],
+      "summary": "Four prompts for synthesizing skip-level conversations: per-manager signal extractor, cross-team pattern detector, talent-spotting synthesizer, and confidentiality decision facilitator.",
+      "why_it_matters": "Skip-levels are conversations until they're synthesized into signal. These prompts force the synthesis work that turns 8–20 conversations into actionable insight about managers, patterns, hidden talent, and your own blind spots.",
+      "when_to_use": [
+        "Quarterly synthesis after a round of skip-levels",
+        "Before manager calibration",
+        "Before performance review cycles for managers reporting to you",
+        "Triangulating signal across multiple ICs about a specific manager or pattern"
+      ],
+      "not_for": [
+        "Sharing the synthesis directly with the managers being assessed",
+        "Acting on single-source signal without triangulation"
+      ],
+      "source_inspiration": [
+        "Will Larson — An Elegant Puzzle on skip-level rhythm",
+        "Lara Hogan — skip-level templates"
+      ],
+      "inputs_required": [
+        {
+          "name": "Skip-level conversation notes",
+          "description": "Notes from each conversation in the period.",
+          "required": true
+        },
+        {
+          "name": "Manager-of-managers context",
+          "description": "Who reports to you, current performance read on each.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Per-manager synthesis",
+        "Cross-team patterns",
+        "Talent observations",
+        "Confidentiality plan"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Triangulate before acting.",
+          "prompts": [
+            "Single source is hypothesis; multiple sources is signal.",
+            "Distinguish what's about the manager from what's about the org.",
+            "Decide attribution before sharing."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "per-manager-signal",
+          "name": "Per-manager signal extractor",
+          "use_case": "From skip-levels with one manager's reports, extract the signal about that manager's effectiveness.",
+          "inputs": [
+            "Skip-level notes from N reports of one manager",
+            "Manager's recent context (tenure, scope, team size)",
+            "Your prior read on this manager"
+          ],
+          "output_format": [
+            "'Team health read' — strong / mixed / concerning, with evidence",
+            "'Manager strengths' — patterns across reports",
+            "'Manager development areas' — patterns suggesting coaching focus",
+            "'Specific incidents' — events mentioned by multiple reports",
+            "'Surprises' — what you didn't expect",
+            "'Recommended action' — coaching, feedback, or intervention"
+          ],
+          "review_checklist": [
+            "Patterns require 2+ sources, not single source",
+            "Strengths and development areas anchored in specific evidence",
+            "Action is specific (not 'continue coaching')"
+          ],
+          "prompt": "You are extracting signal about a manager from skip-level conversations with their direct reports. Triangulate; single source is hypothesis, multiple is signal.\n\nContext\n- Skip-level notes from N reports: {skip_level_notes}\n- Manager context (tenure, scope, team size): {manager_context}\n- Your prior read: {prior_read}\n\nProduce six sections:\n\n1. Team health read — strong / mixed / concerning, with specific evidence from skip-levels.\n\n2. Manager strengths — patterns across reports (require 2+ sources). What this manager consistently does well.\n\n3. Manager development areas — patterns suggesting coaching focus. Could be subtle (e.g., reports asking different versions of 'where am I going?' suggests career-conversation gap).\n\n4. Specific incidents — events mentioned by multiple reports. Often the highest-signal items.\n\n5. Surprises — what you didn't expect (good or bad).\n\n6. Recommended action — specific: coaching focus area, feedback to deliver, escalation if needed. Not 'continue coaching'.\n\nKeep total under 600 words. Triangulated; specific."
+        },
+        {
+          "id": "cross-team-patterns",
+          "name": "Cross-team pattern detector",
+          "use_case": "From skip-levels across multiple managers' teams, detect patterns that say something about the org, not individual managers.",
+          "inputs": [
+            "Skip-level notes across all teams in the period",
+            "Recent org events (reorg, leadership change, strategic shift)"
+          ],
+          "output_format": [
+            "'Pattern 1' — theme appearing across multiple teams; what it tells you",
+            "'Pattern 2' — same",
+            "'Pattern 3' — same",
+            "'Cross-team triggers' — common cross-functional partner everyone struggles with",
+            "'Strategic signal' — company decisions landing badly (or well) across teams",
+            "'What this says about you' — patterns that reflect on your own leadership"
+          ],
+          "review_checklist": [
+            "Patterns require 3+ teams, not 2",
+            "What-this-says-about-you section is real, uncomfortable",
+            "Strategic-signal section connects micro patterns to macro shifts"
+          ],
+          "prompt": "You are detecting cross-team patterns in skip-level signal. Patterns across multiple teams = about you, the org, or the company; not about individual managers.\n\nContext\n- Skip-level notes across all teams: {all_skip_notes}\n- Recent org events: {org_events}\n\nProduce six sections:\n\n1. Pattern 1 — theme appearing across multiple teams (3+) with the underlying signal.\n\n2. Pattern 2 — same.\n\n3. Pattern 3 — same.\n\n4. Cross-team triggers — common cross-functional partner that everyone is struggling with (a specific PM, a specific exec, a specific process).\n\n5. Strategic signal — company decisions landing badly (or well) across teams. Often: a recent reorg, a strategic pivot, a leadership change.\n\n6. What this says about you — patterns that reflect on your own leadership. Uncomfortable but real (e.g., 'multiple teams reported feeling unclear about quarterly priorities — that's about my comms, not their managers').\n\nKeep total under 600 words. Pattern requires 3+ teams; honest about your own contribution."
+        },
+        {
+          "id": "talent-spotting",
+          "name": "Talent-spotting synthesizer",
+          "use_case": "From skip-levels, surface ICs who weren't on your radar — for promotion, sponsorship, or scope investment.",
+          "inputs": [
+            "Skip-level notes",
+            "Current talent map (who's on your radar, who's not)",
+            "Open opportunities (scope, sponsorship, exec exposure)"
+          ],
+          "output_format": [
+            "'People to watch (positive)' — ICs whose work or judgment was repeatedly praised",
+            "'People to watch (concerning)' — ICs whose work or behavior raised concerns from multiple sources",
+            "'Hidden talent' — ICs operating above their level the org isn't seeing",
+            "'Recommended action per person' — promotion consideration, sponsorship, scope opportunity, or flag-with-manager",
+            "'Talent calibration' — how this changes your overall talent picture"
+          ],
+          "review_checklist": [
+            "Each person requires multiple sources",
+            "Concerning section is honest, not punitive",
+            "Recommended actions are specific (not 'keep an eye on')",
+            "Hidden talent often means level mismatch — real growth opportunity"
+          ],
+          "prompt": "You are spotting talent surfaced by skip-levels — ICs whose contribution or risk wasn't on your radar.\n\nContext\n- Skip-level notes: {notes}\n- Current talent map: {talent_map}\n- Open opportunities: {opportunities}\n\nProduce five sections:\n\n1. People to watch (positive) — ICs whose work or judgment was repeatedly praised by their peers (require 2+ sources). Per person: what they did, why it stands out.\n\n2. People to watch (concerning) — ICs whose work or behavior raised concerns from multiple sources. Honest, not punitive. Per person: what surfaced, who raised it, severity.\n\n3. Hidden talent — ICs operating above their level the org isn't yet recognizing. Often: people whose manager is over-protecting them, people in adjacent teams whose work crosses into yours.\n\n4. Recommended action per person — for positives: promotion consideration, sponsorship for specific opportunity, scope investment. For concerning: flag with their manager (with confidentiality framing).\n\n5. Talent calibration — how this changes your overall talent picture. Bench depth, succession, gaps.\n\nKeep total under 600 words. Multi-sourced; specific actions."
+        },
+        {
+          "id": "confidentiality-facilitator",
+          "name": "Confidentiality decision facilitator",
+          "use_case": "For each significant insight from skip-level synthesis, decide what to share with whom and how.",
+          "inputs": [
+            "Insights from synthesis (per manager, cross-team, talent)",
+            "What ICs explicitly asked you to share or not share"
+          ],
+          "output_format": [
+            "'Per-insight decision matrix' — Insight | Source | What to share | With whom | When | Attribution",
+            "'Tell with attribution' — only if IC consented",
+            "'Tell without attribution' — most common; pattern is real but source protected",
+            "'Sit on it for now' — single-source or needs more triangulation",
+            "'Escalate' — beyond what the manager can address (HR, exec)"
+          ],
+          "review_checklist": [
+            "Attribution decisions match what ICs explicitly said",
+            "Most insights default to 'without attribution' (protects sources)",
+            "'Sit on it' is real — not everything needs immediate action",
+            "Escalation has criteria (beyond manager's scope)"
+          ],
+          "prompt": "You are facilitating confidentiality decisions for the insights from skip-level synthesis. Trust dies if attribution leaks; signal evaporates if you sit on everything.\n\nContext\n- Insights from synthesis: {insights}\n- What ICs explicitly asked re: sharing: {ic_consent}\n\nProduce five sections:\n\n1. Per-insight decision matrix — Insight | Source(s) | What to share | With whom | When | Attribution (with consent / without / not at all).\n\n2. Tell with attribution — only if the IC explicitly consented. Rare and powerful.\n\n3. Tell without attribution — most common. Pattern is real but source protected. Manager hears 'I'm noticing X across multiple conversations'; doesn't hear who said it.\n\n4. Sit on it for now — single-source insights or insights needing more triangulation. Don't act on hypotheses.\n\n5. Escalate — insights beyond what the manager can address: HR-territory issues, manager-quality concerns severe enough for your own manager-of-managers conversation, exec-level structural issues.\n\nKeep total under 500 words. Confidentiality first; signal preserved."
+        }
+      ],
+      "related_entries": [
+        "skip-level-synthesis (template)",
+        "skip-level-agenda (template)",
+        "manager-quality-review (template)",
+        "1-1-coaching-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "skip-level",
+        "synthesis",
+        "manager-of-managers"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "30–60 minutes per prompt; full synthesis 2–4 hours",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
       "updated_at": "2026-04-24",
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance"
@@ -3020,6 +3407,191 @@
       "practice_label": "Strategy & Planning"
     },
     {
+      "id": "pp-capacity-forecasting-pack",
+      "entry_type": "prompt_pack",
+      "title": "Capacity Forecasting Pack",
+      "slug": "capacity-forecasting-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Engineering Excellence",
+        "Finance & Operations",
+        "Technical Leadership"
+      ],
+      "concepts": [],
+      "summary": "Four prompts for capacity forecasting: demand-driver synthesizer, supply-constraint mapper, three-scenario projector, and decision-trigger-now extractor.",
+      "why_it_matters": "Capacity forecasting fails when it produces a single number with no scenario range, ignores lead times, and doesn't surface what to do this quarter. These prompts force the variance, lead-time, and decisions discipline.",
+      "when_to_use": [
+        "Quarterly capacity forecast refresh",
+        "Annual planning input on capacity needs",
+        "After material growth or shift in usage patterns"
+      ],
+      "not_for": [
+        "Elastic capacity that scales in seconds (autoscale config)",
+        "Single-scenario projections"
+      ],
+      "source_inspiration": [
+        "FinOps Foundation — capacity planning patterns",
+        "Google SRE — capacity planning"
+      ],
+      "inputs_required": [
+        {
+          "name": "Current usage data",
+          "description": "Per dimension.",
+          "required": true
+        },
+        {
+          "name": "Demand drivers",
+          "description": "What's driving growth.",
+          "required": true
+        },
+        {
+          "name": "Lead times",
+          "description": "How long to add capacity per dimension.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Demand-driver synthesis",
+        "Supply-constraint map",
+        "Three-scenario projection",
+        "Decisions for this quarter"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Variance over single number; lead time over capacity.",
+          "prompts": [
+            "Three scenarios, not one.",
+            "Lead time is the real constraint.",
+            "Decisions are needed this quarter, not next."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "demand-driver-synthesizer",
+          "name": "Demand-driver synthesizer",
+          "use_case": "From cross-functional inputs (Sales pipeline, Marketing campaigns, Product launches), synthesize the demand picture.",
+          "inputs": [
+            "Sales pipeline / forecast",
+            "Marketing campaign calendar",
+            "Product launch plan",
+            "Strategic shifts"
+          ],
+          "output_format": [
+            "'Driver inventory' — each driver with magnitude and timing",
+            "'Per-dimension impact' — for each capacity dimension, what each driver does",
+            "'Hidden drivers' — demand that isn't yet visible in current usage",
+            "'Demand uncertainty' — where the forecast is most uncertain"
+          ],
+          "review_checklist": [
+            "Drivers include both Sales and Marketing inputs",
+            "Per-dimension impact maps drivers to capacity",
+            "Hidden drivers section catches what's not yet visible"
+          ],
+          "prompt": "You are synthesizing demand drivers for capacity forecasting. Cross-functional inputs are the source.\n\nContext\n- Sales pipeline: {sales}\n- Marketing campaigns: {marketing}\n- Product launches: {launches}\n- Strategic shifts: {shifts}\n\nProduce four sections:\n\n1. Driver inventory — each driver with magnitude (% load increase, # users, $ revenue) and timing.\n\n2. Per-dimension impact — for each capacity dimension (compute, storage, network, vendors, headcount), what each driver does.\n\n3. Hidden drivers — demand that isn't yet visible in current usage but is coming: a partnership signed by Sales, a marketing campaign no one told engineering about, an integration commitment.\n\n4. Demand uncertainty — where the forecast is most uncertain (which drivers, which dimensions, which time periods).\n\nKeep total under 500 words. Cross-functional driven; uncertainty named."
+        },
+        {
+          "id": "supply-constraint-mapper",
+          "name": "Supply-constraint mapper",
+          "use_case": "Map what caps supply for each capacity dimension, with lead times.",
+          "inputs": [
+            "Per-dimension current capacity ceilings",
+            "Vendor / hire / hardware lead times",
+            "Architectural limits"
+          ],
+          "output_format": [
+            "'Constraint per dimension' — hard limits, cost ceilings, vendor / hire / hardware lead times",
+            "'Architectural limits' — places current architecture won't scale beyond N (often most consequential)",
+            "'Bottleneck per dimension' — the binding constraint",
+            "'Lead time map' — how long to add capacity per dimension"
+          ],
+          "review_checklist": [
+            "Architectural limits are named (often missed)",
+            "Lead times are realistic (3–6 months for hires, weeks-months for vendor onboarding)",
+            "Bottleneck identification is honest"
+          ],
+          "prompt": "You are mapping supply constraints for each capacity dimension.\n\nContext\n- Per-dimension capacity ceilings: {ceilings}\n- Lead times: {lead_times}\n- Architectural limits: {arch_limits}\n\nProduce four sections:\n\n1. Constraint per dimension — for each: hard limits (regional capacity, license maximums), cost ceilings (budget caps), vendor lead times (onboarding, scaling), hire lead times (3–6 months from req to first contribution).\n\n2. Architectural limits — places current architecture won't scale beyond N. Often the most consequential constraint and most likely to be skipped.\n\n3. Bottleneck per dimension — the binding constraint. The limit that hits first.\n\n4. Lead time map — how long to add capacity per dimension. Honest.\n\nKeep total under 500 words. Architectural limits named; lead times honest."
+        },
+        {
+          "id": "three-scenario-projector",
+          "name": "Three-scenario projector",
+          "use_case": "Build base / optimistic / pessimistic forecasts with implications per scenario.",
+          "inputs": [
+            "Demand drivers",
+            "Supply constraints",
+            "Time horizon (4–8 quarters)"
+          ],
+          "output_format": [
+            "'Base case (~50%)' — demand plays as expected, when we hit which limit",
+            "'Optimistic (~25%)' — demand grows faster, what breaks first, decisions accelerated",
+            "'Pessimistic (~25%)' — demand slower or constraint earlier, capacity overbuilt, what we'd cut",
+            "'Comparison' — side-by-side per dimension",
+            "'Decision implications' — different decisions per scenario"
+          ],
+          "review_checklist": [
+            "Three scenarios are honestly different (not three versions of the base)",
+            "Each scenario has implications (decisions, costs, risks)",
+            "Comparison surfaces variance"
+          ],
+          "prompt": "You are building three forecast scenarios for capacity. Variance is the value.\n\nContext\n- Demand drivers: {drivers}\n- Supply constraints: {constraints}\n- Time horizon: {horizon}\n\nProduce five sections:\n\n1. Base case (~50% likely) — demand plays out as expected. Per dimension: when we hit which limit (specific month). Investment decisions needed by (lead-time-adjusted dates).\n\n2. Optimistic (~25%) — demand grows faster than expected. What breaks first. Investment decisions accelerated. What we'd cut to make room if budget-constrained.\n\n3. Pessimistic (~25%) — demand grows slower OR constraint hits earlier. Capacity overbuilt. Cost containment options. Strategic implications.\n\n4. Comparison — side-by-side per dimension across the three scenarios.\n\n5. Decision implications — different decisions per scenario. The ones that are robust across scenarios are the safe bets.\n\nKeep total under 700 words. Three real scenarios; decisions distinguished."
+        },
+        {
+          "id": "decision-trigger-extractor",
+          "name": "Decision-trigger-now extractor",
+          "use_case": "From the forecast, surface what we need to decide THIS quarter, not later.",
+          "inputs": [
+            "Forecast scenarios",
+            "Decision triggers per dimension (yellow / red)",
+            "Capacity to act in this quarter"
+          ],
+          "output_format": [
+            "'Decisions this quarter' — table: Decision | Owner | Deadline | What enables",
+            "'Why this quarter' — lead time analysis (if we wait until next quarter, action takes too long)",
+            "'Inputs needed' — data, alignment, approval to enable each decision",
+            "'Decisions to defer' — explicit list with criteria for revisiting",
+            "'No-regret moves' — decisions that are right across all three scenarios"
+          ],
+          "review_checklist": [
+            "Decisions have specific owners and deadlines",
+            "Why-this-quarter accounts for lead time",
+            "No-regret moves are real (decisions robust across scenarios)"
+          ],
+          "prompt": "You are extracting the capacity decisions needed THIS quarter from the forecast.\n\nContext\n- Forecast scenarios: {scenarios}\n- Decision triggers per dimension: {triggers}\n- Capacity to act this quarter: {capacity}\n\nProduce five sections:\n\n1. Decisions this quarter — table: Decision | Owner | Deadline | What enables it. Specific.\n\n2. Why this quarter — lead time analysis. If we wait until next quarter, action takes too long; show the math.\n\n3. Inputs needed — data, alignment, approval required to enable each decision.\n\n4. Decisions to defer — items that came up but explicitly deferred. With criteria for when we'd revisit.\n\n5. No-regret moves — decisions that are right across all three scenarios (base, optimistic, pessimistic). These are the safest investments.\n\nKeep total under 500 words. Specific decisions; lead-time justified."
+        }
+      ],
+      "related_entries": [
+        "capacity-forecasting-model (template)",
+        "engineering-budget-planner (template)",
+        "cloud-spend-review (template)",
+        "budget-planning-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "capacity",
+        "forecasting",
+        "finops",
+        "planning"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "60–90 minutes per prompt; quarterly cycle",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
       "id": "pp-incident-summary-pack",
       "entry_type": "prompt_pack",
       "title": "Incident Summary Pack",
@@ -4228,6 +4800,386 @@
       "practice_label": "Reliability & Ops"
     },
     {
+      "id": "pp-service-deprecation-and-dr-pack",
+      "entry_type": "prompt_pack",
+      "title": "Service Deprecation and DR Pack",
+      "slug": "service-deprecation-and-dr-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Engineering Excellence",
+        "Technical Leadership"
+      ],
+      "concepts": [
+        "Incident Management"
+      ],
+      "summary": "Four prompts spanning service-deprecation and DR/BCP work: deprecation announcement drafter, migration-progress synthesizer, DR tabletop facilitator, and DR gap-analysis writer.",
+      "why_it_matters": "Both deprecation and DR fail at the comms and follow-through stage, not the technical stage. These prompts produce the artifacts that turn plans into landed outcomes.",
+      "when_to_use": [
+        "Drafting the public deprecation announcement",
+        "Synthesizing migration progress mid-deprecation",
+        "Facilitating a DR tabletop exercise",
+        "Writing up the gap analysis after a DR test"
+      ],
+      "not_for": [
+        "Replacing the underlying plans (use the templates)",
+        "Theatrical DR tabletops without honest gap-finding"
+      ],
+      "source_inspiration": [
+        "Stripe / Google — public deprecation patterns",
+        "Google SRE Workbook — DR tabletop methodology",
+        "ISO 22301 — Business continuity management"
+      ],
+      "inputs_required": [
+        {
+          "name": "Service / scenario context",
+          "description": "What's being deprecated, or what DR scenario is being tested.",
+          "required": true
+        },
+        {
+          "name": "Stakeholder map",
+          "description": "Who's affected; who's involved in DR.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Deprecation announcement",
+        "Migration progress synthesis",
+        "Tabletop facilitation guide",
+        "DR gap analysis"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Comms and gap-finding are the value-add.",
+          "prompts": [
+            "Deprecation comms set the timeline expectation.",
+            "Tabletops without gaps are theater.",
+            "Gap analysis must produce owned, dated actions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "deprecation-announcement",
+          "name": "Deprecation announcement drafter",
+          "use_case": "Draft the public announcement of a service deprecation.",
+          "inputs": [
+            "Service being deprecated",
+            "Reason",
+            "Replacement (if any)",
+            "Timeline (announce date, EOL date, key milestones)",
+            "Audience (internal teams, external customers, public API users)"
+          ],
+          "output_format": [
+            "'Announcement' — full text",
+            "'Migration timeline' — table of dates and what changes",
+            "'Replacement guidance' — what to use instead",
+            "'Support channels' — where to get help",
+            "'FAQ for known concerns'"
+          ],
+          "review_checklist": [
+            "Lead time is honest (12 months for public APIs, 6 for internal services with adoption)",
+            "Replacement is named and ready (don't announce if it isn't)",
+            "Support channels are real and staffed"
+          ],
+          "prompt": "You are drafting a service deprecation announcement.\n\nContext\n- Service: {service}\n- Reason: {reason}\n- Replacement: {replacement}\n- Timeline: {timeline}\n- Audience: {audience}\n\nProduce five sections:\n\n1. Announcement — full text. State the service, EOL date, what users need to do, where to get help. Plain language.\n\n2. Migration timeline — table: Date | What changes (announce → warnings added → no new accounts → read-only → EOL → cleanup).\n\n3. Replacement guidance — what to use instead, link to migration documentation.\n\n4. Support channels — Slack channel, office hours, contact for top users.\n\n5. FAQ — anticipated questions with honest answers.\n\nKeep total under 600 words. Honest timeline; real support."
+        },
+        {
+          "id": "migration-progress-synthesizer",
+          "name": "Migration progress synthesizer",
+          "use_case": "Mid-deprecation, synthesize migration progress and surface stuck users.",
+          "inputs": [
+            "Adoption metric (% on old vs new)",
+            "Per-user migration status (migrated / in-progress / not-started)",
+            "Recent escalations or blockers"
+          ],
+          "output_format": [
+            "'Overall progress' — % migrated, trajectory",
+            "'Stuck users' — top users not making progress, with reason",
+            "'Common blockers' — patterns across stuck users",
+            "'Recommended actions' — proactive outreach, escalation, scope change to replacement",
+            "'Risk to EOL date' — will we make the date or need to extend"
+          ],
+          "review_checklist": [
+            "Stuck users named explicitly",
+            "Common blockers identified for category-level fix",
+            "EOL risk is honest, not optimistic"
+          ],
+          "prompt": "You are synthesizing migration progress for an in-flight deprecation.\n\nContext\n- Adoption metric: {adoption}\n- Per-user status: {user_status}\n- Recent escalations: {escalations}\n\nProduce five sections:\n\n1. Overall progress — % migrated, week-over-week trajectory, projected migration completion vs. EOL date.\n\n2. Stuck users — top users not making progress. Per user: who they are, why stuck, what they need.\n\n3. Common blockers — patterns across stuck users (a missing capability in replacement, a documentation gap, an integration complexity nobody anticipated).\n\n4. Recommended actions — proactive outreach to stuck top-tier users, escalation if customer-side isn't engaging, scope change to replacement to address the common blocker.\n\n5. Risk to EOL date — will we make the date, or do we need extension / extension policy invocation? Honest.\n\nKeep total under 500 words. Honest about stuck users; honest about EOL risk."
+        },
+        {
+          "id": "dr-tabletop-facilitator",
+          "name": "DR tabletop facilitator",
+          "use_case": "Facilitate a DR tabletop exercise. Generate the scenario, lead the discussion, capture the gaps.",
+          "inputs": [
+            "Scenario to test (region outage, ransomware, vendor failure, etc.)",
+            "Participants (engineering, security, comms, exec)",
+            "Plan being tested"
+          ],
+          "output_format": [
+            "'Scenario opener' — set the scene; specific timeline and impact",
+            "'Discussion prompts' — phase-by-phase questions for the group",
+            "'Decision points' — calls the group has to make (and capture)",
+            "'Likely gaps to surface' — what to probe if the group glosses",
+            "'Capture template' — for the post-tabletop gap register"
+          ],
+          "review_checklist": [
+            "Scenario is specific (named systems, named timing, real impact)",
+            "Discussion prompts cover detection / decision / mitigation / comms / recovery",
+            "Likely gaps probe areas the plan typically glosses",
+            "Capture template produces actionable gaps"
+          ],
+          "prompt": "You are facilitating a DR tabletop exercise. Goal: surface real gaps in the plan, not validate that it works.\n\nContext\n- Scenario: {scenario}\n- Participants: {participants}\n- Plan being tested: {plan}\n\nProduce five sections:\n\n1. Scenario opener — set the scene with specifics. 'It's Tuesday 2 AM PT. Our primary US-EAST region has been down for 18 minutes. Our paging system fired but only on-call for service A acknowledged. Customer reports started in support 4 minutes ago.'\n\n2. Discussion prompts — phase-by-phase questions for the group:\n   - Detection: who knows, when, how\n   - Decision: who decides to invoke DR, on what criteria\n   - Mitigation: failover steps, who executes, dependencies\n   - Comms: customer / exec / internal team\n   - Recovery: when do we declare resolution, what's the verification\n\n3. Decision points — calls the group has to make and document during the tabletop.\n\n4. Likely gaps to surface — what to probe if the group glosses: backup integrity (when was last verified-restorable?); single-point-of-failure people; out-of-band comms if primary is impacted; data freshness implications.\n\n5. Capture template — Gap | Severity | Owner | Mitigation | Target date.\n\nKeep total under 700 words. Specific scenario; probing prompts; capturable gaps."
+        },
+        {
+          "id": "dr-gap-analysis",
+          "name": "DR gap analysis writer",
+          "use_case": "After a DR test (tabletop or live drill), write up the gap analysis with owned, dated actions.",
+          "inputs": [
+            "Test results (gaps surfaced)",
+            "Severity assessment per gap",
+            "Available capacity to address"
+          ],
+          "output_format": [
+            "'Test summary' — what was tested, who participated",
+            "'Gaps surfaced' — table by severity",
+            "'Critical gaps' — with mitigation owner and date (typically 30 days)",
+            "'High gaps' — owner and date (typically 90 days)",
+            "'Medium / low gaps' — backlogged with prioritization criteria",
+            "'Recommended next test' — what scenario, when",
+            "'Updates to the DR/BCP plan' — what gets revised based on what we learned"
+          ],
+          "review_checklist": [
+            "Critical gaps have owners and 30-day dates (not 'TBD')",
+            "Severity is honest (don't soft-pedal)",
+            "Plan updates are real (DR plan must change based on tests)"
+          ],
+          "prompt": "You are writing the gap analysis after a DR test. Owned actions; honest severity.\n\nContext\n- Test results / gaps surfaced: {results}\n- Severity per gap: {severity}\n- Capacity: {capacity}\n\nProduce seven sections:\n\n1. Test summary — what was tested (scenario), who participated, when.\n\n2. Gaps surfaced — table: Gap | Severity | Where in the plan it surfaced.\n\n3. Critical gaps — gaps that would block recovery in a real event. Owner, 30-day target date, mitigation.\n\n4. High gaps — gaps that would slow or compromise recovery. Owner, 90-day date.\n\n5. Medium / low gaps — backlogged with prioritization criteria.\n\n6. Recommended next test — what scenario to test next, when. Often: re-test the area where the worst gap was, after mitigation.\n\n7. Updates to the DR/BCP plan — what gets revised based on what we learned. The plan must change based on tests; if it doesn't, the test was theater.\n\nKeep total under 600 words. Owned; dated; honest severity."
+        }
+      ],
+      "related_entries": [
+        "service-deprecation-plan (template)",
+        "dr-bcp-plan (template)",
+        "incident-summary-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "deprecation",
+        "dr",
+        "bcp",
+        "tabletop"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "30–90 minutes per prompt",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "pp-conflict-mediation-pack",
+      "entry_type": "prompt_pack",
+      "title": "Conflict Mediation Pack",
+      "slug": "conflict-mediation-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "Org Design",
+        "People Management",
+        "Culture & Change"
+      ],
+      "concepts": [
+        "Difficult Conversations"
+      ],
+      "summary": "Four prompts for mediating sustained conflicts: separate-hearing facilitator, mediator's diagnostic synthesizer, joint-session script drafter, and resolution-design helper.",
+      "why_it_matters": "Most failed mediations failed by treating presented conflict as actual conflict, mediating positions instead of interests, or designing resolutions that depend on sustained good will. These prompts force the diagnostic discipline.",
+      "when_to_use": [
+        "Preparing the separate hearings before joint mediation",
+        "Synthesizing the mediator's diagnostic between separate hearings and joint session",
+        "Drafting the joint-session script",
+        "Designing the resolution that addresses interests"
+      ],
+      "not_for": [
+        "Routine disagreements that resolve themselves",
+        "Cases where one party is acting in bad faith",
+        "Replacing HR partnership when conflict involves policy violation"
+      ],
+      "source_inspiration": [
+        "Roger Fisher / William Ury — Getting to Yes",
+        "Sheila Heen / Douglas Stone — Difficult Conversations"
+      ],
+      "inputs_required": [
+        {
+          "name": "Conflict context",
+          "description": "Parties, history, escalation pattern.",
+          "required": true
+        },
+        {
+          "name": "Both parties willing to engage",
+          "description": "Mediation requires good faith.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Separate-hearing structure",
+        "Mediator's diagnostic",
+        "Joint-session script",
+        "Resolution design"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Hear separately first; mediate interests, not positions.",
+          "prompts": [
+            "Separate hearings first.",
+            "Distinguish positions from interests.",
+            "Resolutions change structure, not just behavior."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "separate-hearing-facilitator",
+          "name": "Separate-hearing facilitator",
+          "use_case": "Structure the separate 1:1 conversations with each party before joint mediation.",
+          "inputs": [
+            "Conflict context",
+            "Each party's role and history",
+            "What's been escalated"
+          ],
+          "output_format": [
+            "'Opening for each hearing' — frame the goal and confidentiality",
+            "'Listening prompts' — open questions to surface position, interest, contribution, desired outcome",
+            "'What to capture in writing' — structured notes",
+            "'What to NOT debate in the hearing' — your read; that comes later",
+            "'How to close the hearing' — what they should expect next"
+          ],
+          "review_checklist": [
+            "Opening doesn't promise resolution; promises a process",
+            "Listening prompts surface interests, not just positions",
+            "Capture is structured for the synthesis step",
+            "You don't argue with them in the hearing"
+          ],
+          "prompt": "You are structuring separate 1:1 hearings with two parties in a conflict before joint mediation.\n\nContext\n- Conflict: {conflict}\n- Parties: {parties}\n- What's been escalated: {escalation}\n\nProduce five sections:\n\n1. Opening — frame the goal (understand their perspective; design a resolution; not a verdict). Confidentiality (what's in this hearing stays here unless they agree).\n\n2. Listening prompts — open questions:\n   - What's your account of what happened?\n   - What do you want from this resolution?\n   - What do you need (underneath what you want)?\n   - What was your contribution to this?\n   - What outcome could you live with?\n   - What would be unacceptable?\n\n3. What to capture in writing — structured notes: position, interests, account of what happened, other party's behavior as they describe, their contribution, wanted outcome, acceptable outcome, unacceptable.\n\n4. What to NOT debate — your read on the situation. That comes in the joint session, not the hearing.\n\n5. How to close — what they should expect next. Joint session in [N] days; you'll come with a proposed resolution; goal is mutual sign-off.\n\nKeep total under 500 words. Listening, not arguing."
+        },
+        {
+          "id": "mediator-diagnostic-synthesizer",
+          "name": "Mediator's diagnostic synthesizer",
+          "use_case": "Between separate hearings and joint session, synthesize what's actually going on.",
+          "inputs": [
+            "Notes from Side A hearing",
+            "Notes from Side B hearing",
+            "What you've observed independently"
+          ],
+          "output_format": [
+            "'Presented conflict' — what they say it's about",
+            "'Underlying conflict' — what it's actually about (often different)",
+            "'Structural cause' — organization-level factors making this conflict more likely",
+            "'Where each is right' — both parties usually have legitimate points",
+            "'Where each is overstating' — anchored in evidence",
+            "'Truth they're both avoiding' — common in escalated conflicts"
+          ],
+          "review_checklist": [
+            "Underlying conflict is hypothesized, not asserted",
+            "Structural cause is honest (often the unlock)",
+            "Both-sides analysis is real (most conflicts both have a point)",
+            "Truth-they're-avoiding section names what's hard to name"
+          ],
+          "prompt": "You are synthesizing the mediator's diagnostic between separate hearings and joint session.\n\nContext\n- Side A notes: {side_a}\n- Side B notes: {side_b}\n- Your observations: {observations}\n\nProduce six sections:\n\n1. Presented conflict — what they each say it's about.\n\n2. Underlying conflict — what it's actually about (often different from presented). Common: scope ambiguity, status / recognition, trust deficit from past event, structural contention for resources.\n\n3. Structural cause — organization-level factors making this conflict more likely (unclear ownership, dual reporting, shared resource constraint).\n\n4. Where each is right — both parties almost always have a legitimate point. Document.\n\n5. Where each is overstating — anchored in evidence from the hearings.\n\n6. Truth they're both avoiding — common in escalated conflicts: a truth neither wants to name (their own contribution, an upstream decision, a fact about the work). Surfacing this is often the unlock.\n\nKeep total under 600 words. Diagnostic; honest; both-sided."
+        },
+        {
+          "id": "joint-session-script",
+          "name": "Joint-session script drafter",
+          "use_case": "Draft the joint mediation session script (60–90 minutes).",
+          "inputs": [
+            "Mediator's diagnostic",
+            "Proposed resolution",
+            "Ground rules"
+          ],
+          "output_format": [
+            "'Opening' — frame, ground rules",
+            "'Each party speaks' — what they want from the session, in their own words",
+            "'Mediator's read' — share diagnostic truthfully but with care",
+            "'Resolution discussion' — propose; iterate based on response",
+            "'Commitment' — what each party (and you) commits to; in writing",
+            "'Follow-up cadence' — when we check back"
+          ],
+          "review_checklist": [
+            "Opening sets ground rules clearly",
+            "Mediator's read is delivered with care",
+            "Resolution discussion is iterative, not take-it-or-leave-it",
+            "Commitments are in writing"
+          ],
+          "prompt": "You are drafting the joint mediation session script (60–90 minutes total).\n\nContext\n- Diagnostic: {diagnostic}\n- Proposed resolution: {resolution}\n- Ground rules: {ground_rules}\n\nProduce six sections:\n\n1. Opening (5 min) — mediator frames the session: goal is resolution, not verdict. Ground rules: one person speaks at a time; statements about behavior not character; mediator is not a judge; nothing committed unless agreed in the room; confidentiality.\n\n2. Each party speaks (15 min total) — what they want from the session, in their own words. Each party uninterrupted.\n\n3. Mediator's read (10 min) — share diagnostic from synthesis: what's underneath, structural cause, where each is right, where each is overstating, truth being avoided. With care; this isn't a verdict.\n\n4. Resolution discussion (30 min) — propose the resolution; iterate based on response. Not take-it-or-leave-it.\n\n5. Commitment (10 min) — what each party (and you, the mediator) commits to. In writing; both sign off.\n\n6. Follow-up cadence (5 min) — when we check back: 2 weeks separately, 6 weeks jointly if needed, 3 months assessment.\n\nKeep total under 700 words. Structured; iterative; written commitments."
+        },
+        {
+          "id": "resolution-design-helper",
+          "name": "Resolution design helper",
+          "use_case": "Design the resolution that addresses interests (not positions) and changes structure (not just behavior).",
+          "inputs": [
+            "Both-sides interests from diagnostic",
+            "Structural cause",
+            "Mediator's authority to act"
+          ],
+          "output_format": [
+            "'What both parties need' — interests, not positions",
+            "'Resolution proposal' — what changes (scope, decision-rights, process, reporting)",
+            "'Structural changes' — addressing the structural cause",
+            "'Behavioral commitments' — from each party",
+            "'Mediator commitments' — what you commit to do",
+            "'What this resolution does NOT solve' — honest about residual"
+          ],
+          "review_checklist": [
+            "Proposal addresses interests, not just positions",
+            "Structural changes are real (otherwise the conflict recurs)",
+            "Mediator commitments are credible",
+            "Residual is named honestly"
+          ],
+          "prompt": "You are designing the resolution that addresses interests and changes structure.\n\nContext\n- Both-sides interests: {interests}\n- Structural cause: {structural_cause}\n- Your authority to act: {authority}\n\nProduce six sections:\n\n1. What both parties need — interests (not positions). Side A needs X; Side B needs Y. The structural opportunity to provide both.\n\n2. Resolution proposal — what changes: scope, decision-rights, process, reporting. Specific.\n\n3. Structural changes — addressing the structural cause from the diagnostic. If you don't address structure, the conflict recurs with different people.\n\n4. Behavioral commitments — from each party. Specific behaviors, not 'communicate better'.\n\n5. Mediator commitments — what you commit to do (clarify scope publicly, change a process, escalate a decision, follow up at intervals). Real.\n\n6. What this resolution does NOT solve — honest about residual. Some things may not be resolvable in this conversation.\n\nKeep total under 600 words. Interests; structure; honest residual."
+        }
+      ],
+      "related_entries": [
+        "conflict-mediation-memo (template)",
+        "stakeholder-communication-pack (prompt pack)",
+        "1-1-coaching-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "conflict",
+        "mediation",
+        "difficult-conversations"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "30–90 minutes per prompt; full mediation cycle 2–6 weeks",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
       "id": "pp-future-state-design-pack",
       "entry_type": "prompt_pack",
       "title": "Future-State Design Pack",
@@ -5032,6 +5984,197 @@
       "format": "json",
       "status": "gold",
       "version": "3.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-reorg-impact-pack",
+      "entry_type": "prompt_pack",
+      "title": "Reorg Impact Pack",
+      "slug": "reorg-impact-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Culture & Change"
+      ],
+      "concepts": [
+        "Team Topologies"
+      ],
+      "summary": "Four prompts for reorg impact analysis: people-impact mapper, attrition-risk surfacer, hidden-dependency finder, and cost-benefit reckoner.",
+      "why_it_matters": "Reorgs that look great on paper carry costs the design phase missed. These prompts surface those costs before the design is locked, so the decision is made on real numbers.",
+      "when_to_use": [
+        "Pre-announcement assessment of reorg costs",
+        "Surfacing attrition risk created by reorg",
+        "Finding hidden dependencies that would orphan",
+        "Honest cost-benefit reckoning before locking the design"
+      ],
+      "not_for": [
+        "Run by the same person who designed the reorg (use outside reviewer)",
+        "Substituting for the reorg comms cascade"
+      ],
+      "source_inspiration": [
+        "Heidari-Robinson & Heywood — ReOrg",
+        "Will Larson on org-design impact analysis"
+      ],
+      "inputs_required": [
+        {
+          "name": "Candidate reorg design",
+          "description": "All reporting and scope changes.",
+          "required": true
+        },
+        {
+          "name": "HR partner inputs",
+          "description": "Comp / leveling implications.",
+          "required": true
+        },
+        {
+          "name": "Outside reviewer inputs",
+          "description": "Honest cost assessment.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "People-impact map",
+        "Attrition risk list",
+        "Hidden dependency map",
+        "Cost-benefit reckoning"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Surface real costs.",
+          "prompts": [
+            "Outside reviewer required.",
+            "Specific people, not 'team members'.",
+            "Costs in real numbers."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "people-impact-mapper",
+          "name": "People-impact mapper",
+          "use_case": "For each person whose situation changes in the reorg, map the impact.",
+          "inputs": [
+            "Reorg design",
+            "Current people / roles / scope",
+            "Comp / leveling info"
+          ],
+          "output_format": [
+            "'Per-person impact table' — Person | Current state | Post-reorg state | Reaction risk",
+            "'Reporting changes' — with manager-of-manager continuity assessment",
+            "'Scope changes' — stretches vs. downgrades distinguished",
+            "'Comp / leveling complications' — flagged for HR",
+            "'Roles eliminated' — handled per layoff or relocation"
+          ],
+          "review_checklist": [
+            "Each person named (not 'most engineers')",
+            "Reaction risk based on what you actually know about each person",
+            "Scope-downgrades flagged as concerning",
+            "HR involved on every comp implication"
+          ],
+          "prompt": "You are mapping per-person impact of a reorg. Specific people, not categories.\n\nContext\n- Reorg design: {design}\n- Current people / roles / scope: {current}\n- Comp / leveling info: {comp_info}\n\nProduce five sections:\n\n1. Per-person impact table — for each affected person: Person | Current state (manager, scope, level) | Post-reorg state | Reaction risk (low / medium / high) based on what you know about them.\n\n2. Reporting changes — manager-of-manager continuity. People moving to a manager who doesn't yet know them carry trust-rebuild cost.\n\n3. Scope changes — distinguish stretches (good — opportunity) from downgrades (concerning — perceived demotion). Each named.\n\n4. Comp / leveling complications — people who would be at the wrong level for their scope, or whose comp band would shift. Flagged for HR.\n\n5. Roles eliminated — handled per layoff (with comms pack) or relocation (where).\n\nKeep total under 600 words. Specific; HR-coordinated."
+        },
+        {
+          "id": "attrition-risk-surfacer",
+          "name": "Attrition-risk surfacer",
+          "use_case": "Identify the top retention risks the reorg creates.",
+          "inputs": [
+            "People-impact map",
+            "Recent retention signals",
+            "Investment options for retention"
+          ],
+          "output_format": [
+            "'Top 5 retention risks' — people most likely to leave because of the reorg",
+            "'Why at risk per person' — manager change, scope downgrade, perceived demotion, lost autonomy, missed promo",
+            "'Investment options per person' — and whether worth it",
+            "'Accepted-loss list' — people whose departure you'd accept as a cost",
+            "'Cluster risk' — multiple people in same area at risk simultaneously"
+          ],
+          "review_checklist": [
+            "Top 5 named explicitly",
+            "Why at risk is specific",
+            "Accepted-loss is honest, not just convenience",
+            "Cluster risk surfaces compounding losses"
+          ],
+          "prompt": "You are surfacing the top retention risks created by a reorg.\n\nContext\n- People-impact map: {impact_map}\n- Recent retention signals: {signals}\n- Investment options: {options}\n\nProduce five sections:\n\n1. Top 5 retention risks — people most likely to leave because of the reorg. Named.\n\n2. Why at risk per person — specific reason: manager change to someone they don't trust, scope downgrade, perceived demotion (lost direct reports), lost autonomy, missed promo cycle.\n\n3. Investment options per person — and whether worth it (cost vs. value of retaining them).\n\n4. Accepted-loss list — people whose departure you'd accept as a cost of the reorg. Honest about why; if your reaction would be relief, that's the right call.\n\n5. Cluster risk — multiple people in the same area at risk simultaneously. Compounding loss is more damaging than the same number scattered.\n\nKeep total under 600 words. Honest; named."
+        },
+        {
+          "id": "hidden-dependency-finder",
+          "name": "Hidden-dependency finder",
+          "use_case": "Find the dependencies the reorg design didn't surface.",
+          "inputs": [
+            "Reorg design",
+            "Cross-team relationships current state",
+            "On-call rotations and ownership maps"
+          ],
+          "output_format": [
+            "'Knowledge in one head' — info only one person has who is moving",
+            "'Cross-team rituals' — informal coordination that depends on current relationships",
+            "'Vendor / tool ownership' — that would orphan in the reorg",
+            "'On-call coverage' — rotations that lose coverage post-reorg",
+            "'Single-threaded leadership' — programs whose lead would now be on the wrong team"
+          ],
+          "review_checklist": [
+            "Knowledge gaps named, not 'institutional knowledge'",
+            "Rituals are real (specific cross-team meetings, shared docs)",
+            "On-call coverage gap quantified",
+            "Single-threaded items have proposed fix"
+          ],
+          "prompt": "You are finding hidden dependencies the reorg design didn't surface.\n\nContext\n- Reorg design: {design}\n- Cross-team relationships current state: {relationships}\n- On-call and ownership maps: {ownership}\n\nProduce five sections:\n\n1. Knowledge in one head — information only one person has who is moving. Named.\n\n2. Cross-team rituals — informal coordination that depends on current relationships. Specific (Maya + Bob's weekly sync that aligns API + iOS; lost when Maya moves teams).\n\n3. Vendor / tool ownership — vendors and tools that would orphan in the reorg. Who picks up ownership.\n\n4. On-call coverage — rotations that lose coverage post-reorg. Quantified.\n\n5. Single-threaded leadership — programs whose lead would now be on the wrong team for that program. Named, with proposed fix.\n\nKeep total under 500 words. Hidden things first; named owners."
+        },
+        {
+          "id": "cost-benefit-reckoner",
+          "name": "Cost-benefit reckoner",
+          "use_case": "Reconcile reorg benefits against the costs surfaced; produce a recommendation.",
+          "inputs": [
+            "People-impact, attrition risk, hidden dependencies",
+            "Intended benefits of the reorg",
+            "Cost summary"
+          ],
+          "output_format": [
+            "'Total cost summary' — disruption + attrition + comp + customer + morale recovery",
+            "'Benefits intended' — and time to realize",
+            "'Net assessment' — do benefits clearly justify costs",
+            "'Confidence level' — how sure are we",
+            "'Recommendation' — proceed / modify / defer / don't",
+            "'Acceptable cost-benefit threshold' — what we'd say if asked"
+          ],
+          "review_checklist": [
+            "Cost summary is realistic, not optimistic",
+            "Benefits have time-to-realize attached",
+            "Net assessment is honest, not advocacy",
+            "Recommendation is specific (not 'proceed with caution')"
+          ],
+          "prompt": "You are reconciling the reorg's intended benefits against its surfaced costs.\n\nContext\n- People-impact, attrition risk, hidden dependencies: {costs_surfaced}\n- Intended benefits: {benefits}\n- Cost summary: {cost_summary}\n\nProduce six sections:\n\n1. Total cost summary — disruption (eng-weeks of lost productivity) + attrition (probable loss × replacement cost) + comp adjustments + customer / partner cost + morale recovery cost. Realistic.\n\n2. Benefits intended — and time to realize. Typically 6–18 months after the reorg lands.\n\n3. Net assessment — do the benefits clearly justify the costs? Honest.\n\n4. Confidence level — how sure are we (high / medium / low).\n\n5. Recommendation — proceed as designed (with costs accepted explicitly) / proceed with modifications (specific) / defer or phase / don't do it.\n\n6. Acceptable cost-benefit threshold — what we'd say if exec asks 'is the cost worth it?'. Pre-commit your honest answer.\n\nKeep total under 600 words. Honest reckoning; specific recommendation."
+        }
+      ],
+      "related_entries": [
+        "reorg-impact-assessment (template)",
+        "reorg-rollout-pack (prompt pack)",
+        "layoff-comms-drafter-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "reorg",
+        "impact",
+        "change-management"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "60–120 minutes per prompt; full assessment 1–2 weeks",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
       "updated_at": "2026-04-24",
       "practice_folder": "org-design-change",
       "practice_label": "Org Design & Change"
@@ -6034,6 +7177,199 @@
       "practice_label": "Finance & Business Ops"
     },
     {
+      "id": "pp-finops-anomaly-pack",
+      "entry_type": "prompt_pack",
+      "title": "FinOps Anomaly Pack",
+      "slug": "finops-anomaly-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "Finance & Operations",
+        "Engineering Excellence"
+      ],
+      "concepts": [],
+      "summary": "Four prompts for cloud-cost anomaly response: rapid-triage facilitator, cause-hypothesis generator, exec-comms drafter, and post-anomaly post-mortem.",
+      "why_it_matters": "Cloud cost anomalies are caught late and fixed slowly without structure. These prompts compress triage to hours, generate honest cause hypotheses, communicate by severity, and capture lessons for prevention.",
+      "when_to_use": [
+        "Active triage of a spend anomaly (within hours of detection)",
+        "Generating cause hypotheses when investigation is mid-flight",
+        "Drafting comms to finance, leadership, or exec by severity",
+        "Post-anomaly post-mortem for material spikes"
+      ],
+      "not_for": [
+        "Ongoing optimization (use cost-optimization-review)",
+        "Vendor pricing changes (use vendor-renegotiation-pack)"
+      ],
+      "source_inspiration": [
+        "FinOps Foundation — anomaly detection and response patterns",
+        "AWS / Azure / GCP cost management documentation"
+      ],
+      "inputs_required": [
+        {
+          "name": "Anomaly characterization",
+          "description": "Service, magnitude, trajectory.",
+          "required": true
+        },
+        {
+          "name": "Billing data accessible",
+          "description": "Detailed breakdown.",
+          "required": true
+        },
+        {
+          "name": "Designated triage owner",
+          "description": "Without owner, ignored.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Rapid triage",
+        "Cause hypotheses",
+        "Comms by severity",
+        "Post-mortem if material"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Triage in hours; act on cause; comms by severity.",
+          "prompts": [
+            "Triage owner designated.",
+            "Cause-confirmed before action.",
+            "Comms severity matches actual impact."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "rapid-triage-facilitator",
+          "name": "Rapid triage facilitator",
+          "use_case": "Facilitate the 2–4 hour triage of a cost anomaly.",
+          "inputs": [
+            "Anomaly (service, magnitude, period, trajectory)",
+            "Customer / business impact (if any)",
+            "Recent changes in the affected area"
+          ],
+          "output_format": [
+            "'Anomaly characterization' — specific",
+            "'Comparison' — vs. last period, vs. plan, vs. usage growth",
+            "'Severity assessment' — low / medium / high / critical",
+            "'First-pass hypothesis list' — likely causes by category",
+            "'Investigation steps' — data to pull, people to ask",
+            "'Triage timeline' — when we'll know cause, when we'll act"
+          ],
+          "review_checklist": [
+            "Characterization is specific (numbers, trajectory)",
+            "Severity matches actual impact",
+            "Hypotheses are categorized (compute, storage, network, vendor)",
+            "Timeline is committed"
+          ],
+          "prompt": "You are facilitating rapid triage of a cloud cost anomaly. Goal: cause and action in 2–4 hours.\n\nContext\n- Anomaly: {anomaly}\n- Customer / business impact: {impact}\n- Recent changes in affected area: {recent_changes}\n\nProduce six sections:\n\n1. Anomaly characterization — service / category / period / magnitude ($ and %) / trajectory (still rising / leveled / decreasing).\n\n2. Comparison — vs. last period (week, month), vs. plan / budget, vs. usage growth (is cost-per-unit changing or just total?).\n\n3. Severity assessment — low / medium / high / critical based on magnitude and customer / business impact.\n\n4. First-pass hypothesis list — likely causes by category: compute spike (new deploy, runaway, failed autoscale), storage spike (retention, backup, lifecycle), network spike (CDN, cross-region, exfiltration), vendor spike (auto-scale licenses, pricing tier).\n\n5. Investigation steps — data to pull (billing breakdown, recent deploys, logs), people to ask (owning team, recent on-call, infrastructure change owners).\n\n6. Triage timeline — when we expect to know cause, when we'd act, when we'd update stakeholders.\n\nKeep total under 500 words. Specific characterization; categorized hypotheses; committed timeline."
+        },
+        {
+          "id": "cause-hypothesis-generator",
+          "name": "Cause-hypothesis generator",
+          "use_case": "Generate ranked cause hypotheses when investigation is mid-flight.",
+          "inputs": [
+            "Anomaly characterization",
+            "Investigation findings so far",
+            "What we've ruled in / out"
+          ],
+          "output_format": [
+            "'Top 3 hypotheses ranked by likelihood' — based on investigation",
+            "'Evidence for each' — what supports the hypothesis",
+            "'Evidence against' — what contradicts (if anything)",
+            "'Next investigation step per hypothesis' — what would confirm",
+            "'Estimated time to confirm cause'"
+          ],
+          "review_checklist": [
+            "Hypotheses ranked honestly, not by hope",
+            "Evidence is specific (logs, metrics, billing data)",
+            "Next step would actually distinguish hypotheses"
+          ],
+          "prompt": "You are generating ranked cause hypotheses for an anomaly mid-investigation.\n\nContext\n- Anomaly: {anomaly}\n- Investigation findings: {findings}\n- Ruled in / out so far: {ruled}\n\nProduce five sections:\n\n1. Top 3 hypotheses ranked by likelihood — based on investigation findings, not initial gut.\n\n2. Evidence for each — specific (log entries, metric data, billing breakdown).\n\n3. Evidence against — what contradicts each hypothesis (if anything).\n\n4. Next investigation step per hypothesis — what would confirm or refute. Specific data to pull or person to ask.\n\n5. Estimated time to confirm cause — for top hypothesis.\n\nKeep total under 400 words. Ranked honestly; next steps specific."
+        },
+        {
+          "id": "exec-comms-drafter",
+          "name": "Exec comms drafter",
+          "use_case": "Draft anomaly comms to the right audience by severity.",
+          "inputs": [
+            "Anomaly",
+            "Severity",
+            "Cause status (confirmed / suspected / unknown)",
+            "Action being taken"
+          ],
+          "output_format": [
+            "'Audience by severity' — who gets notified at each level",
+            "'Low-severity comms' — log + weekly digest",
+            "'Medium-severity comms' — finance partner + team",
+            "'High-severity comms' — finance + engineering leadership",
+            "'Critical comms' — incident-style; immediate exec notification",
+            "'Comms content template'"
+          ],
+          "review_checklist": [
+            "Audience matches severity",
+            "Content includes status, cause, action, expected resolution, cost",
+            "Critical-severity gets incident-style comms (not email-only)"
+          ],
+          "prompt": "You are drafting anomaly comms by severity.\n\nContext\n- Anomaly: {anomaly}\n- Severity: {severity}\n- Cause status: {cause_status}\n- Action: {action}\n\nProduce six sections:\n\n1. Audience by severity — Low: log + weekly digest. Medium: finance partner + team. High: finance + engineering leadership. Critical: immediate exec notification.\n\n2. Low-severity comms — short note in weekly leadership digest.\n\n3. Medium-severity comms — message to finance partner and team. Status, cause (if known), action, expected resolution.\n\n4. High-severity comms — to finance + engineering leadership. Same content with more detail; estimated cost incurred and prevented.\n\n5. Critical comms — incident-style. Immediate exec notification (within 30 min). Same template as major incident comms.\n\n6. Comms content template — what's happening, confirmed cause (or status), action being taken, expected resolution, estimated cost incurred and prevented.\n\nKeep total under 500 words. Severity-matched; specific content."
+        },
+        {
+          "id": "post-anomaly-postmortem",
+          "name": "Post-anomaly post-mortem",
+          "use_case": "After a material anomaly, write the brief post-mortem.",
+          "inputs": [
+            "Anomaly characterization",
+            "Confirmed cause",
+            "Detection-to-fix timeline",
+            "Action items"
+          ],
+          "output_format": [
+            "'What happened' — anomaly summary",
+            "'Why it happened' — confirmed cause",
+            "'Why detection took N hours' — was monitoring inadequate?",
+            "'Why fix took N hours' — what slowed",
+            "'Cost impact' — total $ incurred",
+            "'Action items' — prevent / detect / respond improvements with owners",
+            "'Pattern check' — has this kind of anomaly happened before?"
+          ],
+          "review_checklist": [
+            "Detection lag is examined honestly",
+            "Action items are categorized and owned",
+            "Pattern check forces structural-investment question if recurring"
+          ],
+          "prompt": "You are writing the brief post-mortem after a material cost anomaly.\n\nContext\n- Anomaly: {anomaly}\n- Confirmed cause: {cause}\n- Detection-to-fix timeline: {timeline}\n- Action items: {actions}\n\nProduce seven sections:\n\n1. What happened — anomaly summary.\n\n2. Why it happened — confirmed cause.\n\n3. Why detection took N hours — was monitoring inadequate? Alert thresholds wrong? Anomaly type not instrumented?\n\n4. Why fix took N hours — what slowed: ownership unclear, runbook missing, rollback didn't work?\n\n5. Cost impact — total $ incurred from anomaly start to full resolution.\n\n6. Action items, categorized: prevent recurrence (config changes, governance) | improve detection (better alerts, instrumentation) | improve response (runbook, ownership). Each with owner and date.\n\n7. Pattern check — has this kind of anomaly happened before? If recurring, structural investment is justified beyond fix-this-instance.\n\nKeep total under 500 words. Honest detection lag; pattern-aware."
+        }
+      ],
+      "related_entries": [
+        "finops-anomaly-triage (template)",
+        "cloud-spend-review (template)",
+        "cost-optimization-review (template)",
+        "incident-summary-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "finops",
+        "anomaly",
+        "cost",
+        "cloud"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "30–60 minutes per prompt; full anomaly cycle 2–4 hours",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    },
+    {
       "id": "pp-headcount-case-pack",
       "entry_type": "prompt_pack",
       "title": "Headcount Case Pack",
@@ -6637,6 +7973,198 @@
       "format": "json",
       "status": "gold",
       "version": "3.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "pp-vendor-renegotiation-pack",
+      "entry_type": "prompt_pack",
+      "title": "Vendor Renegotiation Pack",
+      "slug": "vendor-renegotiation-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance & Operations",
+        "Technical Leadership"
+      ],
+      "concepts": [],
+      "summary": "Four prompts for vendor renegotiation: BATNA developer, ask-prioritizer with trades, vendor pitch drafter, and tactics anticipator.",
+      "why_it_matters": "Renewals treated as administrative leave 15–40% of value on the table. These prompts force the work that creates real leverage: BATNA, prioritized asks with planned trades, and tactic anticipation.",
+      "when_to_use": [
+        "4–6 months before vendor contract renewal",
+        "Building the BATNA before vendor conversation",
+        "Drafting the negotiation pitch",
+        "Preparing for vendor's predictable counter-tactics"
+      ],
+      "not_for": [
+        "Renewals less than 2 months out (no time to build leverage)",
+        "Strategic vendors where the relationship is the value",
+        "Bypassing procurement / legal / finance partnership"
+      ],
+      "source_inspiration": [
+        "Roger Fisher / William Ury — Getting to Yes (BATNA)",
+        "Standard procurement frameworks",
+        "FinOps Foundation — vendor cost optimization"
+      ],
+      "inputs_required": [
+        {
+          "name": "Current contract",
+          "description": "Terms, pricing, renewal date.",
+          "required": true
+        },
+        {
+          "name": "Real alternative bids",
+          "description": "Credible alternatives.",
+          "required": true
+        },
+        {
+          "name": "Internal alignment",
+          "description": "Engineering, finance, legal, procurement.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "BATNA",
+        "Prioritized asks with trades",
+        "Vendor pitch",
+        "Tactics anticipator"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Real BATNA; honest trades.",
+          "prompts": [
+            "BATNA must be real, not bluff.",
+            "Trades pre-decided.",
+            "Vendors test seriously; bluffs lose."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "batna-developer",
+          "name": "BATNA developer",
+          "use_case": "Develop the Best Alternative to Negotiated Agreement — what we actually do if the vendor won't move.",
+          "inputs": [
+            "Current vendor's role",
+            "Alternative vendors with pricing",
+            "Build option (if applicable)",
+            "Status-quo cost"
+          ],
+          "output_format": [
+            "'Switch to vendor X' — cost, time, risk; named vendor",
+            "'Build internally' — cost, time, risk",
+            "'Stay with workaround' — cost, time, risk",
+            "'Accept current vendor's terms' — under what conditions",
+            "'Best alternative' — which is BATNA",
+            "'Walk-away threshold' — when we'd actually walk"
+          ],
+          "review_checklist": [
+            "Each alternative is real (researched, not hypothetical)",
+            "BATNA is named explicitly",
+            "Walk-away threshold is committed before negotiation"
+          ],
+          "prompt": "You are developing the BATNA — your best alternative if the vendor won't move. Real, not bluff.\n\nContext\n- Current vendor's role: {current_vendor}\n- Alternative vendors with pricing: {alternatives}\n- Build option: {build}\n- Status-quo cost: {status_quo}\n\nProduce six sections:\n\n1. Switch to vendor X — named vendor (or two), with cost, time-to-cut-over, risk. Real research.\n\n2. Build internally — cost (3-year TCO), time, risk. Often expensive but real.\n\n3. Stay with workaround — cost (engineering time, customer impact), time, risk.\n\n4. Accept current vendor's terms — under what conditions you'd accept (price ceiling, term length).\n\n5. Best alternative — which is your BATNA? Named.\n\n6. Walk-away threshold — what would actually trigger walking. Committed before negotiation; not decided in the moment.\n\nKeep total under 500 words. Real BATNA; committed walk-away."
+        },
+        {
+          "id": "ask-prioritizer",
+          "name": "Ask-prioritizer with trades",
+          "use_case": "Prioritize what to ask for and pre-decide what to trade.",
+          "inputs": [
+            "What we want from the renewal (pricing, terms, capacity, SLA, support, exit clauses)",
+            "What we'd trade (multi-year commit, reference, beta participation, volume)"
+          ],
+          "output_format": [
+            "'Must-have' — things we won't sign without",
+            "'Strong-want' — things that materially affect value",
+            "'Nice-to-have' — things to ask, accept partial wins",
+            "'Trade table' — what we'd give to get what",
+            "'Pre-decided positions' — what we'd accept in negotiation"
+          ],
+          "review_checklist": [
+            "Must-have list is short (fewer than 3 ideally)",
+            "Trades are pre-decided, not negotiated in the room",
+            "Pre-decided positions are honest"
+          ],
+          "prompt": "You are prioritizing renewal asks and pre-deciding trades.\n\nContext\n- What we want: {wants}\n- What we'd trade: {trades_available}\n\nProduce five sections:\n\n1. Must-have — things we won't sign without. Short list (<3 ideally).\n\n2. Strong-want — things that materially affect value. Worth fighting for.\n\n3. Nice-to-have — things to ask for; accept partial wins.\n\n4. Trade table — what we'd give to get what. Multi-year commit (buys pricing flex but reduces optionality), reference participation (case study, talk), beta participation, volume guarantees, faster decision (vs. extended evaluation).\n\n5. Pre-decided positions — what we'd accept in negotiation. Examples: 'accept 12% reduction if multi-year'; 'accept current price if SLA tightens to X'; 'walk away if exit clauses don't include data portability'.\n\nKeep total under 500 words. Pre-decided; honest."
+        },
+        {
+          "id": "vendor-pitch-drafter",
+          "name": "Vendor pitch drafter",
+          "use_case": "Draft what we actually take to the vendor in the renegotiation conversation.",
+          "inputs": [
+            "Prioritized asks",
+            "BATNA",
+            "Trades available",
+            "Frame (partnership-focused or transactional)"
+          ],
+          "output_format": [
+            "'Frame' — opener that respects the relationship",
+            "'What we love' — specific things working (acknowledges value)",
+            "'What needs to improve' — specific items with data",
+            "'Specific asks' — must-have / strong-want / nice-to-have framing",
+            "'What we're offering' — trades on the table",
+            "'Timing and decision' — when, with BATNA implied not threatened"
+          ],
+          "review_checklist": [
+            "Frame respects the partnership without being subservient",
+            "What needs to improve is data-anchored",
+            "Asks are specific (not 'better pricing')",
+            "BATNA is implied through the timing, not waved as threat"
+          ],
+          "prompt": "You are drafting the renegotiation pitch to take to the vendor.\n\nContext\n- Prioritized asks: {asks}\n- BATNA: {batna}\n- Trades: {trades}\n- Frame: {frame}\n\nProduce six sections:\n\n1. Frame — 'We've been a partner for [N] years. We want to continue that for the next [N] years if the terms work for both of us.'\n\n2. What we love — specific things working. Acknowledges value; sets up the negotiation.\n\n3. What needs to improve — specific items with data. SLA misses with numbers, capability gaps with evidence, cost growth vs usage growth.\n\n4. Specific asks — must-have / strong-want / nice-to-have. Frame must-haves as 'we need X for this to make sense to us going forward'.\n\n5. What we're offering — trades on the table. Real trades, not implied.\n\n6. Timing and decision — when we need to decide. BATNA implied (not threatened): 'if we can't reach agreement, we'll need to make a different decision by [date]'.\n\nKeep total under 600 words. Partnership-respecting; data-anchored; BATNA implied."
+        },
+        {
+          "id": "tactics-anticipator",
+          "name": "Tactics anticipator",
+          "use_case": "Anticipate vendor's predictable counter-tactics.",
+          "inputs": [
+            "Vendor's negotiation history (if known)",
+            "Vendor's company stage / pressure (early-stage vs. mature)",
+            "Account team's likely behavior"
+          ],
+          "output_format": [
+            "'Vendor's likely opening' — what they typically come back with",
+            "'Tactics they'll use' — multi-year lock-in, performance-tied terms refusal, urgency creation",
+            "'Tactics to use back' — multi-quote pressure, performance-tied terms ask, walk-away signal",
+            "'Tactics to avoid' — bluffing about BATNA, going to vendor before internal alignment",
+            "'Decision points' — moments where you'd pause and reassess"
+          ],
+          "review_checklist": [
+            "Vendor's likely opening is realistic, not strawman",
+            "Tactics-to-use are honest (within your authority)",
+            "Tactics-to-avoid are real risks for your team",
+            "Decision points are pre-committed"
+          ],
+          "prompt": "You are anticipating the vendor's predictable counter-tactics in renegotiation.\n\nContext\n- Vendor's negotiation history: {history}\n- Vendor's company stage / pressure: {stage}\n- Account team's likely behavior: {account_behavior}\n\nProduce five sections:\n\n1. Vendor's likely opening — what they typically come back with: small price concession, hold firm on terms, push for multi-year lock at current price (then raise next time).\n\n2. Tactics they'll use — multi-year lock-in pressure, refuse performance-tied terms, refuse tight SLAs, refuse exit clauses, create artificial urgency to renew before you've evaluated alternatives.\n\n3. Tactics to use back — multi-quote pressure (have credible alternatives in hand), multi-year value at single-year commit, performance-tied pricing or commitments, willingness to walk away (real BATNA).\n\n4. Tactics to avoid — bluffing about BATNA you don't have (vendor calls it), going to vendor before internal alignment (vendor splits the team), negotiating without legal review (terms have hidden costs), tight timeline (vendor exploits urgency).\n\n5. Decision points — moments where you'd pause and reassess: vendor's first offer, vendor's revised offer, vendor's 'final' offer. Pre-committed responses for each.\n\nKeep total under 600 words. Realistic; pre-committed."
+        }
+      ],
+      "related_entries": [
+        "vendor-renegotiation-pitch (template)",
+        "vendor-evaluation-matrix (template)",
+        "vendor-evaluation-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "vendor",
+        "renegotiation",
+        "procurement",
+        "batna"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "60–120 minutes per prompt; full renegotiation 4–6 months",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
       "updated_at": "2026-04-24",
       "practice_folder": "finance-business-ops",
       "practice_label": "Finance & Business Ops"

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-24T15:07:59.495318",
-  "count": 63,
+  "generated_at": "2026-04-24T15:44:14.571532",
+  "count": 73,
   "practice_labels": {
     "people-hiring-performance": "People · Hiring · Performance",
     "strategy-planning": "Strategy & Planning",
@@ -1573,6 +1573,319 @@
       "practice_label": "People · Hiring · Performance"
     },
     {
+      "id": "gold-psychological-safety-diagnostic",
+      "entry_type": "template",
+      "title": "Psychological Safety Diagnostic",
+      "slug": "psychological-safety-diagnostic",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "People Management",
+        "Culture & Change"
+      ],
+      "summary": "Adapted Edmondson 7-item assessment plus engineering-specific items, manager observation framework, synthesis of likely causes, and intervention plan. For diagnosing psychological safety as a quarterly team-health input.",
+      "why_it_matters": "Psychological safety is the foundation for honest mistakes, early surfacing of risks, and real disagreement on technical and strategic decisions. It's also frequently confused with comfort or absence of conflict. This diagnostic separates safety from agreement, surfaces specific causes, and forces the manager to act on what they find.",
+      "when_to_use": [
+        "Quarterly team-health diagnostic",
+        "After a triggering event (layoff, public failure, reorg, attrition)",
+        "When retro themes suggest disengagement or surface-level participation",
+        "Before deciding on team-level interventions"
+      ],
+      "not_for": [
+        "More frequently than quarterly (survey fatigue produces compliance, not signal)",
+        "Treating low scores as a verdict — they're a diagnostic input",
+        "Substituting for direct conversation with the people involved"
+      ],
+      "source_inspiration": [
+        "Amy Edmondson — The Fearless Organization (and original 7-item scale)",
+        "Google Project Aristotle research",
+        "Patrick Lencioni — Five Dysfunctions of a Team"
+      ],
+      "inputs_required": [
+        {
+          "name": "Survey or observation method",
+          "description": "Decide upfront: anonymous self-survey, structured observation, or combination.",
+          "required": true
+        },
+        {
+          "name": "Comparison baseline",
+          "description": "Prior round or org benchmark, if available.",
+          "required": false
+        },
+        {
+          "name": "Willingness to act on results",
+          "description": "Surveys without follow-up make psych safety worse; only survey if you'll act.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Survey scores",
+        "Observation read",
+        "Synthesis with strengths and weaknesses",
+        "Cause analysis",
+        "Intervention plan",
+        "Re-measure schedule"
+      ],
+      "sections": [
+        {
+          "name": "Self-survey",
+          "purpose": "Edmondson 7-item plus engineering-specific items.",
+          "fields": [
+            "7 standard items with healthy direction",
+            "4 engineering-specific items",
+            "Survey distribution guidance"
+          ]
+        },
+        {
+          "name": "Manager observation",
+          "purpose": "What to look for over 4–6 week window.",
+          "fields": [
+            "Signals of healthy psych safety",
+            "Signals of low psych safety"
+          ]
+        },
+        {
+          "name": "Synthesis",
+          "purpose": "Combine survey and observation into overall read.",
+          "fields": [
+            "Overall score / read",
+            "Where team is strong",
+            "Where team is weak",
+            "Concerning signals"
+          ]
+        },
+        {
+          "name": "Likely causes",
+          "purpose": "Diagnose root: manager, individual, event, composition, workload, org.",
+          "fields": [
+            "Manager behavior",
+            "Specific individual",
+            "Recent event",
+            "Composition",
+            "Workload",
+            "Org-level pattern"
+          ]
+        },
+        {
+          "name": "Interventions",
+          "purpose": "Specific action per cause.",
+          "fields": [
+            "Manager behavior interventions",
+            "Individual conversations",
+            "Event-related interventions",
+            "Composition support",
+            "Workload addressing",
+            "Org-level boundary"
+          ]
+        },
+        {
+          "name": "Re-measure",
+          "purpose": "Schedule the next check.",
+          "fields": [
+            "Next diagnostic date",
+            "Specific changes hoped for",
+            "Escalation signals"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable misuse.",
+          "fields": [
+            "Confusing safety with comfort",
+            "Surveys without follow-up",
+            "Aggregating away signal",
+            "Single-cause attribution",
+            "One-shot diagnostic",
+            "Survey fatigue"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "psychological-safety",
+        "team-health",
+        "edmondson",
+        "diagnostic"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Survey + 4–6 weeks observation + 2 hours synthesis; intervention spans 3–6 months",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Psychological Safety Diagnostic\n\n## How to use\n\nThis diagnostic helps you assess psychological safety on a team — the shared belief that the team is safe for interpersonal risk-taking. It's adapted from Amy Edmondson's research, with engineering-team-specific signals layered on top.\n\nPsychological safety is NOT agreement, comfort, or absence of conflict. Healthy teams disagree openly. Unhealthy teams agree publicly and complain privately. The diagnostic is designed to surface that gap.\n\nRun it as: a self-survey by team members (anonymous), structured manager observation, or the combination. Combine with team retro themes for the most signal.\n\nThis is a diagnostic, not a verdict. Low scores mean investigate; they don't mean the team is broken. High scores mean keep doing what's working; they don't mean nothing needs attention.\n\n---\n\n## Header\n\n- **Team**: \n- **Date of diagnostic**: \n- **Method** (self-survey / observation / combined): \n- **Sample size** (if survey): \n- **Comparison reference** (prior round / org benchmark / null): \n\n---\n\n## Part 1: Self-survey (Edmondson 7-item, adapted)\n\nEach item rated 1 (strongly disagree) to 7 (strongly agree). Lower scores on items 2 and 3 are healthier; higher scores on the others are healthier.\n\n1. **If you make a mistake on this team, it is often held against you.** (lower is healthier)\n2. **Members of this team are able to bring up problems and tough issues.**\n3. **People on this team sometimes reject others for being different.** (lower is healthier)\n4. **It is safe to take a risk on this team.**\n5. **It is difficult to ask other members of this team for help.** (lower is healthier)\n6. **No one on this team would deliberately act in a way that undermines my efforts.**\n7. **Working with members of this team, my unique skills and talents are valued and utilized.**\n\n### Engineering-specific items (add for context)\n\n8. **I feel comfortable disagreeing with the technical direction of a senior engineer or my manager.**\n9. **When something goes wrong in production, the team focuses on what we learn rather than who's at fault.**\n10. **I feel comfortable saying 'I don't know' or 'I made a mistake' in front of the team.**\n11. **I feel comfortable raising concerns about scope, timeline, or strategy in planning conversations.**\n\n### Survey distribution\n\n- Anonymous (use a tool that genuinely is anonymous; team members will sense if it isn't)\n- Multiple-choice scale, plus optional open-text per item\n- Run once a quarter at most; more frequent surveys produce survey fatigue, not signal\n\n---\n\n## Part 2: Manager observation\n\nThings to look for over a 4–6 week observation window:\n\n### Signal of healthy psych safety\n\n- People disagree openly in meetings (not just senior people; not just men; not just the loudest)\n- \"I don't know\" gets said freely, by senior and junior people\n- Mistakes get surfaced quickly (not hidden or sandbagged)\n- Postmortems focus on systems, not people\n- Quiet team members participate; participation is roughly equitable\n- People ask for help across the team (not just from the manager)\n- The team disagrees with you, the manager, in front of you (not in private)\n\n### Signal of low psych safety\n\n- Meetings are quiet; only senior people speak; only men speak (if mixed-gender)\n- People defer to the most senior person in the room rather than debate\n- Mistakes get caught late, after they've grown\n- \"I'm fine\" / \"no concerns\" become the default 1:1 answer\n- People route around each other rather than confront issues directly\n- The team agrees with you in front of you, then complains privately (you'll learn this from skip-levels)\n- New hires take longer to start contributing visibly\n\n---\n\n## Part 3: Synthesis\n\n### 3.1 Overall read\n\n- **Score** (if survey): average across items, or pattern across items\n- **Observation read**: strong / mixed / concerning\n- **Trend** (if you have a prior baseline): improving / stable / deteriorating\n\n### 3.2 Where the team is strong\n\n- 2–3 dimensions where the signal is genuinely healthy\n\n### 3.3 Where the team is weak\n\n- 2–3 dimensions where the signal suggests concern\n- For each: the specific evidence, the likely cause, the intervention\n\n### 3.4 Specific concerning signals\n\n- Particular events, conversations, or non-events that warrant attention beyond the survey numbers\n\n---\n\n## Part 4: Likely causes\n\nFor low-psych-safety signal, common causes:\n\n- **Manager behavior**: are you (or another manager) shutting down dissent without realizing it? Reacting badly to mistakes? Picking favorites?\n- **Specific individual**: is one person's behavior making the team unsafe (a senior engineer who interrupts, a peer who blames)?\n- **Recent event**: a layoff, a public failure, a reorg that left people guarded\n- **Composition**: a team with one underrepresented person often has lower safety for that person; team-level scores can hide this\n- **Workload**: under sustained stress, psych safety decays (people don't have bandwidth to engage)\n- **Org-level pattern**: company culture that punishes dissent; if so, the team's psych safety is capped by the org's\n\n---\n\n## Part 5: Interventions\n\nFor each weakness, a specific intervention:\n\n- **Manager behavior**: get an outside coach observation, ask for direct feedback in 1:1s, change a specific behavior (e.g., wait longer before speaking, name and reward dissent)\n- **Specific individual**: have the conversation directly with the individual; don't outsource it to time\n- **Recent event**: explicit conversation about what changed, what's safe, what's not yet recovered\n- **Composition**: 1:1 attention to underrepresented people; structural support (sponsorship, allyship)\n- **Workload**: address the workload (it's the cause; psych safety is the symptom)\n- **Org-level pattern**: bound interventions to what's possible at team level; surface to your manager\n\n---\n\n## Part 6: Re-measure\n\n- **Next diagnostic date**: typically 6 months out (sooner if intervention is active)\n- **What you're hoping to see change**: specific items / behaviors\n- **What would tell you the intervention isn't working**: signals to escalate\n\n---\n\n## Common failure modes\n\n- **Confusing safety with comfort**: a team that never disagrees in meetings has LOW safety, not high.\n- **Surveys without follow-up**: surveying psych safety and not visibly changing anything makes psych safety worse.\n- **Aggregating away the signal**: team-level averages hide whether one or two people are getting the brunt of low safety.\n- **Treating it as the manager's fault**: sometimes it is; sometimes it's a single individual's behavior, an org-level pattern, or a recent event.\n- **One-shot diagnostic**: psych safety changes over time; a single snapshot is a starting point, not a verdict.\n- **Survey fatigue from over-measuring**: quarterly maximum; more frequent produces compliance, not signal.\n\n---\n\n## Related artifacts\n\n- `engineering-health-review` — for the broader team health assessment\n- `manager-quality-review` — for manager-specific assessment\n- `team-topology-worksheet` — for team-structure factors\n- `retention-risk-assessment` — for the retention dimension psych safety affects\n"
+    },
+    {
+      "id": "gold-retention-risk-assessment",
+      "entry_type": "template",
+      "title": "Retention Risk Assessment",
+      "slug": "retention-risk-assessment",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "People Management",
+        "Performance & Development"
+      ],
+      "summary": "Quarterly (or post-event) structured assessment of who on the team is at risk of leaving, with risk signals, investment options, accepted-risk list, and departure preparation for those you can't save.",
+      "why_it_matters": "Retention investment must happen BEFORE someone interviews. Once they're talking to recruiters, you've already lost most of your leverage. The signals are usually visible for weeks or months in advance — but only if a manager is doing the disciplined work of looking. This template forces that look.",
+      "when_to_use": [
+        "Quarterly (or at minimum every 6 months)",
+        "After a triggering event: major reorg, comp cycle, attrition wave",
+        "After noticing a pattern of disengagement on the team",
+        "Before exec retention discussions"
+      ],
+      "not_for": [
+        "Sharing with the people being assessed (this is your confidential working document)",
+        "Witch-hunt framing — the goal is honest investment decisions, not surveillance",
+        "Substituting for actual retention conversations with the people"
+      ],
+      "source_inspiration": [
+        "Patty McCord — Powerful, on talent retention",
+        "Lara Hogan — retention conversations and BICEPS framework",
+        "First Round Review — interviews on retention practices"
+      ],
+      "inputs_required": [
+        {
+          "name": "Honest read on each team member",
+          "description": "Disengagement signals, comp gaps, scope mismatch, manager friction, market pull.",
+          "required": true
+        },
+        {
+          "name": "Recent attrition data",
+          "description": "Who left in the period, regrettable vs non-regrettable.",
+          "required": true
+        },
+        {
+          "name": "Investment capacity",
+          "description": "What you can actually do (comp, scope, sponsorship, coaching) and what you can't.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "At-risk individual assessments",
+        "Risk patterns",
+        "Investment plan",
+        "Accepted-risk list",
+        "Departure preparation"
+      ],
+      "sections": [
+        {
+          "name": "At-risk individuals",
+          "purpose": "Per-person assessment with action.",
+          "fields": [
+            "Why at risk",
+            "Risk level",
+            "Confidence",
+            "Their value",
+            "Their motivations",
+            "Investment options",
+            "Recommended action",
+            "Owner"
+          ]
+        },
+        {
+          "name": "Risk signals patterns",
+          "purpose": "Patterns across at-risk individuals.",
+          "fields": [
+            "Scope-related",
+            "Comp-related",
+            "Manager-related",
+            "Promotion-related",
+            "Project-related",
+            "Market-related"
+          ]
+        },
+        {
+          "name": "Investment options analysis",
+          "purpose": "For people you're investing in.",
+          "fields": [
+            "Investment matrix",
+            "Scope change options",
+            "Comp adjustment",
+            "Manager change",
+            "Sponsorship",
+            "Coaching",
+            "Direct conversation"
+          ]
+        },
+        {
+          "name": "Accepted-risk list",
+          "purpose": "People you're NOT investing in; honest about why.",
+          "fields": [
+            "Not aligned",
+            "Performance concerns",
+            "Investment cost too high",
+            "Already gone mentally"
+          ]
+        },
+        {
+          "name": "Departure preparation",
+          "purpose": "For high-risk people you can't save.",
+          "fields": [
+            "Knowledge transfer plan",
+            "Successor identification",
+            "Comms plan",
+            "Exit interview commitment"
+          ]
+        },
+        {
+          "name": "Cross-team risk",
+          "purpose": "Risk beyond individual people.",
+          "fields": [
+            "Manager retention risk",
+            "Cluster risk",
+            "Skill-cluster risk"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Surprise attrition",
+            "Counter-offers",
+            "Comp as only lever",
+            "Pretending to invest",
+            "No follow-through",
+            "Witch-hunt framing"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "retention",
+        "attrition",
+        "talent",
+        "people-management"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "3–6 hours quarterly; investment actions span weeks to months",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Retention Risk Assessment\n\n## How to use\n\nThis is the structured assessment you run quarterly (or after a triggering event like a major reorg, comp cycle, or attrition wave) to surface who's at risk of leaving and what you'd do about it.\n\nThe discipline is to assess BEFORE someone gives notice. Once they're interviewing, you've already lost most of your leverage. The signals you're looking for are usually visible weeks or months in advance — disengagement, withdrawal, scope mismatch, missed promo, comp dissatisfaction, manager friction.\n\nThis is not a witch-hunt template. It's a manager's working document for retention investment. Every \"at risk\" assessment must lead to a deliberate action: invest more, accept the departure as likely, or do nothing and document why.\n\n---\n\n## Header\n\n- **Period covered**: \n- **Trigger** (quarterly review / post-event): \n- **Total team headcount**: \n- **Recent attrition** (regrettable / non-regrettable in the period): \n\n---\n\n## Part 1: At-risk individuals\n\nFor each person on your team you'd consider at risk:\n\n### [Person name]\n\n- **Why at risk**: specific signals you've observed (disengagement, scope mismatch, missed promo, comp gap, manager friction, market pull)\n- **Risk level**: low / medium / high / actively interviewing\n- **Confidence in assessment**: high / medium / low\n- **What's their value**: what would the team lose specifically if they leave (institutional knowledge, capability, leadership, mentorship)\n- **What we know about their motivations**: from 1:1s, career conversations, peer chatter (use what you actually know, not what you guess)\n- **Investment options**: things you could do to reduce risk\n- **Recommended action**: invest / accept / observe\n- **Owner of follow-through**: \n\n> Repeat per person.\n\n---\n\n## Part 2: Risk signals patterns\n\nLooking across at-risk individuals, what patterns emerge?\n\n- **Scope-related risk**: people whose scope no longer matches their level / interest\n- **Comp-related risk**: people whose comp is materially below market or below internal peers\n- **Manager-related risk**: people with manager friction (their manager, your manager-quality concerns)\n- **Promotion-related risk**: people who recently received \"not yet\" or who feel stuck\n- **Project-related risk**: people stuck on projects they've outgrown or projects they don't believe in\n- **Market-related risk**: people whose skills are in heavy market demand right now\n\n---\n\n## Part 3: Investment options analysis\n\nFor the highest-risk people you've decided to invest in:\n\n| Person | Action | Cost | Confidence it works | Owner | When |\n|--------|--------|------|---------------------|-------|------|\n|        |        |      |                     |       |      |\n|        |        |      |                     |       |      |\n\nCommon investment actions:\n- **Scope change**: stretch project, additional responsibility, lateral move\n- **Comp adjustment**: market correction (typically requires HR approval, often hard to get out-of-cycle)\n- **Manager change**: move to a different manager (rare but powerful)\n- **Sponsorship**: explicit advocacy for promotion, exec exposure, conference, named opportunity\n- **Coaching investment**: external coach, mentor matching, training budget\n- **Direct conversation**: name what you see and ask what they need (often more effective than guessing)\n\n---\n\n## Part 4: Accepted-risk list\n\nPeople you're NOT investing additional retention dollars in. Be honest about why:\n\n- **Not aligned with team direction**: their growth doesn't match the team's needs going forward\n- **Performance concerns**: retention isn't the right investment if you're managing them out\n- **Investment-cost-too-high**: the comp ask, the scope demand, or the manager change isn't tractable\n- **They're already gone mentally**: investment won't change the outcome\n\nFor each: what you'd say if they gave notice tomorrow. (If your reaction would be relief, that's signal that this was the right call.)\n\n---\n\n## Part 5: Departure preparation\n\nFor high-risk people you've decided not to (or can't) save:\n\n- **Knowledge transfer plan**: what they uniquely hold and how to capture it before they leave\n- **Successor identification**: who could absorb their work / scope / leadership\n- **Comms plan**: how their departure will be communicated (when it happens)\n- **Exit interview commitment**: what you want to learn from them on the way out\n\n---\n\n## Part 6: Cross-team risk\n\nRisk that goes beyond individual people:\n\n- **Manager retention risk**: managers reporting to you who are at risk; their departure affects the entire team\n- **Cluster risk**: groups of people with shared risk factors (a project that's stalled, a manager everyone struggles with)\n- **Skill-cluster risk**: areas where multiple key people are at risk in the same skill area (iOS, ML, security)\n\n---\n\n## Common failure modes\n\n- **Surprise attrition**: every \"I had no idea\" signals the manager wasn't paying attention to signals that were visible.\n- **Counter-offers as retention strategy**: counter-offers buy time, not loyalty. Most counter-offered employees leave within 18 months.\n- **Comp as the only lever**: scope, manager fit, and recognition often matter more than money — but managers default to money because it's the lever they understand.\n- **Pretending to invest while actually accepting**: the worst outcome — telling someone you're working on retention while doing nothing. They'll leave AND tell other people you weren't honest.\n- **No follow-through**: assessing risk and naming actions without owners or dates. The assessment becomes performative.\n- **Witch-hunt framing**: this is a confidential manager working document, not a list to be shared. Trust dies if it leaks.\n\n---\n\n## Related artifacts\n\n- `1-1-coaching-pack` (prompts) — for the conversation surfacing what someone needs\n- `compensation-conversation` (in performance-review-pack) — for comp adjustment conversations\n- `individual-development-plan` — for scope and growth investment\n- `succession-planning-grid` — for the broader successor identification work\n- `retention-risk-pack` (prompts) — for facilitating this assessment\n"
+    },
+    {
       "id": "tpl-skip-level-agenda",
       "entry_type": "template",
       "title": "Skip-level agenda",
@@ -1686,6 +1999,159 @@
       "template_body_markdown": "# Skip-level agenda\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "gold-skip-level-synthesis",
+      "entry_type": "template",
+      "title": "Skip-Level Synthesis Template",
+      "slug": "skip-level-synthesis",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Management",
+        "Org Design"
+      ],
+      "summary": "Quarterly synthesis template for the manager-of-managers turning a series of skip-level conversations into structured signal: per-manager assessment, cross-team patterns, talent observations, manager calibration, your own blind spots, and confidentiality decisions.",
+      "why_it_matters": "A single skip-level is a conversation. A series of skip-levels is signal — about manager quality, team health, hidden risks, and your own blind spots. Without synthesis, that signal evaporates. This template forces the work that turns conversations into insight.",
+      "when_to_use": [
+        "Quarterly (or at least every 6 months) after a round of skip-level conversations",
+        "Before a manager calibration conversation with your peers",
+        "Before performance review cycles for the managers reporting to you",
+        "When triangulating signal across multiple ICs about a specific manager or pattern"
+      ],
+      "not_for": [
+        "Sharing with the managers being assessed (this is your private working document)",
+        "Acting on single-source signal without triangulation",
+        "Substituting for the formal manager-quality review process"
+      ],
+      "source_inspiration": [
+        "Will Larson — An Elegant Puzzle on skip-level rhythm and synthesis",
+        "Lara Hogan — skip-level templates and confidentiality patterns",
+        "Camille Fournier — The Manager's Path on managing managers"
+      ],
+      "inputs_required": [
+        {
+          "name": "Skip-level conversations completed",
+          "description": "Notes from each conversation in the period.",
+          "required": true
+        },
+        {
+          "name": "Coverage check",
+          "description": "Did you reach every direct of every manager? If not, why?",
+          "required": true
+        },
+        {
+          "name": "Confidentiality intent",
+          "description": "Decide what gets shared with whom before writing.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Per-manager signal",
+        "Cross-team patterns",
+        "Talent observations",
+        "Manager calibration",
+        "Your blind spots",
+        "Confidentiality decisions"
+      ],
+      "sections": [
+        {
+          "name": "Signal by manager",
+          "purpose": "Synthesize what each manager's team told you.",
+          "fields": [
+            "Team health read with evidence",
+            "Manager strengths visible",
+            "Manager development areas",
+            "Specific incidents",
+            "Surprises",
+            "Action to take"
+          ]
+        },
+        {
+          "name": "Cross-team patterns",
+          "purpose": "Patterns across multiple teams = about you, org, or company.",
+          "fields": [
+            "Theme 1",
+            "Theme 2",
+            "Theme 3",
+            "Common patterns to watch for"
+          ]
+        },
+        {
+          "name": "Talent observations",
+          "purpose": "People who came up that weren't on your radar.",
+          "fields": [
+            "People to watch (positive)",
+            "People to watch (concerning)",
+            "Hidden talent"
+          ]
+        },
+        {
+          "name": "Manager calibration",
+          "purpose": "Compare managers across the signal.",
+          "fields": [
+            "Strongest",
+            "Weakest",
+            "Most-improved",
+            "Most-concerning trend"
+          ]
+        },
+        {
+          "name": "Your own blind spots",
+          "purpose": "What skip-levels surfaced about your own gaps.",
+          "fields": [
+            "Things you didn't know",
+            "Things contradicted by signal",
+            "Behavior you need to change"
+          ]
+        },
+        {
+          "name": "Confidentiality and what to share back",
+          "purpose": "Per insight, decide attribution and audience.",
+          "fields": [
+            "Tell with attribution",
+            "Tell without attribution",
+            "Sit on it",
+            "Escalate"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the predictable failures.",
+          "fields": [
+            "Skip-levels as status",
+            "No synthesis",
+            "Sharing with attribution without consent",
+            "Becoming de facto manager",
+            "Acting on single-source",
+            "Letting weak managers slide"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "skip-level",
+        "synthesis",
+        "manager-of-managers",
+        "people-management"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "2–4 hours quarterly to synthesize a round of skip-levels",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Skip-Level Synthesis Template\n\n## How to use\n\nThis template is for the manager-of-managers synthesizing signal from a series of skip-level conversations. It's the document you keep for yourself (and selectively share) to track patterns about your managers' teams that wouldn't show up in any single conversation.\n\nA single skip-level is a conversation. A series of skip-levels is signal — about manager quality, team health, hidden risks, growth opportunities, and your own blind spots. This template forces you to do the synthesis work that turns the conversations into insight.\n\nRun this synthesis quarterly, or at least every 6 months. It is your private working document — not for distribution to the managers being assessed.\n\n---\n\n## Header\n\n- **Period covered**: \n- **# of skip-levels conducted in period**: \n- **Coverage**: did you reach every direct of every manager? If not, why?\n\n---\n\n## Part 1: Signal by manager\n\nFor each manager reporting to you, capture what their team's signal told you.\n\n### Manager: [Name]\n\n- **Team health read**: strong / mixed / concerning, with evidence\n- **Manager strengths visible from skip-level**: 2–3 things their team consistently appreciated\n- **Manager development areas visible from skip-level**: 2–3 patterns that suggest a coaching focus (or a more serious concern)\n- **Specific incidents mentioned**: things that came up across multiple 1:1s with their team\n- **Anything you didn't expect**: surprises (good or bad) about how the team is operating\n- **Action you'll take with this manager**: specific coaching, specific feedback, specific intervention\n\n> Repeat per manager.\n\n---\n\n## Part 2: Cross-team patterns\n\nPatterns that show up across multiple managers' teams — these are usually about you, the org, or the company, not about individual managers.\n\n- **Cross-team theme 1**: what came up across multiple teams; what it tells you\n- **Cross-team theme 2**: \n- **Cross-team theme 3**: \n\nCommon patterns to watch for:\n- A specific cross-functional partner that everyone is struggling with\n- A company decision that's landing badly across all teams\n- A pattern of attrition / disengagement that crosses teams\n- A specific tooling or process gap that's slowing everyone\n\n---\n\n## Part 3: Talent observations\n\nPeople who came up in skip-levels who weren't on your radar:\n\n- **People to watch (positive)**: ICs whose work or judgment was repeatedly praised; consider for promotion, sponsorship, scope change\n- **People to watch (concerning)**: ICs whose work or behavior raised concerns from multiple sources; flag with their manager\n- **Hidden talent**: ICs operating above their level that the org isn't seeing\n\n---\n\n## Part 4: Manager calibration\n\nHow do your managers compare to each other on the skip-level signal?\n\n- **Strongest manager (current period)**: with rationale; consider for promotion, harder scope, mentorship of weaker peer\n- **Weakest manager (current period)**: with rationale; specific coaching plan\n- **Most-improved**: who got materially better since last synthesis\n- **Most-concerning trend**: who's getting worse, with what evidence\n\n---\n\n## Part 5: Your own blind spots\n\nSkip-levels often surface things you're missing or doing poorly.\n\n- **Things skip-levels told you that you didn't know**: \n- **Things you've been telling yourself that the skip-levels contradict**: \n- **Things you (the manager-of-managers) need to change about your own behavior**: \n\n---\n\n## Part 6: Confidentiality and what to share back\n\nFor each significant insight, decide:\n\n- **Tell the manager directly with attribution**: only if the IC consented\n- **Tell the manager without attribution**: most common — pattern is real but source is protected\n- **Sit on it for now**: when the signal is single-source or you need more before acting\n- **Escalate**: when the issue is beyond what the manager can address (e.g., HR-flagged, exec-level intervention needed)\n\n---\n\n## Common failure modes\n\n- **Skip-levels become status updates**: if the IC is reporting on their work, the conversation is failing. Use the skip-level agenda template to structure for signal.\n- **No synthesis**: doing skip-levels without writing the synthesis means the signal evaporates. Schedule the synthesis time.\n- **Sharing skip-level signal with attribution without consent**: most damaging failure. Trust dies instantly.\n- **Becoming the de facto manager**: solving problems in skip-levels that should go through the manager. Surface to the manager; don't bypass.\n- **Acting on single-source signal**: one IC's complaint about their manager isn't a pattern. Wait for triangulation.\n- **Letting weak managers slide because their teams are 'okay'**: skip-levels often surface that 'okay' is masking real issues.\n\n---\n\n## Related artifacts\n\n- `skip-level-agenda` — the per-conversation agenda template\n- `manager-quality-review` — for the formal manager assessment\n- `skip-level-synthesis-pack` (prompts) — for synthesis facilitation\n- `1-1-coaching-pack` (prompts) — for the coaching conversations with managers based on the synthesis\n"
     },
     {
       "id": "tpl-succession-planning-grid",
@@ -3576,6 +4042,338 @@
       "practice_label": "Strategy & Planning"
     },
     {
+      "id": "gold-capacity-forecasting-model",
+      "entry_type": "template",
+      "title": "Capacity Forecasting Model",
+      "slug": "capacity-forecasting-model",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Engineering Excellence",
+        "Finance & Operations",
+        "Technical Leadership"
+      ],
+      "summary": "Multi-quarter capacity forecast across compute, storage, network, vendors, and engineering capacity — with three scenarios (base / optimistic / pessimistic), explicit decision triggers (yellow / red), investment levers per dimension, and the decisions needed this quarter.",
+      "why_it_matters": "Most teams forecast capacity reactively: a service hits a wall, someone scrambles. This template flips that to anticipatory — when will we hit which limit, what's the lead time, when do we need to start. Lead time, not capacity, is the real constraint.",
+      "when_to_use": [
+        "Quarterly capacity forecast refresh",
+        "Annual planning input",
+        "After material growth or shrinkage",
+        "Before committing to a strategic bet that materially shifts demand"
+      ],
+      "not_for": [
+        "Elastic capacity that scales in seconds (autoscale config, not a forecast)",
+        "Single-scenario projections (variance is the value)",
+        "Replacing engineering judgment about architectural ceilings"
+      ],
+      "source_inspiration": [
+        "FinOps Foundation — capacity planning patterns",
+        "Google SRE Workbook — capacity planning",
+        "AWS / Azure capacity planning whitepapers"
+      ],
+      "inputs_required": [
+        {
+          "name": "Current usage data",
+          "description": "Per dimension (compute, storage, network, vendors, headcount).",
+          "required": true
+        },
+        {
+          "name": "Demand drivers",
+          "description": "User growth, usage growth, planned launches, seasonality.",
+          "required": true
+        },
+        {
+          "name": "Lead times",
+          "description": "How long to add capacity per dimension.",
+          "required": true
+        },
+        {
+          "name": "Cross-functional inputs",
+          "description": "Sales pipeline, Marketing campaigns, Product launch plans that drive demand.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Demand projections per dimension",
+        "Three scenarios",
+        "Decision triggers (yellow/red)",
+        "Investment options per dimension",
+        "Risk register",
+        "Decisions needed this quarter"
+      ],
+      "sections": [
+        {
+          "name": "What we're forecasting",
+          "purpose": "Per dimension: current, trend, projected demand.",
+          "fields": [
+            "Capacity dimension matrix"
+          ]
+        },
+        {
+          "name": "Demand drivers",
+          "purpose": "What's driving growth/shrinkage and timing.",
+          "fields": [
+            "User/customer growth",
+            "Usage growth per user",
+            "New product launches",
+            "Strategic shifts",
+            "Seasonality",
+            "One-time events"
+          ]
+        },
+        {
+          "name": "Supply constraints",
+          "purpose": "What caps supply.",
+          "fields": [
+            "Hard limits",
+            "Cost ceilings",
+            "Vendor lead times",
+            "Hiring lead time",
+            "Architectural limits"
+          ]
+        },
+        {
+          "name": "Forecast scenarios",
+          "purpose": "Three scenarios with implications.",
+          "fields": [
+            "Base case",
+            "Optimistic case",
+            "Pessimistic case"
+          ]
+        },
+        {
+          "name": "Decision triggers",
+          "purpose": "Yellow / red triggers per dimension with action.",
+          "fields": [
+            "Trigger matrix per dimension"
+          ]
+        },
+        {
+          "name": "Investment / optimization options",
+          "purpose": "Levers per dimension.",
+          "fields": [
+            "Cloud capacity options",
+            "Headcount options",
+            "Vendor capacity options"
+          ]
+        },
+        {
+          "name": "Risk register",
+          "purpose": "Predictable forecast risks.",
+          "fields": [
+            "Risk matrix"
+          ]
+        },
+        {
+          "name": "Decisions to make this quarter",
+          "purpose": "What needs deciding now.",
+          "fields": [
+            "Decisions list with deadlines and owners"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Single-scenario forecast",
+            "No lead time accounting",
+            "Architectural limits ignored",
+            "Forecast not updated",
+            "Disconnect from financial planning",
+            "Hidden demand drivers"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "capacity-planning",
+        "forecasting",
+        "finops",
+        "infrastructure"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Initial model: 1–2 weeks; quarterly refresh: 1 week",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops",
+      "template_body_markdown": "# Capacity Forecasting Model\n\n## How to use\n\nThis template structures a multi-quarter capacity forecast for an engineering organization or platform. The output is an honest projection of demand vs. supply across compute, storage, network, vendors, and engineering capacity — with the trigger points where you'll need to invest, optimize, or change direction.\n\nMost teams forecast capacity reactively: a service hits a wall, an alert fires, someone scrambles. This template flips that to anticipatory: when will we hit which limit, what's the lead time to address it, when do we need to start.\n\nThis is for capacity types where the lead time to act is material (weeks to quarters): cloud capacity in specific regions, vendor seat licenses, engineering headcount, specialized hardware. For elastic scaling that responds in seconds, this template is overkill — that's an autoscaling configuration, not a forecast.\n\n---\n\n## Header\n\n- **Forecast period**: typically next 4–8 quarters\n- **Owner**: \n- **Last forecast**: \n- **Next refresh**: typically quarterly\n- **Approval / review path**: \n\n---\n\n## Part 1: What we're forecasting\n\nFor each capacity dimension, define:\n\n| Dimension | Unit | Current usage | Trend (% / quarter) | Projected demand 4Q out |\n|-----------|------|---------------|---------------------|-------------------------|\n| Cloud compute (region X) |  |  |  |  |\n| Cloud storage |  |  |  |  |\n| Network egress |  |  |  |  |\n| Database (transactions / sec) |  |  |  |  |\n| Vendor license seats |  |  |  |  |\n| Engineering headcount (by team / skill) |  |  |  |  |\n| Specialized hardware (GPU, etc.) |  |  |  |  |\n\n---\n\n## Part 2: Demand drivers\n\nWhat's driving demand growth or shrinkage:\n\n- **User / customer growth**: rate of new sign-ups, expected for next 4Q\n- **Usage growth per user**: feature adoption, deeper usage patterns\n- **New product launches**: capacity demand each launch creates\n- **Strategic shifts**: planned changes that materially alter demand\n- **Seasonality**: predictable cycles (e.g., Q4 retail load, end-of-quarter sales spike)\n- **One-time events**: marketing campaigns, partnership launches, conferences\n\nFor each, the impact on each capacity dimension and the timing.\n\n---\n\n## Part 3: Supply constraints\n\nWhat's capping supply:\n\n- **Hard limits**: regional capacity ceilings, license maximums, hardware lead times\n- **Cost ceilings**: budget constraints that cap growth before infrastructure does\n- **Vendor lead times**: how long to onboard / scale specific vendors\n- **Hiring lead time**: typically 3–6 months from req approval to first contribution\n- **Architectural limits**: places where current architecture won't scale beyond N (often the most consequential)\n\n---\n\n## Part 4: Forecast scenarios\n\nThree scenarios, not one:\n\n### Base case (~50% likely)\n\n- Demand drivers play out as expected\n- Supply expands on planned cadence\n- **When we hit which limit**: per dimension, the projected month\n- **Investment decisions needed by**: lead-time-adjusted dates\n\n### Optimistic case (~25% likely)\n\n- Demand grows faster than expected (good problem)\n- **What breaks first**: the dimensions most sensitive to growth\n- **Investment decisions accelerated**: dates pulled in\n- **What we'd cut to make room**: if budget-constrained\n\n### Pessimistic case (~25% likely)\n\n- Demand grows slower OR a constraint hits earlier than expected\n- **Capacity overbuilt**: where we'd see waste\n- **Cost containment options**: what we'd pull back\n- **Strategic implications**: if growth stalls, what that means for the team\n\n---\n\n## Part 5: Decision triggers\n\nFor each capacity dimension, the trigger points:\n\n| Dimension | Current | Yellow trigger | Red trigger | Action at trigger |\n|-----------|---------|----------------|-------------|-------------------|\n|           |         |                |             |                   |\n\n- **Yellow**: start planning the action (typically at 60–70% of capacity)\n- **Red**: action must be in flight (typically at 80–90% of capacity)\n- **Action**: specific, with lead time accounted for\n\n---\n\n## Part 6: Investment / optimization options\n\nPer dimension, the levers available:\n\n### Cloud capacity\n- **Add capacity** (lead time, cost)\n- **Optimize usage** (efficiency project, lead time)\n- **Multi-region distribution** (architecture work)\n- **Reserved instances / commitments** (cost reduction at scale)\n\n### Engineering headcount\n- **Hire** (3–6 month lead time; cost; risk)\n- **Contractor bridge** (faster but expensive; bridging only)\n- **Reallocate from lower-priority work** (immediate; cost is opportunity)\n- **Outsource specific work** (variable; risk)\n\n### Vendor capacity\n- **Renegotiate** (timing tied to renewal)\n- **Add seats** (typically fast)\n- **Replace** (long lead time; switching cost)\n\n---\n\n## Part 7: Risk register\n\n| Risk | Likelihood | Impact | Mitigation |\n|------|-----------|--------|------------|\n| Demand grows 2x base case |  |  |  |\n| Hiring slows below plan |  |  |  |\n| Architectural ceiling hit before forecast |  |  |  |\n| Vendor changes pricing materially |  |  |  |\n| Regional capacity unavailable when needed |  |  |  |\n\n---\n\n## Part 8: Decisions to make this quarter\n\nFrom the forecast, what we need to decide NOW (not later):\n\n- **Decisions**: list with deadline\n- **Owners**: \n- **What enables each decision** (data, alignment, approval): \n\n---\n\n## Common failure modes\n\n- **Single-scenario forecast**: one number doesn't help; it's the variance that matters.\n- **No lead time accounting**: hitting yellow at 70% capacity is fine if action takes 2 weeks; deadly if action takes 6 months.\n- **Architectural limits ignored**: the assumption that infrastructure is elastic; specific architectures have hard ceilings the forecast must call out.\n- **Forecast made once, never updated**: capacity forecasts are quarterly minimum; faster if growth is volatile.\n- **Disconnect from financial planning**: capacity drives spend; forecast must be reconciled with the budget.\n- **Hidden demand drivers**: a partnership signed by Sales that adds load; a marketing campaign no one told engineering about. Forecast assumes you have the demand picture; cross-check with Sales/Marketing.\n\n---\n\n## Related artifacts\n\n- `engineering-budget-planner` — for the financial side of capacity\n- `cloud-spend-review` — for cloud-specific capacity and cost\n- `headcount-business-case` — for the headcount portion\n- `capacity-forecasting-pack` (prompts) — for facilitating forecast updates\n"
+    },
+    {
+      "id": "gold-dr-bcp-plan",
+      "entry_type": "template",
+      "title": "Disaster Recovery & Business Continuity Plan (DR/BCP)",
+      "slug": "dr-bcp-plan",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Engineering Excellence",
+        "Technical Leadership"
+      ],
+      "summary": "Living DR/BCP plan covering RTO/RPO per service, six standard disaster scenarios, backup inventory with restore-tested status, communication plan, testing schedule (tabletop quarterly, restore quarterly, failover semi-annually, full DR annually), and gap register.",
+      "why_it_matters": "Most teams have some DR thinking but few have tested the plan end-to-end, identified non-recoverable dependencies, or distinguished what they'd recover from what they'd accept losing. This template forces the work that turns 'we have backups' into a real recovery capability.",
+      "when_to_use": [
+        "Annual DR/BCP review with stakeholders",
+        "Quarterly tabletop exercise",
+        "After significant architecture changes (new vendors, region expansion, new critical services)",
+        "After a near-miss or related incident that surfaced a gap"
+      ],
+      "not_for": [
+        "Routine incident response (use incident-review-packet for individual incidents)",
+        "Replacing actual testing — the plan is theory until tested",
+        "Untested backup verification (test or it's not a backup)"
+      ],
+      "source_inspiration": [
+        "ISO 22301 — Business continuity management",
+        "Google SRE Workbook — disaster recovery patterns",
+        "AWS / Azure / GCP DR architecture references"
+      ],
+      "inputs_required": [
+        {
+          "name": "Critical service inventory",
+          "description": "List of services with business criticality.",
+          "required": true
+        },
+        {
+          "name": "Honest RTO/RPO per service",
+          "description": "Tested or to-be-tested targets.",
+          "required": true
+        },
+        {
+          "name": "Stakeholder alignment",
+          "description": "Engineering, security, legal, business approvers.",
+          "required": true
+        },
+        {
+          "name": "Test schedule commitment",
+          "description": "Quarterly tabletop, quarterly backup restore, semi-annual failover, annual full DR.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "RTO/RPO matrix",
+        "Disaster scenario responses",
+        "Backup and restore inventory",
+        "Communication plan",
+        "Testing schedule",
+        "Gap register"
+      ],
+      "sections": [
+        {
+          "name": "Recovery objectives",
+          "purpose": "Define RTO/RPO per critical service and what we'd accept losing.",
+          "fields": [
+            "RTO/RPO matrix per service",
+            "Tier definitions",
+            "What we'd accept losing"
+          ]
+        },
+        {
+          "name": "Disaster scenarios",
+          "purpose": "Six standard scenarios with response detail.",
+          "fields": [
+            "Cloud region outage",
+            "Cloud provider extended outage",
+            "Data corruption / ransomware",
+            "Critical vendor failure",
+            "Loss of key personnel",
+            "Office / facility loss"
+          ]
+        },
+        {
+          "name": "Backup and recovery infrastructure",
+          "purpose": "Backup inventory and restore-tested status.",
+          "fields": [
+            "Backup inventory matrix",
+            "Restore tested per system (or 'never tested' — the most concerning)"
+          ]
+        },
+        {
+          "name": "Communication plan",
+          "purpose": "Who to notify per scenario; primary and secondary channels.",
+          "fields": [
+            "Notification matrix per scenario",
+            "Primary and backup channels"
+          ]
+        },
+        {
+          "name": "Testing schedule",
+          "purpose": "Plans rot; test on a cadence.",
+          "fields": [
+            "Tabletop quarterly",
+            "Backup restore quarterly",
+            "Failover drill semi-annually",
+            "Full DR annually"
+          ]
+        },
+        {
+          "name": "Gap register",
+          "purpose": "From the most recent test, with owners and dates.",
+          "fields": [
+            "Gap matrix"
+          ]
+        },
+        {
+          "name": "Approval and review",
+          "purpose": "Sign-off and out-of-band copy.",
+          "fields": [
+            "Approved by",
+            "Date",
+            "Distribution list",
+            "Out-of-band copy"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Predictable DR failures.",
+          "fields": [
+            "Backups never tested",
+            "RTO/RPO not honest",
+            "Dependency on affected team",
+            "No out-of-band plan copy",
+            "Bus factor 1 not addressed",
+            "Tabletop performative",
+            "Plan not updated after changes"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "disaster-recovery",
+        "business-continuity",
+        "dr",
+        "bcp",
+        "reliability"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Initial plan: 4–8 weeks; quarterly tabletop: 2 hours; annual full review: 2 days",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops",
+      "template_body_markdown": "# Disaster Recovery & Business Continuity Plan (DR/BCP)\n\n## How to use\n\nThis template structures a DR/BCP plan for an engineering organization — recovery from major disruptions like region-wide cloud outages, ransomware events, data corruption, or extended provider failures. It's NOT for routine incidents (use the incident response runbooks for those); it's for the events that test whether the company can continue to operate.\n\nMost teams have *some* DR thinking — backups exist, on-call is set up. Few have actually tested the plan end-to-end, identified the dependencies that aren't recoverable, or distinguished what they'd recover from what they'd accept losing.\n\nThis is intended as a living document, reviewed annually with stakeholders and tested at least quarterly via a tabletop exercise (not just paper review).\n\n---\n\n## Header\n\n- **Plan owner**: \n- **Last reviewed**: \n- **Next scheduled review**: \n- **Last tested (tabletop)**: \n- **Last tested (live drill)**: \n- **Approver / sign-off**: \n\n---\n\n## Part 1: Recovery objectives\n\n### 1.1 RTO and RPO per critical service\n\nFor each critical service or capability, define:\n\n- **RTO (Recovery Time Objective)**: how long until the service must be restored\n- **RPO (Recovery Point Objective)**: how much data loss is acceptable (typically the time window between backups)\n- **Justification**: why these targets (customer commitment, SLA, business continuity needs)\n\n| Service | RTO | RPO | Tier | Justification |\n|---------|-----|-----|------|---------------|\n|         |     |     |      |               |\n\nTier definitions (typical):\n- **Tier 0**: cannot be down at all (rare; usually customer-facing core)\n- **Tier 1**: down up to 1 hour acceptable; recover same day\n- **Tier 2**: down up to 1 day acceptable\n- **Tier 3**: down up to 1 week acceptable\n\n### 1.2 What we'd accept losing\n\nBe honest. Some data, some services, some capabilities are not worth the cost of full recovery. Document explicitly:\n\n- **Data we won't recover (or only after extended delay)**:\n- **Services we'd run in degraded mode for an extended period**:\n- **Capabilities we'd suspend during recovery**:\n\n---\n\n## Part 2: Disaster scenarios\n\nFor each scenario, document the response. Cover at minimum:\n\n### 2.1 Cloud region outage (extended, multi-hour)\n\n- **Detection**: how we'd know, alerting in place\n- **Failover**: where we'd shift traffic, capacity\n- **Communication**: status page, customer notification, internal\n- **Estimated RTO**: \n- **Known gaps**: \n\n### 2.2 Cloud provider extended outage (full provider, multi-day)\n\n- **Workaround**: do we have multi-cloud, or do we wait?\n- **Alternative communication**: how customers reach us if our primary channels are down\n- **Estimated RTO**: \n- **Known gaps**: \n\n### 2.3 Data corruption / ransomware\n\n- **Detection**: how we identify and isolate\n- **Backup integrity**: when's the last verified-restorable backup\n- **Restore process**: documented and tested\n- **Customer communication**: what we'd say\n- **Legal / regulatory steps**: required notifications, evidence preservation\n- **Estimated RTO**: \n- **Known gaps**: \n\n### 2.4 Critical vendor failure (e.g., payment processor, identity provider)\n\n- **Identification**: which vendors are critical\n- **Workaround**: degraded mode, manual processing, alternative vendor\n- **Comms with customers**: \n- **Estimated RTO**: \n- **Known gaps**: \n\n### 2.5 Loss of key personnel\n\n- **Single points of failure**: who knows what only one person knows\n- **Documentation gap**: what isn't documented that should be\n- **Bus factor by area**: critical areas with bus factor 1\n- **Mitigation in flight**: \n\n### 2.6 Office / facility loss (if applicable)\n\n- **Remote-work readiness**: can the team operate fully remote\n- **Hardware redundancy**: \n- **Network access from elsewhere**: \n\n---\n\n## Part 3: Backup and recovery infrastructure\n\n### 3.1 Backup inventory\n\n| System | Backup method | Frequency | Retention | Last verified-restorable |\n|--------|---------------|-----------|-----------|--------------------------|\n|        |               |           |           |                          |\n\n### 3.2 Restore tested\n\nFor each critical system, when did we LAST actually restore from backup?\n\n- **Tested with full restore**: list with date\n- **Never tested**: list (the most concerning row of the matrix)\n\n> Untested backups are not backups. They are hopeful files.\n\n---\n\n## Part 4: Communication plan\n\n### 4.1 Who to notify per scenario\n\n| Scenario | Internal team | Exec | Customers | Public | Legal | Regulators |\n|----------|---------------|------|-----------|--------|-------|------------|\n|          |               |      |           |        |       |            |\n\n### 4.2 Communication channels\n\n- **Primary**: standard channels (status page, customer email)\n- **Secondary** (if primary is impacted): backup channels (e.g., social media, alternate domain)\n- **Internal coordination**: backup chat platform if Slack is down\n\n---\n\n## Part 5: Testing schedule\n\nDR plans rot quickly. Test schedule:\n\n- **Tabletop exercise**: quarterly (90 min, scenario-based, document gaps)\n- **Backup restore test**: quarterly (actually restore a backup to a sandbox, verify integrity)\n- **Failover drill**: semi-annually (real failover for a non-critical service)\n- **Full DR test**: annually (the big one; coordinated with stakeholders)\n\n---\n\n## Part 6: Gap register\n\nFrom the most recent test / review:\n\n| Gap | Severity | Owner | Mitigation | Target date |\n|-----|----------|-------|------------|-------------|\n|     |          |       |            |             |\n\n---\n\n## Part 7: Approval and review\n\n- **Approved by**: \n- **Date**: \n- **Distribution list** (who has access to this plan): \n- **Out-of-band copy** (where this plan lives if our systems are down): \n\n---\n\n## Common failure modes\n\n- **Backups never tested**: the most common DR failure. The first time you discover the backup is corrupt or incomplete is when you need to restore.\n- **RTO/RPO not honest**: \"1 hour RTO\" written down, untested, and impossible. Test before you commit.\n- **Dependency on the team that's also affected**: DR plan that assumes the team is available, when the disaster scenario is \"the team's office is gone.\"\n- **No out-of-band copy of the DR plan**: the plan lives in the system that's down.\n- **Bus factor 1 areas not addressed**: the plan assumes someone knows how to recover X; that someone is on vacation.\n- **Tabletop becomes performative**: read-aloud session with no real critique. Use a facilitator who isn't the plan owner; assign gaps with owners and dates.\n- **Plan never updated after architecture changes**: a year-old DR plan for the architecture from 18 months ago.\n\n---\n\n## Related artifacts\n\n- `incident-review-packet` — for individual incident response\n- `risk-register` — for the longer list of risks the DR plan addresses\n- `service-ownership-template` — for clarifying who owns DR for each service\n- `dr-bcp-pack` (prompts) — for tabletop facilitation and post-test gap synthesis\n"
+    },
+    {
       "id": "tpl-engineering-health-review",
       "entry_type": "template",
       "title": "Engineering health review",
@@ -4532,6 +5330,158 @@
       "practice_label": "Reliability & Ops"
     },
     {
+      "id": "gold-service-deprecation-plan",
+      "entry_type": "template",
+      "title": "Service Deprecation Plan",
+      "slug": "service-deprecation-plan",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Engineering Excellence",
+        "Technical Leadership"
+      ],
+      "summary": "Structured 6–18 month plan for retiring an internal service or public API: pre-announcement adoption inventory, public announcement, migration support, phased shutdown (soft → brownout → read-only → EOL → cleanup), and risk register.",
+      "why_it_matters": "Most failed deprecations fail at comms and migration support, not the technical shutdown. Killing a used service generates outages, escalations, and quiet rebellion from teams that never migrated. This template structures the whole arc so the deprecation actually lands.",
+      "when_to_use": [
+        "Retiring an internal service with material adoption (>1 team, >1000 req/day)",
+        "Sunsetting a public API",
+        "Decommissioning a product capability with active users",
+        "Replacing one service with another that requires user migration"
+      ],
+      "not_for": [
+        "Deleting unused or zero-adoption services (just delete and announce)",
+        "Cases where you're not committed to the deprecation (a slipping EOL date erodes trust permanently)",
+        "When the replacement isn't ready (don't announce until it is)"
+      ],
+      "source_inspiration": [
+        "Google — public API deprecation policy patterns",
+        "Stripe — deprecation handling for public APIs",
+        "Will Larson — service migration patterns at scale"
+      ],
+      "inputs_required": [
+        {
+          "name": "Adoption inventory",
+          "description": "Honest read on internal teams, external customers, public API consumers using the service.",
+          "required": true
+        },
+        {
+          "name": "Replacement readiness",
+          "description": "Replacement service / tool / workaround ready for adoption with documentation.",
+          "required": true
+        },
+        {
+          "name": "Approval and rationale",
+          "description": "Decision-maker, decision date, business case.",
+          "required": true
+        },
+        {
+          "name": "12+ month timeline runway",
+          "description": "Material services need 6–18 months.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Adoption inventory",
+        "Public announcement",
+        "Migration documentation and tooling",
+        "Phased shutdown plan",
+        "Risk register",
+        "Tracking metrics"
+      ],
+      "sections": [
+        {
+          "name": "Pre-announcement",
+          "purpose": "Decision rationale, adoption inventory, replacement readiness check.",
+          "fields": [
+            "Decision and rationale",
+            "Adoption inventory (internal, external, public)",
+            "Replacement readiness check"
+          ]
+        },
+        {
+          "name": "Public announcement",
+          "purpose": "Timing, channels, content template.",
+          "fields": [
+            "Target announcement date",
+            "Lead time before EOL",
+            "Channels",
+            "Announcement content template"
+          ]
+        },
+        {
+          "name": "Migration support",
+          "purpose": "Documentation, tooling, channels, tracking.",
+          "fields": [
+            "Migration documentation requirements",
+            "Migration tooling (automated migration, detection, sandbox)",
+            "Support channels (Slack, office hours, direct outreach)",
+            "Migration tracking (adoption %, per-user status, weekly report)"
+          ]
+        },
+        {
+          "name": "Phased shutdown",
+          "purpose": "Soft deprecation → brownout → read-only → EOL → cleanup.",
+          "fields": [
+            "Phase 1: Soft deprecation (announce + warn)",
+            "Phase 2: Brownout testing",
+            "Phase 3: Read-only mode",
+            "Phase 4: End of life",
+            "Phase 5: Cleanup"
+          ]
+        },
+        {
+          "name": "Risk register",
+          "purpose": "Predictable risks per deprecation.",
+          "fields": [
+            "Top users not migrated",
+            "Replacement gaps surface",
+            "Surprise consumers",
+            "Internal blockers",
+            "Customer escalation forces extension"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Announcing before replacement ready",
+            "EOL date slips",
+            "No proactive top-user outreach",
+            "Untested migration docs",
+            "Skipping brownout phase",
+            "Letting one customer block EOL",
+            "Deleting docs post-EOL"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "deprecation",
+        "sunset",
+        "migration",
+        "service-lifecycle"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Plan: 1–2 weeks; execution: 6–18 months total cycle",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops",
+      "template_body_markdown": "# Service Deprecation Plan\n\n## How to use\n\nThis template is for the structured shutdown of an internal service, public API, or product capability that is being retired. Done well, deprecation is a 6–18 month exercise that respects users, preserves history, and frees engineering capacity. Done badly, it creates outages, customer escalations, and quiet rebellion from teams who never migrated.\n\nMost failed deprecations failed at the comms and migration-support stage, not the technical shutdown. This template structures both.\n\nThis is for capabilities with material adoption (>1 customer, >1 internal team, >1000 requests/day or similar threshold). For unused services, just delete and announce.\n\n---\n\n## Header\n\n- **Service / capability being deprecated**: \n- **Owning team**: \n- **Owner of the deprecation**: \n- **Why deprecating**: \n- **Replacement** (if any): \n- **Target end-of-life date**: \n- **Total deprecation timeline** (typically 6–18 months for material services): \n\n---\n\n## Part 1: Pre-announcement\n\n### 1.1 Decision and rationale\n\n- **Why this service is being deprecated**: strategic shift, replaced by better option, no longer needed, cost too high, security/compliance issue\n- **Decision-maker and approval date**: \n- **Cost-benefit summary**: cost of operating × remaining time vs. cost of migration support × remaining time\n\n### 1.2 Adoption inventory\n\nBefore announcing, you need an honest read on usage:\n\n- **Internal teams using this service**: list with primary contact\n- **External customers using this service** (if external): list with their CSM / account team\n- **Public API consumers** (if applicable): rough count, top consumers identified\n- **Critical use cases**: what would break for which user if this just disappeared\n- **Edge cases / unusual integrations**: what's likely to surprise you on the way out\n\n### 1.3 Replacement readiness\n\nIf the deprecation has a replacement (a new service, a third-party tool, a manual workaround):\n\n- **Replacement is ready for adoption**: yes / no / not yet\n- **Migration documentation exists**: yes / no\n- **Migration tooling exists**: yes / no\n- **Performance / capability gaps in replacement**: explicit list\n- **What we're committing to add to the replacement before deprecation**:\n\n> If the replacement isn't ready, **don't announce yet**. Announcing too early makes the team look unreliable.\n\n---\n\n## Part 2: Public announcement\n\n### 2.1 Announcement timing\n\n- **Target announcement date**: \n- **Lead time before end-of-life**: typically 12 months for public APIs, 6 months for internal services with adoption, 3 months for narrow use\n- **Announcement channels**: status page, blog post, email to known users, in-product notice\n\n### 2.2 Announcement content\n\n```\nWe are deprecating [service] effective [end-of-life date].\n\n[1–2 sentences on why]\n\nWhat this means for you:\n- [Action you need to take]\n- [Timeline for migration]\n- [Where to get help]\n\nReplacement:\n- [What to use instead]\n- [Documentation link]\n- [Migration support available]\n\nTimeline:\n- [Date]: deprecation announced (today)\n- [Date]: warnings added to service responses (e.g., HTTP deprecation header, log warnings)\n- [Date]: new accounts / integrations no longer accepted\n- [Date]: read-only mode (if applicable)\n- [Date]: end-of-life\n\nSupport:\n- Migration help: [contact / channel]\n- Questions: [contact / channel]\n- Office hours: [if offered]\n```\n\n---\n\n## Part 3: Migration support\n\n### 3.1 Migration documentation\n\nRequired:\n- **Why we're deprecating**: link to announcement\n- **What you should do**: step-by-step migration guide\n- **Mapping table**: old API endpoints / capabilities → new equivalents\n- **Code samples**: before / after in common languages\n- **Common pitfalls**: things people hit that aren't obvious\n\n### 3.2 Migration tooling\n\nWhere possible:\n- **Automated migration tool**: a script / CLI / library that migrates the user\n- **Detection tool**: a tool that scans a codebase / config and identifies what needs to change\n- **Sandbox**: a place to test the new service before committing\n\n### 3.3 Migration support channels\n\n- **Slack / chat channel**: monitored during business hours\n- **Office hours**: weekly synchronous slot for people working through migration\n- **Direct outreach**: for top users (especially external customers), proactive outreach by your team\n\n### 3.4 Migration tracking\n\n- **Adoption metric**: % of traffic on old vs new\n- **User-list status**: per known user, migrated / in-progress / not-started\n- **Weekly report**: surface to leadership; surface stuck users early\n\n---\n\n## Part 4: Phased shutdown\n\n### Phase 1 — Soft deprecation (announce + warn)\n\n- Service continues to work normally\n- Deprecation header / warning logged on every request\n- No new accounts or integrations accepted\n- Migration tooling and documentation live\n\n### Phase 2 — Brownout testing (typically 1–3 months before EOL)\n\n- Periodic short outages (1 hour, weekly) to surface integrations that aren't migrated\n- Used as a fire-drill for users; communicates urgency\n- Schedule announced 30 days in advance\n\n### Phase 3 — Read-only mode (typically 30 days before EOL)\n\n- Service responds to reads but rejects writes\n- Forces the last laggards to migrate\n- Reads-only window is short; clear comms\n\n### Phase 4 — End of life\n\n- Service responds with \"410 Gone\" or equivalent for 30 days, with helpful redirect to migration docs\n- After 30 days, infrastructure decommissioned\n\n### Phase 5 — Cleanup\n\n- Code removed from active codebases\n- Infrastructure decommissioned (cloud, monitoring, on-call)\n- Documentation archived (not deleted; URLs continue to redirect to the migration guide)\n- Team rotates to next priority\n\n---\n\n## Part 5: Risk register\n\n| Risk | Likelihood | Impact | Mitigation |\n|------|-----------|--------|------------|\n| Top users haven't migrated by EOL date |  |  |  |\n| Replacement gap surfaces during migration |  |  |  |\n| Surprise consumers (unknown to us) appear at brownout |  |  |  |\n| Internal team blocks on missing capability in replacement |  |  |  |\n| Customer escalation forces extension |  |  |  |\n\n---\n\n## Part 6: Common failure modes\n\n- **Announcing before the replacement is ready**: erodes trust; users have nothing to migrate to.\n- **Soft EOL date that keeps slipping**: each slip teaches users that deadlines aren't real; the next deprecation will land worse.\n- **No proactive outreach to top users**: top users find out at brownout when they're already broken.\n- **Migration docs that don't survive testing**: write the docs by having someone else migrate using only the docs; fix what's missing.\n- **No brownout phase**: skipping brownouts means EOL day surfaces every integration you didn't know about; chaotic.\n- **Letting one customer block EOL indefinitely**: at some point, the deprecation has to land. Negotiate a paid extension or accept the customer churn; don't run a service forever for one user.\n- **Deleting documentation post-EOL**: people google for the API a year later. URLs should redirect to migration docs, not 404.\n\n---\n\n## Related artifacts\n\n- `service-deprecation-pack` (prompts) — for drafting the announcement, customer outreach, and brownout comms\n- `vendor-evaluation-matrix` — if the replacement is a buy decision\n- `risk-register` — for the deprecation's specific risks\n- `incident-summary-pack` (prompts) — for the inevitable incidents during brownout\n"
+    },
+    {
       "id": "tpl-service-ownership-template",
       "entry_type": "template",
       "title": "Service ownership template",
@@ -5105,6 +6055,168 @@
       "template_body_markdown": "# Communication plan\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "org-design-change",
       "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "gold-conflict-mediation-memo",
+      "entry_type": "template",
+      "title": "Conflict Mediation Memo",
+      "slug": "conflict-mediation-memo",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "Org Design",
+        "People Management",
+        "Culture & Change"
+      ],
+      "summary": "Working memo for the manager mediating a sustained escalated conflict between two parties (engineers, managers, teams, partners). Forces hearing both sides separately, distinguishing positions from interests, surfacing the structural cause, and designing a resolution both can sign off on.",
+      "why_it_matters": "Most failed mediations failed by treating the presented conflict as the actual conflict, mediating positions instead of interests, or designing resolutions that depend on sustained good will rather than structural change. This template forces the diagnostic discipline that produces resolutions that hold.",
+      "when_to_use": [
+        "Conflict between two parties has been escalating for weeks or months",
+        "Prior informal interventions haven't worked",
+        "The conflict is affecting work, team morale, or customer outcomes",
+        "Both parties are willing to engage in mediation in good faith"
+      ],
+      "not_for": [
+        "Routine disagreements that will resolve themselves",
+        "Cases where one party has clearly violated policy (HR-led, not mediator-led)",
+        "Cases where one party is acting in bad faith (mediation requires good faith from both)",
+        "Sharing in full with either party — this is the mediator's working document"
+      ],
+      "source_inspiration": [
+        "Roger Fisher / William Ury — Getting to Yes (interests vs. positions)",
+        "Sheila Heen / Douglas Stone — Difficult Conversations",
+        "Standard organizational mediation frameworks"
+      ],
+      "inputs_required": [
+        {
+          "name": "Both parties willing to engage",
+          "description": "Mediation requires good-faith participation from both.",
+          "required": true
+        },
+        {
+          "name": "Time for separate hearings before joint session",
+          "description": "Hearing simultaneously produces theater; sequential produces honesty.",
+          "required": true
+        },
+        {
+          "name": "Authority to act on resolution",
+          "description": "Mediator can change scope, decision-rights, or structure if needed.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Both-side perspectives documented",
+        "Mediator's diagnostic read",
+        "Resolution design",
+        "Joint session script",
+        "Follow-through plan"
+      ],
+      "sections": [
+        {
+          "name": "Background",
+          "purpose": "What surfaced this; what's been tried.",
+          "fields": [
+            "What surfaced this",
+            "Past interventions"
+          ]
+        },
+        {
+          "name": "Side A perspective",
+          "purpose": "Heard privately, documented.",
+          "fields": [
+            "Position",
+            "Interests",
+            "What happened",
+            "Other party's behavior",
+            "Own contribution",
+            "Wanted outcome",
+            "Acceptable outcome",
+            "Unacceptable"
+          ]
+        },
+        {
+          "name": "Side B perspective",
+          "purpose": "Same depth, separately.",
+          "fields": [
+            "Same fields as Side A"
+          ]
+        },
+        {
+          "name": "Mediator's read",
+          "purpose": "What's actually going on (often different from either party).",
+          "fields": [
+            "Presented conflict vs. underlying conflict",
+            "Structural cause",
+            "Where each is right",
+            "Where each is overstating",
+            "Truth both are avoiding"
+          ]
+        },
+        {
+          "name": "Resolution design",
+          "purpose": "Address interests, not positions; structural over behavioral.",
+          "fields": [
+            "What both parties need",
+            "Proposed resolution (changes, commitments)",
+            "Why this should work",
+            "What it does NOT resolve"
+          ]
+        },
+        {
+          "name": "Joint mediation session",
+          "purpose": "Run the session to land the resolution.",
+          "fields": [
+            "Pre-session prep",
+            "Session agenda (60–90 min, 6 phases)",
+            "Ground rules"
+          ]
+        },
+        {
+          "name": "Follow-through",
+          "purpose": "Written summary, check-ins, escalation path.",
+          "fields": [
+            "Written summary within 24h",
+            "2-week / 6-week / 3-month check-ins",
+            "Escalation if resolution doesn't hold"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable mediation failures.",
+          "fields": [
+            "Hearing both at once first",
+            "Position-based mediation",
+            "Avoiding structural cause",
+            "Brittle good-will resolutions",
+            "No follow-through",
+            "HR escalation timing"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "conflict",
+        "mediation",
+        "difficult-conversations",
+        "org-design"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Separate hearings: 2 hours; mediator synthesis: 2 hours; joint session: 90 min; follow-through: 3 months",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change",
+      "template_body_markdown": "# Conflict Mediation Memo\n\n## How to use\n\nThis template is for the manager (or the manager-of-managers) mediating a sustained, escalated conflict between two parties — engineers, managers, teams, or cross-functional partners. It's NOT for routine disagreements that resolve themselves; it's for conflicts that have been ignored long enough to require formal mediation.\n\nThe structure forces the mediator to:\n- Hear both sides separately first, document what they actually want\n- Distinguish positions (what they're asking for) from interests (what they actually need)\n- Surface the structural causes underneath\n- Design a resolution both can sign off on\n\nThis is a sensitive document. Treat it as confidential. Share specific portions with each party only with their consent or in the joint mediation session.\n\n---\n\n## Header\n\n- **Mediator**: \n- **Date opened**: \n- **Parties**: \n- **Brief description of the conflict**: \n- **History**: how long this has been escalating, prior interventions\n- **Stakes** (if unresolved): work stoppage, attrition, customer impact\n\n---\n\n## Part 1: Background\n\n### 1.1 What surfaced this to you\n\n- Who escalated to you\n- What happened that made it formal (a Slack incident, a missed commitment, a team escalation)\n- What had been tried before\n\n### 1.2 Past interventions\n\n- Conversations that have happened between the parties\n- Manager-led 1:1s with each\n- Anything that worked temporarily\n\n---\n\n## Part 2: Side A perspective\n\n> Hear them privately first, before any joint conversation. Document what they say.\n\n- **Position** (what they're asking for): \n- **Interests** (what they actually need to feel resolved): \n- **What they say happened**: \n- **What they say the other party did**: \n- **What they say their own contribution was** (or wasn't): \n- **What outcome they want**: \n- **What outcome they could live with**: \n- **What would be unacceptable**: \n\n---\n\n## Part 3: Side B perspective\n\n> Same depth, separately. Document.\n\n- **Position**: \n- **Interests**: \n- **What they say happened**: \n- **What they say the other party did**: \n- **What they say their own contribution was** (or wasn't): \n- **What outcome they want**: \n- **What outcome they could live with**: \n- **What would be unacceptable**: \n\n---\n\n## Part 4: Mediator's read\n\n### 4.1 What's actually going on\n\nThe conflict as the mediator sees it (often different from either party's framing):\n\n- **The presented conflict**: what they say it's about\n- **The underlying conflict**: what it's actually about (often: scope ambiguity, status / recognition, trust deficit from a past event, structural contention for resources)\n- **The structural cause**: organization-level factors that make this conflict more likely (unclear ownership, dual reporting, shared resource constraint)\n\n### 4.2 Where the parties are right\n\nBoth parties almost always have a legitimate point. Document:\n\n- **Side A is right about**: \n- **Side B is right about**: \n\n### 4.3 Where each is overstating\n\n- **Side A is overstating**: \n- **Side B is overstating**: \n\n### 4.4 Truth they're both avoiding\n\nCommon in escalated conflicts: a truth neither party wants to name (their own contribution, an upstream decision that's the real issue, a fact about the work itself). Surfacing this is often the unlock.\n\n---\n\n## Part 5: Resolution design\n\n### 5.1 What both parties need\n\nBased on interests (not positions), what would resolve this:\n\n- **For Side A**: \n- **For Side B**: \n- **For the team / org**: \n\n### 5.2 Proposed resolution\n\nA specific, actionable resolution:\n\n- **What changes**: scope, decision-rights, process, reporting\n- **What both parties commit to**: behavior, communication\n- **What the mediator commits to** (manager / leadership actions): \n- **Acknowledgment** of what's happened: where appropriate\n\n### 5.3 Why this resolution should work\n\n- Addresses Side A's interest because: \n- Addresses Side B's interest because: \n- Addresses the structural cause because: \n\n### 5.4 What this resolution does NOT do\n\nHonest about what's unresolved or accepted:\n\n- \n- \n\n---\n\n## Part 6: Joint mediation session\n\n> Once you've drafted the resolution, run the joint session to land it.\n\n### 6.1 Pre-session prep\n\n- Brief each party on the structure of the session\n- Confirm both have committed to participating in good faith\n- Set ground rules\n\n### 6.2 Session agenda (typically 60–90 min)\n\n1. **Opening** — mediator frames the session, the goal, the ground rules (5 min)\n2. **Each party speaks** — what they want from the session, in their own words (15 min total)\n3. **Mediator's read** — share Part 4 truthfully but with care (10 min)\n4. **Resolution discussion** — propose Part 5; iterate based on response (30 min)\n5. **Commitment** — what each party (and you) commits to; in writing (10 min)\n6. **Follow-up cadence** — when we check back, what we'll be watching for (5 min)\n\n### 6.3 Ground rules\n\n- One person speaks at a time\n- Statements about behavior, not character (\"when you did X\" not \"you are X\")\n- The mediator is not a judge; the goal is resolution, not rightness\n- Anything not agreed in the room is not committed\n- Confidentiality of the session itself (what's said stays with the parties + mediator)\n\n---\n\n## Part 7: Follow-through\n\n### 7.1 Written summary (within 24 hours)\n\nTo both parties: agreed resolution, commitments, follow-up date.\n\n### 7.2 Follow-up check-ins\n\n- **2 weeks**: separate 1:1 with each — is the resolution holding?\n- **6 weeks**: joint check-in if needed\n- **3 months**: assessment — is this stable?\n\n### 7.3 If the resolution doesn't hold\n\n- **Escalation path**: one party wasn't acting in good faith, or the structural cause wasn't addressed\n- **Next intervention**: more formal (HR, role change, separation)\n- **When to call it**: don't iterate forever; some conflicts need decisive structural action\n\n---\n\n## Common failure modes\n\n- **Mediator hears both sides at once first**: produces theater, not honesty. Hear separately, then jointly.\n- **Position-based mediation**: trying to find a middle on what they're asking for. Doesn't address what they need.\n- **Avoiding the structural cause**: a personality conflict often masks a structural problem. Ignoring it means the same conflict recurs with different people.\n- **Resolution that requires sustained good will**: brittle. Resolutions should change structure, not just behavior.\n- **No follow-through**: the resolution holds for 2 weeks then unravels because no one checked in.\n- **Escalating to HR too early or too late**: HR is the right partner for some cases; not all. Get HR perspective on whether they should be involved.\n\n---\n\n## Related artifacts\n\n- `difficult-conversations-pack` (in difficult-conversations prompts) — for the individual conversations\n- `manager-quality-review` — if the conflict involves a manager whose effectiveness is in question\n- `org-design-proposal` — if the conflict reveals a structural issue requiring redesign\n- `conflict-mediation-pack` (prompts) — for facilitating the mediation itself\n"
     },
     {
       "id": "gold-layoff-comms-pack",
@@ -5953,6 +7065,209 @@
       "template_body_markdown": "# Reorg communication pack\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "org-design-change",
       "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "gold-reorg-impact-assessment",
+      "entry_type": "template",
+      "title": "Reorg Impact Assessment",
+      "slug": "reorg-impact-assessment",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Culture & Change"
+      ],
+      "summary": "Pre-announcement assessment of reorg costs across 10 dimensions: in-flight work disruption, people-level impact (reporting, scope, comp, role elimination), attrition risk, hidden dependencies, customer-facing impact, cross-functional, cultural/morale tax, and the cost-benefit reckoning.",
+      "why_it_matters": "Most reorgs that look great on paper carry costs the design phase missed — disruption to in-flight work, comp/leveling complications, attrition risk, customer-facing impact, surviving-team morale tax. This template forces the surfacing of those costs BEFORE the design is locked, so the decision is made on real numbers.",
+      "when_to_use": [
+        "After you have a candidate reorg design, before you announce",
+        "Co-authored with HR partner from the start",
+        "Reviewed by at least one outside reviewer not invested in the design"
+      ],
+      "not_for": [
+        "Done by the same person who designed the reorg (they'll minimize costs)",
+        "Substituting for the actual reorg comms cascade",
+        "Cases where you've already locked the design and won't change it (assessment becomes performative)"
+      ],
+      "source_inspiration": [
+        "Heidari-Robinson & Heywood — ReOrg",
+        "Will Larson on org-design impact analysis",
+        "Lara Hogan — reorg playbooks"
+      ],
+      "inputs_required": [
+        {
+          "name": "Candidate reorg design",
+          "description": "The proposed structure with all reporting and scope changes.",
+          "required": true
+        },
+        {
+          "name": "HR partner involved",
+          "description": "From the start, not after announcement.",
+          "required": true
+        },
+        {
+          "name": "Outside reviewer",
+          "description": "Not invested in the design; provides honest cost assessment.",
+          "required": true
+        },
+        {
+          "name": "Honest data on people, work, customers",
+          "description": "Real numbers, not minimized.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Disruption assessment",
+        "People-level impact map",
+        "Attrition risk list",
+        "Hidden dependency map",
+        "Customer/partner impact",
+        "Cost summary",
+        "Recommendation"
+      ],
+      "sections": [
+        {
+          "name": "Disruption to in-flight work",
+          "purpose": "Initiatives, owners, disruption risk, mitigation.",
+          "fields": [
+            "Initiative matrix",
+            "Initiatives shifting owners",
+            "Initiatives splitting across teams",
+            "Knowledge loss risks",
+            "Customer commitments at risk",
+            "Recovery timeline"
+          ]
+        },
+        {
+          "name": "People-level impact",
+          "purpose": "Reporting changes, scope changes, comp complications, role eliminations.",
+          "fields": [
+            "Reporting changes",
+            "Scope changes",
+            "Comp / leveling complications",
+            "Roles being eliminated"
+          ]
+        },
+        {
+          "name": "Attrition risk",
+          "purpose": "Top retention risks created by the reorg.",
+          "fields": [
+            "Top 5 retention risks",
+            "Why at risk",
+            "Investment options",
+            "Accepted-loss list"
+          ]
+        },
+        {
+          "name": "Hidden dependencies",
+          "purpose": "Things the design may not have surfaced.",
+          "fields": [
+            "Knowledge in one head",
+            "Cross-team rituals",
+            "Vendor/tool ownership",
+            "On-call coverage",
+            "Single-threaded leadership"
+          ]
+        },
+        {
+          "name": "Customer-facing impact",
+          "purpose": "Customer interactions disrupted.",
+          "fields": [
+            "Customers affected",
+            "What changes for them",
+            "Comms required",
+            "Churn risk"
+          ]
+        },
+        {
+          "name": "Cross-functional impact",
+          "purpose": "Partner teams affected.",
+          "fields": [
+            "Partner teams",
+            "Interface changes",
+            "Comms required"
+          ]
+        },
+        {
+          "name": "Cultural / morale tax",
+          "purpose": "Reorgs change culture even when design is good.",
+          "fields": [
+            "Surviving team reaction",
+            "Trust impact",
+            "Morale projection 30/90/180 days",
+            "Recovery investment"
+          ]
+        },
+        {
+          "name": "Cost summary",
+          "purpose": "Total realistic cost of the reorg.",
+          "fields": [
+            "Initiative disruption cost",
+            "Attrition cost",
+            "Comp adjustments",
+            "Customer/partner cost",
+            "Morale recovery cost",
+            "Total"
+          ]
+        },
+        {
+          "name": "Benefit-cost reckoning",
+          "purpose": "Honest comparison.",
+          "fields": [
+            "Benefits intended",
+            "Time to realize",
+            "Cost summary",
+            "Net assessment",
+            "Confidence level"
+          ]
+        },
+        {
+          "name": "Recommendation",
+          "purpose": "Proceed / modify / defer / don't.",
+          "fields": [
+            "Proceed as designed",
+            "Proceed with modifications",
+            "Defer / phase",
+            "Don't do it"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the predictable failures.",
+          "fields": [
+            "Assessment by design owner",
+            "Costs labeled 'disruption'",
+            "Comp/leveling discovered late",
+            "Customer impact missed",
+            "Cultural tax not budgeted",
+            "No 'don't reorg' comparison"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "reorg",
+        "impact-assessment",
+        "change-management",
+        "org-design"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "1–2 weeks of work; HR/outside reviewer involved throughout",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change",
+      "template_body_markdown": "# Reorg Impact Assessment\n\n## How to use\n\nThis is the assessment you run BEFORE locking a reorg design. The point is to surface the costs that planning conversations systematically miss — disruption to in-flight work, comp/leveling complications, attrition risk, hidden dependencies, customer-facing impact, and the surviving-team morale tax.\n\nA reorg is one of the highest-leverage tools a leader has. It's also one of the most expensive to do badly. Most reorgs that look great on paper carry costs the design phase didn't surface. This template forces that surfacing.\n\nRun it AFTER you have a candidate design, BEFORE you announce. Co-author with HR partner; involve at least one outside reviewer who isn't invested in the design.\n\n---\n\n## Header\n\n- **Reorg in question**: brief description\n- **Owner**: \n- **HR partner**: \n- **Outside reviewer**: \n- **Target announcement date**: \n- **Decision deadline for go/no-go on the design**: \n\n---\n\n## Part 1: Disruption to in-flight work\n\nFor each significant in-flight initiative:\n\n| Initiative | Current owner | Post-reorg owner | Disruption risk | Mitigation |\n|------------|---------------|------------------|-----------------|------------|\n|            |               |                  |                 |            |\n|            |               |                  |                 |            |\n\n- **Initiatives that would shift owners**: with risk\n- **Initiatives that would split across teams**: with coordination cost\n- **Initiatives that would lose institutional knowledge**: where the people most familiar with the work move away from it\n- **Customer commitments at risk**: \n- **Recovery timeline if disrupted**: how long for new owner to get back to current pace\n\n---\n\n## Part 2: People-level impact\n\n### 2.1 Reporting changes\n\nFor each person whose reporting changes:\n\n- **Person**: \n- **Current manager → new manager**: \n- **Comp / leveling implications** (if any): \n- **Likely reaction** (based on what you know about them): \n- **Risk if they react badly** (attrition, performance dip, public dissent): \n- **Mitigation** (early conversation, scope preservation, manager-of-manager involvement): \n\n### 2.2 Scope changes\n\nFor each person whose scope materially changes:\n\n- **Scope before vs. after**: \n- **Whether this is a stretch (good) or a downgrade (concerning)**: \n- **What conversation you'd need to have with them**: \n\n### 2.3 Comp / leveling complications\n\n- **People who would now be at the wrong level for their scope**: \n- **People whose comp band would need adjustment**: \n- **People whose equity/promo timeline would be affected**: \n- **HR partner's read on what's tractable vs. blocked**: \n\n### 2.4 People whose roles disappear\n\n- **Manager roles being eliminated**: \n- **IC roles being eliminated**: \n- **Plan for each affected person** (relocate, demote with grace, manage out, layoff): \n\n> If a reorg includes role eliminations, it's a layoff inside a reorg. Use the layoff comms pack alongside this template.\n\n---\n\n## Part 3: Attrition risk\n\n- **Top 5 retention risks created by this reorg**: people most likely to leave because of it\n- **Why they're at risk** (manager change, scope downgrade, perceived demotion, lost autonomy, missed promo)\n- **Investment options to retain** (and whether worth it)\n- **Accepted-loss list** (people whose departure you'd accept as a cost of the reorg, if any)\n\n---\n\n## Part 4: Hidden dependencies\n\nThings the reorg design may not have surfaced:\n\n- **Knowledge that's only in one person's head** (and that person is moving): \n- **Cross-team rituals and conversations that depend on current relationships**: \n- **Vendor / tool ownership that would orphan**: \n- **On-call rotations that would lose coverage**: \n- **Single-threaded leadership on programs that span the new boundaries**: \n\n---\n\n## Part 5: Customer-facing impact\n\n- **Customers who interact with current team structure**: account managers, technical contacts, support relationships\n- **What changes for them**: who they talk to, who owns their issues, who knows their context\n- **Comms required for affected customers**: \n- **Risk of customer disruption or churn**: \n\n---\n\n## Part 6: Cross-functional impact\n\n- **Partner teams whose interface changes**: Product, Design, Data, Sales, Marketing\n- **What changes for them**: who they coordinate with, who owns the partnership\n- **Cross-functional comms required**: \n\n---\n\n## Part 7: Cultural / morale tax\n\nA reorg changes culture even if the design is good:\n\n- **Surviving team's likely reaction**: anxiety about future reorgs, loss of close colleagues, manager change\n- **Trust impact**: every reorg costs trust that takes months to rebuild\n- **30-day, 90-day, 6-month morale projection**: \n- **Investment to recover** (manager 1:1s, all-hands cadence, surveys): \n\n---\n\n## Part 8: Cost summary\n\nBest-honest assessment of total cost of this reorg:\n\n- **Initiative disruption cost** (eng-weeks of lost productivity): \n- **Attrition cost** (probable loss × replacement cost): \n- **Comp / leveling adjustments**: \n- **Customer / partner cost**: \n- **Surviving-team morale recovery cost**: \n- **Total cost** (realistic, not optimistic): \n\n---\n\n## Part 9: Benefit-cost reckoning\n\n- **Benefits the reorg is intended to deliver**: \n- **Time to realize the benefits**: typically 6–18 months after the reorg lands\n- **Cost summary from Part 8**: \n- **Net assessment**: do the benefits clearly justify the costs?\n- **Confidence level**: how sure are we?\n\n---\n\n## Part 10: Recommendation\n\nBased on the assessment:\n\n- **Proceed as designed**: with the costs accepted explicitly\n- **Proceed with modifications**: specific modifications to reduce cost\n- **Defer / phase**: not now or not all at once\n- **Don't do it**: the costs exceed the benefits\n\n---\n\n## Common failure modes\n\n- **Assessment done by the design owner**: same person who's invested in the design will minimize costs. Get an outside reviewer.\n- **Costs labeled as \"disruption that the team will work through\"**: real costs (engineer-weeks, attrition, customer churn) need real numbers.\n- **Comp/leveling implications discovered post-announcement**: HR partner involved late. Bring HR in during design, not after.\n- **Customer impact not assessed**: reorgs of customer-facing teams or teams that own customer relationships always have customer impact.\n- **Cultural tax not budgeted**: morale recovery requires manager time and visible commitment.\n- **No comparison to \"don't reorg\"**: status quo isn't free, but the comparison to \"not doing this reorg\" is often skipped.\n\n---\n\n## Related artifacts\n\n- `reorg-communication-pack` — for the cascade comms\n- `org-design-proposal` — for the design itself\n- `change-management-plan` — for the broader change management\n- `layoff-comms-pack` — if the reorg includes role eliminations\n- `reorg-impact-pack` (prompts) — for facilitating the assessment\n"
     },
     {
       "id": "tpl-stakeholder-map",
@@ -6875,6 +8190,157 @@
       "practice_label": "Finance & Business Ops"
     },
     {
+      "id": "gold-finops-anomaly-triage",
+      "entry_type": "template",
+      "title": "FinOps Anomaly Triage",
+      "slug": "finops-anomaly-triage",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "Finance & Operations",
+        "Engineering Excellence"
+      ],
+      "summary": "Fast triage template (2–4 hours) for cloud spend anomalies — sudden cost spikes, unexpected category jumps, drift in unit economics. Hypothesis generation by category, investigation, action by cause type, and comms by severity.",
+      "why_it_matters": "Most cloud-spend anomalies are caught late and fixed slowly. By the time finance flags the variance, you've already incurred weeks of unnecessary spend. This template structures fast triage so the response window matters.",
+      "when_to_use": [
+        "Cloud-spend alert fires for an anomaly",
+        "Monthly billing review surfaces unexpected variance",
+        "FinOps tool flags drift in unit economics",
+        "Customer impact ties back to cost / capacity"
+      ],
+      "not_for": [
+        "Ongoing optimization work (use cost-optimization-review)",
+        "Vendor renegotiation (use vendor-renegotiation-pitch)",
+        "Replacing post-mortem for material anomalies (do triage, then post-mortem)"
+      ],
+      "source_inspiration": [
+        "FinOps Foundation — cost anomaly detection and response patterns",
+        "AWS / Azure / GCP cost management documentation",
+        "Standard incident response patterns adapted for cost"
+      ],
+      "inputs_required": [
+        {
+          "name": "Anomaly identified",
+          "description": "Service, magnitude, trajectory.",
+          "required": true
+        },
+        {
+          "name": "Billing data accessible",
+          "description": "Detailed breakdown by service, region, tag.",
+          "required": true
+        },
+        {
+          "name": "Designated triage owner",
+          "description": "Cloud spend without owner gets ignored.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Anomaly characterization",
+        "Confirmed cause",
+        "Action with owner",
+        "Comms by severity",
+        "Post-mortem if material"
+      ],
+      "sections": [
+        {
+          "name": "The anomaly",
+          "purpose": "Characterize what's anomalous.",
+          "fields": [
+            "Service / category",
+            "Period",
+            "Magnitude",
+            "Trajectory",
+            "Vs. baseline",
+            "Customer / business impact"
+          ]
+        },
+        {
+          "name": "Hypothesis generation",
+          "purpose": "Common causes by category.",
+          "fields": [
+            "Compute spike causes",
+            "Storage spike causes",
+            "Network / egress causes",
+            "Vendor / SaaS causes"
+          ]
+        },
+        {
+          "name": "Investigation",
+          "purpose": "Pull data, ask people, identify cause.",
+          "fields": [
+            "Data to pull",
+            "People to ask",
+            "Cause identified with confidence and evidence"
+          ]
+        },
+        {
+          "name": "Action",
+          "purpose": "Action by cause type.",
+          "fields": [
+            "If runaway / bug",
+            "If config / policy",
+            "If legitimate growth",
+            "If vendor pricing change",
+            "If unknown after triage window"
+          ]
+        },
+        {
+          "name": "Comms",
+          "purpose": "Who to notify by severity.",
+          "fields": [
+            "Notification levels",
+            "Comms content"
+          ]
+        },
+        {
+          "name": "Post-triage",
+          "purpose": "Post-mortem if material; pattern check.",
+          "fields": [
+            "Post-mortem fields if > threshold",
+            "Pattern check across recent anomalies"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Slow detection",
+            "Triaged not validated",
+            "No clear owner",
+            "Legitimate growth treated as anomaly",
+            "Vendor pricing as anomaly",
+            "No post-mortem on material"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "finops",
+        "anomaly",
+        "cost",
+        "cloud-spend",
+        "triage"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "2–4 hours per triage; post-mortem 1–2 hours if material",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops",
+      "template_body_markdown": "# FinOps Anomaly Triage\n\n## How to use\n\nThis template is for the manager (or FinOps owner) responding to a cloud spend anomaly — a sudden cost spike, an unexpected category jump, or a drift in unit economics. The goal is to triage in 2–4 hours: is this a real issue, what's the cause, what action is needed, who owns it.\n\nMost cloud-spend anomalies are caught late and fixed slowly. By the time finance flags the variance, you've already incurred several weeks of unnecessary spend. This template structures fast triage so the response window matters.\n\nThis is for spike-style anomalies. For ongoing optimization (right-sizing, reserved instances), use the cost-optimization-review template.\n\n---\n\n## Header\n\n- **Anomaly identified**: \n- **Triage owner**: \n- **Triage start time**: \n- **Severity** (initial): low / medium / high / critical\n- **Notification source**: alert / billing review / FinOps tool / customer impact\n\n---\n\n## Part 1: The anomaly\n\n### 1.1 What's anomalous\n\n- **Service / product / category**: \n- **Period of anomaly**: when did it start\n- **Magnitude**: $ increase, % increase, vs what baseline\n- **Trajectory**: still rising / leveled off / decreasing\n\n### 1.2 Comparison\n\n- **Vs. last period** (week, month): \n- **Vs. plan / budget**: \n- **Vs. usage growth**: is cost-per-unit changing or just total cost?\n\n### 1.3 Customer / business impact\n\n- **User-facing impact** (if any): \n- **Revenue impact** (if any): \n- **SLA impact**: \n\n---\n\n## Part 2: Hypothesis generation\n\nWhat could be causing this? Common causes by category:\n\n### Compute spike\n- New service deployed without capacity review\n- Bug causing infinite loop / runaway processes\n- Failed autoscale that left instances running\n- Workload migration with un-decommissioned old version\n- New customer / partner load not anticipated\n- Data backfill or migration job\n\n### Storage spike\n- New data pipeline retaining more than needed\n- Backup retention configuration change\n- Lifecycle policy not applied\n- Customer data growth (legitimate)\n- Lost data being re-replicated\n\n### Network / egress spike\n- Misconfigured CDN\n- New cross-region traffic pattern\n- API consumer doing inefficient queries\n- Data exfiltration (security incident)\n- Customer load growth\n\n### Vendor / SaaS spike\n- License auto-scaling without notification\n- Usage-based pricing tier moved up\n- New feature usage at higher cost tier\n- Renewal price increase\n\n---\n\n## Part 3: Investigation\n\n### 3.1 Data to pull (immediate)\n\n- Detailed billing breakdown by service / region / tag\n- Recent deploys / changes in the affected service area\n- Recent customer / load changes\n- Recent infrastructure config changes\n- Logs from the affected service for the anomaly window\n\n### 3.2 People to ask\n\n- **Owning team for the affected service**: \n- **Recent on-call**: anything notable\n- **Recent infrastructure change owners**: \n- **Customer-facing teams**: any new load patterns expected\n\n### 3.3 Cause identified\n\n- **Confirmed cause**: \n- **Confidence**: high / medium / low\n- **Evidence**: \n\n---\n\n## Part 4: Action\n\nBased on cause:\n\n### If runaway / bug\n\n- **Immediate action**: stop the bleeding (kill processes, rollback, throttle)\n- **Owner**: \n- **Estimated savings**: \n\n### If config / policy issue\n\n- **Immediate action**: apply correct config\n- **Owner**: \n- **Verification**: how we'll confirm it's fixed\n- **Estimated savings**: \n\n### If legitimate growth\n\n- **Action**: validate vs. plan; if outside plan, escalate to capacity / budget conversation\n- **Owner**: \n- **Decision needed**: accept, optimize, or constrain\n\n### If vendor pricing change\n\n- **Action**: contract review; engage vendor account team\n- **Owner**: \n- **Negotiation**: see vendor-renegotiation-pitch\n\n### If unknown after triage window\n\n- **Escalation path**: who to engage\n- **Acceptable interim**: what we'll do while investigating\n\n---\n\n## Part 5: Comms\n\n### 5.1 Who to notify (based on severity)\n\n- **Low**: log, weekly digest\n- **Medium**: notify finance partner, team\n- **High**: notify finance + engineering leadership\n- **Critical**: incident-style comms, immediate exec notification\n\n### 5.2 Comms content\n\n- What's happening\n- Confirmed cause (or status if still investigating)\n- Action being taken\n- Expected resolution\n- Estimated cost incurred and prevented\n\n---\n\n## Part 6: Post-triage\n\n### 6.1 Post-mortem if material\n\nFor anomalies > $X (define your threshold), a brief post-mortem:\n\n- Why it happened\n- Why it took N hours to detect (was monitoring inadequate?)\n- Why it took N hours to fix\n- Action items: prevent / detect / respond improvements\n\n### 6.2 Pattern check\n\n- Has this kind of anomaly happened before? Frequency?\n- Is there a category-level fix (better default config, alerting, governance)?\n\n---\n\n## Common failure modes\n\n- **Slow detection**: anomaly visible in billing data for weeks before anyone notices. Set up cost alerts at category level.\n- **Triaged once, not validated**: declared \"fixed\" without confirming spend returns to baseline.\n- **No clear owner**: cloud spend is everyone's job and no one's job. Designate a FinOps owner.\n- **Treating legitimate growth as anomaly**: forcing optimization on real load that should be planned-for.\n- **Treating vendor pricing change as anomaly**: it's a renegotiation conversation, not a triage.\n- **No post-mortem on material anomalies**: lessons not captured; same kind of anomaly recurs.\n\n---\n\n## Related artifacts\n\n- `cloud-spend-review` — for ongoing optimization\n- `cost-optimization-review` — for systematic cost work\n- `incident-review-packet` — for the most-severe cost anomalies (those tied to bugs / outages)\n- `finops-anomaly-pack` (prompts) — for facilitating triage and post-mortem\n"
+    },
+    {
       "id": "tpl-headcount-business-case",
       "entry_type": "template",
       "title": "Headcount business case",
@@ -7409,6 +8875,172 @@
       "template_body_markdown": "# Vendor evaluation matrix\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "finance-business-ops",
       "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "gold-vendor-renegotiation-pitch",
+      "entry_type": "template",
+      "title": "Vendor Renegotiation Pitch",
+      "slug": "vendor-renegotiation-pitch",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance & Operations",
+        "Technical Leadership"
+      ],
+      "summary": "Structured renegotiation strategy for vendor renewals: current relationship assessment, market and alternatives, negotiation strategy with prioritized asks and trades, BATNA definition, internal alignment, pitch to the vendor, and negotiation tactics.",
+      "why_it_matters": "Most teams treat renewals as administrative — sign the same paper, maybe shave 5%. That leaves real leverage on the table. A serious renegotiation, started 4–6 months ahead, can produce 15–40% cost reductions, materially better terms, or both. This template forces the work that creates the leverage.",
+      "when_to_use": [
+        "4–6 months before a vendor contract renewal",
+        "When TCO has grown unfavorably vs. usage",
+        "After SLA misses, capability gaps, or support deterioration",
+        "When credible alternatives have emerged in the market"
+      ],
+      "not_for": [
+        "Renewals less than 2 months out (no time to build leverage)",
+        "Strategic vendors where the relationship is the value (use a different framing)",
+        "Bypassing procurement / legal / finance partnership"
+      ],
+      "source_inspiration": [
+        "Standard procurement and contract negotiation frameworks",
+        "Roger Fisher / William Ury — Getting to Yes (BATNA, interests vs. positions)",
+        "FinOps Foundation — vendor cost optimization patterns"
+      ],
+      "inputs_required": [
+        {
+          "name": "Current contract terms and TCO",
+          "description": "Honest accounting including engineering time, integration cost, customer-impact cost.",
+          "required": true
+        },
+        {
+          "name": "Real alternative bids",
+          "description": "Credible alternatives, not bluff.",
+          "required": true
+        },
+        {
+          "name": "Internal alignment",
+          "description": "Engineering, finance, legal, procurement aligned before vendor conversation.",
+          "required": true
+        },
+        {
+          "name": "BATNA defined",
+          "description": "What we actually do if the vendor won't move.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Current relationship assessment",
+        "Alternatives analysis",
+        "Negotiation strategy with priorities and trades",
+        "BATNA",
+        "Pitch",
+        "Negotiated outcome"
+      ],
+      "sections": [
+        {
+          "name": "Current relationship assessment",
+          "purpose": "What's working, what isn't, full TCO.",
+          "fields": [
+            "What's working",
+            "What's not",
+            "TCO over contract period"
+          ]
+        },
+        {
+          "name": "Market and alternatives",
+          "purpose": "Honest competitor analysis, build option, status-quo option.",
+          "fields": [
+            "Comparable vendors",
+            "Build option",
+            "Status-quo option"
+          ]
+        },
+        {
+          "name": "Negotiation strategy",
+          "purpose": "Prioritized asks, what we'll trade, BATNA.",
+          "fields": [
+            "What we want (must-have, strong-want, nice-to-have)",
+            "Specific asks (pricing, terms, SLA, support, exit)",
+            "What we'll trade",
+            "BATNA — real, not bluff"
+          ]
+        },
+        {
+          "name": "Pitch to the vendor",
+          "purpose": "What you actually take to the conversation.",
+          "fields": [
+            "Frame",
+            "What we love",
+            "What needs to improve",
+            "Specific asks",
+            "What we're offering",
+            "Timing and decision"
+          ]
+        },
+        {
+          "name": "Internal alignment",
+          "purpose": "Engineering, finance, legal, procurement, approver aligned before vendor.",
+          "fields": [
+            "Per-stakeholder alignment"
+          ]
+        },
+        {
+          "name": "Negotiation tactics",
+          "purpose": "What to expect, tactics to use, tactics to avoid.",
+          "fields": [
+            "Vendor's expected moves",
+            "Tactics to use",
+            "Tactics to avoid"
+          ]
+        },
+        {
+          "name": "Outcome and approval",
+          "purpose": "Final terms, approval.",
+          "fields": [
+            "Final terms",
+            "vs. initial offer",
+            "vs. status quo",
+            "Approval"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Starting too late",
+            "No real BATNA",
+            "Internal misalignment",
+            "Single-vendor lock-in",
+            "Bluffing",
+            "Negotiating only on price",
+            "Auto-renewal trap"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "vendor",
+        "renegotiation",
+        "procurement",
+        "tco",
+        "finops"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "4–6 months from kickoff to signed renewal",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops",
+      "template_body_markdown": "# Vendor Renegotiation Pitch\n\n## How to use\n\nThis template structures the negotiation pitch for an existing vendor whose contract is up for renewal. The goal is not necessarily price reduction — though that's often part of it. The goal is to use the renewal moment to renegotiate terms that have become unfavorable: pricing, capacity, SLA, exit clauses, support, integration commitments.\n\nMost teams treat renewals as administrative — sign the same paper, maybe shave 5% off. That leaves leverage on the table. A serious renegotiation, started 4–6 months before renewal, can produce 15–40% cost reductions, materially better terms, or both.\n\nThis is a pitch document the negotiator brings to the vendor's account team. It's also the internal document for socializing the negotiation strategy with finance, legal, and procurement.\n\n---\n\n## Header\n\n- **Vendor**: \n- **Contract renewal date**: \n- **Current annual spend**: \n- **Internal owner**: \n- **Negotiation team**: (engineering owner + procurement / finance + legal as needed)\n- **Negotiation timeline**: typically 4–6 months before renewal\n\n---\n\n## Part 1: Current relationship assessment\n\n### 1.1 What's working\n\n- Capabilities the vendor delivers well\n- Support / partnership quality\n- Strategic value of the relationship\n\n### 1.2 What's not working\n\n- Capability gaps (vs. promised, vs. competitor)\n- Cost growth (vs. usage growth — is the cost-per-unit getting worse?)\n- Support quality issues\n- SLA misses\n- Integration problems\n\n### 1.3 Total Cost of Ownership (TCO) over the contract period\n\n- License cost: \n- Implementation / integration cost (one-time + ongoing): \n- Engineering time on the vendor (admin, monitoring, troubleshooting): \n- Customer-impact cost from any failures: \n- Total: \n\n---\n\n## Part 2: Market and alternatives\n\n### 2.1 Comparable vendors\n\n- **Vendor A**: pricing, key features, gaps\n- **Vendor B**: same\n- **Vendor C**: same\n\n> Honest comparison; don't strawman the alternatives. The vendor will know.\n\n### 2.2 Build option\n\nIf applicable: would building internally make sense at this scale?\n\n- Build TCO over 3 years: \n- Reasons against: \n- Reasons for: \n\n### 2.3 Status-quo option\n\nWhat if we don't renew?\n\n- Workaround cost: \n- Capabilities we'd lose: \n- Operational risk: \n\n---\n\n## Part 3: Negotiation strategy\n\n### 3.1 What we want (in order of priority)\n\n1. **Must-have**: things we won't sign without\n2. **Strong-want**: things that materially affect value\n3. **Nice-to-have**: things to ask for, accept partial wins\n\n### 3.2 Specific asks\n\n- **Pricing**: target reduction or rate lock\n- **Term length**: shorter (more flex) or longer (better pricing)\n- **Capacity**: included usage, overage rates\n- **SLA**: tightened response, better uptime, credits structure\n- **Support**: dedicated account team, response time, escalation\n- **Roadmap commitments**: specific features we need\n- **Exit clauses**: data portability, notice period, switching support\n- **Auto-renewal**: typically remove or shorten\n\n### 3.3 What we'll trade\n\nVendors negotiate; expect to give something. Pre-decide what:\n\n- **Multi-year commit**: buys pricing flex but reduces optionality\n- **Reference participation**: case study, talk, customer panel\n- **Beta participation**: testing new features\n- **Volume guarantees**: minimum spend commitment\n- **Faster decision** (vs. RFP / extended evaluation)\n\n### 3.4 BATNA (Best Alternative to Negotiated Agreement)\n\nDefine explicitly: what do we do if the vendor won't move? Real BATNA, not bluff.\n\n- **Switch to vendor X**: cost, time, risk\n- **Build internally**: cost, time, risk\n- **Stay with workaround**: cost, time, risk\n- **Accept current terms**: under what conditions\n\n> Without a real BATNA, you're not negotiating; you're asking.\n\n---\n\n## Part 4: Pitch to the vendor\n\n> What you actually take to the renewal conversation.\n\n### 4.1 Frame\n\n- \"We've been a partner for [N] years. We want to continue that relationship for the next [N] years if the terms work for both of us.\"\n- \"We've been doing analysis on the renewal. Here's where we are.\"\n\n### 4.2 What we love\n\n- Specific things that have worked (acknowledges value, sets up the negotiation)\n\n### 4.3 What needs to improve\n\n- Specific items, with data\n- \"We need [specific change] for this to make sense to us going forward\"\n\n### 4.4 Specific asks\n\n- Walk through the asks from Part 3.2\n- Frame as \"we need X\" or \"we'd like X\" depending on must-have vs nice-to-have\n\n### 4.5 What we're offering\n\n- The trades from Part 3.3\n\n### 4.6 Timing and decision\n\n- When we need to decide\n- What happens if we can't agree (referencing BATNA without making it a threat)\n\n---\n\n## Part 5: Internal alignment\n\nBefore going to the vendor:\n\n- **Engineering**: capabilities we genuinely need\n- **Finance**: budget envelope; multi-year commitment authority\n- **Legal**: contract terms, particularly exit and data\n- **Procurement**: process compliance, comparable vendor data\n- **Approval**: who can sign off on the negotiated outcome\n\n---\n\n## Part 6: Negotiation tactics\n\n### 6.1 What to expect from the vendor\n\n- Initial offer that gives back some pricing, holds firm on terms\n- Push for multi-year commit to \"lock in\" current price (then they raise next time)\n- Argue against tight SLA / exit clauses\n- Try to renew before you've finished evaluating alternatives\n\n### 6.2 Tactics to use\n\n- **Multi-quote pressure**: have credible alternative bids in hand (not bluffing)\n- **Multi-year value, single-year commit**: can we commit single-year at multi-year pricing\n- **Performance-tied terms**: pricing or commitments tied to vendor delivering on roadmap\n- **Walking away**: real BATNA + willingness to use it; vendors test seriousness\n\n### 6.3 Tactics to avoid\n\n- **Bluffing about a BATNA you don't have**: vendor will call it\n- **Going to vendor before internal alignment**: vendor splits the negotiation team\n- **Negotiating without legal review**: contract terms have hidden costs\n- **Tight timeline**: vendor exploits your urgency\n\n---\n\n## Part 7: Outcome and approval\n\n- **Final terms negotiated**: \n- **Compared to initial offer**: % improvement\n- **Compared to status quo**: % cost change, terms changes\n- **Approval**: who signs off\n- **Contract review timeline**: \n\n---\n\n## Common failure modes\n\n- **Starting renewal conversation too late**: less than 4 months before renewal, vendor knows you have no leverage.\n- **No real BATNA**: you're asking, not negotiating.\n- **Internal misalignment**: vendor exploits gaps between engineering, finance, procurement.\n- **Single-vendor lock-in**: if the vendor knows you can't switch, prices stay high; build credible switching capability over time.\n- **Bluffing**: experienced vendors test seriously; if your BATNA is a bluff, you lose credibility.\n- **Negotiating only on price**: terms (SLA, exit, support) often matter more than 10% off the price.\n- **Auto-renewal trap**: renewals that auto-renew without negotiation are gifts to the vendor; remove or shorten the auto-renewal.\n\n---\n\n## Related artifacts\n\n- `vendor-evaluation-matrix` — for the alternative-vendor analysis\n- `vendor-evaluation-pack` (prompts) — for evaluating alternatives\n- `tool-consolidation-review` — if multiple vendor renewals are being considered together\n- `vendor-renegotiation-pack` (prompts) — for facilitating the renegotiation prep\n"
     },
     {
       "id": "tpl-weekly-leadership-digest",
