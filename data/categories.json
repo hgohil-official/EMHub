@@ -1,6 +1,8 @@
 [
   { "id": "home",              "label": "Home",                  "icon": "home",     "kind": "special", "group": "top" },
   { "id": "career-path",       "label": "Career Path Guide",     "icon": "target",   "kind": "special", "group": "top" },
+  { "id": "templates",         "label": "Templates",             "icon": "clipboard","kind": "special", "group": "top" },
+  { "id": "prompt-library",    "label": "Prompt Library",        "icon": "sparkles", "kind": "special", "group": "top" },
 
   { "id": "books",             "label": "Books",                 "icon": "book",     "kind": "type",   "match": "Book",       "group": "format" },
   { "id": "courses",           "label": "Courses & Certs",       "icon": "grad",     "kind": "type",   "match": "Course",     "group": "format" },

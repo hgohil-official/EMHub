@@ -18,6 +18,11 @@ data/incoming/
 data/dead_urls.json
 data/url_status_report.json
 
+# Authored artifact source folders — shipped content lives in the generated
+# manifests at data/templates.json and data/prompts.json (tracked)
+templates/
+prompt-library/
+
 # Vercel + agent local state
 .vercel
 .claude/

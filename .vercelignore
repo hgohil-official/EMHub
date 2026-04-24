@@ -12,6 +12,7 @@ fix_incoming.py
 research_perplexity.py
 enhance_urls.py
 replace_by_url.py
+index_artifacts.py
 _check_upload.py
 
 # Research workflow inputs
@@ -22,6 +23,11 @@ data/incoming/
 data/dead_urls.json
 data/url_status_report.json
 check_urls.py
+
+# Authored artifact source folders — shipped content is in the generated
+# manifests at data/templates.json and data/prompts.json
+templates/
+prompt-library/
 
 # Dev + agent metadata
 .claude/

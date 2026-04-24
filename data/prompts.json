@@ -1,0 +1,4513 @@
+{
+  "generated_at": "2026-04-24T12:27:57.753883",
+  "count": 25,
+  "practice_labels": {
+    "people-hiring-performance": "People · Hiring · Performance",
+    "strategy-planning": "Strategy & Planning",
+    "reliability-ops": "Reliability & Ops",
+    "org-design-change": "Org Design & Change",
+    "finance-business-ops": "Finance & Business Ops"
+  },
+  "prompts": [
+    {
+      "id": "pp-1-1-coaching-pack",
+      "entry_type": "prompt_pack",
+      "title": "1:1 Coaching Pack",
+      "slug": "1-1-coaching-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Hiring Performance"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for 1:1 coaching pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "1-1-coaching-pack-1",
+          "name": "1:1 Coaching Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for 1:1 coaching pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for 1:1 coaching pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "1-1-coaching-pack-2",
+          "name": "1:1 Coaching Pack prompt 2",
+          "use_case": "Critique and improve a draft for 1:1 coaching pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for 1:1 coaching pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "1-1-coaching-pack-3",
+          "name": "1:1 Coaching Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for 1:1 coaching pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for 1:1 coaching pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "1-1-coaching-pack-4",
+          "name": "1:1 Coaching Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for 1:1 coaching pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for 1:1 coaching pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "1-1-coaching-pack-5",
+          "name": "1:1 Coaching Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in 1:1 coaching pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in 1:1 coaching pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "1-1-coaching-pack",
+        "people-hiring-performance",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-hiring-design-pack",
+      "entry_type": "prompt_pack",
+      "title": "Hiring Design Pack",
+      "slug": "hiring-design-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Hiring Performance"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for hiring design pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "hiring-design-pack-1",
+          "name": "Hiring Design Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for hiring design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for hiring design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "hiring-design-pack-2",
+          "name": "Hiring Design Pack prompt 2",
+          "use_case": "Critique and improve a draft for hiring design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for hiring design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "hiring-design-pack-3",
+          "name": "Hiring Design Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for hiring design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for hiring design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "hiring-design-pack-4",
+          "name": "Hiring Design Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for hiring design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for hiring design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "hiring-design-pack-5",
+          "name": "Hiring Design Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in hiring design pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in hiring design pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "hiring-design-pack",
+        "people-hiring-performance",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-interview-debrief-pack",
+      "entry_type": "prompt_pack",
+      "title": "Interview Debrief Pack",
+      "slug": "interview-debrief-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Hiring Performance"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for interview debrief pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "interview-debrief-pack-1",
+          "name": "Interview Debrief Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for interview debrief pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for interview debrief pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "interview-debrief-pack-2",
+          "name": "Interview Debrief Pack prompt 2",
+          "use_case": "Critique and improve a draft for interview debrief pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for interview debrief pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "interview-debrief-pack-3",
+          "name": "Interview Debrief Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for interview debrief pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for interview debrief pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "interview-debrief-pack-4",
+          "name": "Interview Debrief Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for interview debrief pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for interview debrief pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "interview-debrief-pack-5",
+          "name": "Interview Debrief Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in interview debrief pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in interview debrief pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "interview-debrief-pack",
+        "people-hiring-performance",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-performance-review-pack",
+      "entry_type": "prompt_pack",
+      "title": "Performance Review Pack",
+      "slug": "performance-review-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Hiring Performance"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for performance review pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "performance-review-pack-1",
+          "name": "Performance Review Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for performance review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for performance review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "performance-review-pack-2",
+          "name": "Performance Review Pack prompt 2",
+          "use_case": "Critique and improve a draft for performance review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for performance review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "performance-review-pack-3",
+          "name": "Performance Review Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for performance review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for performance review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "performance-review-pack-4",
+          "name": "Performance Review Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for performance review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for performance review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "performance-review-pack-5",
+          "name": "Performance Review Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in performance review pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in performance review pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "performance-review-pack",
+        "people-hiring-performance",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-promotion-and-growth-pack",
+      "entry_type": "prompt_pack",
+      "title": "Promotion and Growth Pack",
+      "slug": "promotion-and-growth-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Hiring Performance"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for promotion and growth pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "promotion-and-growth-pack-1",
+          "name": "Promotion and Growth Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for promotion and growth pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for promotion and growth pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "promotion-and-growth-pack-2",
+          "name": "Promotion and Growth Pack prompt 2",
+          "use_case": "Critique and improve a draft for promotion and growth pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for promotion and growth pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "promotion-and-growth-pack-3",
+          "name": "Promotion and Growth Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for promotion and growth pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for promotion and growth pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "promotion-and-growth-pack-4",
+          "name": "Promotion and Growth Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for promotion and growth pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for promotion and growth pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "promotion-and-growth-pack-5",
+          "name": "Promotion and Growth Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in promotion and growth pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in promotion and growth pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "promotion-and-growth-pack",
+        "people-hiring-performance",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-executive-review-prep-pack",
+      "entry_type": "prompt_pack",
+      "title": "Executive Review Prep Pack",
+      "slug": "executive-review-prep-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy Planning"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for executive review prep pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "executive-review-prep-pack-1",
+          "name": "Executive Review Prep Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for executive review prep pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for executive review prep pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "executive-review-prep-pack-2",
+          "name": "Executive Review Prep Pack prompt 2",
+          "use_case": "Critique and improve a draft for executive review prep pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for executive review prep pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "executive-review-prep-pack-3",
+          "name": "Executive Review Prep Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for executive review prep pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for executive review prep pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "executive-review-prep-pack-4",
+          "name": "Executive Review Prep Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for executive review prep pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for executive review prep pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "executive-review-prep-pack-5",
+          "name": "Executive Review Prep Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in executive review prep pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in executive review prep pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "executive-review-prep-pack",
+        "strategy-planning",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "pp-okr-and-kpi-pack",
+      "entry_type": "prompt_pack",
+      "title": "OKR and KPI Pack",
+      "slug": "okr-and-kpi-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy Planning"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for okr and kpi pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "okr-and-kpi-pack-1",
+          "name": "OKR and KPI Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for okr and kpi pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for okr and kpi pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "okr-and-kpi-pack-2",
+          "name": "OKR and KPI Pack prompt 2",
+          "use_case": "Critique and improve a draft for okr and kpi pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for okr and kpi pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "okr-and-kpi-pack-3",
+          "name": "OKR and KPI Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for okr and kpi pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for okr and kpi pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "okr-and-kpi-pack-4",
+          "name": "OKR and KPI Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for okr and kpi pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for okr and kpi pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "okr-and-kpi-pack-5",
+          "name": "OKR and KPI Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in okr and kpi pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in okr and kpi pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "okr-and-kpi-pack",
+        "strategy-planning",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "pp-quarterly-planning-pack",
+      "entry_type": "prompt_pack",
+      "title": "Quarterly Planning Pack",
+      "slug": "quarterly-planning-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy Planning"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for quarterly planning pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "quarterly-planning-pack-1",
+          "name": "Quarterly Planning Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for quarterly planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for quarterly planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "quarterly-planning-pack-2",
+          "name": "Quarterly Planning Pack prompt 2",
+          "use_case": "Critique and improve a draft for quarterly planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for quarterly planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "quarterly-planning-pack-3",
+          "name": "Quarterly Planning Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for quarterly planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for quarterly planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "quarterly-planning-pack-4",
+          "name": "Quarterly Planning Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for quarterly planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for quarterly planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "quarterly-planning-pack-5",
+          "name": "Quarterly Planning Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in quarterly planning pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in quarterly planning pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "quarterly-planning-pack",
+        "strategy-planning",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "pp-roadmap-prioritization-pack",
+      "entry_type": "prompt_pack",
+      "title": "Roadmap Prioritization Pack",
+      "slug": "roadmap-prioritization-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy Planning"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for roadmap prioritization pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "roadmap-prioritization-pack-1",
+          "name": "Roadmap Prioritization Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for roadmap prioritization pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for roadmap prioritization pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "roadmap-prioritization-pack-2",
+          "name": "Roadmap Prioritization Pack prompt 2",
+          "use_case": "Critique and improve a draft for roadmap prioritization pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for roadmap prioritization pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "roadmap-prioritization-pack-3",
+          "name": "Roadmap Prioritization Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for roadmap prioritization pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for roadmap prioritization pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "roadmap-prioritization-pack-4",
+          "name": "Roadmap Prioritization Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for roadmap prioritization pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for roadmap prioritization pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "roadmap-prioritization-pack-5",
+          "name": "Roadmap Prioritization Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in roadmap prioritization pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in roadmap prioritization pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "roadmap-prioritization-pack",
+        "strategy-planning",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "pp-strategy-memo-pack",
+      "entry_type": "prompt_pack",
+      "title": "Strategy Memo Pack",
+      "slug": "strategy-memo-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy Planning"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for strategy memo pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "strategy-memo-pack-1",
+          "name": "Strategy Memo Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for strategy memo pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for strategy memo pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "strategy-memo-pack-2",
+          "name": "Strategy Memo Pack prompt 2",
+          "use_case": "Critique and improve a draft for strategy memo pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for strategy memo pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "strategy-memo-pack-3",
+          "name": "Strategy Memo Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for strategy memo pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for strategy memo pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "strategy-memo-pack-4",
+          "name": "Strategy Memo Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for strategy memo pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for strategy memo pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "strategy-memo-pack-5",
+          "name": "Strategy Memo Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in strategy memo pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in strategy memo pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "strategy-memo-pack",
+        "strategy-planning",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "pp-incident-summary-pack",
+      "entry_type": "prompt_pack",
+      "title": "Incident Summary Pack",
+      "slug": "incident-summary-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Reliability Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for incident summary pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "incident-summary-pack-1",
+          "name": "Incident Summary Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for incident summary pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for incident summary pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "incident-summary-pack-2",
+          "name": "Incident Summary Pack prompt 2",
+          "use_case": "Critique and improve a draft for incident summary pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for incident summary pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "incident-summary-pack-3",
+          "name": "Incident Summary Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for incident summary pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for incident summary pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "incident-summary-pack-4",
+          "name": "Incident Summary Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for incident summary pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for incident summary pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "incident-summary-pack-5",
+          "name": "Incident Summary Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in incident summary pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in incident summary pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "incident-summary-pack",
+        "reliability-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "pp-operational-escalation-pack",
+      "entry_type": "prompt_pack",
+      "title": "Operational Escalation Pack",
+      "slug": "operational-escalation-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Reliability Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for operational escalation pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "operational-escalation-pack-1",
+          "name": "Operational Escalation Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for operational escalation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for operational escalation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "operational-escalation-pack-2",
+          "name": "Operational Escalation Pack prompt 2",
+          "use_case": "Critique and improve a draft for operational escalation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for operational escalation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "operational-escalation-pack-3",
+          "name": "Operational Escalation Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for operational escalation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for operational escalation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "operational-escalation-pack-4",
+          "name": "Operational Escalation Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for operational escalation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for operational escalation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "operational-escalation-pack-5",
+          "name": "Operational Escalation Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in operational escalation pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in operational escalation pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "operational-escalation-pack",
+        "reliability-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "pp-postmortem-analysis-pack",
+      "entry_type": "prompt_pack",
+      "title": "Postmortem Analysis Pack",
+      "slug": "postmortem-analysis-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Reliability Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for postmortem analysis pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "postmortem-analysis-pack-1",
+          "name": "Postmortem Analysis Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for postmortem analysis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for postmortem analysis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "postmortem-analysis-pack-2",
+          "name": "Postmortem Analysis Pack prompt 2",
+          "use_case": "Critique and improve a draft for postmortem analysis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for postmortem analysis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "postmortem-analysis-pack-3",
+          "name": "Postmortem Analysis Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for postmortem analysis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for postmortem analysis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "postmortem-analysis-pack-4",
+          "name": "Postmortem Analysis Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for postmortem analysis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for postmortem analysis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "postmortem-analysis-pack-5",
+          "name": "Postmortem Analysis Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in postmortem analysis pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in postmortem analysis pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "postmortem-analysis-pack",
+        "reliability-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "pp-reliability-review-pack",
+      "entry_type": "prompt_pack",
+      "title": "Reliability Review Pack",
+      "slug": "reliability-review-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Reliability Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for reliability review pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "reliability-review-pack-1",
+          "name": "Reliability Review Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for reliability review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for reliability review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reliability-review-pack-2",
+          "name": "Reliability Review Pack prompt 2",
+          "use_case": "Critique and improve a draft for reliability review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for reliability review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reliability-review-pack-3",
+          "name": "Reliability Review Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for reliability review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for reliability review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reliability-review-pack-4",
+          "name": "Reliability Review Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for reliability review pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for reliability review pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reliability-review-pack-5",
+          "name": "Reliability Review Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in reliability review pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in reliability review pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "reliability-review-pack",
+        "reliability-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "pp-risk-register-pack",
+      "entry_type": "prompt_pack",
+      "title": "Risk Register Pack",
+      "slug": "risk-register-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Reliability Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for risk register pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "risk-register-pack-1",
+          "name": "Risk Register Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for risk register pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for risk register pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "risk-register-pack-2",
+          "name": "Risk Register Pack prompt 2",
+          "use_case": "Critique and improve a draft for risk register pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for risk register pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "risk-register-pack-3",
+          "name": "Risk Register Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for risk register pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for risk register pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "risk-register-pack-4",
+          "name": "Risk Register Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for risk register pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for risk register pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "risk-register-pack-5",
+          "name": "Risk Register Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in risk register pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in risk register pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "risk-register-pack",
+        "reliability-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "pp-future-state-design-pack",
+      "entry_type": "prompt_pack",
+      "title": "Future-State Design Pack",
+      "slug": "future-state-design-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design Change"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for future-state design pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "future-state-design-pack-1",
+          "name": "Future-State Design Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for future-state design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for future-state design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "future-state-design-pack-2",
+          "name": "Future-State Design Pack prompt 2",
+          "use_case": "Critique and improve a draft for future-state design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for future-state design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "future-state-design-pack-3",
+          "name": "Future-State Design Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for future-state design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for future-state design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "future-state-design-pack-4",
+          "name": "Future-State Design Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for future-state design pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for future-state design pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "future-state-design-pack-5",
+          "name": "Future-State Design Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in future-state design pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in future-state design pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "future-state-design-pack",
+        "org-design-change",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-leadership-cadence-pack",
+      "entry_type": "prompt_pack",
+      "title": "Leadership Cadence Pack",
+      "slug": "leadership-cadence-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design Change"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for leadership cadence pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "leadership-cadence-pack-1",
+          "name": "Leadership Cadence Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for leadership cadence pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for leadership cadence pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "leadership-cadence-pack-2",
+          "name": "Leadership Cadence Pack prompt 2",
+          "use_case": "Critique and improve a draft for leadership cadence pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for leadership cadence pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "leadership-cadence-pack-3",
+          "name": "Leadership Cadence Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for leadership cadence pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for leadership cadence pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "leadership-cadence-pack-4",
+          "name": "Leadership Cadence Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for leadership cadence pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for leadership cadence pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "leadership-cadence-pack-5",
+          "name": "Leadership Cadence Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in leadership cadence pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in leadership cadence pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "leadership-cadence-pack",
+        "org-design-change",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-org-diagnosis-pack",
+      "entry_type": "prompt_pack",
+      "title": "Org Diagnosis Pack",
+      "slug": "org-diagnosis-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design Change"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for org diagnosis pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "org-diagnosis-pack-1",
+          "name": "Org Diagnosis Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for org diagnosis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for org diagnosis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "org-diagnosis-pack-2",
+          "name": "Org Diagnosis Pack prompt 2",
+          "use_case": "Critique and improve a draft for org diagnosis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for org diagnosis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "org-diagnosis-pack-3",
+          "name": "Org Diagnosis Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for org diagnosis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for org diagnosis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "org-diagnosis-pack-4",
+          "name": "Org Diagnosis Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for org diagnosis pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for org diagnosis pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "org-diagnosis-pack-5",
+          "name": "Org Diagnosis Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in org diagnosis pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in org diagnosis pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "org-diagnosis-pack",
+        "org-design-change",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-reorg-rollout-pack",
+      "entry_type": "prompt_pack",
+      "title": "Reorg Rollout Pack",
+      "slug": "reorg-rollout-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design Change"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for reorg rollout pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "reorg-rollout-pack-1",
+          "name": "Reorg Rollout Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for reorg rollout pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for reorg rollout pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reorg-rollout-pack-2",
+          "name": "Reorg Rollout Pack prompt 2",
+          "use_case": "Critique and improve a draft for reorg rollout pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for reorg rollout pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reorg-rollout-pack-3",
+          "name": "Reorg Rollout Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for reorg rollout pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for reorg rollout pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reorg-rollout-pack-4",
+          "name": "Reorg Rollout Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for reorg rollout pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for reorg rollout pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "reorg-rollout-pack-5",
+          "name": "Reorg Rollout Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in reorg rollout pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in reorg rollout pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "reorg-rollout-pack",
+        "org-design-change",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-stakeholder-communication-pack",
+      "entry_type": "prompt_pack",
+      "title": "Stakeholder Communication Pack",
+      "slug": "stakeholder-communication-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design Change"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for stakeholder communication pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "stakeholder-communication-pack-1",
+          "name": "Stakeholder Communication Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for stakeholder communication pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for stakeholder communication pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "stakeholder-communication-pack-2",
+          "name": "Stakeholder Communication Pack prompt 2",
+          "use_case": "Critique and improve a draft for stakeholder communication pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for stakeholder communication pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "stakeholder-communication-pack-3",
+          "name": "Stakeholder Communication Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for stakeholder communication pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for stakeholder communication pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "stakeholder-communication-pack-4",
+          "name": "Stakeholder Communication Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for stakeholder communication pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for stakeholder communication pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "stakeholder-communication-pack-5",
+          "name": "Stakeholder Communication Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in stakeholder communication pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in stakeholder communication pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "stakeholder-communication-pack",
+        "org-design-change",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-board-narrative-pack",
+      "entry_type": "prompt_pack",
+      "title": "Board Narrative Pack",
+      "slug": "board-narrative-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance Business Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for board narrative pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "board-narrative-pack-1",
+          "name": "Board Narrative Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for board narrative pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for board narrative pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "board-narrative-pack-2",
+          "name": "Board Narrative Pack prompt 2",
+          "use_case": "Critique and improve a draft for board narrative pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for board narrative pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "board-narrative-pack-3",
+          "name": "Board Narrative Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for board narrative pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for board narrative pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "board-narrative-pack-4",
+          "name": "Board Narrative Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for board narrative pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for board narrative pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "board-narrative-pack-5",
+          "name": "Board Narrative Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in board narrative pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in board narrative pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "board-narrative-pack",
+        "finance-business-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "pp-budget-planning-pack",
+      "entry_type": "prompt_pack",
+      "title": "Budget Planning Pack",
+      "slug": "budget-planning-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance Business Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for budget planning pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "budget-planning-pack-1",
+          "name": "Budget Planning Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for budget planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for budget planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "budget-planning-pack-2",
+          "name": "Budget Planning Pack prompt 2",
+          "use_case": "Critique and improve a draft for budget planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for budget planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "budget-planning-pack-3",
+          "name": "Budget Planning Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for budget planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for budget planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "budget-planning-pack-4",
+          "name": "Budget Planning Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for budget planning pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for budget planning pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "budget-planning-pack-5",
+          "name": "Budget Planning Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in budget planning pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in budget planning pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "budget-planning-pack",
+        "finance-business-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "pp-business-ops-digest-pack",
+      "entry_type": "prompt_pack",
+      "title": "Business Ops Digest Pack",
+      "slug": "business-ops-digest-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance Business Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for business ops digest pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "business-ops-digest-pack-1",
+          "name": "Business Ops Digest Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for business ops digest pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for business ops digest pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "business-ops-digest-pack-2",
+          "name": "Business Ops Digest Pack prompt 2",
+          "use_case": "Critique and improve a draft for business ops digest pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for business ops digest pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "business-ops-digest-pack-3",
+          "name": "Business Ops Digest Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for business ops digest pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for business ops digest pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "business-ops-digest-pack-4",
+          "name": "Business Ops Digest Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for business ops digest pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for business ops digest pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "business-ops-digest-pack-5",
+          "name": "Business Ops Digest Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in business ops digest pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in business ops digest pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "business-ops-digest-pack",
+        "finance-business-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "pp-headcount-case-pack",
+      "entry_type": "prompt_pack",
+      "title": "Headcount Case Pack",
+      "slug": "headcount-case-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance Business Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for headcount case pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "headcount-case-pack-1",
+          "name": "Headcount Case Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for headcount case pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for headcount case pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "headcount-case-pack-2",
+          "name": "Headcount Case Pack prompt 2",
+          "use_case": "Critique and improve a draft for headcount case pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for headcount case pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "headcount-case-pack-3",
+          "name": "Headcount Case Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for headcount case pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for headcount case pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "headcount-case-pack-4",
+          "name": "Headcount Case Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for headcount case pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for headcount case pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "headcount-case-pack-5",
+          "name": "Headcount Case Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in headcount case pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in headcount case pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "headcount-case-pack",
+        "finance-business-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "pp-vendor-evaluation-pack",
+      "entry_type": "prompt_pack",
+      "title": "Vendor Evaluation Pack",
+      "slug": "vendor-evaluation-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance Business Ops"
+      ],
+      "concepts": [],
+      "summary": "Prompt pack for vendor evaluation pack use cases in engineering leadership.",
+      "why_it_matters": "Provides reusable, structured prompts for recurring executive and management workflows.",
+      "when_to_use": [
+        "When you need faster first drafts",
+        "When turning rough notes into structured outputs",
+        "When preparing leadership communications or decisions"
+      ],
+      "not_for": [
+        "Blind copy-paste without review"
+      ],
+      "source_inspiration": [
+        "Prompt packs are structured around repeatable leadership workflows and require explicit inputs, outputs, and review criteria [web:10]."
+      ],
+      "inputs_required": [
+        {
+          "name": "Context pack",
+          "description": "Raw notes, audience, constraints, and desired outcome.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Drafts",
+        "Summaries",
+        "Decision support",
+        "Communication artifacts"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Keep prompts grounded in evidence, audience, and review discipline.",
+          "prompts": [
+            "State the audience.",
+            "Separate facts from assumptions.",
+            "Add risks and open questions."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "vendor-evaluation-pack-1",
+          "name": "Vendor Evaluation Pack prompt 1",
+          "use_case": "Create an executive-ready first draft for vendor evaluation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Create an executive-ready first draft for vendor evaluation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "vendor-evaluation-pack-2",
+          "name": "Vendor Evaluation Pack prompt 2",
+          "use_case": "Critique and improve a draft for vendor evaluation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Critique and improve a draft for vendor evaluation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "vendor-evaluation-pack-3",
+          "name": "Vendor Evaluation Pack prompt 3",
+          "use_case": "Summarize complex notes into a concise output for vendor evaluation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Summarize complex notes into a concise output for vendor evaluation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "vendor-evaluation-pack-4",
+          "name": "Vendor Evaluation Pack prompt 4",
+          "use_case": "Stress-test assumptions and risks for vendor evaluation pack",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Stress-test assumptions and risks for vendor evaluation pack. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        },
+        {
+          "id": "vendor-evaluation-pack-5",
+          "name": "Vendor Evaluation Pack prompt 5",
+          "use_case": "Tailor output for different stakeholder audiences in vendor evaluation pack workflows",
+          "inputs": [
+            "Context",
+            "Constraints",
+            "Desired audience or output"
+          ],
+          "output_format": [
+            "Structured bullets",
+            "Table if useful",
+            "Risks and next steps"
+          ],
+          "review_checklist": [
+            "Check factual accuracy",
+            "Remove unsupported claims",
+            "Ensure audience fit"
+          ],
+          "prompt": "Act as an experienced engineering executive advisor. Help with: Tailor output for different stakeholder audiences in vendor evaluation pack workflows. Use the provided context, separate facts from assumptions, and produce a practical, executive-ready output. Inputs: {inputs}"
+        }
+      ],
+      "related_entries": [],
+      "tags": [
+        "vendor-evaluation-pack",
+        "finance-business-ops",
+        "prompt-pack"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "10-20 minutes per prompt",
+      "format": "json",
+      "status": "ready-to-duplicate",
+      "version": "2.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops"
+    }
+  ]
+}

@@ -16,6 +16,10 @@
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
+<!-- Markdown rendering for Templates and Prompt Library -->
+<script src="https://unpkg.com/marked@14.1.4/marked.min.js"></script>
+<script src="https://unpkg.com/dompurify@3.1.7/dist/purify.min.js"></script>
+
 <script>
 // Load JSON data files. Editing data/*.json is the primary workflow.
 window.__DATA_READY__ = (async () => {
@@ -23,12 +27,14 @@ window.__DATA_READY__ = (async () => {
     if (!r.ok) throw new Error(p + ' → ' + r.status);
     return r.json();
   });
-  const [resources, categories, paths, roadmap, taxonomy] = await Promise.all([
+  const [resources, categories, paths, roadmap, taxonomy, templates, prompts] = await Promise.all([
     load('data/resources.json'),
     load('data/categories.json'),
     load('data/paths.json'),
     load('data/roadmap.json'),
     load('data/taxonomy.json'),
+    load('data/templates.json').catch(() => ({ templates: [], practice_labels: {} })),
+    load('data/prompts.json').catch(() => ({ prompts: [], practice_labels: {} })),
   ]);
   window.ARCH_RESOURCES = resources;
   window.ARCH_CATEGORIES = categories;
@@ -37,6 +43,8 @@ window.__DATA_READY__ = (async () => {
   window.ARCH_DOMAINS = taxonomy.domains;
   window.ARCH_TYPES = taxonomy.types;
   window.ARCH_LEVELS = taxonomy.levels;
+  window.ARCH_TEMPLATES = templates;
+  window.ARCH_PROMPTS = prompts;
 })().catch(err => {
   document.getElementById('root').innerHTML =
     '<div style="padding:40px;font-family:system-ui;color:#b00">' +
@@ -49,6 +57,7 @@ window.__DATA_READY__ = (async () => {
 <script type="text/babel" src="components/icons.jsx"></script>
 <script type="text/babel" src="components/sidebar.jsx"></script>
 <script type="text/babel" src="components/career.jsx"></script>
+<script type="text/babel" src="components/artifacts.jsx"></script>
 
 <script>
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
@@ -306,8 +315,14 @@ function App() {
           {/* CAREER PATH GUIDE */}
           {active === 'career-path' && <window.CareerPath />}
 
+          {/* TEMPLATES */}
+          {active === 'templates' && <window.TemplatesView />}
+
+          {/* PROMPT LIBRARY */}
+          {active === 'prompt-library' && <window.PromptsView />}
+
           {/* CATEGORY DETAIL */}
-          {active !== 'home' && active !== 'career-path' && (() => {
+          {active !== 'home' && active !== 'career-path' && active !== 'templates' && active !== 'prompt-library' && (() => {
             const cat = window.ARCH_CATEGORIES.find(c => c.id === active);
             let list = categoryResources(active);
             if (levelFilter !== 'All') list = list.filter(r => r.level === levelFilter || r.level === 'All');
