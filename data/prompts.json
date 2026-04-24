@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-24T15:44:14.571532",
-  "count": 41,
+  "generated_at": "2026-04-24T15:58:29.588743",
+  "count": 45,
   "practice_labels": {
     "people-hiring-performance": "People · Hiring · Performance",
     "strategy-planning": "Strategy & Planning",
@@ -229,6 +229,194 @@
       "format": "json",
       "status": "gold",
       "version": "3.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "pp-executive-coaching-pack",
+      "entry_type": "prompt_pack",
+      "title": "Executive Coaching Pack",
+      "slug": "executive-coaching-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Management",
+        "Performance & Development"
+      ],
+      "concepts": [
+        "Coaching & Mentoring"
+      ],
+      "summary": "Four prompts for executive coaching engagements: right-tool check, growth-area definer, ROI assessor, and continuation decision facilitator.",
+      "why_it_matters": "Coaching is a real investment ($15K–60K+ per year). These prompts produce the structured outputs that make the engagement design credible: right-tool check before committing, observable growth areas, baseline-to-end ROI, honest continuation decision.",
+      "when_to_use": [
+        "Deciding whether coaching is the right tool for a specific situation",
+        "Defining growth areas for a coaching engagement",
+        "Assessing ROI mid-engagement and at end",
+        "Deciding whether to continue, switch, or close the engagement"
+      ],
+      "not_for": [
+        "Manager-as-coach relationship (use 1:1 coaching pack)",
+        "Therapy",
+        "Performance management substitute"
+      ],
+      "source_inspiration": [
+        "ICF coaching standards",
+        "First Round Review — exec coaching interviews"
+      ],
+      "inputs_required": [
+        {
+          "name": "Coachee context",
+          "description": "Role, situation, growth needs.",
+          "required": true
+        },
+        {
+          "name": "Sponsor support",
+          "description": "Time, budget, follow-through commitment.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Right-tool check",
+        "Growth areas defined",
+        "ROI assessment",
+        "Continuation decision"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Honest about fit; specific about growth.",
+          "prompts": [
+            "Coaching is one option; check fit.",
+            "Growth areas observable, not 'better leader'.",
+            "Baseline before starting."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "right-tool-check",
+          "name": "Right-tool check",
+          "use_case": "Test whether coaching is the right intervention before committing budget.",
+          "inputs": [
+            "Situation triggering the coaching consideration",
+            "Coachee context",
+            "Alternative interventions considered (training, mentoring, role change, PIP)"
+          ],
+          "output_format": [
+            "'Coaching fit assessment' — yes / maybe / no",
+            "'When coaching is right (criteria met)'",
+            "'When NOT right (criteria failed)'",
+            "'Alternatives that may be better' — training, mentoring, role change, PIP",
+            "'Coachee buy-in level' — high / medium / low (low = don't proceed)",
+            "'Recommendation' — proceed / try alternative / don't intervene"
+          ],
+          "review_checklist": [
+            "Honest assessment, not advocacy for coaching",
+            "Alternatives considered are real",
+            "Buy-in is checked (compulsory coaching doesn't work)"
+          ],
+          "prompt": "You are checking whether coaching is the right intervention for a situation.\n\nContext\n- Situation: {situation}\n- Coachee context: {coachee_context}\n- Alternatives considered: {alternatives}\n\nProduce six sections:\n\n1. Coaching fit assessment — yes / maybe / no.\n\n2. When coaching is right (criteria met) — specific growth area, sustained attention needed (6+ months), self-awareness present, sponsor support.\n\n3. When NOT right (criteria failed) — performance management issue (PIP), role fit (role conversation), skills gap (training is faster/cheaper), no buy-in.\n\n4. Alternatives that may be better — training (faster, cheaper for skills), mentoring (free, less structured), role change (if role fit), PIP (if performance).\n\n5. Coachee buy-in level — high / medium / low. Low = don't proceed.\n\n6. Recommendation — proceed with coaching / try alternative first / don't intervene now.\n\nKeep total under 400 words. Honest fit check."
+        },
+        {
+          "id": "growth-area-definer",
+          "name": "Growth-area definer",
+          "use_case": "Define 3 specific, observable growth areas for the coaching engagement.",
+          "inputs": [
+            "Coachee's stated growth interests",
+            "Sponsor's stated priorities for coachee",
+            "360 feedback or recent reviews",
+            "What 12 months from now looks like if coaching succeeds"
+          ],
+          "output_format": [
+            "'Growth area 1' — name, current state, 12-month observable success",
+            "'Growth area 2' — same",
+            "'Growth area 3' — same (max 3)",
+            "'Behavioral indicators' — what changes the manager / peers / reports would observe",
+            "'Trade-offs' — what the coachee will need to deprioritize to focus here",
+            "'Coachee + sponsor + coach alignment confirmation' — required before starting"
+          ],
+          "review_checklist": [
+            "Each growth area is observable (not 'become a better leader')",
+            "12-month success is specific and behavioral",
+            "Trade-offs are real (focus requires deprioritization)"
+          ],
+          "prompt": "You are defining 3 specific, observable growth areas for a coaching engagement.\n\nContext\n- Coachee's stated interests: {coachee_interests}\n- Sponsor's priorities: {sponsor_priorities}\n- 360 / recent reviews: {feedback}\n- What 12-month success looks like: {success_vision}\n\nProduce six sections:\n\n1. Growth area 1 — name, current state (specific), 12-month observable success ('have a hard conversation without losing composure' not 'better at hard conversations').\n\n2. Growth area 2 — same.\n\n3. Growth area 3 — same. Max 3 (more dilutes focus).\n\n4. Behavioral indicators — what changes the manager / peers / reports would observe in 6 and 12 months. Specific.\n\n5. Trade-offs — what the coachee will need to deprioritize to focus here. Real focus requires saying no.\n\n6. Coachee + sponsor + coach alignment confirmation required before starting. All three must agree on the growth areas; mid-engagement re-alignment is hard.\n\nKeep total under 500 words. Observable; trade-offs honest."
+        },
+        {
+          "id": "roi-assessor",
+          "name": "ROI assessor",
+          "use_case": "Assess coaching ROI at mid-engagement and at end.",
+          "inputs": [
+            "Baseline (self-assessment, 360, behavioral specifics)",
+            "Current state observation",
+            "Mid or end of engagement",
+            "Cost of engagement"
+          ],
+          "output_format": [
+            "'Baseline-to-current comparison' — per growth area",
+            "'Self-assessment delta' — coachee's read on progress",
+            "'360 / manager observation delta' — others' read",
+            "'Specific behavioral changes observed' — concrete examples",
+            "'Cost-effectiveness' — cost vs. observed change",
+            "'ROI judgment' — clearly worth it / probably worth it / unclear / not worth it"
+          ],
+          "review_checklist": [
+            "Comparison is specific, not vibes",
+            "Self vs. other deltas distinguished",
+            "ROI judgment is honest"
+          ],
+          "prompt": "You are assessing coaching ROI at mid-engagement or end. Honest; comparable to baseline.\n\nContext\n- Baseline: {baseline}\n- Current state: {current_state}\n- Mid or end: {mid_or_end}\n- Engagement cost: {cost}\n\nProduce six sections:\n\n1. Baseline-to-current comparison — per growth area, what's changed.\n\n2. Self-assessment delta — coachee's read on progress.\n\n3. 360 / manager observation delta — what others have observed. Often differs from self-assessment.\n\n4. Specific behavioral changes observed — concrete examples (a hard conversation handled differently; a strategic memo at higher altitude).\n\n5. Cost-effectiveness — coaching cost vs. observed change. Honest comparison.\n\n6. ROI judgment — clearly worth it (high impact for cost) / probably worth it (some impact) / unclear (no clear signal yet) / not worth it.\n\nKeep total under 500 words. Comparable to baseline; honest judgment."
+        },
+        {
+          "id": "continuation-decision",
+          "name": "Continuation decision facilitator",
+          "use_case": "At end of engagement, facilitate the close / continue / switch decision.",
+          "inputs": [
+            "End-of-engagement ROI assessment",
+            "Coachee's preference",
+            "Sponsor's view",
+            "Available coaching budget"
+          ],
+          "output_format": [
+            "'Decision options' — close / continue with same coach / switch coach / pause and revisit",
+            "'Per-option pros / cons'",
+            "'Coachee + sponsor alignment' — where they agree, disagree",
+            "'Recommended decision' — with rationale",
+            "'If continuing' — new growth areas, term length, contracting reset",
+            "'If closing' — what reinforcement plan replaces coaching"
+          ],
+          "review_checklist": [
+            "Recommendation honest, not default-continue",
+            "Continuation has real new growth areas (not 'more of the same')",
+            "Closing has a reinforcement plan (don't lose the gains)"
+          ],
+          "prompt": "You are facilitating the close / continue / switch decision at end of coaching engagement.\n\nContext\n- ROI assessment: {roi}\n- Coachee preference: {coachee_pref}\n- Sponsor view: {sponsor_view}\n- Budget available: {budget}\n\nProduce six sections:\n\n1. Decision options — close engagement / continue with same coach / switch coach / pause and revisit in 6 months.\n\n2. Per-option pros / cons.\n\n3. Coachee + sponsor alignment — where they agree, where they disagree.\n\n4. Recommended decision — with rationale tied to ROI and growth runway. Honest, not default-continue.\n\n5. If continuing — new growth areas (not 'more of the same'), term length, contracting reset.\n\n6. If closing — what reinforcement plan replaces coaching. Don't lose the gains; explicit plan to sustain.\n\nKeep total under 500 words. Honest decision; real reinforcement."
+        }
+      ],
+      "related_entries": [
+        "executive-coaching-engagement-plan (template)",
+        "individual-development-plan (template)",
+        "1-1-coaching-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "executive-coaching",
+        "leadership-development"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "30–60 minutes per prompt; engagement spans 6–12 months",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
       "updated_at": "2026-04-24",
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance"
@@ -2404,6 +2592,191 @@
       ],
       "difficulty": "Intermediate",
       "estimated_time": "10–30 minutes per prompt",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "pp-off-site-facilitator-pack",
+      "entry_type": "prompt_pack",
+      "title": "Off-Site Facilitator Pack",
+      "slug": "off-site-facilitator-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy",
+        "Org Design"
+      ],
+      "concepts": [],
+      "summary": "Four prompts for engineering leadership off-sites: purpose-and-output definer, agenda designer, session-by-session facilitation guide, and post-off-site follow-through synthesizer.",
+      "why_it_matters": "Off-sites are expensive. The difference between off-sites that produce outcomes and those that produce relationship-only is the discipline at planning, facilitation, and follow-through. These prompts force that discipline.",
+      "when_to_use": [
+        "Defining the purpose of an upcoming off-site",
+        "Designing the agenda with explicit decisions",
+        "Preparing per-session facilitation",
+        "Synthesizing post-off-site outputs and tracking follow-through"
+      ],
+      "not_for": [
+        "Off-sites without clear purpose (use it to define purpose, but the answer might be 'don't off-site')",
+        "Tactical small-group meetings (different format)"
+      ],
+      "source_inspiration": [
+        "Patrick Lencioni — Death by Meeting",
+        "Standard executive off-site facilitation patterns"
+      ],
+      "inputs_required": [
+        {
+          "name": "Off-site context",
+          "description": "Type, attendees, time / cost.",
+          "required": true
+        },
+        {
+          "name": "Honest assessment of what alignment isn't happening in normal cadence",
+          "description": "Off-site is justified by this gap.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Purpose and outputs",
+        "Agenda design",
+        "Per-session facilitation",
+        "Post-off-site synthesis"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Discipline at planning and follow-through.",
+          "prompts": [
+            "Pre-commit decisions.",
+            "Pre-work required.",
+            "Follow-through is where off-sites die."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "purpose-output-definer",
+          "name": "Purpose and outputs definer",
+          "use_case": "Define the off-site's purpose and the specific outputs we'll produce.",
+          "inputs": [
+            "Triggering context (annual cycle / new quarter / post-reorg / post-M&A)",
+            "What's not happening in normal cadence that makes off-site justified",
+            "Attendees envisioned"
+          ],
+          "output_format": [
+            "'Primary purpose (max 2)' — strategic alignment / decision-making / team building / reflection / calibration",
+            "'What this is NOT for' — explicit non-purposes",
+            "'Specific outputs by end' — 3+ named",
+            "'Attendees with rationale per person'",
+            "'If we can't name 3 outputs' — recommendation: don't off-site"
+          ],
+          "review_checklist": [
+            "Purpose is at most 2 (more = unfocused)",
+            "Outputs are observable",
+            "Attendee rationale is real per person"
+          ],
+          "prompt": "You are defining the purpose and outputs of an upcoming off-site.\n\nContext\n- Triggering context: {trigger}\n- What's not happening in normal cadence: {gap}\n- Attendees envisioned: {attendees}\n\nProduce five sections:\n\n1. Primary purpose (max 2) — strategic alignment / decision-making / team building / reflection / calibration. More than 2 dilutes.\n\n2. What this is NOT for — explicit non-purposes (status updates, tactical project planning, detailed tech reviews).\n\n3. Specific outputs by end — 3+ named, observable. If you can't name 3, the off-site doesn't have clear-enough purpose.\n\n4. Attendees with rationale per person — why each person specifically. If you can't answer for someone, they probably shouldn't be invited.\n\n5. If we can't name 3 outputs — recommendation: don't off-site this time. Save the cost.\n\nKeep total under 400 words. Discipline; honest about whether to off-site."
+        },
+        {
+          "id": "agenda-designer",
+          "name": "Agenda designer",
+          "use_case": "Design the off-site agenda with explicit time allocation and pre-committed decisions.",
+          "inputs": [
+            "Off-site purpose and outputs",
+            "Attendee count",
+            "Off-site length (1–3 days)",
+            "Pre-committed decisions to make"
+          ],
+          "output_format": [
+            "'Time allocation' — % to discussion / strategy / team building / breakouts / unstructured",
+            "'Day-by-day structure'",
+            "'Per-session design' — owner, format, pre-read, output, time",
+            "'Pre-committed decisions' — what we'll have decided by end",
+            "'Pre-work required of attendees'"
+          ],
+          "review_checklist": [
+            "Time allocation respects the 30/20/20/15/15 principle",
+            "Per-session design is specific (not 'discussion')",
+            "Pre-committed decisions are real (not 'we'll align on direction')"
+          ],
+          "prompt": "You are designing an off-site agenda. Time allocation; per-session design; pre-committed decisions.\n\nContext\n- Purpose and outputs: {purpose_outputs}\n- Attendee count: {count}\n- Length: {length}\n- Pre-committed decisions: {decisions}\n\nProduce five sections:\n\n1. Time allocation — 30% structured discussion / decision-making, 20% strategy / context-setting, 20% team building (structured), 15% breakouts, 15% unstructured. Adjust per purpose.\n\n2. Day-by-day structure — what happens each day, with intent.\n\n3. Per-session design — Owner | Format (presentation / facilitated discussion / breakout / decision) | Pre-read required | Expected output | Time. Specific per session.\n\n4. Pre-committed decisions — what we'll have decided by end. Specific, not 'we'll align on direction'.\n\n5. Pre-work required of attendees — what they need to come prepared with. Sent 2 weeks ahead.\n\nKeep total under 600 words. Specific; pre-committed."
+        },
+        {
+          "id": "session-facilitation-guide",
+          "name": "Session-by-session facilitation guide",
+          "use_case": "Generate per-session facilitation guide for the off-site facilitator.",
+          "inputs": [
+            "Per-session design",
+            "Facilitator (external or internal)",
+            "Likely participation patterns (loud voices, quiet voices, dominant region)"
+          ],
+          "output_format": [
+            "'Per-session facilitation script'",
+            "'Opening framing'",
+            "'Discussion prompts'",
+            "'Time-keeping notes'",
+            "'Decision capture protocol'",
+            "'Handling difficult moments' — disagreement, dominance, drift",
+            "'Closing summary'"
+          ],
+          "review_checklist": [
+            "Opening sets ground rules",
+            "Discussion prompts surface dissent",
+            "Decision capture is real-time, not retrospective",
+            "Difficult-moments guidance is concrete"
+          ],
+          "prompt": "You are generating per-session facilitation guides for an off-site.\n\nContext\n- Per-session design: {sessions}\n- Facilitator: {facilitator}\n- Participation patterns: {patterns}\n\nProduce a facilitation guide for each session with seven sections:\n\n1. Opening framing — what the facilitator says to start; ground rules; goal.\n\n2. Discussion prompts — open questions designed to surface dissent and depth, not 'what does everyone think?'\n\n3. Time-keeping notes — when to push to next phase; signs the discussion is going off-topic.\n\n4. Decision capture protocol — decisions written down in real time; both attendees can see; designated capturer.\n\n5. Handling difficult moments — disagreement (don't suppress; surface and resolve), dominance (specific phrases to redirect), drift (how to bring back).\n\n6. Closing summary — what was decided; what's next; commitments.\n\nKeep total under 700 words. Practical; difficult-moment ready."
+        },
+        {
+          "id": "follow-through-synthesizer",
+          "name": "Post-off-site follow-through synthesizer",
+          "use_case": "Within 1 week of the off-site, synthesize outputs and ensure follow-through.",
+          "inputs": [
+            "Decisions made at off-site",
+            "Action items with owners",
+            "Pulse-check on the off-site itself",
+            "Distribution audience (attendees + non-attending stakeholders)"
+          ],
+          "output_format": [
+            "'Decisions made' — distributed to attendees + non-attending stakeholders",
+            "'Action items' — Item | Owner | Due | First check-in",
+            "'Pulse-check synthesis' — what worked, didn't, would do differently",
+            "'30-day check-in plan'",
+            "'Quarterly reference plan' — how off-site decisions show up in normal cadence"
+          ],
+          "review_checklist": [
+            "Decisions distributed to non-attendees too",
+            "Action items have specific dates",
+            "30-day check-in is committed",
+            "Quarterly reference is in normal cadence (not separate process)"
+          ],
+          "prompt": "You are synthesizing post-off-site outputs and ensuring follow-through.\n\nContext\n- Decisions made: {decisions}\n- Action items: {actions}\n- Pulse-check: {pulse}\n- Distribution audience: {audience}\n\nProduce five sections:\n\n1. Decisions made — full list, distributed to attendees + non-attending stakeholders within 1 week.\n\n2. Action items — table: Item | Owner | Due | First check-in date. Specific.\n\n3. Pulse-check synthesis — what worked, what didn't, what we'd do differently next year. Honest.\n\n4. 30-day check-in plan — when and how we'll check in on action item progress. Committed.\n\n5. Quarterly reference plan — how off-site decisions show up in normal cadence (quarterly leadership review, planning conversations). Don't let the off-site be an island.\n\nKeep total under 500 words. Distributed quickly; check-in committed; integrated into cadence."
+        }
+      ],
+      "related_entries": [
+        "annual-engineering-offsite-plan (template)",
+        "leadership-cadence-pack (prompt pack)",
+        "meeting-notes-synthesizer-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "off-site",
+        "facilitation",
+        "leadership"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "Setup: 1–2 hours per prompt; off-site: 2–3 days; follow-through: 90 days",
       "format": "json",
       "status": "gold",
       "version": "1.0.0",
@@ -5180,6 +5553,195 @@
       "practice_label": "Org Design & Change"
     },
     {
+      "id": "pp-distributed-team-pack",
+      "entry_type": "prompt_pack",
+      "title": "Distributed Team Pack",
+      "slug": "distributed-team-pack",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Culture & Change",
+        "People Management"
+      ],
+      "concepts": [],
+      "summary": "Four prompts for distributed-team operating: norms-document drafter, async-meeting converter, distributed-1:1 prep, and visibility-bias auditor.",
+      "why_it_matters": "Distributed-first works when norms are explicit. These prompts produce the artifacts that turn intent into operating reality: written norms, async-converted meetings, distance-aware 1:1s, bias-aware reviews.",
+      "when_to_use": [
+        "Drafting or refreshing distributed-first operating norms",
+        "Converting a sync meeting to async",
+        "Preparing for a 1:1 with a distributed direct report",
+        "Auditing reviews/promotions for visibility bias"
+      ],
+      "not_for": [
+        "Hybrid teams trying to do remote occasionally (different operating model)",
+        "Replacing actual culture work"
+      ],
+      "source_inspiration": [
+        "GitLab Handbook",
+        "Automattic distributed practices",
+        "Lara Hogan — distributed-team management"
+      ],
+      "inputs_required": [
+        {
+          "name": "Distributed-team context",
+          "description": "Geographies, timezones, current pain.",
+          "required": true
+        },
+        {
+          "name": "Honest cultural assessment",
+          "description": "What's actually happening, not what's claimed.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Operating norms doc",
+        "Async meeting alternative",
+        "Distance-aware 1:1 prep",
+        "Visibility-bias audit"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Make distributed real, not performed.",
+          "prompts": [
+            "Norms make implicit explicit.",
+            "Async-default is earned through practice.",
+            "Visibility bias is real; audit for it."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "norms-doc-drafter",
+          "name": "Operating norms doc drafter",
+          "use_case": "Draft the distributed-first operating norms document for the org.",
+          "inputs": [
+            "Geographies and timezones represented",
+            "Current operating pain points",
+            "Existing norms that work",
+            "Cross-timezone leadership input"
+          ],
+          "output_format": [
+            "'Communication norms' — async-default, response times, working-hours",
+            "'Meeting norms' — when justified, structure, timezone fairness",
+            "'Decision-making norms' — decision rights, decision documents",
+            "'Performance / growth norms' — visibility without performative work",
+            "'Hiring norms' — distributed loops, geographic pay",
+            "'Connection norms' — relationship-building across distance",
+            "'Anti-patterns' — explicit list of what we don't do"
+          ],
+          "review_checklist": [
+            "Anti-patterns are real and specific",
+            "Response times are explicit (not 'reasonable')",
+            "Visibility-bias safeguards named"
+          ],
+          "prompt": "You are drafting distributed-first operating norms for an engineering org.\n\nContext\n- Geographies and timezones: {geographies}\n- Current pain: {pain_points}\n- Existing working norms: {existing_norms}\n- Cross-timezone leadership input: {leadership_input}\n\nProduce seven sections matching the distributed-first-operating-norms template structure: Communication norms (async-default, response times, working-hours, documentation); Meeting norms (when justified, structure, timezone fairness); Decision-making (rights, docs, lifecycle); Performance / growth (visibility, coaching, promotion fairness); Hiring (distributed loops, geographic pay); Connection (relationships, conflict resolution); Anti-patterns (explicit list of what this org does NOT do).\n\nKeep total under 1000 words. Specific; cross-timezone validated."
+        },
+        {
+          "id": "async-meeting-converter",
+          "name": "Async meeting converter",
+          "use_case": "Convert a synchronous meeting into an async equivalent that produces the same signal / decision.",
+          "inputs": [
+            "Meeting purpose",
+            "Current attendees",
+            "What the meeting produces (signal / decision / alignment)",
+            "Why it's currently sync"
+          ],
+          "output_format": [
+            "'Async equivalent design' — what replaces the meeting",
+            "'Format' — written doc, recorded video, threaded comment, structured async",
+            "'Cadence' — how often, by when",
+            "'Sync minimum' — what synchronous time still required (if any)",
+            "'Trial period' — how to test the conversion",
+            "'Signal preservation check' — does the async version preserve what the meeting produced"
+          ],
+          "review_checklist": [
+            "Async design preserves signal, not just convenience",
+            "Sync minimum is honest (some things still need real time)",
+            "Trial period defined (don't 'permanent' a conversion before testing)"
+          ],
+          "prompt": "You are converting a sync meeting to async. The async version must preserve the signal the meeting produced.\n\nContext\n- Meeting purpose: {purpose}\n- Current attendees: {attendees}\n- What the meeting produces: {output}\n- Why currently sync: {sync_reason}\n\nProduce six sections:\n\n1. Async equivalent design — what replaces the meeting. Specific format and process.\n\n2. Format — written doc, recorded video, threaded comment, structured async-decision-doc.\n\n3. Cadence — how often, by when, what triggers it.\n\n4. Sync minimum — what synchronous time still required (if any). Be honest; some things need real time.\n\n5. Trial period — how to test the conversion (typically 4–8 weeks). Don't permanent before testing.\n\n6. Signal preservation check — does the async version preserve what the meeting produced (decision, signal, alignment, relationship). Honest assessment.\n\nKeep total under 500 words. Preserve signal; trial-tested."
+        },
+        {
+          "id": "distributed-1-1-prep",
+          "name": "Distributed 1:1 prep",
+          "use_case": "Prepare a 1:1 with a distributed direct report, accounting for the distance dimension.",
+          "inputs": [
+            "Direct report context (location, timezone, recent observations)",
+            "What's been hard to surface async",
+            "Career / coaching topics needing real time"
+          ],
+          "output_format": [
+            "'Distance-specific context' — what to ask about because of distance",
+            "'Topics requiring sync' — things you can't do well async",
+            "'Coaching opportunity' — growth topics that benefit from voice",
+            "'Connection check' — how the report is doing in their context",
+            "'Action items' — what to follow through on async between 1:1s"
+          ],
+          "review_checklist": [
+            "Distance-specific topics are real (isolation, time-zone fairness, visibility)",
+            "Sync-only topics justified (not 'nice to have sync')",
+            "Connection check is genuine, not performative"
+          ],
+          "prompt": "You are preparing a 1:1 with a distributed direct report. Distance dimension matters.\n\nContext\n- Direct report: {direct_report}\n- What's been hard to surface async: {async_gaps}\n- Coaching topics: {coaching_topics}\n\nProduce five sections:\n\n1. Distance-specific context — what to ask about because of distance: isolation, timezone fairness in meetings they're in, visibility to leadership, access to opportunities.\n\n2. Topics requiring sync — things that can't be done well async. Coaching, hard feedback, ambiguous problem-solving, relationship-building.\n\n3. Coaching opportunity — growth topics that benefit from voice over text.\n\n4. Connection check — genuine ask: how are they doing in their context (city, team, role). Not performative 'how's life'.\n\n5. Action items — what to follow through on async between 1:1s. Specific.\n\nKeep total under 400 words. Distance-aware; genuine."
+        },
+        {
+          "id": "visibility-bias-auditor",
+          "name": "Visibility-bias auditor",
+          "use_case": "Audit reviews / promotions / sponsorship for visibility bias toward HQ-located or timezone-aligned engineers.",
+          "inputs": [
+            "Recent review / promotion data with location",
+            "Sponsorship opportunities given (with location)",
+            "Survey or skip-level signal on perceived fairness"
+          ],
+          "output_format": [
+            "'Promotion rate by location' — table",
+            "'Sponsorship opportunities by location' — distribution",
+            "'Survey signal on fairness perception'",
+            "'Bias indicators' — specific findings of disparate treatment",
+            "'Recommended interventions' — calibration practices, sponsorship distribution, doc-based review weighting"
+          ],
+          "review_checklist": [
+            "Data is location-disaggregated",
+            "Bias indicators are honest, not defensive",
+            "Interventions are specific, not 'be aware'"
+          ],
+          "prompt": "You are auditing reviews / promotions / sponsorship for visibility bias toward HQ-located or timezone-aligned engineers.\n\nContext\n- Recent review / promotion data with location: {data}\n- Sponsorship opportunities given: {sponsorships}\n- Survey signal on fairness: {survey}\n\nProduce five sections:\n\n1. Promotion rate by location — table. Show disparities if present.\n\n2. Sponsorship opportunities by location — distribution. Often distorted toward HQ.\n\n3. Survey signal on fairness perception — what distributed engineers say about review / promotion fairness.\n\n4. Bias indicators — specific findings: HQ-located engineers promoted faster despite identical contribution; sponsorship goes to people in the room; reviews informed by 'who I see' rather than written artifacts.\n\n5. Recommended interventions — specific: calibration practice that addresses location bias explicitly; sponsorship distribution rules; doc-based review weighting; promotion case requirements anchored in artifacts.\n\nKeep total under 500 words. Honest; specific interventions."
+        }
+      ],
+      "related_entries": [
+        "distributed-first-operating-norms (template)",
+        "leadership-cadence-pack (prompt pack)",
+        "skip-level-synthesis-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "distributed",
+        "async",
+        "remote",
+        "operating"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "30–60 minutes per prompt",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
       "id": "pp-future-state-design-pack",
       "entry_type": "prompt_pack",
       "title": "Future-State Design Pack",
@@ -5781,6 +6343,200 @@
       "format": "json",
       "status": "gold",
       "version": "3.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "pp-ma-due-diligence-pack",
+      "entry_type": "prompt_pack",
+      "title": "M&A Due Diligence Pack",
+      "slug": "ma-due-diligence-pack",
+      "audience": [
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Strategy",
+        "Technical Leadership"
+      ],
+      "concepts": [],
+      "summary": "Four prompts for engineering M&A: technical DD checklist generator, people DD synthesizer, integration cost estimator, and deal-stopper findings memo writer.",
+      "why_it_matters": "M&A engineering DD is high-stakes and infrequent. These prompts produce the structured output that DD teams rely on under tight timelines and confidentiality.",
+      "when_to_use": [
+        "Pre-signing engineering due diligence",
+        "Synthesizing people DD findings for the deal team",
+        "Estimating integration cost for the deal model",
+        "Surfacing deal-stopper findings to the deal team"
+      ],
+      "not_for": [
+        "Bypassing legal / M&A team partnership",
+        "Sharing DD findings outside the deal team during pre-close"
+      ],
+      "source_inspiration": [
+        "Standard M&A DD frameworks adapted for engineering",
+        "Will Larson on engineering at scale"
+      ],
+      "inputs_required": [
+        {
+          "name": "Deal context",
+          "description": "Role (acquirer/acquired), stage, timeline.",
+          "required": true
+        },
+        {
+          "name": "Access to target's data",
+          "description": "Through deal data room.",
+          "required": true
+        },
+        {
+          "name": "Confidentiality protocols",
+          "description": "Strict during pre-close.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Technical DD findings",
+        "People DD findings",
+        "Integration cost estimate",
+        "Deal-stopper memo"
+      ],
+      "sections": [
+        {
+          "name": "Usage guidance",
+          "purpose": "Honest findings; tight confidentiality.",
+          "prompts": [
+            "Surface deal-stoppers immediately.",
+            "DD scope is engineering-specific.",
+            "Confidentiality strict pre-close."
+          ]
+        }
+      ],
+      "prompts": [
+        {
+          "id": "tech-dd-checklist",
+          "name": "Technical DD checklist generator",
+          "use_case": "Generate the technical DD checklist tailored to the deal context.",
+          "inputs": [
+            "Target company profile (stage, scale, industry)",
+            "Deal type (acquisition / merger / acqui-hire)",
+            "Specific concerns the deal team has flagged"
+          ],
+          "output_format": [
+            "'Tech stack inventory questions' — what to ask",
+            "'Architecture review questions'",
+            "'Tech debt assessment questions'",
+            "'Security / compliance questions'",
+            "'Vendor concentration questions'",
+            "'Open-source / IP questions'",
+            "'Code quality signal questions'",
+            "'Red-flag list' — what would change the deal if found"
+          ],
+          "review_checklist": [
+            "Checklist tailored to deal type",
+            "Red-flag list is honest about deal-stoppers",
+            "Questions are specific enough to get useful answers"
+          ],
+          "prompt": "You are generating a technical DD checklist for an engineering M&A deal. Tailored to the deal context.\n\nContext\n- Target company profile: {target_profile}\n- Deal type: {deal_type}\n- Deal-team concerns: {concerns}\n\nProduce eight sections:\n\n1. Tech stack inventory questions — what to ask: languages, frameworks, infrastructure, build/deploy.\n\n2. Architecture review questions — monolith / microservices / mixed; major coupling; scaling characteristics.\n\n3. Tech debt assessment — known debt, estimated remediation cost, risk to integration.\n\n4. Security / compliance — certifications, recent incidents, vulnerabilities, regulatory fit.\n\n5. Vendor concentration — critical vendors, contract terms, exit costs, lock-in.\n\n6. Open-source / IP — license compliance, OSS dependencies, IP cleanliness.\n\n7. Code quality signal — test coverage, deploy frequency, incident rate, on-call load.\n\n8. Red-flag list — findings that would change the deal: undisclosed major outages, IP disputes, security incidents, customer concentration we didn't know about.\n\nKeep total under 800 words. Tailored; deal-stopper aware."
+        },
+        {
+          "id": "people-dd-synthesizer",
+          "name": "People DD synthesizer",
+          "use_case": "Synthesize people DD findings into deal-team-ready output.",
+          "inputs": [
+            "Headcount data by team / level / geography",
+            "Compensation benchmarking",
+            "Key talent identification",
+            "Cultural read from interviews",
+            "Recent attrition pattern"
+          ],
+          "output_format": [
+            "'Headcount summary' — by team / level / geography",
+            "'Key talent map' — who's irreplaceable, retention risk post-deal",
+            "'Comp reconciliation cost' — what aligning to acquirer costs",
+            "'Leadership bench' — depth and gaps",
+            "'Cultural read' — operating culture from interviews",
+            "'Attrition risk post-close' — projection",
+            "'Retention investment recommendation' — total $ and key people"
+          ],
+          "review_checklist": [
+            "Key talent map is honest (not just 'everyone is great')",
+            "Comp reconciliation includes equity refresh implications",
+            "Cultural read distinguishes from acquirer's culture",
+            "Attrition projection includes both regrettable and acceptable losses"
+          ],
+          "prompt": "You are synthesizing people DD findings for the deal team. Honest; deal-team-ready.\n\nContext\n- Headcount data: {headcount}\n- Comp benchmarking: {comp}\n- Key talent: {key_talent}\n- Cultural read: {cultural}\n- Attrition pattern: {attrition}\n\nProduce seven sections:\n\n1. Headcount summary — by team / level / geography.\n\n2. Key talent map — who's irreplaceable, with retention risk post-deal. Named (in confidential deal-team doc).\n\n3. Comp reconciliation cost — what aligning to acquirer's comp bands costs. Include equity refresh.\n\n4. Leadership bench — depth and gaps. Specifically: which leaders post-close need backup or replacement.\n\n5. Cultural read — what their operating culture actually is, distinguished from acquirer's. Where the cultures will clash.\n\n6. Attrition risk post-close — projection: regrettable losses (key talent likely to leave); acceptable losses; rate.\n\n7. Retention investment recommendation — total $ for retention bonuses, equity refresh, scope investment. Named key people.\n\nKeep total under 700 words. Honest; named (deal-team-confidential)."
+        },
+        {
+          "id": "integration-cost-estimator",
+          "name": "Integration cost estimator",
+          "use_case": "Estimate the integration cost for the deal model: day-1, 100-day, 12-month.",
+          "inputs": [
+            "Tech DD findings",
+            "People DD findings",
+            "Acquirer's integration capacity"
+          ],
+          "output_format": [
+            "'Day-1 integration cost' — security, identity, basic interop",
+            "'100-day integration cost' — deeper systems, comp reconciliation, leadership",
+            "'12-month integration cost' — consolidation, deprecation, replatforming",
+            "'Cost of NOT integrating' — running two everything indefinitely",
+            "'Total 3-year integration cost'",
+            "'Integration risk premium' — buffer for unknowns"
+          ],
+          "review_checklist": [
+            "Day-1 cost is honest (often higher than estimated)",
+            "12-month cost includes the surprises (most integration takes longer than projected)",
+            "Cost of NOT integrating is real (perpetual duplication)",
+            "Risk premium is included (typical: 30–50% buffer)"
+          ],
+          "prompt": "You are estimating integration cost for the deal model. Honest; risk-adjusted.\n\nContext\n- Tech DD findings: {tech_dd}\n- People DD findings: {people_dd}\n- Acquirer's integration capacity: {capacity}\n\nProduce six sections:\n\n1. Day-1 integration cost — security baseline alignment, identity / SSO, basic interop. Engineer-weeks + cash cost.\n\n2. 100-day integration cost — deeper systems integration, comp reconciliation, leadership integration, customer continuity. Engineer-weeks + cash cost.\n\n3. 12-month integration cost — system consolidation, service deprecation, possible replatforming. Engineer-weeks + cash cost.\n\n4. Cost of NOT integrating — running two of everything indefinitely. Annual recurring cost.\n\n5. Total 3-year integration cost — total all-in.\n\n6. Integration risk premium — buffer for unknowns (typical 30–50%). Justify.\n\nKeep total under 600 words. Honest; risk-buffered."
+        },
+        {
+          "id": "deal-stopper-memo",
+          "name": "Deal-stopper memo writer",
+          "use_case": "Write the memo surfacing deal-stopper findings to the deal team.",
+          "inputs": [
+            "DD findings (tech, people, product)",
+            "Severity assessment per finding",
+            "Possible mitigations"
+          ],
+          "output_format": [
+            "'Headline' — top deal-stopper finding(s)",
+            "'Per-finding detail' — what was found, why it's a deal-stopper, evidence",
+            "'Severity assessment' — would kill deal / would change deal terms / would change integration plan",
+            "'Mitigation options' — if any, what they cost",
+            "'Recommendation' — kill deal / renegotiate / proceed with mitigation / proceed as-is",
+            "'Confidence level' — high / medium / low"
+          ],
+          "review_checklist": [
+            "Headline is honest (no soft-pedal)",
+            "Per-finding evidence is specific",
+            "Mitigation options are realistic, not aspirational",
+            "Recommendation is clear, not equivocal"
+          ],
+          "prompt": "You are writing a deal-stopper memo for the deal team. Honest; clear recommendation.\n\nContext\n- DD findings: {findings}\n- Severity per finding: {severity}\n- Possible mitigations: {mitigations}\n\nProduce six sections:\n\n1. Headline — top deal-stopper finding(s) in 2 sentences.\n\n2. Per-finding detail — what was found, why it's a deal-stopper, specific evidence.\n\n3. Severity assessment — for each finding: would kill deal / would change deal terms / would change integration plan / would proceed as-is with awareness.\n\n4. Mitigation options — if mitigation possible, what it costs (price reduction, escrow, post-close commitment).\n\n5. Recommendation — kill deal / renegotiate (terms changes) / proceed with mitigation (specific) / proceed as-is. Clear; not equivocal.\n\n6. Confidence level — high / medium / low; what would change the recommendation.\n\nKeep total under 500 words. Honest headline; clear recommendation."
+        }
+      ],
+      "related_entries": [
+        "ma-engineering-integration-plan (template)",
+        "vendor-evaluation-pack (prompt pack)"
+      ],
+      "tags": [
+        "gold-standard",
+        "m&a",
+        "due-diligence",
+        "integration"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "DD cycle: 4–8 weeks",
+      "format": "json",
+      "status": "gold",
+      "version": "1.0.0",
       "updated_at": "2026-04-24",
       "practice_folder": "org-design-change",
       "practice_label": "Org Design & Change"

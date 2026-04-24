@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-24T15:44:14.571532",
-  "count": 73,
+  "generated_at": "2026-04-24T15:58:29.588743",
+  "count": 78,
   "practice_labels": {
     "people-hiring-performance": "People · Hiring · Performance",
     "strategy-planning": "Strategy & Planning",
@@ -469,6 +469,161 @@
       "template_body_markdown": "# Career ladder template\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "gold-executive-coaching-engagement-plan",
+      "entry_type": "template",
+      "title": "Executive Coaching Engagement Plan",
+      "slug": "executive-coaching-engagement-plan",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Management",
+        "Performance & Development"
+      ],
+      "summary": "Structured plan for a formal executive coaching engagement (6–12 months, biweekly): when coaching is the right tool, coach selection, engagement design with growth areas, ROI tracking with baseline / mid / end assessments, and closeout / continuation decision.",
+      "why_it_matters": "Coaching is a real investment ($15K–60K+ per year). The difference between coaching that compounds and coaching that doesn't is the engagement design. This template forces the discipline that makes the investment pay back: right-tool check, real growth areas with observable outcomes, baselined ROI tracking.",
+      "when_to_use": [
+        "Setting up coaching for yourself, a senior leader on your team, or a high-potential leader",
+        "Selecting an external coach",
+        "Mid-engagement assessment (month 3 or 4)",
+        "End-of-engagement closeout / continuation decision"
+      ],
+      "not_for": [
+        "Manager-as-coach relationship (part of normal management)",
+        "Therapy (different professional with different ethics)",
+        "Performance management substitute (use PIP)",
+        "Compulsory coaching (doesn't work without coachee buy-in)"
+      ],
+      "source_inspiration": [
+        "International Coach Federation (ICF) standards",
+        "First Round Review — interviews on executive coaching",
+        "Trillion Dollar Coach (Bill Campbell) for context on what executive coaching is"
+      ],
+      "inputs_required": [
+        {
+          "name": "Coachee buy-in",
+          "description": "Genuine, not compulsory.",
+          "required": true
+        },
+        {
+          "name": "Specific growth areas",
+          "description": "3 max, with what success looks like in 12 months.",
+          "required": true
+        },
+        {
+          "name": "Sponsor commitment",
+          "description": "Time, budget, follow-through.",
+          "required": true
+        },
+        {
+          "name": "Budget approval",
+          "description": "$15K–60K+ per engagement typical.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Right-tool decision",
+        "Coach selection",
+        "Engagement design with growth areas",
+        "ROI tracking baseline",
+        "Closeout / continuation decision"
+      ],
+      "sections": [
+        {
+          "name": "When coaching is the right tool",
+          "purpose": "Test fit before committing.",
+          "fields": [
+            "When right (specific growth, sustained attention, self-awareness, sponsor support)",
+            "When NOT right (perf mgmt, role fit, training gap, no buy-in)",
+            "Decision check"
+          ]
+        },
+        {
+          "name": "Coach selection",
+          "purpose": "Right coach for engineering audience.",
+          "fields": [
+            "Coach criteria (engineering audience, specialization, style, references, certification, cultural fit)",
+            "Search process (sources, screen, references, selection)",
+            "Selected coach"
+          ]
+        },
+        {
+          "name": "Engagement design",
+          "purpose": "3 growth areas with observable success; structure; confidentiality.",
+          "fields": [
+            "Growth areas (3 max with 12-month success)",
+            "Engagement structure (cadence, length, format, between-session, 360, manager touchpoints)",
+            "Confidentiality terms"
+          ]
+        },
+        {
+          "name": "ROI tracking",
+          "purpose": "Baseline / mid / end assessment.",
+          "fields": [
+            "Initial baseline (self-assessment, 360 if applicable, behavioral baseline)",
+            "Mid-engagement check (month 3 or 4)",
+            "End-of-engagement assessment"
+          ]
+        },
+        {
+          "name": "Closeout / continuation decision",
+          "purpose": "Three options at end of engagement.",
+          "fields": [
+            "Close engagement",
+            "Continue with same coach",
+            "Switch coach / approach",
+            "Decision criteria"
+          ]
+        },
+        {
+          "name": "When coaching ISN'T working",
+          "purpose": "Signals to address mid-engagement.",
+          "fields": [
+            "Going through motions",
+            "No behavior change",
+            "Coach-coachee mismatch",
+            "Wrong growth area",
+            "3-way conversation reset"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Performance-mgmt substitute",
+            "Compulsory coaching",
+            "Vague growth areas",
+            "No baseline",
+            "Sponsor disengagement",
+            "Coach with wrong audience",
+            "Engagement runs forever"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "executive-coaching",
+        "leadership-development",
+        "people-management"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Setup: 4–6 weeks; engagement: 6–12 months; closeout: 2 weeks",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Executive Coaching Engagement Plan\n\n## How to use\n\nThis template structures an executive coaching engagement — for yourself, for a senior leader on your team, or for a high-potential leader you're investing in. Coaching is a real investment ($15K–60K+ per year typical), and the difference between coaching that compounds and coaching that doesn't is the engagement design.\n\nThis is for formal coaching engagements (typically 6–12 months, biweekly cadence) with an external coach. It's NOT for the manager-as-coach relationship (that's part of normal management); it's NOT for therapy (that's a different professional with different ethics).\n\nThe template covers: when coaching is the right tool, coach selection, engagement design, ROI tracking, and the closeout / continuation decision.\n\n---\n\n## Header\n\n- **Coachee**: \n- **Sponsor** (typically the coachee's manager-of-manager or the coachee themselves): \n- **Engagement period**: \n- **Cadence** (biweekly typically): \n- **Budget**: \n- **Confidentiality terms**: standard coaching confidentiality\n\n---\n\n## Part 1: When coaching is the right tool\n\nCoaching is the right investment when:\n- The coachee has identified specific growth areas they're committed to working on\n- The growth areas require sustained attention over 6+ months (not a quick fix)\n- The coachee has the self-awareness to engage productively (or to develop it)\n- The manager / sponsor is willing to support the time commitment\n\nCoaching is NOT the right tool when:\n- The issue is performance management (use PIP)\n- The issue is role fit (have the role conversation)\n- The issue is skills gap that training would address (training is faster and cheaper)\n- The coachee isn't bought in (compulsory coaching doesn't work)\n\n### 1.1 Decision: is coaching the right investment\n\n- **Why coaching specifically** (vs. training, mentoring, scope change): \n- **Coachee's buy-in level**: high / medium / low (low = don't proceed)\n- **Sponsor's commitment** (time, budget, follow-through): \n\n---\n\n## Part 2: Coach selection\n\n### 2.1 Coach criteria\n\n- **Experience with executive engineering audiences**: most coaches don't have this; check\n- **Specialization** (career transition / leadership style / specific skill area): \n- **Coaching style** (directive / non-directive / mixed): match to coachee preference\n- **References from senior engineering leaders**: required\n- **Certification / credentials**: ICF or equivalent typically\n- **Cultural fit**: language, geography, lived experience as relevant\n\n### 2.2 Coach search process\n\n- **Sources**: peer recommendations, executive coaching firms, internal HR partner\n- **Initial screen**: 30-min chemistry calls with 3 candidates\n- **Reference checks**: 2–3 references each, talked to in person\n- **Final selection**: based on chemistry, fit to growth areas, sponsor confidence\n\n### 2.3 Selected coach\n\n- **Coach**: \n- **Why this coach**: \n- **Term**: \n- **Cost**: \n\n---\n\n## Part 3: Engagement design\n\n### 3.1 Growth areas (3 max)\n\nPre-engagement conversation between coachee, sponsor, and coach to align on:\n\n1. **Growth area 1**: \n   - **What 'success' looks like in 12 months**: specific, observable\n   - **Current state**: \n2. **Growth area 2**: same\n3. **Growth area 3**: same\n\n### 3.2 Engagement structure\n\n- **Cadence**: biweekly typical; weekly if intensive\n- **Session length**: 60–90 min typical\n- **Format**: video / phone / in-person mix\n- **Between-session work**: typically homework / journaling / observation\n- **360 feedback**: at start (and possibly mid-engagement)\n- **Manager touchpoints**: brief check-ins between coachee + manager re: progress\n\n### 3.3 Confidentiality\n\n- **What coach shares with sponsor**: typically nothing specific; only progress signal\n- **What coachee can share with coach**: anything; full confidentiality\n- **What coachee shares with manager**: their choice; encourage\n\n---\n\n## Part 4: ROI tracking\n\n### 4.1 Initial baseline\n\n- **Self-assessment** by coachee on growth areas (1–10 scale)\n- **360 feedback baseline** if running 360\n- **Specific behaviors / outcomes** that would change\n\n### 4.2 Mid-engagement check (typically month 3 or 4)\n\n- **Coachee self-assessment** on progress\n- **Manager observation** of changes\n- **Coach's read** on engagement quality\n- **Adjust if needed**: sometimes growth areas evolve\n\n### 4.3 End-of-engagement assessment\n\n- **Self-assessment** on growth areas vs. baseline\n- **360 feedback** (if running)\n- **Specific behavioral / outcome changes observed**\n- **What worked, what didn't** in the coaching engagement\n- **ROI judgment**: was this worth the investment?\n\n---\n\n## Part 5: Closeout / continuation decision\n\n### 5.1 Three options at end of engagement\n\n- **Close engagement**: coachee has progressed; ongoing coaching not needed\n- **Continue with same coach**: more growth runway with same coach\n- **Switch coach / approach**: different growth area or different coaching style needed\n\n### 5.2 Decision criteria\n\n- **Did the coachee make material progress on the growth areas**: yes / partial / no\n- **Is there a specific next-12-month growth area that warrants continuation**: \n- **Sponsor's view**: continue / not\n- **Coachee's preference**: \n\n---\n\n## Part 6: When coaching ISN'T working\n\nSignals to address mid-engagement:\n\n- **Coachee is going through the motions**: not bringing real material\n- **No observable behavior change**: 4+ months in, manager / 360 sees no change\n- **Coach-coachee mismatch**: chemistry is off\n- **Wrong growth area**: the focus area was wrong from the start\n\nAction: pause, have a 3-way conversation (coachee, coach, sponsor), reset or close.\n\n---\n\n## Common failure modes\n\n- **Coaching as performance-management substitute**: doesn't work; coachee senses the trap, engagement fails\n- **Compulsory coaching**: coachee has to be bought in\n- **Vague growth areas**: 'become a better leader' isn't a growth area; 'have a hard conversation without losing composure' is\n- **No baseline / no measurement**: impossible to know if it worked\n- **Sponsor disengagement**: sponsor sets up coaching, then doesn't reinforce; coaching becomes isolated activity\n- **Coach with wrong audience**: many executive coaches haven't worked with engineering leaders; the patterns are different\n- **Engagement runs forever**: coaching that drags on past 12 months without renewed contracting becomes dependence\n\n---\n\n## Related artifacts\n\n- `individual-development-plan` — for growth areas independent of coaching\n- `manager-quality-review` — for honest assessment of leadership effectiveness\n- `1-1-coaching-pack` (prompts) — for the manager's coaching role (not external coach)\n- `executive-coaching-pack` (prompts) — for facilitating engagement design and review\n"
     },
     {
       "id": "tpl-hiring-plan-template",
@@ -1203,6 +1358,145 @@
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance",
       "template_body_markdown": "# 30/60/90 Onboarding Plan — New Manager\n\n## How to use\n\nThis is the structured plan for a new manager's first 90 days — whether they're external (joined from another company) or internal (just promoted from IC).\n\nManager onboarding fails differently from IC onboarding. New managers tend to either over-act (changing things in the first 30 days based on incomplete understanding) or under-act (avoiding hard calls because they don't yet have credibility). This plan structures the rhythm to do neither.\n\nThe phases:\n- **Days 0–30**: listen, observe, build trust. Don't change anything material.\n- **Days 30–60**: form a working hypothesis about the team and propose small adjustments.\n- **Days 60–90**: make the bigger calls if needed, with the team's support and your manager's air cover.\n\n---\n\n## Header\n\n- **Manager**: \n- **Level**: \n- **Their manager (you)**: \n- **Team they're inheriting**: \n- **Start date**: \n- **30-day check-in**: \n- **60-day check-in**: \n- **90-day check-in**: \n- **Coach / mentor (separate from their manager)**: \n\n---\n\n## Pre-day-1 setup (you, their manager)\n\n- [ ] All standard IC onboarding items done (laptop, accounts, etc.)\n- [ ] 1:1s pre-scheduled with each direct report (in week 1)\n- [ ] 1:1s pre-scheduled with key cross-functional peers\n- [ ] Read-ahead pack: team OKRs, recent reviews, recent retros, current incidents, attrition history, comp band info, current performance issues you know about\n- [ ] Briefing on each direct report (your candid read on each, including the \"if you do nothing else, know this about X\")\n- [ ] Briefing on the team's recent history (last 1–2 years of context)\n- [ ] Framing of YOUR expectations as their manager — what you'll be watching for in the first 90 days\n- [ ] Mentor / coach assigned (someone who is NOT you — typically a peer manager or an outside coach)\n\n---\n\n## Days 0–30 — Listen and observe\n\n### Your intent for them at day 30\n\n- They have an honest read on each direct report\n- They understand the team's current rhythm and conventions\n- They have built initial trust by NOT changing things prematurely\n- They have surfaced the questions and observations they want to take into days 30–60\n\n### Their goals\n\n- **1:1s with each report**: deep listening, not transactions. Use questions like:\n  - \"What was the team like before I joined?\"\n  - \"What do you hope I do?\"\n  - \"What are you afraid I'll do?\"\n  - \"What would you change if you were me?\"\n- **Cross-functional 1:1s**: meet every key partner (product, design, data, sales, support, security as relevant)\n- **Operational immersion**: attend every recurring team meeting; observe rituals, decisions, and pace\n- **Code/system fluency**: read the architecture docs, attend a system walkthrough, ramp enough to follow technical discussions\n- **Org reading**: company strategy, recent leadership comms, current org dynamics\n- **DO NOT**: change processes, restructure meetings, give performance feedback, make commitments to the team about future direction\n\n### Your (manager) actions\n\n- **Weekly 1:1**: focused on what they're learning, not what they're doing\n- **Mid-week-2 check**: are they meeting the right people? Any gap in the briefing?\n- **Skip-levels with their direct reports** (week 3 or 4): get an early read on the new manager's landing\n- **Pre-day-30 sync with HR partner**: anything surfacing from the team about the transition\n\n### Day 30 checkpoint — what to discuss\n\n- What's surprised you about the team?\n- What's surprised you about the company?\n- Who's doing well that you didn't expect? Who's struggling that you didn't expect?\n- What's your initial read on each direct report?\n- What's your initial read on team health, capability, and current commitments?\n- What questions do you have for me?\n- Your (manager) feedback on how the listening period has gone\n\n---\n\n## Days 30–60 — Form hypothesis and propose adjustments\n\n### Your intent for them at day 60\n\n- They have a working hypothesis about the team's strengths, gaps, and direction\n- They have proposed and made small adjustments (not large reorgs)\n- They are starting to deliver coaching and feedback to their reports\n- They have built enough credibility to be heard on the bigger calls coming\n\n### Their goals\n\n- **Working hypothesis document**: write up (for you, not the team) what they see — team capability, commitment realism, manager-quality of their own management, top 3 risks\n- **Small adjustments**: cadence tweaks, meeting consolidation, clarifying ownership on a fuzzy area, restating expectations on something that's drifted\n- **Coaching starts**: weekly 1:1s shift from listening to coaching; specific feedback delivered on small things first\n- **Cross-functional working relationships**: contribute meaningfully to a cross-functional planning conversation\n- **Begin to own commitments**: pick up at least one team commitment they're driving\n\n### Your (manager) actions\n\n- **Weekly 1:1**: shift to \"what's your read, what are you doing about it\"\n- **Day-45 deep-dive**: review their working hypothesis document with them; calibrate\n- **Skip-levels (round 2)**: how is the team responding to the new manager's small adjustments?\n- **Cross-functional check**: how are they showing up to peer leaders?\n\n### Day 60 checkpoint — what to discuss\n\n- What's your hypothesis about the team's biggest risk?\n- What's your hypothesis about the team's biggest opportunity?\n- Where are you still uncertain?\n- What do you want to do in the next 30 days that you haven't yet?\n- Where do you need air cover from me?\n- Your (manager) feedback on coaching, prioritization, decision-making\n\n---\n\n## Days 60–90 — Make the bigger calls\n\n### Your intent for them at day 90\n\n- They are operating as the team's manager, not as a temporary visitor\n- They have addressed the biggest gap they identified in days 30–60\n- They have given feedback on direction, scope, and team composition where needed\n- They have a clear plan for the next 90 days that you've reviewed\n\n### Their goals\n\n- **Address the biggest gap**: this might be a hard performance conversation, a scope change, a cross-team renegotiation, a hire or backfill kickoff\n- **Operating cadence**: any cadence changes are settled; the team knows what to expect\n- **Coaching depth**: deeper feedback to reports; willingness to have hard conversations\n- **Strategic engagement**: contribute to the next planning cycle as a full owner\n- **Plan for days 90–180**: their proposed direction for the team\n\n### Your (manager) actions\n\n- **Weekly 1:1**: normal cadence; coaching as needed for the bigger calls\n- **Day-90 retrospective**: comprehensive review of the onboarding and forward direction\n- **Skip-levels (round 3)**: triangulate the team's read at the 90-day mark\n\n### Day 90 retrospective — what to discuss\n\n- What worked in your onboarding? What didn't?\n- What's the team's state at 90 days vs. where you found it?\n- What hard call still ahead are you avoiding?\n- What's your plan for days 90–180?\n- Your (manager) comprehensive feedback — credibility built, gaps still to close, scope confirmed\n- Their feedback to you — what they need from you going forward\n\n---\n\n## Common failure modes\n\n- **Manager changes too much in days 0–30**: erodes trust before any is built. Your job in days 0–30 is to remind them not to.\n- **Manager avoids hard calls past day 60**: usually a coaching gap; their manager (you) needs to push.\n- **No mentor**: their manager (you) cannot be the only person they confide in. Assign a peer or external coach.\n- **No skip-levels**: you don't know how the new manager is landing without direct signal from their reports.\n- **Letting them inherit broken commitments**: review what they're inheriting BEFORE day 1 and be willing to renegotiate with stakeholders if needed.\n- **Day-90 reviews that are vibes-based**: use the comprehensive feedback structure; don't wing it.\n\n---\n\n## Related artifacts\n\n- `onboarding-30-60-90-ic` — the parallel template for new IC engineers\n- `manager-quality-review` — for honest read on the new manager at the 90-day mark\n- `1-1-coaching-pack` (prompts) — for your 1:1 with them across the 90 days\n- `skip-level-agenda` — for the round-1, round-2, round-3 skip-levels with their team\n"
+    },
+    {
+      "id": "gold-onboarding-new-exec-stakeholder",
+      "entry_type": "template",
+      "title": "Onboarding a New Exec Stakeholder",
+      "slug": "onboarding-new-exec-stakeholder",
+      "audience": [
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Management",
+        "Executive Communication"
+      ],
+      "summary": "Structured plan for the engineering leader when a new exec stakeholder joins (CEO, CFO, CRO, COO, board member). Covers pre-arrival research, first 30 days (listen, brief, propose cadence, deliver one thing well), 30–90 days (deepen context, handle first disagreement and first crisis, ask for feedback), and 90+ days (settled partnership).",
+      "why_it_matters": "A new exec stakeholder's first 90–180 days set the relationship trajectory. The exec is forming opinions whether or not engineering is intentional about shaping them. Most engineering leaders default to either over-pitching or passively waiting; both fail. This template structures the right balance: present, useful, honest.",
+      "when_to_use": [
+        "A new CEO, CFO, CRO, COO, or board member joins",
+        "You're new in your role and the exec is established (inverse onboarding)",
+        "You're both new (often the most consequential)",
+        "Major change in the exec's portfolio that changes your relationship"
+      ],
+      "not_for": [
+        "Replacing the exec's own onboarding process",
+        "Single-event briefings (this is a 90-day arc)",
+        "Substituting for ongoing 1:1 cadence"
+      ],
+      "source_inspiration": [
+        "Michael Watkins — The First 90 Days (applied to the inverse: you supporting their onboarding)",
+        "Will Larson on cross-functional partnership",
+        "First Round Review — exec onboarding interviews"
+      ],
+      "inputs_required": [
+        {
+          "name": "Pre-arrival research",
+          "description": "What you know about them in advance.",
+          "required": true
+        },
+        {
+          "name": "Cadence to propose",
+          "description": "1:1 frequency, larger forum participation, async digest.",
+          "required": true
+        },
+        {
+          "name": "Honest engineering state",
+          "description": "Wins, risks, asks; ready for the context briefing.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Pre-arrival research",
+        "First 30-day relationship plan",
+        "30–90 day deepening",
+        "90+ day settled partnership"
+      ],
+      "sections": [
+        {
+          "name": "Pre-arrival research",
+          "purpose": "Know them before they arrive.",
+          "fields": [
+            "Their background (arc, style, prior engineering relationships, stated focus)",
+            "Likely concerns",
+            "Your relationship strategy (what you want them to think; what you don't)"
+          ]
+        },
+        {
+          "name": "First 30 days",
+          "purpose": "Listen, don't over-pitch.",
+          "fields": [
+            "First-week intro meeting",
+            "Context briefing (week 2 or 3)",
+            "Cadence proposal (1:1, larger forum, async)",
+            "First-month specific deliverable"
+          ]
+        },
+        {
+          "name": "30–90 days",
+          "purpose": "They're forming opinions. Real signal.",
+          "fields": [
+            "Gradual context deepening (strategic, risk, roadmap, talent)",
+            "First disagreement handled well",
+            "First crisis handled well",
+            "Their feedback (asked explicitly by day 60)"
+          ]
+        },
+        {
+          "name": "90+ days",
+          "purpose": "Established partnership; optimize.",
+          "fields": [
+            "Strategic partnership",
+            "Operating cadence settled",
+            "Trust accumulator (specific moments)"
+          ]
+        },
+        {
+          "name": "When the relationship isn't working",
+          "purpose": "Signals and action.",
+          "fields": [
+            "They go around you",
+            "Withhold information",
+            "Rate you publicly low",
+            "Don't include you in conversations",
+            "Action: ask explicitly"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Over-pitching",
+            "Passive waiting",
+            "Hiding bad news",
+            "First-disagreement done badly",
+            "First-crisis done badly",
+            "Skipping explicit feedback ask",
+            "Treating them as threat or tax"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "stakeholder",
+        "exec-onboarding",
+        "relationship",
+        "executive-communication"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "90-day arc; weekly attention; quarterly review",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Onboarding a New Exec Stakeholder\n\n## How to use\n\nThis template is for the engineering leader (typically VPE or CTO) when a new exec stakeholder joins — a new CEO, CFO, CRO, COO, or board member who you'll now report to or partner with closely. Their first 90–180 days set the relationship's trajectory.\n\nThe exec is doing their own listening and learning. Your job is to be the engineering leader they trust — neither over-pitching nor passively waiting to be discovered. This template structures the relationship-building, the strategic context delivery, and the early collaboration patterns.\n\nThis applies whether you're new in your role and they're established, you're established and they're new, or you're both new (often the most consequential).\n\n---\n\n## Header\n\n- **New exec stakeholder**: \n- **Their role**: \n- **Your role with them** (direct report / peer / occasional partner): \n- **Their start date**: \n- **What you know about them in advance** (background, prior roles, public reputation): \n\n---\n\n## Part 1: Pre-arrival research\n\n> Before they start, what you should know.\n\n### 1.1 Their background\n\n- **Career arc**: previous companies, roles, public-known accomplishments\n- **Likely operating style**: from public talks, articles, references if you have any\n- **Their prior engineering relationships**: did they work with engineering closely before? What pattern?\n- **Their stated focus** (from interviews / appointment messaging): what are they here to do?\n\n### 1.2 Their likely concerns\n\n- **What an exec in their role usually wants from engineering**: \n- **Specific concerns the company / board has flagged**: \n- **Specific concerns engineering's prior performance has raised**: \n\n### 1.3 Your relationship strategy\n\n- **What you want them to think of engineering by day 30**: \n- **What you want them to think of you by day 30**: \n- **What you do NOT want them to think**: \n\n---\n\n## Part 2: First 30 days\n\n> They're listening. Don't over-pitch. Be present, useful, honest.\n\n### 2.1 First-week meetings\n\n- **30-minute intro**: who you are, your role, your reports, your scope\n- **Offer**: 60-min context briefing on engineering org, with pre-read\n- **Listen for**: what they ask about, what they don't ask about, what concerns surface\n\n### 2.2 Context briefing (offer in week 2 or 3)\n\n- **Engineering org overview**: structure, scope, current commitments\n- **Strategic narrative**: how engineering's work ties to the company's strategy\n- **Top 3 wins** of the past year: outcomes, not activities\n- **Top 3 risks**: honest about what's hard\n- **Top 3 asks** (if applicable): what you'll need from them\n\n### 2.3 Cadence proposal\n\n- **1:1 cadence**: weekly or biweekly typically; propose, defer to their preference\n- **Larger forum**: how engineering shows up in their staff meeting / town hall / board prep\n- **Async cadence**: status digests, escalation triggers\n\n### 2.4 First-month specific deliverable\n\n- **Deliver one specific thing well**: a clear status update, a customer story, a commitment hit\n- **Build credibility through one observable artifact**, not through general assertions\n\n---\n\n## Part 3: 30–90 days\n\n> They're forming opinions. Make sure those opinions are based on real signal.\n\n### 3.1 Gradual context deepening\n\n- **Strategic deep-dive**: 90-minute session on the engineering strategy, with their questions\n- **Risk deep-dive**: honest review of the engineering risks (security, reliability, talent, debt)\n- **Roadmap walk-through**: aligned with company strategy\n- **Talent overview**: bench, key talent, retention risk (with appropriate confidentiality)\n\n### 3.2 First disagreement, handled well\n\nYou'll disagree with them on something in the first 60 days. The handling matters more than the topic:\n\n- **Disagree with data**, not with assertion\n- **Disagree once, in writing where appropriate**\n- **Commit to their decision** if you don't change it\n- **Don't carry the disagreement forward** if it's been decided\n\n### 3.3 First crisis, handled well\n\nThere will be an incident or escalation in the first 90 days. The handling matters:\n\n- **Inform them quickly**: don't let them learn from someone else\n- **Don't over-claim certainty** in the moment\n- **Demonstrate ownership and a plan**\n- **Follow through visibly**\n\n### 3.4 Their feedback (ask explicitly)\n\nBy day 60, ask:\n- \"How is engineering coming across to you?\"\n- \"What surprised you about engineering, positively or negatively?\"\n- \"What do you want me to be doing differently?\"\n\n---\n\n## Part 4: 90+ days\n\n> Established working relationship. Now optimize.\n\n### 4.1 Strategic partnership\n\n- **Their strategic priorities**: known and you're aligned to\n- **Engineering's strategic narrative**: aligns with theirs\n- **Joint commitments**: clear, in writing\n\n### 4.2 Operating cadence\n\n- **1:1**: settled, productive\n- **Larger forum**: engineering's voice is heard at the right altitude\n- **Escalation**: they trust your judgment on what to escalate\n\n### 4.3 Trust accumulator\n\nTrust is built through specific moments, named:\n\n- **Times you delivered**: \n- **Times you escalated honestly**: \n- **Times you disagreed productively**: \n- **Times you took ownership of a miss**: \n\n---\n\n## Part 5: When the relationship isn't working\n\nSignals to address mid-flight:\n\n- **They go around you**: ask your reports things they should ask you\n- **They withhold information**: you find out about decisions late\n- **They rate you publicly low** in feedback\n- **They don't include you in conversations you should be in**\n\nAction: ask explicitly. Hard conversation, not avoidance. Often they're signaling something specific you can address.\n\n---\n\n## Common failure modes\n\n- **Over-pitching in week 1**: trying to win them over with the engineering value-prop. Comes across as defensive.\n- **Passive waiting to be discovered**: the inverse — assuming they'll figure out engineering's value over time. They won't; they have other priorities.\n- **Hiding bad news**: trying to manage what they see. They will find out, and the trust loss is permanent.\n- **First-disagreement done badly**: digging in publicly, escalating to peers, undermining their decision after the fact.\n- **First-crisis done badly**: defensive, slow to inform, lacking a plan.\n- **Skipping the explicit feedback ask**: assuming silence means they're happy. Often it means they're forming a verdict.\n- **Treating them as a threat or a tax**: rather than as a partner who can amplify engineering. Comes through.\n\n---\n\n## Related artifacts\n\n- `executive-review-prep-pack` (prompts) — for the strategic context delivery\n- `stakeholder-communication-pack` (prompts) — for the ongoing comms cadence\n- `1-1-coaching-pack` (prompts) — for the working 1:1 with them\n- `30-60-90-onboarding-manager` — for the inverse (you onboarding into a new exec scope)\n"
     },
     {
       "id": "tpl-performance-review-packet",
@@ -2401,6 +2695,173 @@
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance",
       "template_body_markdown": "# Underperformance Diagnosis Worksheet\n\n## How to use\n\nThis is the worksheet you fill out BEFORE deciding whether to issue a PIP, restructure the role, change the manager, or have a frank \"is this still the right job for you\" conversation.\n\nMost failed performance interventions failed at the diagnosis stage: the manager treated a clarity problem as a performance problem, treated a manager-fit problem as a capability problem, treated a personal-circumstance moment as a sustained pattern. This worksheet forces the diagnosis before the intervention.\n\nFill it out alone, in writing, before any conversation with HR or your manager. It typically takes 60–90 minutes done well.\n\n---\n\n## Part 1: The observed signal\n\n### 1.1 What you have observed (specific, dated, observable)\n\n- Event 1 (date, what happened, who was affected): \n- Event 2: \n- Event 3: \n- Event 4: \n- Event 5: \n\n> If you have fewer than 3 specific events from the last 8–12 weeks, **stop**. You don't have a performance pattern; you have an impression. Either gather evidence over the next 4–6 weeks or address whatever is driving the impression directly.\n\n### 1.2 Pattern across events\n\n- Are these events isolated or part of a pattern? \n- Is the pattern getting worse, staying the same, or getting better? \n- Does the pattern affect a specific kind of work, or all of their work? \n- Does the pattern affect specific relationships (a peer, a partner team)? \n\n### 1.3 What others are observing\n\n- What are peers saying (in retros, 1:1s, peer feedback)? \n- What is the cross-functional partner saying? \n- What is the report saying about themselves? \n\n---\n\n## Part 2: Alternative explanations\n\nFor each of the following, write the honest answer. If any answer is \"I don't know,\" that's important — investigate it before proceeding.\n\n### 2.1 Clarity\n\n- Have I given them clear expectations for this work, in writing? \n- Have I given them feedback when expectations weren't met, specifically? \n- Could a peer at their level read what I've told them and know what \"good\" looks like? \n\n> If clarity is the issue, this is a manager problem, not a performance problem. The intervention is restating expectations and feedback, not a PIP.\n\n### 2.2 Role fit\n\n- Is the work actually a fit for their strengths, interests, and trajectory? \n- Has the role changed since they were hired/promoted into it (e.g., scope grew, team shifted)? \n- Would they be a strong contributor in a different role on the team? \n\n> If role fit is the issue, the intervention is a role change conversation, not a PIP.\n\n### 2.3 Manager fit\n\n- Have I been an effective manager for them specifically (not generally)? \n- Have we had a coaching relationship, or a checking-in relationship? \n- Has anything in my own behavior contributed to the pattern (lack of feedback, inconsistent direction, withdrawal)? \n\n> If manager fit is the issue, the honest intervention is a manager change or a serious self-correction, not a PIP from the same manager.\n\n### 2.4 Team conditions\n\n- Is the team functional? Psychologically safe? Properly staffed? \n- Has the report been carrying disproportionate load (on-call, mentoring, ambiguous scope)? \n- Are there team dynamics affecting their ability to do their best work (a difficult peer, an unclear collaboration model)? \n\n> If team conditions are the issue, the intervention is structural, not individual.\n\n### 2.5 Personal circumstance\n\n- Is there a personal situation (within what you can responsibly know) that explains the pattern? \n- Is the duration of the pattern consistent with a temporary disruption vs. sustained issue? \n\n> Personal circumstances warrant accommodation, not a PIP. Talk to your HR partner.\n\n### 2.6 Compensation / leveling mismatch\n\n- Are they appropriately compensated and leveled for the scope they're being asked to perform? \n- Is the work at their level, above, or below? \n\n> If they're operating below their level on the work, the issue may be motivation. If above, the issue may be unrealistic expectations.\n\n### 2.7 Capability\n\n- Do they have the skills, tools, and access to do the work? \n- Has the gap been there from the start, or has the bar moved? \n- Is the gap closeable with training, sponsorship, or pairing? \n\n> If capability is the issue and closeable, the intervention is investment, not a PIP. If not closeable, see role fit.\n\n---\n\n## Part 3: Honest diagnosis\n\n### 3.1 What is the most likely explanation?\n\nAfter working through Part 2:\n\n- Most likely: \n- Second most likely: \n- What evidence would confirm the most likely?: \n- What evidence would change my mind?: \n\n### 3.2 Confidence level\n\n- High / Medium / Low confidence in the diagnosis: \n- If Low: what's the next investigation step before any intervention?: \n\n---\n\n## Part 4: Intervention recommendation\n\nBased on the diagnosis, the intervention should be ONE of the following. Don't stack them.\n\n### Option A: Coaching and clarity (clarity issue)\n\n- Restate expectations in writing\n- Schedule weekly written feedback for 4–6 weeks\n- Re-evaluate at the end\n\n### Option B: Role change conversation (role fit issue)\n\n- Frame: \"I want to talk about whether this role is the right fit for what you do well\"\n- Possible outcomes: re-scope current role, move to a different team, leave with dignity\n- Not a PIP\n\n### Option C: Manager intervention (manager fit issue)\n\n- This may mean a different manager, or it may mean significant self-correction by you\n- Talk to your manager and HR partner; this is hard to address from inside the relationship\n\n### Option D: Structural intervention (team conditions issue)\n\n- Address the team-level issue\n- Re-evaluate individual performance once the structural issue is addressed\n\n### Option E: Performance Improvement Plan (capability + sustained pattern)\n\n- See `pip-framework-and-letter` template\n- Only if you have ruled out A–D and have specific, observable success criteria\n\n### Option F: Managed exit (decision is already made)\n\n- Be honest with yourself — if this is what's happening, don't disguise it as a PIP\n- See your HR partner for the separation playbook\n\n### Option G: Continue monitoring (insufficient evidence)\n\n- Set a specific re-evaluation date (4–8 weeks)\n- Define what you're watching for\n- Don't drift; come back\n\n---\n\n## Part 5: What you'll do this week\n\n- Decision: \n- Action this week: \n- Who I need to talk to (HR, my manager, the report): \n- Re-evaluation date if no decision yet: \n\n---\n\n## Common failure modes\n\n- **Stacking interventions.** A PIP after a year of unclear feedback isn't a PIP; it's the manager's failure delivered as the report's problem.\n- **Skipping the alternative-explanations work.** The fastest path to a wrong intervention is to skip Part 2.\n- **Confidence theater.** Marking \"high confidence\" because the answer is uncomfortable to hold lightly.\n- **Bypassing HR.** Diagnosis is yours; intervention design needs HR.\n- **Sharing the worksheet with the report.** This is YOUR thinking document, not theirs.\n\n---\n\n## Related artifacts\n\n- `pip-framework-and-letter` — for Option E\n- `1-1-coaching-pack` (prompts) — for Option A\n- `performance-review-pack` (prompts) — for documenting the gap if it follows a recent review\n- `manager-quality-review` — for honest self-assessment if Option C is on the table\n"
+    },
+    {
+      "id": "gold-annual-engineering-offsite-plan",
+      "entry_type": "template",
+      "title": "Annual Engineering Off-Site Plan",
+      "slug": "annual-engineering-offsite-plan",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy",
+        "Org Design",
+        "Culture & Change"
+      ],
+      "summary": "Structured plan for an annual engineering leadership off-site (2–3 days): purpose definition, attendee selection, pre-work, agenda design with specific decisions to make, facilitation norms, and post-off-site follow-through.",
+      "why_it_matters": "Off-sites are expensive (travel, accommodation, lost productivity for 2–3 days × N leaders). They're worth the cost when they produce decisions and alignment that wouldn't happen in normal cadence — and waste when scheduled because off-sites happen annually but no one knows what they're for.",
+      "when_to_use": [
+        "Annual engineering leadership off-site planning",
+        "Major team-formation off-site (after reorg or M&A)",
+        "Strategic-alignment off-site at the start of a new fiscal year",
+        "When alignment isn't happening in normal cadence and an in-person commitment is justified"
+      ],
+      "not_for": [
+        "Off-sites scheduled out of habit without clear purpose",
+        "Tactical project planning (small group, not full leadership)",
+        "Detailed technical reviews (different forum)",
+        "Replacing normal operating cadence"
+      ],
+      "source_inspiration": [
+        "Patrick Lencioni — Death by Meeting (and the off-site analog)",
+        "Standard executive off-site facilitation patterns",
+        "First Round Review — interviews on leadership off-sites"
+      ],
+      "inputs_required": [
+        {
+          "name": "Clear purpose (1–2 primary)",
+          "description": "Strategic alignment, decisions, team building, reflection, calibration.",
+          "required": true
+        },
+        {
+          "name": "Pre-committed decisions",
+          "description": "What we'll have decided by the end.",
+          "required": true
+        },
+        {
+          "name": "Pre-work commitment from attendees",
+          "description": "Each attendee completes the pre-work.",
+          "required": true
+        },
+        {
+          "name": "Facilitator (consider external)",
+          "description": "Especially for hard topics or high politics.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Off-site purpose",
+        "Attendee list with rationale",
+        "Pre-work package",
+        "Agenda with decisions to make",
+        "Facilitation plan",
+        "Post-off-site follow-through"
+      ],
+      "sections": [
+        {
+          "name": "Purpose",
+          "purpose": "Pick at most 2 primary purposes; name explicit non-purposes; commit to specific outputs.",
+          "fields": [
+            "What this is for (max 2 of 5 options)",
+            "What this is NOT for",
+            "Specific outputs at end (3+ named)"
+          ]
+        },
+        {
+          "name": "Attendees",
+          "purpose": "Right people; rationale for each; explicit non-invited.",
+          "fields": [
+            "Core / adjacent / optional",
+            "Why each person specifically",
+            "Who's notably NOT invited"
+          ]
+        },
+        {
+          "name": "Pre-work",
+          "purpose": "People show up prepared, not cold.",
+          "fields": [
+            "Required reading (2 weeks ahead)",
+            "Required pre-thinking",
+            "Pre-work commitment"
+          ]
+        },
+        {
+          "name": "Agenda design",
+          "purpose": "Time allocation; day-by-day; session design; decisions to make.",
+          "fields": [
+            "Time allocation principles (30/20/20/15/15)",
+            "Day-by-day structure",
+            "Per-session design",
+            "Decisions pre-committed"
+          ]
+        },
+        {
+          "name": "Facilitation",
+          "purpose": "Facilitator selection; norms.",
+          "fields": [
+            "External vs. internal",
+            "Facilitator's job",
+            "Facilitation norms"
+          ]
+        },
+        {
+          "name": "Post-off-site follow-through",
+          "purpose": "1 week / 30 days / quarterly.",
+          "fields": [
+            "Within 1 week",
+            "30 days after",
+            "Quarterly through year"
+          ]
+        },
+        {
+          "name": "ROI assessment",
+          "purpose": "Did the off-site pay back?",
+          "fields": [
+            "Outputs produced",
+            "Decisions held",
+            "Worth time / cost",
+            "What we'd do differently"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "No clear purpose",
+            "Attendees over-broad",
+            "Pre-work skipped",
+            "No pre-committed decisions",
+            "Facilitator is org leader",
+            "All work no relationship",
+            "All relationship no work",
+            "No follow-through"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "off-site",
+        "leadership",
+        "alignment",
+        "annual"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "Planning: 6–8 weeks; off-site: 2–3 days; follow-through: 90 days",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning",
+      "template_body_markdown": "# Annual Engineering Off-Site Plan\n\n## How to use\n\nThis template structures the planning of an annual engineering leadership off-site — the once-a-year (typically 2–3 day) gathering of engineering leadership for strategic alignment, team building, and forward direction setting.\n\nOff-sites are expensive (travel, accommodation, lost productivity for 2–3 days × N leaders). They're worth the cost when they produce decisions and alignment that wouldn't happen in normal cadence — and waste when they're scheduled because off-sites happen annually but no one knows what they're for.\n\nThe template covers: defining the purpose, selecting attendees, designing the agenda, pre-work, facilitation, and post-off-site follow-through.\n\n---\n\n## Header\n\n- **Off-site purpose** (one sentence): \n- **Owner**: \n- **Dates**: \n- **Location**: \n- **Attendees** (count): \n- **Budget**: \n- **Facilitator** (consider external): \n\n---\n\n## Part 1: Purpose\n\n### 1.1 What is this off-site for\n\nPick at most TWO of the following as primary; everything else is secondary:\n\n- **Strategic alignment**: agreeing on direction for the next 12 months\n- **Decision-making**: a specific set of decisions that benefit from being made together in person\n- **Team building**: relationship and trust building among the leadership team\n- **Reflection / retrospective**: looking back at the year together\n- **Manager-of-managers calibration**: cross-team alignment on talent, performance, leadership\n\n### 1.2 What this off-site is NOT for\n\nExplicit list of things people might expect that we're NOT doing:\n\n- Status updates (these belong in normal cadence)\n- Tactical project planning (small group, not whole-team)\n- Detailed tech reviews (different forum)\n- HR-level personnel discussions (different conversation)\n\n### 1.3 Outputs we'll have at end\n\nSpecific, observable outputs:\n- \n- \n- \n- \n\n> If you can't name 3 specific outputs, the off-site doesn't have a clear enough purpose. Don't go.\n\n---\n\n## Part 2: Attendees\n\n### 2.1 Who's invited\n\n- **Core**: directly relevant to the off-site purpose\n- **Adjacent**: useful to have for some sessions\n- **Optional**: invited but not required\n\n### 2.2 Why these people\n\nFor each attendee, why they specifically need to be there. If you can't answer for someone, they probably shouldn't be invited.\n\n### 2.3 Who's notably NOT invited\n\n- People who might expect to be invited but aren't, with the reason\n- Often: ICs (off-site is leadership-only); peer-org representatives\n\n---\n\n## Part 3: Pre-work\n\nMost off-site failures happen because people show up cold. Pre-work makes the in-person time count.\n\n### 3.1 Required reading (sent 2 weeks ahead)\n\n- Strategy doc / context\n- Specific decision artifacts (option memos, etc.)\n- Recent retro outputs\n- Anything that would otherwise be presented in the room\n\n### 3.2 Required pre-thinking\n\n- Specific questions for each attendee to come prepared to discuss\n- Async input gathered (e.g., survey of attendees on top concerns)\n\n### 3.3 Pre-work commitment\n\n- Each attendee confirms they've completed the pre-work\n- If not, the relevant session is at risk\n\n---\n\n## Part 4: Agenda design\n\n### 4.1 Time allocation principles\n\n- **30% structured discussion / decision-making**: the high-leverage in-person time\n- **20% strategy / context-setting**: presentations, panels, exec input\n- **20% facilitated team building**: structured (not just dinners)\n- **15% small-group / breakout work**: where the actual decisions get made\n- **15% unstructured time**: conversations between sessions matter; over-scheduling kills them\n\n### 4.2 Day-by-day structure\n\n#### Day 1\n- **Morning**: opening, setting context, alignment on outcomes\n- **Afternoon**: structured discussion on top topic\n- **Evening**: dinner with intent (not just food)\n\n#### Day 2\n- **Morning**: top-2 topic structured discussion\n- **Afternoon**: breakout work on specific decisions\n- **Evening**: free / informal\n\n#### Day 3 (if applicable)\n- **Morning**: synthesis, decisions confirmed, commitments made\n- **Closing**: each attendee names what they'll do as a result\n\n### 4.3 Specific session design\n\nFor each session, document:\n- **Owner**: \n- **Format**: presentation / facilitated discussion / small-group / decision\n- **Pre-read required**: \n- **Expected output**: \n- **Time**: \n\n### 4.4 Decisions to make at the off-site\n\nPre-commit the decisions that will be made:\n- \n- \n- \n\n> Vague intent decisions defer to after the off-site, where they often die.\n\n---\n\n## Part 5: Facilitation\n\n### 5.1 Facilitator selection\n\n- **External vs. internal**: external is often worth it for off-sites with hard topics or high politics\n- **Facilitator's job**: keep time, surface dissent, capture decisions, prevent rambling\n- **Facilitator pre-brief**: 30 min with each attendee in advance\n\n### 5.2 Facilitation norms\n\n- Agreed phone / laptop policy\n- Speaking-time discipline (no one dominates; quiet voices invited)\n- Decision-capture protocol (decisions written down in real time)\n- Disagreement protocol (disagree-and-commit framing)\n\n---\n\n## Part 6: Post-off-site follow-through\n\n### 6.1 Within 1 week\n\n- Decisions captured in writing, distributed to attendees + non-attending stakeholders\n- Action items assigned with owners and dates\n- Pulse-check: how was the off-site, what would we do differently\n\n### 6.2 30 days after\n\n- First check-in on action items: are they moving?\n- Any decisions that haven't held: address now\n\n### 6.3 Quarterly through year\n\n- Off-site decisions referenced in the quarterly leadership review\n- If decisions haven't held / progressed: address explicitly\n\n---\n\n## Part 7: ROI assessment\n\nAfter the off-site (and 90 days later):\n\n- **Did we produce the named outputs**: yes / partial / no\n- **Did the decisions hold**: yes / no / unclear\n- **Was the time / cost worth it**: \n- **What we'd do differently next year**: \n\n---\n\n## Common failure modes\n\n- **No clear purpose**: scheduled because off-sites happen annually; everyone shows up unsure of why. Result: relationship-building disguised as work.\n- **Attendees over-broad**: 30 people in a room can't make decisions; off-site becomes presentation series.\n- **Pre-work skipped**: people show up cold; sessions devolve into context-setting that should have been async.\n- **No decisions pre-committed**: everything 'we'll discuss' gets discussed and nothing gets decided.\n- **Facilitation by the org leader**: leader runs the off-site, defending their own ideas, suppressing dissent.\n- **All work, no relationship**: off-sites without relationship-building waste the in-person opportunity (you could have done this on Zoom).\n- **All relationship, no work**: off-sites that are just team-building are also a waste; that's a retreat, not an off-site.\n- **No follow-through**: decisions made in the room, never executed.\n\n---\n\n## Related artifacts\n\n- `quarterly-planning-packet` — for the in-quarter planning that follows the off-site\n- `executive-engineering-review-memo` — for the strategic context the off-site builds on\n- `off-site-facilitator-pack` (prompts) — for facilitation prep and post-off-site synthesis\n"
     },
     {
       "id": "tpl-annual-engineering-strategy-memo",
@@ -6219,6 +6680,161 @@
       "template_body_markdown": "# Conflict Mediation Memo\n\n## How to use\n\nThis template is for the manager (or the manager-of-managers) mediating a sustained, escalated conflict between two parties — engineers, managers, teams, or cross-functional partners. It's NOT for routine disagreements that resolve themselves; it's for conflicts that have been ignored long enough to require formal mediation.\n\nThe structure forces the mediator to:\n- Hear both sides separately first, document what they actually want\n- Distinguish positions (what they're asking for) from interests (what they actually need)\n- Surface the structural causes underneath\n- Design a resolution both can sign off on\n\nThis is a sensitive document. Treat it as confidential. Share specific portions with each party only with their consent or in the joint mediation session.\n\n---\n\n## Header\n\n- **Mediator**: \n- **Date opened**: \n- **Parties**: \n- **Brief description of the conflict**: \n- **History**: how long this has been escalating, prior interventions\n- **Stakes** (if unresolved): work stoppage, attrition, customer impact\n\n---\n\n## Part 1: Background\n\n### 1.1 What surfaced this to you\n\n- Who escalated to you\n- What happened that made it formal (a Slack incident, a missed commitment, a team escalation)\n- What had been tried before\n\n### 1.2 Past interventions\n\n- Conversations that have happened between the parties\n- Manager-led 1:1s with each\n- Anything that worked temporarily\n\n---\n\n## Part 2: Side A perspective\n\n> Hear them privately first, before any joint conversation. Document what they say.\n\n- **Position** (what they're asking for): \n- **Interests** (what they actually need to feel resolved): \n- **What they say happened**: \n- **What they say the other party did**: \n- **What they say their own contribution was** (or wasn't): \n- **What outcome they want**: \n- **What outcome they could live with**: \n- **What would be unacceptable**: \n\n---\n\n## Part 3: Side B perspective\n\n> Same depth, separately. Document.\n\n- **Position**: \n- **Interests**: \n- **What they say happened**: \n- **What they say the other party did**: \n- **What they say their own contribution was** (or wasn't): \n- **What outcome they want**: \n- **What outcome they could live with**: \n- **What would be unacceptable**: \n\n---\n\n## Part 4: Mediator's read\n\n### 4.1 What's actually going on\n\nThe conflict as the mediator sees it (often different from either party's framing):\n\n- **The presented conflict**: what they say it's about\n- **The underlying conflict**: what it's actually about (often: scope ambiguity, status / recognition, trust deficit from a past event, structural contention for resources)\n- **The structural cause**: organization-level factors that make this conflict more likely (unclear ownership, dual reporting, shared resource constraint)\n\n### 4.2 Where the parties are right\n\nBoth parties almost always have a legitimate point. Document:\n\n- **Side A is right about**: \n- **Side B is right about**: \n\n### 4.3 Where each is overstating\n\n- **Side A is overstating**: \n- **Side B is overstating**: \n\n### 4.4 Truth they're both avoiding\n\nCommon in escalated conflicts: a truth neither party wants to name (their own contribution, an upstream decision that's the real issue, a fact about the work itself). Surfacing this is often the unlock.\n\n---\n\n## Part 5: Resolution design\n\n### 5.1 What both parties need\n\nBased on interests (not positions), what would resolve this:\n\n- **For Side A**: \n- **For Side B**: \n- **For the team / org**: \n\n### 5.2 Proposed resolution\n\nA specific, actionable resolution:\n\n- **What changes**: scope, decision-rights, process, reporting\n- **What both parties commit to**: behavior, communication\n- **What the mediator commits to** (manager / leadership actions): \n- **Acknowledgment** of what's happened: where appropriate\n\n### 5.3 Why this resolution should work\n\n- Addresses Side A's interest because: \n- Addresses Side B's interest because: \n- Addresses the structural cause because: \n\n### 5.4 What this resolution does NOT do\n\nHonest about what's unresolved or accepted:\n\n- \n- \n\n---\n\n## Part 6: Joint mediation session\n\n> Once you've drafted the resolution, run the joint session to land it.\n\n### 6.1 Pre-session prep\n\n- Brief each party on the structure of the session\n- Confirm both have committed to participating in good faith\n- Set ground rules\n\n### 6.2 Session agenda (typically 60–90 min)\n\n1. **Opening** — mediator frames the session, the goal, the ground rules (5 min)\n2. **Each party speaks** — what they want from the session, in their own words (15 min total)\n3. **Mediator's read** — share Part 4 truthfully but with care (10 min)\n4. **Resolution discussion** — propose Part 5; iterate based on response (30 min)\n5. **Commitment** — what each party (and you) commits to; in writing (10 min)\n6. **Follow-up cadence** — when we check back, what we'll be watching for (5 min)\n\n### 6.3 Ground rules\n\n- One person speaks at a time\n- Statements about behavior, not character (\"when you did X\" not \"you are X\")\n- The mediator is not a judge; the goal is resolution, not rightness\n- Anything not agreed in the room is not committed\n- Confidentiality of the session itself (what's said stays with the parties + mediator)\n\n---\n\n## Part 7: Follow-through\n\n### 7.1 Written summary (within 24 hours)\n\nTo both parties: agreed resolution, commitments, follow-up date.\n\n### 7.2 Follow-up check-ins\n\n- **2 weeks**: separate 1:1 with each — is the resolution holding?\n- **6 weeks**: joint check-in if needed\n- **3 months**: assessment — is this stable?\n\n### 7.3 If the resolution doesn't hold\n\n- **Escalation path**: one party wasn't acting in good faith, or the structural cause wasn't addressed\n- **Next intervention**: more formal (HR, role change, separation)\n- **When to call it**: don't iterate forever; some conflicts need decisive structural action\n\n---\n\n## Common failure modes\n\n- **Mediator hears both sides at once first**: produces theater, not honesty. Hear separately, then jointly.\n- **Position-based mediation**: trying to find a middle on what they're asking for. Doesn't address what they need.\n- **Avoiding the structural cause**: a personality conflict often masks a structural problem. Ignoring it means the same conflict recurs with different people.\n- **Resolution that requires sustained good will**: brittle. Resolutions should change structure, not just behavior.\n- **No follow-through**: the resolution holds for 2 weeks then unravels because no one checked in.\n- **Escalating to HR too early or too late**: HR is the right partner for some cases; not all. Get HR perspective on whether they should be involved.\n\n---\n\n## Related artifacts\n\n- `difficult-conversations-pack` (in difficult-conversations prompts) — for the individual conversations\n- `manager-quality-review` — if the conflict involves a manager whose effectiveness is in question\n- `org-design-proposal` — if the conflict reveals a structural issue requiring redesign\n- `conflict-mediation-pack` (prompts) — for facilitating the mediation itself\n"
     },
     {
+      "id": "gold-distributed-first-operating-norms",
+      "entry_type": "template",
+      "title": "Distributed-First Operating Norms",
+      "slug": "distributed-first-operating-norms",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Culture & Change"
+      ],
+      "summary": "Living document of operating norms for a distributed-first engineering organization: communication (async-default, response times, working-hours protection), meetings, decision-making, performance-and-growth fairness, hiring, connection, and explicit anti-patterns.",
+      "why_it_matters": "Distributed-first works when norms are explicit. It fails when norms are unwritten and people improvise — which means the loudest voices and timezone-dominant office set culture by default. This template makes the implicit explicit.",
+      "when_to_use": [
+        "Establishing operating norms when shifting to distributed-first",
+        "Onboarding new hires (reference doc)",
+        "Resolving disputes about meeting cadence or response expectations",
+        "Aligning new managers on the org's operating model",
+        "Annual review and refresh"
+      ],
+      "not_for": [
+        "Hybrid teams trying to do remote occasionally (different operating model)",
+        "Single-location teams that occasionally have someone remote",
+        "Replacing actual culture work — the doc supports culture, doesn't substitute"
+      ],
+      "source_inspiration": [
+        "GitLab Handbook — distributed operating model",
+        "Automattic — distributed company practices",
+        "Basecamp — Shape Up and async-first patterns"
+      ],
+      "inputs_required": [
+        {
+          "name": "Org commitment to distributed-first",
+          "description": "Genuine, not lip service.",
+          "required": true
+        },
+        {
+          "name": "Cross-timezone leadership input",
+          "description": "Norms drafted with people across timezones, not just HQ.",
+          "required": true
+        },
+        {
+          "name": "Annual review commitment",
+          "description": "Norms rot if not maintained.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Documented operating norms",
+        "Onboarding reference",
+        "Annual review and refresh"
+      ],
+      "sections": [
+        {
+          "name": "Communication norms",
+          "purpose": "Async-default, response times, working-hours, documentation.",
+          "fields": [
+            "Async-by-default",
+            "Response time expectations",
+            "Working-hours protection",
+            "Documentation as default"
+          ]
+        },
+        {
+          "name": "Meeting norms",
+          "purpose": "When to have a meeting, structure, timezone fairness.",
+          "fields": [
+            "When justified vs. not",
+            "Meeting structure (pre-read, agenda, recorded, notes, quarterly review)",
+            "Timezone fairness (rotation, no always-same-region-suffers)"
+          ]
+        },
+        {
+          "name": "Decision-making norms",
+          "purpose": "Decision rights, decision documents.",
+          "fields": [
+            "Single-threaded ownership",
+            "Consultation explicit",
+            "Disagreement window",
+            "Disagree-and-commit",
+            "Decision document format and lifecycle"
+          ]
+        },
+        {
+          "name": "Performance and growth in distributed teams",
+          "purpose": "Visibility without performative work; coaching; promotion fairness.",
+          "fields": [
+            "Visibility without performative",
+            "Coaching and growth",
+            "Promotion / review fairness"
+          ]
+        },
+        {
+          "name": "Hiring norms",
+          "purpose": "Distributed loops, geographic pay.",
+          "fields": [
+            "Distributed hiring",
+            "Geographic pay"
+          ]
+        },
+        {
+          "name": "Connection and trust",
+          "purpose": "Building relationships across distance; conflict resolution.",
+          "fields": [
+            "Building relationships",
+            "Conflict resolution distributed"
+          ]
+        },
+        {
+          "name": "What this org does NOT do",
+          "purpose": "Explicit anti-patterns.",
+          "fields": [
+            "Per-company anti-patterns"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Norms unwritten",
+            "Async-first in name only",
+            "No meeting review",
+            "Documentation rot",
+            "Visibility bias",
+            "Holiday insensitivity",
+            "'Periodic in-person' becomes mandatory"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "distributed",
+        "remote",
+        "async",
+        "operating-norms",
+        "culture"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Initial draft: 2–4 weeks with cross-timezone input; annual refresh: 1 week",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change",
+      "template_body_markdown": "# Distributed-First Operating Norms\n\n## How to use\n\nThis template structures the operating norms for an engineering organization that is distributed-first — geographically distributed teams, no central HQ, async-default communication. It's NOT for hybrid teams trying to do remote occasionally; it's for orgs whose default is distributed and asynchronous.\n\nDistributed-first works when the operating norms are explicit. It fails when the norms are unwritten and people improvise — which means the loudest voices and the timezone-dominant office set culture by default.\n\nThis template is intended as a living document, owned by engineering leadership, reviewed annually. It's referenced when onboarding new hires, resolving disputes about meeting cadence or response expectations, and aligning new managers.\n\n---\n\n## Header\n\n- **Owner**: \n- **Last reviewed**: \n- **Next review**: \n- **Org timezones represented**: \n- **Number of distinct geographies**: \n\n---\n\n## Part 1: Communication norms\n\n### 1.1 Async-by-default\n\n- **Decisions are made in writing**: in a designated decision doc / RFC / channel, not in a meeting\n- **Discussions live in async channels**: with thread depth, summarized weekly\n- **Synchronous time is reserved for**: real-time collaboration, hard conversations, relationship-building, ambiguity resolution\n- **Sync time should be exceptional, not default**: the burden of justification is on synchronous, not async\n\n### 1.2 Response time expectations\n\n| Channel | Expected response time | Example |\n|---------|------------------------|---------|\n| Email |  |  |\n| Slack DM |  |  |\n| Slack channel |  |  |\n| PR review |  |  |\n| Async-decision document |  |  |\n| Tagged-mention urgent |  |  |\n\n> Make these explicit. People will assume something. Make sure they assume what's true.\n\n### 1.3 Working-hours protection\n\n- **Core hours** (if any): a window where overlap exists for sync coordination\n- **No-meeting blocks**: protected time for deep work\n- **Off-hours expectations**: explicit. No expectation of response after hours. If on-call, separate norm.\n- **Holidays / time off**: respected across geographies (different countries have different calendars)\n\n### 1.4 Documentation as default\n\n- **Documentation is the source of truth**, not memory or chat\n- **Decisions are written down**: ADRs, decision docs, meeting outputs\n- **Onboarding-grade docs**: a new hire can ramp without a 1:1 explanation for most things\n- **Doc maintenance**: stale docs are worse than missing ones; quarterly doc review\n\n---\n\n## Part 2: Meeting norms\n\n### 2.1 When to have a meeting\n\nA meeting is justified when:\n- Real-time collaboration is required (paired debugging, design sketching)\n- The conversation requires nuance that text loses (hard feedback, conflict resolution)\n- Multiple parties need to align in a bounded time\n- Trust-building requires presence\n\nA meeting is NOT justified for:\n- Status updates (write them down)\n- FYI broadcasts (write them down)\n- Decisions that could be async (write them down)\n\n### 2.2 Meeting structure\n\n- **Pre-read required**: every meeting has a doc circulated >24h in advance\n- **Agenda set**: in the doc, with time per item\n- **Recorded**: when participants can't attend live (with consent)\n- **Notes captured**: decisions, action items, owners; circulated within 24h\n- **Recurring meetings reviewed quarterly**: do they still produce signal?\n\n### 2.3 Timezone fairness\n\n- **Rotation of meeting times**: if a recurring meeting forces some attendees into off-hours, rotate\n- **No 'always-the-same-region-suffers' meetings**: the cost of sync time is paid by everyone equitably over time\n- **Async alternatives offered**: people who can't attend get the doc + opportunity to comment async with same weight\n\n---\n\n## Part 3: Decision-making norms\n\n### 3.1 Decision rights\n\n- **Single-threaded ownership**: every decision has one owner who decides\n- **Consultation explicit**: who must be consulted before; not 'whoever happens to see the message'\n- **Disagreement window**: an explicit period when stakeholders can object before a decision is final\n- **Disagree-and-commit**: once decided, even disagreers commit\n\n### 3.2 Decision documents\n\n- **Format**: standardized (ADR, decision memo, RFC — pick one)\n- **Required sections**: context, options considered, recommendation, decision-maker, deadline\n- **Storage**: searchable, linked from related docs\n- **Lifecycle**: status (draft / under review / decided / superseded) maintained\n\n---\n\n## Part 4: Performance and growth in distributed teams\n\n### 4.1 Visibility without performative work\n\n- **Outcomes over hours**: measured by what's shipped, not when people are online\n- **Async demos**: video / Loom for showing work; not always live demos\n- **Visibility is the manager's job to surface**: don't expect distributed engineers to self-promote\n- **No bias toward visible-online people**: explicit attention to people who do their best work in their own time\n\n### 4.2 Coaching and growth\n\n- **1:1s are sacred**: video preferred for distributed reports; never canceled lightly\n- **Career conversations require real time**: not async\n- **Sponsorship is harder distributed**: managers must work harder to introduce reports to opportunities they wouldn't see\n\n### 4.3 Promotion and review fairness\n\n- **Reviews informed by written artifacts**: not 'who I see in the office'\n- **Calibration explicitly addresses location bias**: don't let HQ-located people dominate promotion calibration\n- **Track promotion rate by geography**: surface inequity\n\n---\n\n## Part 5: Hiring norms\n\n### 5.1 Distributed hiring\n\n- **Loop designed for async**: take-home or async-friendly options\n- **Time-zone-fair scheduling**: don't always make candidates in a specific timezone work off-hours\n- **Distributed onboarding**: assumes the new hire is solo in a city; doesn't depend on office presence\n\n### 5.2 Geographic pay\n\n- **Pay band by geography**: if applicable, transparent\n- **Cost-of-living adjustments**: explicit\n- **Equal pay for equal work**: defended explicitly when challenged\n\n---\n\n## Part 6: Connection and trust\n\n### 6.1 Building relationships across distance\n\n- **Onboarding includes relationship-building**: dedicated 1:1s with team members, structured intros\n- **Periodic in-person time**: when, who pays, what we do\n- **Async social channels**: optional; never compulsory\n- **Cross-team rotation / collaboration**: structured ways for engineers to know each other across teams\n\n### 6.2 Conflict resolution distributed\n\n- **Sync time required for hard conversations**: not Slack\n- **Mediator role explicit**: when a conflict goes beyond the team\n- **Conflict is harder to detect distributed**: managers must work to surface what would be visible in an office\n\n---\n\n## Part 7: What this org does NOT do\n\nExplicit anti-patterns for this org:\n\n- \n- \n- \n\nExamples (per company): \"We do not have an HQ that gets primary input\"; \"We do not require always-on Slack\"; \"We do not promote based on visibility to leadership\"; \"We do not penalize timezone-mismatch in reviews\"; \"We do not have meetings that exclude any major timezone consistently.\"\n\n---\n\n## Common failure modes\n\n- **Norms unwritten**: defaults form anyway. Loudest voices and the timezone-dominant office set culture by default.\n- **Async-first in name only**: leadership says async-first but actually decides in synchronous meetings the few timezone-aligned attendees can join.\n- **No meeting review**: meetings accrete; calendar fills; deep work disappears.\n- **Documentation rot**: writing is required but never maintained; new hires can't trust what they read.\n- **Visibility bias**: HQ-located or timezone-aligned engineers get promoted faster despite identical contribution.\n- **Holiday / vacation insensitivity**: scheduling launches on Thanksgiving (US-fine, EU-fine, but Lunar New Year is unconsidered).\n- **'Periodic in-person' that's actually mandatory**: distributed-first promised, then 4x/year mandatory in-person makes it false.\n\n---\n\n## Related artifacts\n\n- `leadership-cadence-pack` (prompts) — for cadence design suited to distributed teams\n- `meeting-audit-template` — for the recurring quarterly review\n- `engineering-health-review` — distributed teams need explicit health monitoring\n- `distributed-team-pack` (prompts) — for distributed-team facilitation\n"
+    },
+    {
       "id": "gold-layoff-comms-pack",
       "entry_type": "template",
       "title": "Layoff Comms Pack",
@@ -6490,6 +7106,139 @@
       "template_body_markdown": "# Leadership operating model\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "org-design-change",
       "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "gold-ma-engineering-integration-plan",
+      "entry_type": "template",
+      "title": "M&A Engineering Integration Plan",
+      "slug": "ma-engineering-integration-plan",
+      "audience": [
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Strategy",
+        "Culture & Change"
+      ],
+      "summary": "Four-phase integration plan for M&A: due diligence (technical, people, product, cost, deal-stoppers), day-1 readiness (comms, logistics, retention), 100-day integration (leadership, technical priorities, comp reconciliation, cultural, customer continuity), and 12-month assessment.",
+      "why_it_matters": "M&A is high-stakes, low-frequency, and uniquely error-prone for engineering. Tech debt that wasn't visible in DD, talent that departs faster than projected, cultural integration that fails despite earnest effort, product roadmap collisions nobody saw. This template structures the engineering specifics that corporate M&A playbooks miss.",
+      "when_to_use": [
+        "Engineering input to acquisition due diligence (before signing)",
+        "Day-1 readiness preparation (before closing)",
+        "100-day integration execution (after closing)",
+        "12-month integration assessment (one year post-close)"
+      ],
+      "not_for": [
+        "Replacing corporate M&A playbook (this is engineering-specific addendum)",
+        "Bypassing legal / HR / M&A team partnership",
+        "Substituting for bilateral relationship between acquirer and acquired engineering leadership"
+      ],
+      "source_inspiration": [
+        "Standard M&A integration playbooks adapted for engineering",
+        "Will Larson — engineering leadership at scale during change",
+        "Patty McCord — talent retention through transitions"
+      ],
+      "inputs_required": [
+        {
+          "name": "Deal context",
+          "description": "Role (acquirer / acquired), team sizes, deal stage.",
+          "required": true
+        },
+        {
+          "name": "Cross-functional team alignment",
+          "description": "HR, Legal, Finance, M&A team, Product.",
+          "required": true
+        },
+        {
+          "name": "Confidentiality protocols",
+          "description": "Pre-close especially.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Due diligence findings",
+        "Day-1 plan",
+        "100-day integration plan",
+        "12-month assessment"
+      ],
+      "sections": [
+        {
+          "name": "Due diligence (engineering input)",
+          "purpose": "Pre-signing technical, people, product, cost, deal-stopper assessment.",
+          "fields": [
+            "Technical due diligence",
+            "People due diligence",
+            "Product / commercial DD",
+            "Integration cost estimate",
+            "Deal-stopper findings"
+          ]
+        },
+        {
+          "name": "Day-1 readiness",
+          "purpose": "What's true on closing day.",
+          "fields": [
+            "Day-1 comms",
+            "Day-1 logistics",
+            "Day-1 retention actions"
+          ]
+        },
+        {
+          "name": "100-day integration",
+          "purpose": "The most consequential period.",
+          "fields": [
+            "Engineering leadership integration",
+            "Technical integration priorities (top 5)",
+            "Comp and leveling reconciliation",
+            "Cultural integration",
+            "Customer continuity",
+            "100-day pulse-check"
+          ]
+        },
+        {
+          "name": "12-month assessment",
+          "purpose": "Did integration succeed.",
+          "fields": [
+            "Did integration succeed (talent, cultural, technical, roadmap, customer)",
+            "What worked, didn't, would do differently",
+            "Outstanding integration items"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt predictable failures.",
+          "fields": [
+            "Over-promising day-1",
+            "Under-investing in retention",
+            "Cultural integration as theater",
+            "Tech debt surprises",
+            "Roadmap collision unaddressed",
+            "Comp delayed too long",
+            "Founder mismanagement"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "m&a",
+        "merger",
+        "acquisition",
+        "integration",
+        "org-design"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "DD: 4–8 weeks; day-1: 1–2 weeks; 100-day plan: 100 days; 12-month assessment: ongoing",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change",
+      "template_body_markdown": "# M&A Engineering Integration Plan\n\n## How to use\n\nThis template structures the engineering side of an acquisition or merger — from due-diligence input through 12-month integration. It's for the engineering leader (typically VPE or CTO) who is either acquiring (the larger organization) or being acquired (the smaller).\n\nM&A is high-stakes, low-frequency, and uniquely error-prone for engineering: technical debt that wasn't visible in due diligence; talent that departs faster than you projected; cultural integration that fails despite earnest effort; product roadmap collisions that nobody saw coming.\n\nThis template covers the four phases: due diligence, day-1 readiness, 100-day integration, and 12-month assessment. Use it alongside the broader corporate M&A playbook; this addresses engineering specifics that the corporate playbook typically misses.\n\n**Critical**: M&A involves legal, financial, and regulatory work that varies by jurisdiction and deal type. This template is engineering integration, not legal compliance. Work with M&A team / legal / HR throughout.\n\n---\n\n## Header\n\n- **Deal**: \n- **Role** (acquirer / being acquired): \n- **Engineering team size on each side**: \n- **Deal stage** (LOI / DD / signed / closed / integrating): \n- **Owner**: \n- **Cross-functional partners**: HR, Legal, Finance, M&A team, Product\n- **Confidentiality status**: \n\n---\n\n## Phase 1: Due diligence (engineering input)\n\n> Done before signing. Discreet; only people on the deal team know.\n\n### 1.1 Technical due diligence\n\n- **Tech stack inventory**: languages, frameworks, infrastructure\n- **Architecture review**: monolith / microservices / mixed; major coupling points\n- **Tech debt assessment**: known debt, estimated remediation cost, risk to integration\n- **Security posture**: certifications, recent incidents, vulnerabilities\n- **Compliance status**: SOC 2 / ISO / GDPR / HIPAA / industry-specific\n- **Vendor concentration**: critical vendors, contract terms, exit costs\n- **Open-source posture**: license compliance, OSS dependencies, IP cleanliness\n- **Code quality signal**: test coverage, deploy frequency, incident rate, on-call load\n\n### 1.2 People due diligence\n\n- **Headcount by team / level / geography**: \n- **Key technical talent**: who's irreplaceable, what's their retention risk post-deal\n- **Comp benchmarking**: how comp compares to acquirer; what reconciliation will cost\n- **Leadership bench**: depth of engineering leadership; gaps\n- **Cultural read**: from interviews with key engineers, what their actual operating culture is\n- **Recent attrition pattern**: trend, regrettable losses, cause\n\n### 1.3 Product / commercial due diligence (engineering perspective)\n\n- **Product overlap with acquirer**: what would consolidate, what stays separate\n- **Customer concentration**: are commitments to 1–2 customers driving the value\n- **Roadmap commitments**: what's been promised that engineering will need to deliver\n- **Technical commitments to customers**: SLAs, integrations, data residency\n\n### 1.4 Integration cost estimate\n\n- **Day-1 integration cost** (security, identity, basic interop)\n- **100-day integration cost** (deeper systems, comp reconciliation, leadership)\n- **12-month integration cost** (consolidation, deprecation, replatforming)\n- **Cost of not integrating** (running two everything indefinitely)\n\n### 1.5 Deal-stopper findings\n\nHonest list of what surfaced in DD that would change the deal:\n- \n- \n\nSurface immediately to deal team. Don't bury.\n\n---\n\n## Phase 2: Day-1 readiness (closing day)\n\n> What's true on closing day. Mostly people-and-comms; technical integration starts later.\n\n### 2.1 Day-1 comms\n\n- **All-hands at acquired company**: hosted by acquired CEO + acquirer engineering exec\n- **Welcome message from acquirer engineering exec**: \n- **Public announcement** (if material): coordinated with PR\n- **Customer-facing comms** (if material): coordinated with customer-success\n- **What's changing day-1** (often: nothing operational; reporting / branding shift only): \n- **What's not changing** (typically: comp, immediate manager, scope): \n\n### 2.2 Day-1 logistics\n\n- **Email migration**: phased; not day-1 if avoidable\n- **Identity / SSO**: minimum viable interop\n- **Slack / chat**: separate workspaces typically; integration later\n- **Document access**: read-only access to critical acquirer docs\n- **Calendar shared**: \n\n### 2.3 Day-1 retention actions\n\n- **Key talent retention conversations**: held in advance of closing; offers in writing day-1\n- **Equity treatment**: explained clearly per affected person\n- **Benefits transition**: explained\n- **Reporting changes**: who reports to whom day-1; communicated in advance\n\n---\n\n## Phase 3: 100-day integration\n\n> The most consequential period. Most M&A integration failures happen here.\n\n### 3.1 Engineering leadership integration\n\n- **Combined engineering leadership team**: who's at the table, cadence, decision rights\n- **Joint planning cycle**: when the first joint planning happens\n- **Cross-team intros**: structured intro program for engineers across both sides\n- **Joint on-call** (if applicable): timing\n\n### 3.2 Technical integration priorities\n\nTop 5 technical integration priorities for the first 100 days:\n\n| Priority | Owner | Target | Risk if delayed |\n|----------|-------|--------|-----------------|\n| 1.       |       |        |                 |\n| 2.       |       |        |                 |\n| 3.       |       |        |                 |\n| 4.       |       |        |                 |\n| 5.       |       |        |                 |\n\nCommon: identity / SSO, security baseline alignment, customer-data interop, monitoring / observability, joint incident response.\n\n### 3.3 Comp and leveling reconciliation\n\n- **Comp band reconciliation**: how acquired comp maps to acquirer bands\n- **Equity refresh** (if applicable): scope and timing\n- **Promo / leveling reconciliation**: how titles and levels translate\n- **Communication to affected employees**: scope, timing, framing\n\n### 3.4 Cultural integration\n\n- **Combined culture norms**: what we keep from each side, what we converge on\n- **Operating cadence** (meetings, planning, decision rights): proposed unified cadence\n- **Specific conflicts to resolve**: where the two cultures will visibly clash\n- **Manager training on the integration**: \n\n### 3.5 Customer continuity\n\n- **Customer-facing engineering teams**: continuity of who customers talk to\n- **SLA commitments**: honored continuously through transition\n- **Roadmap commitments**: re-validated and re-communicated as needed\n\n### 3.6 100-day pulse-check\n\n- **Survey the engineering team** (both sides): integration health, what's working, what's not\n- **Synthesize and respond**: visible response to the survey\n\n---\n\n## Phase 4: 12-month assessment\n\n### 4.1 Did integration succeed\n\n- **Talent retention**: % of acquired engineers still with company after 12 months\n- **Cultural integration**: survey signal, manager feedback, attrition by tenure\n- **Technical integration**: are the systems integrated to the level intended\n- **Roadmap integration**: are joint products shipping\n- **Customer impact**: any churn attributable to integration\n\n### 4.2 What worked, what didn't\n\n- **What worked**: \n- **What didn't**: \n- **What we'd do differently in the next M&A**: \n\n### 4.3 Outstanding integration items\n\n- **Items still open**: with owner, target, and rationale for not yet completed\n- **Items explicitly deferred**: with criteria for re-prioritizing\n- **Items abandoned**: with rationale\n\n---\n\n## Common failure modes\n\n- **Over-promising day-1 integration**: trying to do too much on closing day. Most integration is 100-day work, not day-1.\n- **Under-investing in retention**: treating retention as automatic. Acquired engineers have lots of options post-deal; you must invest.\n- **Cultural integration as theater**: unified all-hands and shared swag aren't culture integration. Real integration is about decision rights, operating cadence, who-decides-what.\n- **Tech debt surprises**: due diligence missed real debt; integration cost balloons. DD should be more skeptical, not less.\n- **Roadmap collision unaddressed**: assuming the two product roadmaps will mesh. They usually don't. Reconciliation is real work.\n- **Comp delayed too long**: comp reconciliation conversations dragged out for months. Resolve in first 90 days.\n- **Founder / acquired-leader mismanagement**: failing to engage acquired CEO / CTO meaningfully in integration; they leave; their team follows.\n\n---\n\n## Related artifacts\n\n- `org-design-proposal` — for the post-integration org design\n- `reorg-impact-assessment` — for the impact of integration on existing teams\n- `retention-risk-assessment` — for retention investment in acquired key talent\n- `change-management-plan` — for the broader change management\n- `m&a-due-diligence-pack` (prompts) — for due diligence facilitation\n"
     },
     {
       "id": "tpl-manager-quality-review",
