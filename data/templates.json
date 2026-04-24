@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-24T12:27:57.753883",
-  "count": 54,
+  "generated_at": "2026-04-24T15:07:59.495318",
+  "count": 63,
   "practice_labels": {
     "people-hiring-performance": "People · Hiring · Performance",
     "strategy-planning": "Strategy & Planning",
@@ -931,6 +931,280 @@
       "practice_label": "People · Hiring · Performance"
     },
     {
+      "id": "gold-onboarding-30-60-90-ic",
+      "entry_type": "template",
+      "title": "30/60/90 Onboarding Plan — New IC",
+      "slug": "onboarding-30-60-90-ic",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering"
+      ],
+      "domains": [
+        "People Management",
+        "Hiring",
+        "Performance & Development"
+      ],
+      "summary": "Structured 90-day onboarding plan for a new IC engineer with explicit manager intent, engineer goals, and checkpoints at 30, 60, and 90 days. Each phase shifts from learning to contributing to operating with calibrated independence.",
+      "why_it_matters": "The first 90 days set the trajectory. New hires who ramp without structure default to the work that's loudest, not the work that compounds. This template forces the manager to pre-stage real work, calibrate on the team's bar, and have honest checkpoints — instead of finding out at month 6 that the new hire isn't operating at level.",
+      "when_to_use": [
+        "Co-authoring with a new IC engineer in their first week",
+        "Reviewing weekly during the first 90 days",
+        "Anchoring the 30, 60, and 90 day checkpoints",
+        "Calibrating early if the engineer is trending off-track at day 60"
+      ],
+      "not_for": [
+        "New managers (use the manager variant)",
+        "Treating the plan as a checklist instead of a relationship",
+        "Substituting for real 1:1 conversation with the new hire"
+      ],
+      "source_inspiration": [
+        "Michael Watkins — The First 90 Days",
+        "Lara Hogan — onboarding playbooks",
+        "GitLab Handbook — onboarding flows"
+      ],
+      "inputs_required": [
+        {
+          "name": "Day 1 setup completed",
+          "description": "Laptop, accounts, calendar, buddy, first project all pre-staged.",
+          "required": true
+        },
+        {
+          "name": "First small project ready",
+          "description": "Something shippable in week 2 — pre-staged.",
+          "required": true
+        },
+        {
+          "name": "Manager calendar capacity",
+          "description": "Weekly 1:1 protected; week 1 intros pre-scheduled.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "First 90-day plan",
+        "Three checkpoint discussions",
+        "Forward scope at day 90"
+      ],
+      "sections": [
+        {
+          "name": "Day 1 setup",
+          "purpose": "Manager owns these before day 1.",
+          "fields": [
+            "Laptop / accounts / access",
+            "Week 1 calendar pre-scheduled",
+            "First-week reading list",
+            "Buddy assigned and briefed",
+            "First small project identified",
+            "Welcome message in team channel"
+          ]
+        },
+        {
+          "name": "First 30 days — Learn the system and the people",
+          "purpose": "Foundation: technical fluency, system understanding, people context, org context.",
+          "fields": [
+            "Manager intent for day 30",
+            "Engineer goals (technical, system, people, org)",
+            "Manager actions (1:1 cadence, intros, first commit, week-4 retro)",
+            "Day 30 checkpoint discussion topics"
+          ]
+        },
+        {
+          "name": "Days 30–60 — Contribute on real work with support",
+          "purpose": "Real ownership, technical contribution, design participation, customer/product context.",
+          "fields": [
+            "Manager intent for day 60",
+            "Engineer goals",
+            "Manager actions (1:1 cadence shift, pair on calibration, broader context, day-45 mini-checkpoint)",
+            "Day 60 checkpoint discussion topics"
+          ]
+        },
+        {
+          "name": "Days 60–90 — Operating with calibrated independence",
+          "purpose": "Independent ownership, team contribution, strategic engagement.",
+          "fields": [
+            "Manager intent for day 90",
+            "Engineer goals",
+            "Manager actions",
+            "Day 90 retrospective topics",
+            "Forward scope and growth direction"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the predictable mistakes.",
+          "fields": [
+            "No first project ready",
+            "1:1s become status",
+            "Buddy substituted for manager",
+            "Skipping day-90 retro",
+            "Calibrating too late",
+            "Skip-level invisibility"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "onboarding",
+        "30-60-90",
+        "new-hire",
+        "ic",
+        "people-management"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "60–90 minutes to draft; 90 days to execute; 30–60 minutes per checkpoint",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# 30/60/90 Onboarding Plan — New IC\n\n## How to use\n\nThis is the structured plan for a new individual contributor's first 90 days. Co-author it with the new hire in their first week, revisit it weekly, and use it as the artifact at the 30/60/90 checkpoints.\n\nThe goals shift across the 90 days: at 30 days, the new hire is *learning the system and people*. At 60 days, they're *contributing on real work with support*. At 90 days, they're *operating with calibrated independence*.\n\nThis plan is for an experienced IC joining a new team. Adjust expectations earlier for new-grads (longer ramp on technical fluency) and later for senior+ engineers (faster on technical fluency, slower on org/strategic context).\n\n---\n\n## Header\n\n- **Engineer**: \n- **Level**: \n- **Manager**: \n- **Start date**: \n- **30-day check-in date**: \n- **60-day check-in date**: \n- **90-day check-in date**: \n- **Buddy / onboarding partner**: \n\n---\n\n## Day 1 setup\n\nManager owns these. Done before the engineer's first day if possible.\n\n- [ ] Laptop, accounts, and access provisioned\n- [ ] Calendar invites for week 1 sent (1:1 with manager, intros with team, intros with cross-functional partners)\n- [ ] First-week reading list shared (team mission, current OKRs, key docs, recent decisions)\n- [ ] Buddy assigned and briefed\n- [ ] First small project identified (something shippable in week 2)\n- [ ] Codebase access and dev environment instructions\n- [ ] Welcome message in team channel ready\n\n---\n\n## First 30 days — Learn the system and the people\n\n### Manager's intent\n\nThe new hire should leave day 30 able to:\n- Articulate the team's mission and current goals\n- Name the key people (team, cross-functional partners, stakeholders)\n- Navigate the codebase / system enough to make small changes\n- Identify their own first piece of meaningful work\n\n### Goals for the engineer\n\n- **Technical fluency**: clone the repos, run the system locally, ship one small change (typo fix, doc update, or trivial bug fix in week 1; small feature or fix in week 2–4)\n- **System understanding**: read the architecture docs, attend system walkthroughs, ask questions\n- **People context**: 1:1 with each teammate, intros with cross-functional partners, attend at least one of every recurring meeting\n- **Org context**: read the company strategy, current OKRs, recent product launches, and current customer landscape\n\n### Manager actions\n\n- **1:1 cadence**: weekly, 30 minutes, focused on questions and unblocking\n- **Week 1 intros**: schedule 30-minute coffee chats with 5–8 key people (immediate team, manager-of-manager, key cross-functional partners)\n- **Week 2 first commit**: ensure the small first project is in flight; pair on the PR if needed\n- **Week 4 retro**: what's working in onboarding, what's missing, what's confusing\n\n### Day 30 checkpoint — what to discuss\n\n- What's surprised you about the team / company / system?\n- What's been hardest to figure out?\n- Who do you not yet know that you should?\n- What would make the next 30 days more productive?\n- Manager: explicit feedback on what you're seeing — strengths, where to focus\n\n---\n\n## Days 30–60 — Contribute on real work with support\n\n### Manager's intent\n\nThe new hire should leave day 60 able to:\n- Own a meaningful piece of work end-to-end\n- Participate effectively in technical discussions and reviews\n- Give and receive feedback in the team's normal rhythm\n- Identify when they need help and ask for it well\n\n### Goals for the engineer\n\n- **Real ownership**: own a piece of work that ships in this period (a feature, a refactor, a tooling improvement). Not pair-programming on someone else's work.\n- **Technical contribution**: write code that gets reviewed and merged. Give code reviews to others.\n- **Design participation**: contribute to at least one technical design discussion (write or review an RFC, propose an approach, push back on a proposal)\n- **Customer / product context**: understand the customers being served and the product context for the work\n\n### Manager actions\n\n- **1:1 cadence**: weekly, 45 minutes; shifting from \"are you blocked\" to \"how is the work going\"\n- **Stretch on calibration**: pair on first 1–2 design decisions or PR reviews to calibrate on the team's bar\n- **Connect to broader context**: invite to a strategy review, a customer call, a partner meeting\n- **Day 45 mini-checkpoint**: informal — is the engineer trending toward day-60 readiness? If not, what's the gap?\n\n### Day 60 checkpoint — what to discuss\n\n- What's the work you're most proud of so far?\n- Where are you still feeling stretched?\n- Are there places you're holding back that you'd like to push more?\n- How is the team feeling to you now?\n- Manager: feedback on technical contribution, collaboration, and growth area for next 30 days\n\n---\n\n## Days 60–90 — Operating with calibrated independence\n\n### Manager's intent\n\nThe new hire should leave day 90 able to:\n- Operate at their level without constant manager check-in\n- Have a clear view of what they own going forward\n- Have surfaced the work / scope / direction questions they have for the manager\n- Be a normal contributing member of the team\n\n### Goals for the engineer\n\n- **Independent ownership**: own and ship work without manager scaffolding\n- **Team contribution**: contribute beyond their immediate work — code reviews, design reviews, mentorship of someone newer\n- **Strategic engagement**: participate in planning, raise concerns about scope or direction, ask hard questions\n- **First feedback cycle**: participate in any review / feedback cycle that occurs\n\n### Manager actions\n\n- **1:1 cadence**: weekly, 30–45 minutes; normal team rhythm\n- **Day 90 retrospective**: comprehensive review of the onboarding (see below)\n- **Forward planning**: agree on the engineer's scope and growth direction for the next 90 days\n\n### Day 90 retrospective — what to discuss\n\n- Are you operating at the level we hired you for?\n- What's the gap between where you are and where you want to be in 6 months?\n- What's the gap between where you are and where I want you to be in 6 months?\n- How was the onboarding? What worked, what didn't?\n- What's your scope and growth focus for days 90–180?\n- Manager: comprehensive feedback — strengths confirmed, growth areas, calibration to the level\n- Engineer: feedback to manager — what they need from you going forward\n\n---\n\n## Common failure modes\n\n- **No first project ready**: new hires lose week 1 to \"what should I work on\" if the manager hasn't pre-staged.\n- **Manager checks in but doesn't connect**: 1:1s become status updates instead of relationship-building during the most important period.\n- **Letting the buddy do the manager's job**: the buddy is for system / team navigation; the manager owns career, expectations, and feedback.\n- **Skipping the day-90 retrospective**: turns the 30/60/90 from a structured ramp into theater.\n- **Calibrating too late**: if the engineer is off-track at day 60, the day-60 checkpoint is when to address it, not day 90.\n- **Manager-of-manager invisibility**: senior+ hires especially benefit from a 30-day skip-level conversation. Schedule it.\n\n---\n\n## Related artifacts\n\n- `onboarding-30-60-90-manager` — the parallel template for new managers\n- `1-1-coaching-pack` (prompts) — for the 1:1 conversations across the 90 days\n- `performance-review-pack` (prompts) — for the day-90 retrospective if it overlaps with a review cycle\n- `interview-loop-design` — to ensure the loop set realistic expectations the new hire is being onboarded against\n"
+    },
+    {
+      "id": "gold-onboarding-30-60-90-manager",
+      "entry_type": "template",
+      "title": "30/60/90 Onboarding Plan — New Manager",
+      "slug": "onboarding-30-60-90-manager",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "People Management",
+        "Hiring",
+        "Org Design"
+      ],
+      "summary": "Structured 90-day onboarding plan for a new manager (external hire or internal promotion) with explicit phases: listen (0–30), hypothesize and adjust (30–60), make the bigger calls (60–90). Includes the manager-of-the-manager's actions and skip-level rhythm.",
+      "why_it_matters": "Manager onboarding fails differently from IC onboarding. New managers either over-act in the first 30 days (changing things based on incomplete understanding) or under-act past day 60 (avoiding hard calls). This template structures the rhythm so they do neither — and gives the manager-of-the-manager the cadence to coach effectively.",
+      "when_to_use": [
+        "Co-authoring with a new manager (external hire) in week 1",
+        "Onboarding an internal IC just promoted into management",
+        "Anchoring the 30, 60, and 90 day checkpoints",
+        "Coaching a new manager who is over-acting or under-acting"
+      ],
+      "not_for": [
+        "New ICs (use the IC variant)",
+        "Promotion from manager to director (different transition; needs its own template)",
+        "Substituting for the new manager's relationship with their team"
+      ],
+      "source_inspiration": [
+        "Michael Watkins — The First 90 Days",
+        "Camille Fournier — The Manager's Path on transitions",
+        "Lara Hogan — manager onboarding playbooks"
+      ],
+      "inputs_required": [
+        {
+          "name": "Pre-day-1 read-ahead pack",
+          "description": "Team OKRs, recent reviews, retros, incidents, attrition, comp bands, known performance issues.",
+          "required": true
+        },
+        {
+          "name": "Honest briefing on each direct report",
+          "description": "Manager-of-manager's candid read; the 'if you do nothing else, know this' for each.",
+          "required": true
+        },
+        {
+          "name": "Mentor or coach assigned",
+          "description": "Someone other than their direct manager — peer manager or external coach.",
+          "required": true
+        },
+        {
+          "name": "Pre-scheduled 1:1s",
+          "description": "With reports and cross-functional peers in week 1.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "First 90-day plan with phased intent",
+        "Three checkpoint discussions",
+        "Working hypothesis at day 60",
+        "Forward direction plan at day 90"
+      ],
+      "sections": [
+        {
+          "name": "Pre-day-1 setup (manager-of-manager owns)",
+          "purpose": "What you do BEFORE the new manager arrives.",
+          "fields": [
+            "Standard onboarding items",
+            "Pre-scheduled 1:1s with reports and peers",
+            "Read-ahead pack",
+            "Briefing on each report",
+            "Team history briefing",
+            "Manager-of-manager expectations framed",
+            "Mentor / coach assigned"
+          ]
+        },
+        {
+          "name": "Days 0–30 — Listen and observe",
+          "purpose": "Build trust by NOT changing things. Listen, not transact.",
+          "fields": [
+            "Manager-of-manager intent for day 30",
+            "New manager goals (1:1s, cross-functional, operational, code, org reading)",
+            "Explicit DO NOTs",
+            "Manager-of-manager actions (1:1 weekly, mid-week-2 check, week 3-4 skip-levels)",
+            "Day 30 checkpoint topics"
+          ]
+        },
+        {
+          "name": "Days 30–60 — Form hypothesis and propose adjustments",
+          "purpose": "Working hypothesis, small adjustments, coaching starts.",
+          "fields": [
+            "Manager-of-manager intent for day 60",
+            "New manager goals (hypothesis doc, small adjustments, coaching starts, cross-functional, ownership)",
+            "Manager-of-manager actions (day-45 hypothesis review, round-2 skip-levels)",
+            "Day 60 checkpoint topics"
+          ]
+        },
+        {
+          "name": "Days 60–90 — Make the bigger calls",
+          "purpose": "Address the biggest gap; settle operating cadence; deeper coaching.",
+          "fields": [
+            "Manager-of-manager intent for day 90",
+            "New manager goals (address biggest gap, cadence settled, coaching depth, strategic engagement, day-90-180 plan)",
+            "Manager-of-manager actions (round-3 skip-levels, day-90 retrospective)",
+            "Day 90 retrospective topics"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the predictable mistakes.",
+          "fields": [
+            "Changes too much in 0–30",
+            "Avoids hard calls past day 60",
+            "No mentor",
+            "No skip-levels",
+            "Inheriting broken commitments without renegotiation",
+            "Vibes-based day-90 review"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "onboarding",
+        "30-60-90",
+        "new-manager",
+        "people-management"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "60–90 minutes to draft; 90 days to execute; 60–90 minutes per checkpoint",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# 30/60/90 Onboarding Plan — New Manager\n\n## How to use\n\nThis is the structured plan for a new manager's first 90 days — whether they're external (joined from another company) or internal (just promoted from IC).\n\nManager onboarding fails differently from IC onboarding. New managers tend to either over-act (changing things in the first 30 days based on incomplete understanding) or under-act (avoiding hard calls because they don't yet have credibility). This plan structures the rhythm to do neither.\n\nThe phases:\n- **Days 0–30**: listen, observe, build trust. Don't change anything material.\n- **Days 30–60**: form a working hypothesis about the team and propose small adjustments.\n- **Days 60–90**: make the bigger calls if needed, with the team's support and your manager's air cover.\n\n---\n\n## Header\n\n- **Manager**: \n- **Level**: \n- **Their manager (you)**: \n- **Team they're inheriting**: \n- **Start date**: \n- **30-day check-in**: \n- **60-day check-in**: \n- **90-day check-in**: \n- **Coach / mentor (separate from their manager)**: \n\n---\n\n## Pre-day-1 setup (you, their manager)\n\n- [ ] All standard IC onboarding items done (laptop, accounts, etc.)\n- [ ] 1:1s pre-scheduled with each direct report (in week 1)\n- [ ] 1:1s pre-scheduled with key cross-functional peers\n- [ ] Read-ahead pack: team OKRs, recent reviews, recent retros, current incidents, attrition history, comp band info, current performance issues you know about\n- [ ] Briefing on each direct report (your candid read on each, including the \"if you do nothing else, know this about X\")\n- [ ] Briefing on the team's recent history (last 1–2 years of context)\n- [ ] Framing of YOUR expectations as their manager — what you'll be watching for in the first 90 days\n- [ ] Mentor / coach assigned (someone who is NOT you — typically a peer manager or an outside coach)\n\n---\n\n## Days 0–30 — Listen and observe\n\n### Your intent for them at day 30\n\n- They have an honest read on each direct report\n- They understand the team's current rhythm and conventions\n- They have built initial trust by NOT changing things prematurely\n- They have surfaced the questions and observations they want to take into days 30–60\n\n### Their goals\n\n- **1:1s with each report**: deep listening, not transactions. Use questions like:\n  - \"What was the team like before I joined?\"\n  - \"What do you hope I do?\"\n  - \"What are you afraid I'll do?\"\n  - \"What would you change if you were me?\"\n- **Cross-functional 1:1s**: meet every key partner (product, design, data, sales, support, security as relevant)\n- **Operational immersion**: attend every recurring team meeting; observe rituals, decisions, and pace\n- **Code/system fluency**: read the architecture docs, attend a system walkthrough, ramp enough to follow technical discussions\n- **Org reading**: company strategy, recent leadership comms, current org dynamics\n- **DO NOT**: change processes, restructure meetings, give performance feedback, make commitments to the team about future direction\n\n### Your (manager) actions\n\n- **Weekly 1:1**: focused on what they're learning, not what they're doing\n- **Mid-week-2 check**: are they meeting the right people? Any gap in the briefing?\n- **Skip-levels with their direct reports** (week 3 or 4): get an early read on the new manager's landing\n- **Pre-day-30 sync with HR partner**: anything surfacing from the team about the transition\n\n### Day 30 checkpoint — what to discuss\n\n- What's surprised you about the team?\n- What's surprised you about the company?\n- Who's doing well that you didn't expect? Who's struggling that you didn't expect?\n- What's your initial read on each direct report?\n- What's your initial read on team health, capability, and current commitments?\n- What questions do you have for me?\n- Your (manager) feedback on how the listening period has gone\n\n---\n\n## Days 30–60 — Form hypothesis and propose adjustments\n\n### Your intent for them at day 60\n\n- They have a working hypothesis about the team's strengths, gaps, and direction\n- They have proposed and made small adjustments (not large reorgs)\n- They are starting to deliver coaching and feedback to their reports\n- They have built enough credibility to be heard on the bigger calls coming\n\n### Their goals\n\n- **Working hypothesis document**: write up (for you, not the team) what they see — team capability, commitment realism, manager-quality of their own management, top 3 risks\n- **Small adjustments**: cadence tweaks, meeting consolidation, clarifying ownership on a fuzzy area, restating expectations on something that's drifted\n- **Coaching starts**: weekly 1:1s shift from listening to coaching; specific feedback delivered on small things first\n- **Cross-functional working relationships**: contribute meaningfully to a cross-functional planning conversation\n- **Begin to own commitments**: pick up at least one team commitment they're driving\n\n### Your (manager) actions\n\n- **Weekly 1:1**: shift to \"what's your read, what are you doing about it\"\n- **Day-45 deep-dive**: review their working hypothesis document with them; calibrate\n- **Skip-levels (round 2)**: how is the team responding to the new manager's small adjustments?\n- **Cross-functional check**: how are they showing up to peer leaders?\n\n### Day 60 checkpoint — what to discuss\n\n- What's your hypothesis about the team's biggest risk?\n- What's your hypothesis about the team's biggest opportunity?\n- Where are you still uncertain?\n- What do you want to do in the next 30 days that you haven't yet?\n- Where do you need air cover from me?\n- Your (manager) feedback on coaching, prioritization, decision-making\n\n---\n\n## Days 60–90 — Make the bigger calls\n\n### Your intent for them at day 90\n\n- They are operating as the team's manager, not as a temporary visitor\n- They have addressed the biggest gap they identified in days 30–60\n- They have given feedback on direction, scope, and team composition where needed\n- They have a clear plan for the next 90 days that you've reviewed\n\n### Their goals\n\n- **Address the biggest gap**: this might be a hard performance conversation, a scope change, a cross-team renegotiation, a hire or backfill kickoff\n- **Operating cadence**: any cadence changes are settled; the team knows what to expect\n- **Coaching depth**: deeper feedback to reports; willingness to have hard conversations\n- **Strategic engagement**: contribute to the next planning cycle as a full owner\n- **Plan for days 90–180**: their proposed direction for the team\n\n### Your (manager) actions\n\n- **Weekly 1:1**: normal cadence; coaching as needed for the bigger calls\n- **Day-90 retrospective**: comprehensive review of the onboarding and forward direction\n- **Skip-levels (round 3)**: triangulate the team's read at the 90-day mark\n\n### Day 90 retrospective — what to discuss\n\n- What worked in your onboarding? What didn't?\n- What's the team's state at 90 days vs. where you found it?\n- What hard call still ahead are you avoiding?\n- What's your plan for days 90–180?\n- Your (manager) comprehensive feedback — credibility built, gaps still to close, scope confirmed\n- Their feedback to you — what they need from you going forward\n\n---\n\n## Common failure modes\n\n- **Manager changes too much in days 0–30**: erodes trust before any is built. Your job in days 0–30 is to remind them not to.\n- **Manager avoids hard calls past day 60**: usually a coaching gap; their manager (you) needs to push.\n- **No mentor**: their manager (you) cannot be the only person they confide in. Assign a peer or external coach.\n- **No skip-levels**: you don't know how the new manager is landing without direct signal from their reports.\n- **Letting them inherit broken commitments**: review what they're inheriting BEFORE day 1 and be willing to renegotiate with stakeholders if needed.\n- **Day-90 reviews that are vibes-based**: use the comprehensive feedback structure; don't wing it.\n\n---\n\n## Related artifacts\n\n- `onboarding-30-60-90-ic` — the parallel template for new IC engineers\n- `manager-quality-review` — for honest read on the new manager at the 90-day mark\n- `1-1-coaching-pack` (prompts) — for your 1:1 with them across the 90 days\n- `skip-level-agenda` — for the round-1, round-2, round-3 skip-levels with their team\n"
+    },
+    {
       "id": "tpl-performance-review-packet",
       "entry_type": "template",
       "title": "Performance review packet",
@@ -1044,6 +1318,144 @@
       "template_body_markdown": "# Performance review packet\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "people-hiring-performance",
       "practice_label": "People · Hiring · Performance"
+    },
+    {
+      "id": "gold-pip-framework-and-letter",
+      "entry_type": "template",
+      "title": "Performance Improvement Plan (PIP) — Framework & Letter",
+      "slug": "pip-framework-and-letter",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "People Management",
+        "Performance & Development"
+      ],
+      "summary": "Three-part PIP toolkit: pre-PIP diagnosis to test whether a PIP is the right instrument, the co-signed letter itself, and the manager's weekly operating plan including mid-checkpoint and end-state branches.",
+      "why_it_matters": "PIPs are the most consequential people-management instrument a manager wields. Most failed PIPs failed at the diagnosis stage, not the execution stage. This template forces the manager to do the diagnostic work before issuing the letter, sets observable success criteria, and prevents the end-of-PIP conversation from being a surprise to anyone.",
+      "when_to_use": [
+        "When informal coaching has been tried, documented, and has not closed the performance gap",
+        "When the gap is material to the team's outcomes and persistent over weeks or months",
+        "When you can articulate observable, measurable success criteria for what 'good' looks like in the next 30–90 days",
+        "When you have alignment from your manager, HR partner, and (where required) legal"
+      ],
+      "not_for": [
+        "Cases where you have not yet given direct, specific feedback on the gap",
+        "Cases where the underlying issue is role fit, manager fit, or team dysfunction — fix those first, do not paper over them with a PIP",
+        "Cases where you have already mentally written off the employee — that is a managed exit, not a PIP, and should follow the separation playbook",
+        "Cases where you cannot write down what 'success' looks like in observable terms"
+      ],
+      "source_inspiration": [
+        "Camille Fournier — The Manager's Path, ch. 5 on managing through difficulty.",
+        "Patty McCord — Powerful, on radical clarity in expectations.",
+        "Lara Hogan — Resilient Management, on documenting the support side of difficult conversations.",
+        "Standard HR practice from US/UK enterprise tech (review by company HR/legal partner is required before issuing)."
+      ],
+      "inputs_required": [
+        {
+          "name": "Performance gap evidence",
+          "description": "Specific, observable instances of the gap over the last 8–16 weeks, with dates and context.",
+          "required": true
+        },
+        {
+          "name": "Prior feedback documentation",
+          "description": "1:1 notes, written feedback, or follow-ups where the gap was named and the report acknowledged it.",
+          "required": true
+        },
+        {
+          "name": "HR partner consultation",
+          "description": "Review of the diagnosis and draft letter with HR before issuance.",
+          "required": true
+        },
+        {
+          "name": "Skip-level alignment",
+          "description": "Your manager's awareness and concurrence with the decision to PIP.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Pre-PIP diagnosis worksheet (manager-facing)",
+        "Co-signed PIP letter",
+        "Weekly review record (manager → report, copy HR)",
+        "Mid-PIP checkpoint outcome",
+        "End-of-PIP outcome decision and follow-up plan"
+      ],
+      "sections": [
+        {
+          "name": "Pre-PIP diagnosis",
+          "purpose": "Test whether a PIP is the right instrument. Most failed PIPs failed here.",
+          "fields": [
+            "Performance gap in observable terms",
+            "Date the gap first became material",
+            "What you have already tried (with dates)",
+            "Report's stated understanding of the gap",
+            "Alternative explanations ruled out (role, manager, team, personal, comp/level)",
+            "Outcome you actually want (best, realistic, worst)",
+            "Stakeholder alignment confirmed (HR, skip-level, legal if needed)"
+          ]
+        },
+        {
+          "name": "PIP letter",
+          "purpose": "Co-signed document delivered in person. Defensible, specific, humane.",
+          "fields": [
+            "Header (employee, manager, period, HR partner)",
+            "Statement of purpose",
+            "Performance gap table (expected vs. observed)",
+            "Specific examples with dates",
+            "Success criteria table (each observable and measurable)",
+            "Manager support commitments",
+            "What is not changing during the PIP",
+            "Resources (HR contact, EAP, right to representation)",
+            "Acknowledgment signature lines"
+          ]
+        },
+        {
+          "name": "Operating plan (manager-side)",
+          "purpose": "Weekly cadence, written summaries, mid-checkpoint, and end-state branches.",
+          "fields": [
+            "Weekly review structure (45–60 min)",
+            "Weekly written summary template",
+            "Mid-PIP checkpoint at midpoint",
+            "End-of-PIP outcome paths (success, extension, separation)"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Read before drafting. Most failures are predictable from these patterns.",
+          "fields": [
+            "Vague criteria",
+            "Surprise PIP (no prior feedback)",
+            "Stretch goals stacked into criteria",
+            "No genuine manager support",
+            "Discussing the PIP with peers",
+            "Skipping the mid-checkpoint"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "pip",
+        "performance-management",
+        "managing-out",
+        "difficult-conversations",
+        "people-hiring-performance"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "3–5 hours over a week to draft and align; 30–90 days to execute",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Performance Improvement Plan (PIP) — Framework & Letter\n\n## How to use\n\nThis template is for the manager who has decided that informal coaching has run its course and a structured, documented improvement plan is the right next step.\n\nA PIP is a serious instrument. Use it when (a) the gap between current and expected performance is material and persistent, (b) you've already given specific feedback that was understood and not acted on, and (c) you can write down clear, observable success criteria. If any of those three is missing, work on those first — don't paper over them with a PIP.\n\nThis template has three parts:\n- **Pre-PIP diagnosis** — for you, the manager, before involving the report\n- **PIP letter** — the document the report receives, co-signed\n- **Operating plan** — your weekly cadence during the PIP period\n\nRun the diagnosis with your manager and HR partner before you draft the letter. Most PIPs that fail in court or in retrospect failed at the diagnosis stage.\n\n---\n\n## Part 1: Pre-PIP diagnosis\n\n### 1.1 Why now, why this person\n\n- **The performance gap, in observable terms**: \n- **When the gap first became material**: \n- **What you have already done about it** (1:1 feedback dates, written notes, training, scope changes): \n- **The report's stated understanding of the gap** (their words, from your most recent feedback conversation): \n\n### 1.2 Have you ruled out alternative explanations\n\n- **Role fit**: is the work the right work for this person's strengths? \n- **Manager fit**: have they had clear expectations, regular feedback, and unblocked support from you? \n- **Team conditions**: is the team functional — psychologically safe, properly staffed, with reasonable scope? \n- **Personal circumstances** (within what you can responsibly know): is something material happening in their life that explains the dip? \n- **Compensation / level mismatch**: are they compensated and leveled correctly for the scope? \n\nIf the answer to any of these is no or unknown, address it before issuing the PIP.\n\n### 1.3 Outcome you actually want\n\n- **Best case**: \n- **Realistic case**: \n- **Worst case (and what you'll do)**: \n\nA PIP that you have already mentally written off is not a PIP — it's a managed exit. Be honest with yourself about which one this is, because the structure of the document differs.\n\n### 1.4 Stakeholder alignment\n\n- **HR business partner reviewed**: ☐ Date: \n- **Skip-level / your manager aware**: ☐ Date: \n- **Legal review (if jurisdiction or risk requires)**: ☐ Date: \n- **Comp/equity implications considered**: ☐ \n\n---\n\n## Part 2: PIP letter (co-signed)\n\n> Hand this to the report in person, in a private setting, after you have read it through together. Do not email it as a first delivery.\n\n### 2.1 Header\n\n- **Employee**: \n- **Manager**: \n- **Period**: [start date] through [end date — typically 30, 60, or 90 days]\n- **Date issued**: \n- **HR partner**: \n\n### 2.2 Statement of purpose\n\nThis Performance Improvement Plan is a structured opportunity to address specific performance concerns. Successful completion of this plan returns the employee to good standing. Failure to meet the criteria below may result in further action up to and including termination of employment.\n\n### 2.3 Performance gap\n\nThe following gap exists between expected performance for the role and current performance:\n\n| Area | Expected at level | Observed in the last [N] months |\n|------|--------------------|---------------------------------|\n|      |                    |                                 |\n|      |                    |                                 |\n|      |                    |                                 |\n\nSpecific examples (events, projects, dates):\n- \n- \n- \n\n### 2.4 Success criteria\n\nSuccess at the end of the PIP period means meeting all of the following criteria. Each criterion is observable and measurable. Anything not on this list is not part of the PIP.\n\n| Criterion | How it will be measured | Cadence of review |\n|-----------|--------------------------|-------------------|\n|           |                          |                   |\n|           |                          |                   |\n|           |                          |                   |\n\n### 2.5 Manager support\n\nThe manager commits to providing the following during the PIP period:\n\n- Weekly 1:1 dedicated to PIP progress, in addition to regular 1:1\n- Written feedback after each weekly review\n- Removal of [specific blockers, if any]\n- Access to [training, mentorship, tooling] as needed\n\n### 2.6 What is not changing during the PIP\n\n- Compensation and benefits\n- Reporting line\n- Scope (unless explicitly modified above)\n- Confidentiality of the PIP itself — do not discuss with peers; we will not discuss with peers\n\n### 2.7 Resources\n\n- HR partner contact: \n- Employee Assistance Program (if applicable): \n- Right to representation per company policy: \n\n### 2.8 Acknowledgment\n\nSigning acknowledges receipt and understanding of this plan. It does not constitute agreement with the assessment or admission of underperformance.\n\n- Employee signature / date: \n- Manager signature / date: \n\n---\n\n## Part 3: Operating plan (manager-side)\n\n### 3.1 Weekly review structure (45–60 min)\n\n- Review the success criteria from the letter, one by one\n- For each: evidence collected this week, status (on track / off track / unclear), next-week commitment\n- Capture the review in writing within 24 hours; share with the report and HR partner\n- End by asking: \"Is there anything blocking your ability to meet these criteria that we haven't named?\"\n\n### 3.2 Weekly written summary (manager → report, copy HR)\n\n```\nPIP weekly review — [employee name]\nWeek [N] of [total]\nDate: \n\nCriteria status this week:\n- [Criterion 1]: [on track / off track / unclear] — [evidence]\n- [Criterion 2]: ...\n- [Criterion 3]: ...\n\nManager observations: \n\nCommitments for next week:\n- Employee: \n- Manager: \n\nNext review: [date]\n```\n\n### 3.3 Mid-PIP checkpoint (typically week 4 of an 8-week PIP)\n\nHold an explicit checkpoint with the report and HR partner. Possible outcomes:\n- On track to succeed → continue\n- Off track but recoverable → reset commitments, document\n- Off track and not recoverable → begin transition planning\n\nThe mid-checkpoint exists so that the end of the PIP is not a surprise to anyone.\n\n### 3.4 End of PIP — three possible outcomes\n\n**Successful completion**\n- Written confirmation that performance now meets expectations\n- Return to standard 1:1 cadence\n- Plan for sustained performance review at +60 / +90 days\n\n**Extended PIP** (rare; HR-approved only)\n- Specific gaps that remain\n- New end date and revised criteria\n- Documented justification\n\n**Separation**\n- Coordinated with HR on timing, comms, and severance\n- Day-of plan: who delivers the news, where, when, what the report leaves with\n- Internal comms plan for the team — see the separation comms template\n\n---\n\n## Common failure modes (read before drafting)\n\n- **Vague criteria.** \"Improve communication\" is not a criterion. \"Send a written weekly status update by Friday EOD covering [specific elements]\" is.\n- **Surprise PIP.** If this is the first the report has heard about the concerns, you have a manager-feedback problem, not a performance problem. Pause and address that first.\n- **Stacking criteria the role does not require.** A PIP must reflect the actual job. Adding stretch goals as required criteria is a tell that the manager has already decided.\n- **No genuine support offered.** A PIP without manager-side commitments reads as a paper trail, and increasingly will be treated as such by HR and legal.\n- **Privately discussing the PIP with peers.** Both the manager and the report should treat the PIP as confidential. Talking about it with the team poisons the team and the report.\n- **Skipping the mid-checkpoint.** The end-of-PIP conversation should never be a surprise. The mid-checkpoint is where surprises are eliminated.\n\n---\n\n## Related artifacts\n\n- `underperformance-diagnosis-worksheet` — use BEFORE this template to test whether a PIP is the right instrument\n- `pip-conversation-pack` (prompt pack) — language for the PIP delivery conversation and weekly reviews\n- `separation-comms-template` — for the team comms if the PIP ends in separation\n- `performance-review-packet` — for documenting the gap if the PIP follows a recent review\n"
     },
     {
       "id": "tpl-promotion-case-template",
@@ -1391,6 +1803,140 @@
       "practice_label": "People · Hiring · Performance"
     },
     {
+      "id": "gold-underperformance-diagnosis-worksheet",
+      "entry_type": "template",
+      "title": "Underperformance Diagnosis Worksheet",
+      "slug": "underperformance-diagnosis-worksheet",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering"
+      ],
+      "domains": [
+        "People Management",
+        "Performance & Development"
+      ],
+      "summary": "A 60–90 minute manager-only diagnostic worksheet to determine whether observed underperformance warrants a PIP, a role change, a manager intervention, a structural fix, or simply more evidence-gathering.",
+      "why_it_matters": "Most failed performance interventions failed at the diagnosis stage. The manager treated a clarity problem as a performance problem, treated a manager-fit issue as a capability issue, or escalated to a PIP without ruling out alternatives. This worksheet forces the diagnostic discipline that prevents wrong-intervention damage.",
+      "when_to_use": [
+        "Before considering a PIP for an underperforming engineer",
+        "When you've been carrying a vague concern about a report's performance for 6+ weeks",
+        "When peers or stakeholders are flagging concerns and you want to test whether they reflect a real pattern",
+        "Before any conversation with HR about formal action"
+      ],
+      "not_for": [
+        "Sharing with the report being diagnosed — this is the manager's thinking document",
+        "Cases where you have fewer than 3 specific observed events in the last 8–12 weeks (gather evidence first)",
+        "Replacing HR consultation — this is input to that conversation, not a substitute"
+      ],
+      "source_inspiration": [
+        "Camille Fournier — The Manager's Path on diagnosing performance issues",
+        "Lara Hogan — Resilient Management on alternative-explanation discipline",
+        "Standard organizational psychology on attribution error in performance assessment"
+      ],
+      "inputs_required": [
+        {
+          "name": "Observed events",
+          "description": "3+ specific, dated events from the last 8–12 weeks.",
+          "required": true
+        },
+        {
+          "name": "Honest self-reflection",
+          "description": "Willingness to consider that the issue may be clarity, manager fit, or team conditions — not capability.",
+          "required": true
+        },
+        {
+          "name": "Time",
+          "description": "60–90 minutes uninterrupted; not a 15-minute exercise.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Diagnosis with confidence level",
+        "Intervention recommendation (one of seven options)",
+        "Action plan for the week"
+      ],
+      "sections": [
+        {
+          "name": "Observed signal",
+          "purpose": "Force evidence over impression. If you don't have 3+ specific events, stop.",
+          "fields": [
+            "Event list with dates and observable details",
+            "Pattern analysis across events",
+            "What others are observing"
+          ]
+        },
+        {
+          "name": "Alternative explanations",
+          "purpose": "Test whether the issue is performance or something else (clarity, role fit, manager fit, team conditions, personal, comp/level, capability).",
+          "fields": [
+            "Clarity check",
+            "Role fit check",
+            "Manager fit check",
+            "Team conditions check",
+            "Personal circumstance check",
+            "Comp/leveling check",
+            "Capability check"
+          ]
+        },
+        {
+          "name": "Honest diagnosis",
+          "purpose": "Most likely explanation with confidence level and what would change your mind.",
+          "fields": [
+            "Most likely explanation",
+            "Second most likely",
+            "Confirming evidence to seek",
+            "Disconfirming evidence to seek",
+            "Confidence level"
+          ]
+        },
+        {
+          "name": "Intervention recommendation",
+          "purpose": "One of seven discrete interventions; don't stack them.",
+          "fields": [
+            "Option A: Coaching and clarity (clarity issue)",
+            "Option B: Role change (role fit)",
+            "Option C: Manager intervention (manager fit)",
+            "Option D: Structural fix (team conditions)",
+            "Option E: PIP (capability + sustained pattern + ruled out A–D)",
+            "Option F: Managed exit (be honest with yourself)",
+            "Option G: Continue monitoring (insufficient evidence)"
+          ]
+        },
+        {
+          "name": "Action this week",
+          "purpose": "Specific next step.",
+          "fields": [
+            "Decision",
+            "Action this week",
+            "Stakeholders to talk to",
+            "Re-evaluation date if no decision yet"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "underperformance",
+        "diagnosis",
+        "performance-management",
+        "pre-pip"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "60–90 minutes for the worksheet; 2–6 weeks for the resulting intervention",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "people-hiring-performance",
+      "practice_label": "People · Hiring · Performance",
+      "template_body_markdown": "# Underperformance Diagnosis Worksheet\n\n## How to use\n\nThis is the worksheet you fill out BEFORE deciding whether to issue a PIP, restructure the role, change the manager, or have a frank \"is this still the right job for you\" conversation.\n\nMost failed performance interventions failed at the diagnosis stage: the manager treated a clarity problem as a performance problem, treated a manager-fit problem as a capability problem, treated a personal-circumstance moment as a sustained pattern. This worksheet forces the diagnosis before the intervention.\n\nFill it out alone, in writing, before any conversation with HR or your manager. It typically takes 60–90 minutes done well.\n\n---\n\n## Part 1: The observed signal\n\n### 1.1 What you have observed (specific, dated, observable)\n\n- Event 1 (date, what happened, who was affected): \n- Event 2: \n- Event 3: \n- Event 4: \n- Event 5: \n\n> If you have fewer than 3 specific events from the last 8–12 weeks, **stop**. You don't have a performance pattern; you have an impression. Either gather evidence over the next 4–6 weeks or address whatever is driving the impression directly.\n\n### 1.2 Pattern across events\n\n- Are these events isolated or part of a pattern? \n- Is the pattern getting worse, staying the same, or getting better? \n- Does the pattern affect a specific kind of work, or all of their work? \n- Does the pattern affect specific relationships (a peer, a partner team)? \n\n### 1.3 What others are observing\n\n- What are peers saying (in retros, 1:1s, peer feedback)? \n- What is the cross-functional partner saying? \n- What is the report saying about themselves? \n\n---\n\n## Part 2: Alternative explanations\n\nFor each of the following, write the honest answer. If any answer is \"I don't know,\" that's important — investigate it before proceeding.\n\n### 2.1 Clarity\n\n- Have I given them clear expectations for this work, in writing? \n- Have I given them feedback when expectations weren't met, specifically? \n- Could a peer at their level read what I've told them and know what \"good\" looks like? \n\n> If clarity is the issue, this is a manager problem, not a performance problem. The intervention is restating expectations and feedback, not a PIP.\n\n### 2.2 Role fit\n\n- Is the work actually a fit for their strengths, interests, and trajectory? \n- Has the role changed since they were hired/promoted into it (e.g., scope grew, team shifted)? \n- Would they be a strong contributor in a different role on the team? \n\n> If role fit is the issue, the intervention is a role change conversation, not a PIP.\n\n### 2.3 Manager fit\n\n- Have I been an effective manager for them specifically (not generally)? \n- Have we had a coaching relationship, or a checking-in relationship? \n- Has anything in my own behavior contributed to the pattern (lack of feedback, inconsistent direction, withdrawal)? \n\n> If manager fit is the issue, the honest intervention is a manager change or a serious self-correction, not a PIP from the same manager.\n\n### 2.4 Team conditions\n\n- Is the team functional? Psychologically safe? Properly staffed? \n- Has the report been carrying disproportionate load (on-call, mentoring, ambiguous scope)? \n- Are there team dynamics affecting their ability to do their best work (a difficult peer, an unclear collaboration model)? \n\n> If team conditions are the issue, the intervention is structural, not individual.\n\n### 2.5 Personal circumstance\n\n- Is there a personal situation (within what you can responsibly know) that explains the pattern? \n- Is the duration of the pattern consistent with a temporary disruption vs. sustained issue? \n\n> Personal circumstances warrant accommodation, not a PIP. Talk to your HR partner.\n\n### 2.6 Compensation / leveling mismatch\n\n- Are they appropriately compensated and leveled for the scope they're being asked to perform? \n- Is the work at their level, above, or below? \n\n> If they're operating below their level on the work, the issue may be motivation. If above, the issue may be unrealistic expectations.\n\n### 2.7 Capability\n\n- Do they have the skills, tools, and access to do the work? \n- Has the gap been there from the start, or has the bar moved? \n- Is the gap closeable with training, sponsorship, or pairing? \n\n> If capability is the issue and closeable, the intervention is investment, not a PIP. If not closeable, see role fit.\n\n---\n\n## Part 3: Honest diagnosis\n\n### 3.1 What is the most likely explanation?\n\nAfter working through Part 2:\n\n- Most likely: \n- Second most likely: \n- What evidence would confirm the most likely?: \n- What evidence would change my mind?: \n\n### 3.2 Confidence level\n\n- High / Medium / Low confidence in the diagnosis: \n- If Low: what's the next investigation step before any intervention?: \n\n---\n\n## Part 4: Intervention recommendation\n\nBased on the diagnosis, the intervention should be ONE of the following. Don't stack them.\n\n### Option A: Coaching and clarity (clarity issue)\n\n- Restate expectations in writing\n- Schedule weekly written feedback for 4–6 weeks\n- Re-evaluate at the end\n\n### Option B: Role change conversation (role fit issue)\n\n- Frame: \"I want to talk about whether this role is the right fit for what you do well\"\n- Possible outcomes: re-scope current role, move to a different team, leave with dignity\n- Not a PIP\n\n### Option C: Manager intervention (manager fit issue)\n\n- This may mean a different manager, or it may mean significant self-correction by you\n- Talk to your manager and HR partner; this is hard to address from inside the relationship\n\n### Option D: Structural intervention (team conditions issue)\n\n- Address the team-level issue\n- Re-evaluate individual performance once the structural issue is addressed\n\n### Option E: Performance Improvement Plan (capability + sustained pattern)\n\n- See `pip-framework-and-letter` template\n- Only if you have ruled out A–D and have specific, observable success criteria\n\n### Option F: Managed exit (decision is already made)\n\n- Be honest with yourself — if this is what's happening, don't disguise it as a PIP\n- See your HR partner for the separation playbook\n\n### Option G: Continue monitoring (insufficient evidence)\n\n- Set a specific re-evaluation date (4–8 weeks)\n- Define what you're watching for\n- Don't drift; come back\n\n---\n\n## Part 5: What you'll do this week\n\n- Decision: \n- Action this week: \n- Who I need to talk to (HR, my manager, the report): \n- Re-evaluation date if no decision yet: \n\n---\n\n## Common failure modes\n\n- **Stacking interventions.** A PIP after a year of unclear feedback isn't a PIP; it's the manager's failure delivered as the report's problem.\n- **Skipping the alternative-explanations work.** The fastest path to a wrong intervention is to skip Part 2.\n- **Confidence theater.** Marking \"high confidence\" because the answer is uncomfortable to hold lightly.\n- **Bypassing HR.** Diagnosis is yours; intervention design needs HR.\n- **Sharing the worksheet with the report.** This is YOUR thinking document, not theirs.\n\n---\n\n## Related artifacts\n\n- `pip-framework-and-letter` — for Option E\n- `1-1-coaching-pack` (prompts) — for Option A\n- `performance-review-pack` (prompts) — for documenting the gap if it follows a recent review\n- `manager-quality-review` — for honest self-assessment if Option C is on the table\n"
+    },
+    {
       "id": "tpl-annual-engineering-strategy-memo",
       "entry_type": "template",
       "title": "Annual engineering strategy memo",
@@ -1503,6 +2049,146 @@
       "template_body_markdown": "# Annual engineering strategy memo\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "strategy-planning",
       "practice_label": "Strategy & Planning"
+    },
+    {
+      "id": "gold-build-vs-buy-decision-memo",
+      "entry_type": "template",
+      "title": "Build vs. Buy Decision Memo",
+      "slug": "build-vs-buy-decision-memo",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy",
+        "Technical Leadership",
+        "Finance & Operations"
+      ],
+      "summary": "Structured memo for build-vs-buy-vs-status-quo decisions on capabilities requiring multi-engineer-quarter investment. Forces comparable analysis: full TCO, time-to-value, strategic ownership, reversibility, and the often-skipped status quo option.",
+      "why_it_matters": "Most build-vs-buy decisions go wrong because build cost is under-estimated (initial dev is a fraction of TCO), buy cost is over-estimated (sticker price isn't TCO), 'strategic' justification papers over weak quantitative analysis, and the option to stay status quo is never seriously evaluated. This memo forces honest comparable analysis across all three.",
+      "when_to_use": [
+        "Decision about a capability requiring 6+ months of engineering effort if built",
+        "Vendor decision that would commit 3+ years of operating cost",
+        "Platform vs. point solution evaluations",
+        "Strategic capability where 'we should just build it' instinct is loud"
+      ],
+      "not_for": [
+        "Trivial decisions (small features, minor tooling)",
+        "Cases where status quo is genuinely impossible (must do something now)",
+        "Bypassing security/legal review of vendor decisions"
+      ],
+      "source_inspiration": [
+        "Standard enterprise architecture build-vs-buy frameworks",
+        "Will Larson — Staff Engineer on platform investment decisions",
+        "FinOps Foundation — TCO patterns",
+        "Marc Andreessen — software is eating the world (and most non-core software is buy)"
+      ],
+      "inputs_required": [
+        {
+          "name": "Capability description",
+          "description": "What we're deciding about, who consumes it, strategic relevance, maturity of need.",
+          "required": true
+        },
+        {
+          "name": "Honest TCO data",
+          "description": "Build cost includes 3-year operating; buy cost includes implementation + ongoing + exit.",
+          "required": true
+        },
+        {
+          "name": "Vendor finalists (if buy is on table)",
+          "description": "1–3 vendor candidates with pricing.",
+          "required": false
+        },
+        {
+          "name": "Status quo cost",
+          "description": "Cost of doing without, including the compounding workaround tax.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Side-by-side comparison",
+        "Recommendation with rationale",
+        "Reversibility analysis",
+        "Implementation logistics"
+      ],
+      "sections": [
+        {
+          "name": "The capability",
+          "purpose": "Define what we're deciding about and why.",
+          "fields": [
+            "Capability description",
+            "Users/consumers",
+            "Strategic relevance (core / supporting / commodity)",
+            "Maturity of need (stable / evolving / experimental)",
+            "Trigger for deciding now",
+            "Cost of not deciding"
+          ]
+        },
+        {
+          "name": "The three options",
+          "purpose": "Build, buy, and status quo — each evaluated comparably.",
+          "fields": [
+            "Option A — Build (scope, initial cost, ongoing cost, TCO, time-to-value, capabilities owned/lacked, risks)",
+            "Option B — Buy (vendor candidates, TCO, time-to-value, capabilities gained/lacked, risks)",
+            "Option C — Status quo (what it means, current cost, 3-year projection, when it breaks, risks)"
+          ]
+        },
+        {
+          "name": "Comparison and recommendation",
+          "purpose": "Side-by-side; reversibility; strategic vs. commodity check; recommendation.",
+          "fields": [
+            "Side-by-side table across 7 dimensions",
+            "Reversibility analysis (one-way vs two-way doors)",
+            "Strategic vs. commodity honest assessment",
+            "Recommendation with rationale tied to the analysis",
+            "What we're explicitly accepting",
+            "What would change the recommendation"
+          ]
+        },
+        {
+          "name": "Implementation logistics",
+          "purpose": "If build or buy, the next-step logistics.",
+          "fields": [
+            "If building: lead, team, phasing, success criteria, sunset plan",
+            "If buying: vendor selection, implementation owner, integration scope, success criteria, exit plan"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the ways these decisions go wrong.",
+          "fields": [
+            "Build cost under-estimated (operating is the dominant cost)",
+            "'Strategic' used to justify weak quantitative case",
+            "Status quo not seriously evaluated",
+            "Optionality ignored",
+            "Vendor TCO doesn't include exit cost",
+            "Builder bias when analyst is also the builder"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "build-vs-buy",
+        "tco",
+        "strategy",
+        "vendor",
+        "platform"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "8–16 hours over 1–2 weeks to draft properly; review by independent reader before approval",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning",
+      "template_body_markdown": "# Build vs. Buy Decision Memo\n\n## How to use\n\nThis memo structures the decision to build a capability internally vs. buy it from a vendor (or stay status quo). It's intended for capabilities that are non-trivial — typically multi-engineer-quarter to deliver — where the decision is committing 6+ months of engineering effort and 3+ years of operating cost.\n\nThe memo's job is not to advocate; it's to force comparable analysis across options so the decision can be made on the merits. Most build-vs-buy decisions go wrong because:\n\n- Build cost is under-estimated (initial dev is a fraction of TCO)\n- Buy cost is over-estimated (sticker price isn't TCO)\n- \"Strategic\" justification papers over weak quantitative analysis\n- Optionality cost (what if we change our minds in 2 years?) is ignored\n\nFill out all sections honestly. Include \"stay status quo\" as a real option, not a strawman.\n\n---\n\n## Header\n\n- **Decision**: build / buy / stay status quo for [capability]\n- **Owner**: \n- **Decision deadline**: \n- **Decision-maker / approver**: \n- **Estimated investment**: \n- **Time horizon for analysis** (typically 3 years): \n\n---\n\n## Part 1: The capability\n\n### 1.1 What capability are we deciding about\n\n- **Capability description**: \n- **Users / consumers internally**: \n- **Strategic relevance**: how core is this to our differentiated value? (Core / supporting / commodity)\n- **Maturity of need**: how stable is the requirement? (Stable / evolving / experimental)\n\n### 1.2 Why are we deciding now\n\n- **Trigger**: \n- **Cost of NOT deciding**: what continues to break or be missed without this decision\n\n---\n\n## Part 2: The three options\n\n### Option A — Build internally\n\n- **Scope of build**: what we'd actually build (MVP and target state)\n- **Initial development cost** (engineer-weeks, lead time, $)\n- **Ongoing operating cost** (engineering time per quarter to maintain, evolve, support)\n- **3-year TCO**: \n- **Time-to-value**: when we'd have the capability live\n- **Capabilities we'd own**: data, customization, IP, evolution control\n- **Capabilities we'd lack vs. buy**: maturity gaps relative to a market-leading vendor\n- **Risks**: scope creep, key-person dependency, missed market shifts, opportunity cost on team's other work\n\n### Option B — Buy (vendor)\n\n- **Vendor candidates**: 1–3 finalists if known\n- **Total Cost of Ownership** (license + implementation + ongoing operations + escape cost)\n  - Year 1: \n  - Years 2–3: \n  - 3-year TCO: \n- **Time-to-value**: when we'd have the capability live\n- **Capabilities gained immediately**: maturity, ecosystem, ongoing innovation\n- **Capabilities we'd lack vs. build**: customization, data ownership, integration depth\n- **Risks**: vendor lock-in, vendor financial health, integration complexity, security/compliance\n\n### Option C — Stay status quo\n\n- **What status quo means**: doing without, manual workarounds, partial coverage\n- **Cost of status quo**: ongoing cost of the workaround (engineering time, customer impact, operational risk)\n- **3-year cost projection** (the workaround compounds; quantify): \n- **When status quo breaks**: at what scale, growth, or strategic shift this stops being viable\n- **Risks**: what happens if status quo runs out before we revisit the decision\n\n---\n\n## Part 3: Comparison and recommendation\n\n### 3.1 Side-by-side\n\n| Dimension | Build | Buy | Status quo |\n|-----------|-------|-----|------------|\n| Year-1 cost |  |  |  |\n| 3-year TCO |  |  |  |\n| Time-to-value |  |  |  |\n| Strategic ownership |  |  |  |\n| Optionality (can we reverse in year 2?) |  |  |  |\n| Capability ceiling |  |  |  |\n| Risk profile |  |  |  |\n\n### 3.2 Reversibility analysis\n\n- **Build → Switch later**: cost and time to switch from a build to a vendor in year 2 (often high)\n- **Buy → Switch later**: cost and time to switch vendors or migrate to build in year 2 (depends on lock-in)\n- **One-way doors vs. two-way doors**: which option locks us in, which preserves optionality\n\n### 3.3 Strategic vs. commodity question\n\n- **Is this our differentiator?**: if the capability IS the differentiator, building usually right; if it's commodity, buying usually right\n- **Honest assessment**: most teams overclaim the strategic relevance of work they want to build; check this honestly\n\n### 3.4 Recommendation\n\n- **Recommendation**: build / buy / status quo (with vendor name if buy)\n- **Rationale tied to the side-by-side**: not advocacy; show the analysis\n- **What we're explicitly accepting**: the trade-offs of the recommended option\n- **What would change the recommendation**: conditions under which we'd revisit\n\n---\n\n## Part 4: Implementation logistics (if build or buy)\n\n### If building\n\n- **Lead engineer / architect**: \n- **Team**: \n- **Phasing**: MVP, then evolution\n- **Success criteria** (when we'd say the build worked): \n- **Sunset plan if build fails**: when we'd accept it isn't working and pivot to buy\n\n### If buying\n\n- **Vendor selection process**: see `vendor-evaluation-pack`\n- **Implementation owner**: \n- **Integration scope**: \n- **Success criteria** (when we'd say the buy worked): \n- **Exit plan if vendor fails**: when we'd switch vendors or rebuild\n\n---\n\n## Part 5: Approval\n\n- **Approver**: \n- **Date approved**: \n- **Approval conditions** (any specific commitments tied to approval): \n\n---\n\n## Common failure modes\n\n- **Build cost under-estimated**: initial development is a fraction of total cost. Include 3-year operating cost (engineers maintaining, evolving, supporting); typically 30–70% of initial dev cost annually.\n- **\"Strategic\" used to justify weak quantitative case**: if the build is strategic, it should still survive a quantitative comparison. If it doesn't, it's not strategic enough to build.\n- **Status quo not seriously evaluated**: most teams skip status quo because it's not exciting; often it's the right answer for 1–2 more years while the org figures out the real strategic shape.\n- **Optionality ignored**: locking into a build in year 1 that won't be revisitable in year 3 even if better options emerge.\n- **Vendor TCO doesn't include exit cost**: if you commit to a vendor, the cost of leaving is part of the cost.\n- **Analyst doing the analysis is also the builder**: builder bias toward building. Get an outside reviewer on the analysis.\n\n---\n\n## Related artifacts\n\n- `vendor-evaluation-pack` (prompts) — for the buy-side vendor selection\n- `platform-investment-case` (template) — for the build-side investment case\n- `roi-business-case` (template) — for the broader ROI framing\n- `tco-narrative` (in `vendor-evaluation-pack`) — for the TCO calculation discipline\n"
     },
     {
       "id": "tpl-cross-functional-kickoff-template",
@@ -2417,6 +3103,137 @@
       "practice_label": "Strategy & Planning"
     },
     {
+      "id": "gold-pre-mortem-template",
+      "entry_type": "template",
+      "title": "Pre-Mortem Template",
+      "slug": "pre-mortem-template",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Strategy",
+        "Engineering Excellence"
+      ],
+      "summary": "Facilitator's template for running a pre-mortem on a plan, strategy, or initiative — before commitment. Imagining the failed future and working backward to surface predictable failure modes the optimistic planning conversation missed.",
+      "why_it_matters": "Pre-mortems are the cheapest insurance on a strategic plan. They surface failure modes that the regular planning conversation systematically misses because the room is biased toward optimism, politeness, or sunk-cost momentum. Skipping them means the predictable failures hit and the team is surprised.",
+      "when_to_use": [
+        "Before locking a quarterly plan or strategic commitment",
+        "Before launching a major initiative (>$1M cost or 10+ engineer-weeks)",
+        "Before committing to a customer-promised roadmap item with high downside",
+        "When the team's optimism feels disconnected from the team's track record"
+      ],
+      "not_for": [
+        "Plans already executing (run a mid-flight check instead)",
+        "Trivial decisions (a feature, not a strategy)",
+        "Cases where the plan owner is not open to adjusting the plan (pre-mortem becomes performative)"
+      ],
+      "source_inspiration": [
+        "Gary Klein — original pre-mortem methodology (Harvard Business Review)",
+        "Daniel Kahneman — Thinking Fast and Slow on planning fallacy",
+        "Annie Duke — Thinking in Bets on probabilistic decision-making"
+      ],
+      "inputs_required": [
+        {
+          "name": "Plan to pre-mortem",
+          "description": "The committed-or-about-to-be-committed plan with success criteria.",
+          "required": true
+        },
+        {
+          "name": "4–10 participants",
+          "description": "Plan owner, direct executors, adjacent skeptics, domain veterans, fresh eyes.",
+          "required": true
+        },
+        {
+          "name": "Separate facilitator",
+          "description": "NOT the plan owner — their presence suppresses critique.",
+          "required": true
+        },
+        {
+          "name": "90-minute meeting",
+          "description": "Discrete time block; not folded into another meeting.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Top 5 failure clusters",
+        "Decisions to make NOW with owners and deadlines",
+        "Plan adjustments recommended",
+        "Re-check scheduled"
+      ],
+      "sections": [
+        {
+          "name": "Pre-meeting setup (facilitator owns)",
+          "purpose": "Set up the conditions for honest critique.",
+          "fields": [
+            "Plan being pre-mortemed (with success criteria)",
+            "Participants (4–10 across categories)",
+            "Facilitator prep (read plan, identify gloss areas, brief owner, brief participants, set no-rebuttal rule)"
+          ]
+        },
+        {
+          "name": "The meeting (90 minutes)",
+          "purpose": "Imagine the failed future; surface specific failure modes; rank; identify decisions.",
+          "fields": [
+            "Phase 1 — Frame the failed future (5 min)",
+            "Phase 2 — Silent generation of failure modes (15 min)",
+            "Phase 3 — Round-robin surface (30 min)",
+            "Phase 4 — Cluster and rank by likelihood × impact (20 min)",
+            "Phase 5 — Hidden dependencies and single points of failure (10 min)",
+            "Phase 6 — Decisions to make NOW with owners and deadlines (10 min)"
+          ]
+        },
+        {
+          "name": "Post-meeting synthesis (24 hours)",
+          "purpose": "Capture the output; force the plan to change (or risks to be explicitly accepted).",
+          "fields": [
+            "Top 5 failure clusters with specifics",
+            "Decisions to make NOW table",
+            "Plan adjustments recommended (cuts, phasing, mitigations, acceptances)",
+            "Plan changes the owner has agreed to",
+            "Re-check scheduled"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the ways pre-mortems become performative.",
+          "fields": [
+            "Plan owner runs meeting",
+            "Rebuttals allowed",
+            "Generic failure modes",
+            "No decisions on the way out",
+            "No re-check scheduled",
+            "Pre-mortem becomes performative"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "pre-mortem",
+        "planning",
+        "risk",
+        "strategy",
+        "facilitation"
+      ],
+      "difficulty": "Intermediate",
+      "estimated_time": "30 min facilitator prep; 90 min meeting; 60 min synthesis = 3 hours total",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "strategy-planning",
+      "practice_label": "Strategy & Planning",
+      "template_body_markdown": "# Pre-Mortem Template\n\n## How to use\n\nA pre-mortem is the inverse of a postmortem. Before committing to a plan, the team imagines a future in which the plan has clearly failed, then works backward to identify what predictably went wrong.\n\nIt's the cheapest insurance you can buy on a strategic plan, a quarterly commitment, or a major initiative. It surfaces predictable failure modes that the regular planning conversation misses because the room is biased toward optimism (or politeness, or sunk-cost momentum).\n\nRun a pre-mortem **before** the commitment is locked. Hour-and-a-half meeting, 4–10 people, a facilitator who isn't the plan's owner. The facilitator's job is to keep the room in the failed-future frame and prevent the conversation from drifting back to \"but we'll handle that.\"\n\nThis template covers facilitation prep, the meeting itself, and the post-meeting synthesis.\n\n---\n\n## Part 1: Pre-meeting setup (facilitator owns)\n\n### 1.1 Plan to be pre-mortemed\n\n- **Plan / initiative being pre-mortemed**: \n- **Owner**: \n- **Time horizon**: \n- **Stated success criteria** (what the plan claims will be true at the end): \n- **Pre-read sent to participants** (1-page plan summary): \n\n### 1.2 Participants\n\nPick 4–10 people across these categories:\n\n- **Plan owner**: yes (will mostly listen, defend less, listen more)\n- **Direct executors** (will be doing the work): 2–3\n- **Adjacent skeptics** (people who'd be affected but aren't on the team): 1–2\n- **Domain veterans** (have seen this kind of plan before): 1–2\n- **Outside fresh eyes** (no investment in the plan): 1–2\n- **Facilitator**: separate person, NOT the plan owner\n\n### 1.3 Facilitator's prep\n\n- [ ] Read the plan in full\n- [ ] Identify 2–3 areas where you suspect the plan glosses (helpful as backup probe questions)\n- [ ] Brief the plan owner on their job: listen, take notes, defend nothing in the room\n- [ ] Brief participants on the framing: \"Imagine it's [end date]. The plan failed clearly and visibly. Why?\"\n- [ ] Set a no-rebuttal rule for the room\n\n---\n\n## Part 2: The meeting (90 minutes)\n\n### Phase 1 — Frame the failed future (5 min)\n\nThe facilitator opens with a specific scenario:\n\n> \"It's [end date]. We're doing the postmortem on this plan. It failed — the success criteria were not met, the executive review was bad, and the team is doing damage assessment. For the next 90 minutes, we're working backward from that failure to identify why.\"\n\nTwo ground rules:\n1. **No rebuttals.** \"But we'll mitigate that\" is not allowed in the room. Capture the failure mode; mitigate later.\n2. **Specificity.** \"People left\" is not a failure mode. \"Maya left in week 3 and the iOS migration lost its only senior reviewer\" is a failure mode.\n\n### Phase 2 — Silent generation (15 min)\n\nEach participant writes failure modes silently. Targets:\n- Minimum 5 failure modes per person\n- Each is specific (named people, projects, events, dates)\n- Each is plausible (not \"the office burns down\")\n\nThe facilitator's role here is to keep the room quiet. Do not begin discussing.\n\n### Phase 3 — Round-robin (30 min)\n\nEach participant reads ONE failure mode at a time, rotating. Facilitator captures verbatim. No discussion until all are surfaced.\n\nThis phase usually surfaces 30–60 failure modes. Don't filter; capture all.\n\n### Phase 4 — Cluster and rank (20 min)\n\nGroup failure modes into clusters (e.g., \"key person leaves,\" \"dependency slips,\" \"scope explodes,\" \"wrong product-market fit\"). Then rank clusters by:\n- **Likelihood**: how likely in the time horizon (rare / possible / likely / expected)\n- **Impact**: if it happens, how bad (minor / material / fatal)\n\nIdentify the top 3–5 clusters by likelihood × impact.\n\n### Phase 5 — Hidden dependencies and single points of failure (10 min)\n\nSpecific question to surface what the plan rests on:\n- \"What does this plan secretly depend on that we haven't named?\"\n- Common: a single person, a partner team's commitment, an external event, an unreviewed decision.\n\n### Phase 6 — Decisions to make NOW (10 min)\n\nFor each top cluster, the facilitator asks:\n- \"What decision could we make in the next week that would meaningfully reduce this risk?\"\n- Capture the decision, the owner, and the deadline.\n\nThe plan owner doesn't have to commit in the room — but every decision should have a named owner and a date for the call.\n\n---\n\n## Part 3: Post-meeting synthesis (24 hours)\n\nThe facilitator writes the pre-mortem report:\n\n### 3.1 Top 5 failure clusters (ranked)\n\nFor each:\n- **Cluster name**: \n- **Specific failure modes** (the verbatim ones from the meeting): \n- **Likelihood × impact rationale**: \n- **Hidden dependency / single point of failure** (if any): \n\n### 3.2 Decisions to make NOW\n\n| # | Decision | Owner | Deadline | Status |\n|---|----------|-------|----------|--------|\n| 1 |          |       |          |        |\n| 2 |          |       |          |        |\n\n### 3.3 Plan adjustments recommended\n\n- **Cuts** (parts of the plan that should be removed to reduce risk): \n- **Phasing** (work that should happen in a different order): \n- **Mitigations** (specific work added to reduce risk of top clusters): \n- **Acceptance** (risks the team accepts as-is, with explicit acknowledgment): \n\n### 3.4 Plan changes the owner has agreed to\n\nThe owner reviews and either accepts or pushes back, in writing. The pre-mortem only adds value if the plan changes (or the team explicitly accepts the risks).\n\n### 3.5 Scheduled re-check\n\nWhen (typically a third of the way through the plan) we re-check: are any of the top failure clusters showing early signs?\n\n---\n\n## Common failure modes (in the pre-mortem itself)\n\n- **Plan owner runs the meeting**: their presence subtly suppresses honest critique. Get a separate facilitator.\n- **Rebuttals allowed**: \"but we'll handle that\" rationalizes away the value. The facilitator must enforce no-rebuttal.\n- **Generic failure modes**: \"communication breaks down,\" \"team is too small.\" These are useless. Force specificity.\n- **No decisions on the way out**: a pre-mortem without decisions is therapy. The Phase 6 step is non-negotiable.\n- **No re-check scheduled**: the predicted failure happens in week 7 and no one was watching.\n- **Pre-mortem becomes performative**: if the team doesn't believe their input changes the plan, they stop bringing real failure modes. Run pre-mortems only when you genuinely intend to adjust.\n\n---\n\n## When NOT to run a pre-mortem\n\n- The plan is already executing (run a mid-flight check instead)\n- The team has already done a thorough risk review (don't duplicate)\n- The plan owner is not open to changing the plan (pre-mortem will be performative)\n- For trivial decisions (don't pre-mortem a feature; pre-mortem a strategy or a quarter)\n\n---\n\n## Related artifacts\n\n- `pre-mortem-facilitator-pack` (prompts) — for facilitating the meeting and synthesizing the output\n- `quarterly-planning-packet` — the plan that often warrants a pre-mortem\n- `risk-register` — where the surviving risks land for ongoing tracking\n- `dependency-risk-review` — for the hidden-dependency portion at depth\n"
+    },
+    {
       "id": "tpl-quarterly-planning-packet",
       "entry_type": "template",
       "title": "Quarterly planning packet",
@@ -3107,6 +3924,152 @@
       "template_body_markdown": "# Incident review packet\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Summary\nState the incident, severity, customer impact, and resolution at a glance.\n\n- **Date and duration**: \n- **Severity**: \n- **Customer impact**: \n- **Business impact**: \n- **Resolution summary**: \n\n## Timeline\nRecord critical events, escalations, and decisions.\n\n- **Lead-up**: \n- **First known impact**: \n- **Key decisions**: \n- **Mitigation steps**: \n- **Recovery**: \n\n## Contributing factors\nDescribe the system, process, and decision contributors.\n\n- **Primary trigger**: \n- **Why it happened**: \n- **Why it was possible**: \n- **Why it was not prevented**: \n- **Why detection/response was insufficient**: \n\n## Response analysis\nEvaluate what went well and what did not in execution and communication.\n\n- **What worked**: \n- **What slowed response**: \n- **Stakeholder messaging**: \n- **Tooling or role gaps**: \n\n## Follow-up actions\nCreate accountable next steps with owners and verification.\n\n- **Action item**: \n- **Owner**: \n- **Due date**: \n- **Expected impact**: \n- **Verification method**: \n",
       "practice_folder": "reliability-ops",
       "practice_label": "Reliability & Ops"
+    },
+    {
+      "id": "gold-major-incident-exec-comms",
+      "entry_type": "template",
+      "title": "Major-Incident Exec Comms Template",
+      "slug": "major-incident-exec-comms",
+      "audience": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Engineering Manager",
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Engineering Excellence",
+        "Executive Communication"
+      ],
+      "summary": "Structured exec-facing communication for P0/P1/SEV1 incidents — first notification, periodic updates, resolution comms, post-incident summary, and customer-facing drafts. Calm, specific, honest; commit to next update rather than resolution time.",
+      "why_it_matters": "During a major incident, the comms are often what determine how the incident is remembered. Slow first notification, speculation as fact, optimistic resolution times, and silent missed updates erode trust permanently. This template gives the manager the structure to communicate with discipline when the room is on fire.",
+      "when_to_use": [
+        "P0/P1/SEV1 incident declared and exec notification needed within 15–30 minutes",
+        "During active incident — periodic updates every 30–60 minutes",
+        "At resolution — final notification with initial root cause",
+        "24 hours later — exec summary for those who need the picture"
+      ],
+      "not_for": [
+        "Lower-severity incidents (use standard incident comms; this is for major-incident discipline)",
+        "Replacing the customer-facing status page workflow",
+        "Public PR comms without coordination with PR/Comms team"
+      ],
+      "source_inspiration": [
+        "Google SRE — incident response and customer communication",
+        "PagerDuty Incident Response docs",
+        "Atlassian incident management handbook",
+        "John Allspaw — Learning from Incidents"
+      ],
+      "inputs_required": [
+        {
+          "name": "Incident facts",
+          "description": "Severity, start time, scope, current state, IC name.",
+          "required": true
+        },
+        {
+          "name": "Customer impact assessment",
+          "description": "Who's affected, how, how many.",
+          "required": true
+        },
+        {
+          "name": "Distribution list",
+          "description": "Pre-defined exec / customer-leadership / comms / legal contacts.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "First exec notification",
+        "Periodic updates (every 30–60 min)",
+        "Resolution notification",
+        "24-hour exec summary",
+        "Customer-facing comms drafts"
+      ],
+      "sections": [
+        {
+          "name": "First exec notification (within 15–30 min)",
+          "purpose": "Execs hear from engineering BEFORE customers or press.",
+          "fields": [
+            "Subject line format",
+            "Body template (status, scope, what we know, what we don't, what we're doing, IC, next update)",
+            "Distribution list (line manager, customer-facing leadership, comms, legal)"
+          ]
+        },
+        {
+          "name": "Periodic updates (every 30–60 min)",
+          "purpose": "Calm, specific, honest. Distinguish know vs. suspect.",
+          "fields": [
+            "Subject line format with update number",
+            "Body template (status, scope changes, what's new, what's unknown, mitigation, customer comms status, next update)",
+            "Tone notes (no platitudes, no speculation as fact, commit to next update not resolution)"
+          ]
+        },
+        {
+          "name": "Resolution comms",
+          "purpose": "Final notification when fully resolved (not just mitigated).",
+          "fields": [
+            "Subject line format",
+            "Body template (status, total duration, what happened, customer impact, initial root cause, what's still open, postmortem timing)"
+          ]
+        },
+        {
+          "name": "Post-incident exec summary (24 hours after)",
+          "purpose": "Detailed summary for execs who need the picture without reading the postmortem.",
+          "fields": [
+            "Headline",
+            "Compressed timeline",
+            "Customer impact (specific)",
+            "Initial root cause",
+            "Why detection took X minutes (if material)",
+            "Why mitigation took X minutes (if material)",
+            "Immediate corrective actions",
+            "Postmortem schedule",
+            "Commitments"
+          ]
+        },
+        {
+          "name": "Customer-facing comms drafts",
+          "purpose": "Status page, tier-1 customer email, public comms.",
+          "fields": [
+            "Status page (during and resolved)",
+            "Tier-1 customer email template",
+            "Public comms guidance (coordinate with PR)"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the predictable comms failures.",
+          "fields": [
+            "Slow first notification (exec hears from customer first)",
+            "Speculation as fact",
+            "Optimistic resolution time",
+            "Update silence",
+            "Different stories to different audiences",
+            "No postmortem follow-through"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "incident-comms",
+        "exec-comms",
+        "sev1",
+        "p0",
+        "crisis"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Templates ready in advance; 5–15 min per update during incident",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "reliability-ops",
+      "practice_label": "Reliability & Ops",
+      "template_body_markdown": "# Major-Incident Exec Comms Template\n\n## How to use\n\nThis template is for exec-facing communication during and after a P0/P1/SEV1 incident — when the CEO, CFO, board, or major customers need to know what's happening, what we're doing, and what's true now.\n\nIt's NOT the team's incident channel. It's NOT the customer-facing status page (though it informs it). It's the structured comms that go to people who don't have the time or context to read the incident channel.\n\nThe principles:\n- **Calm, specific, honest.** No platitudes; no panic.\n- **Lead with current state.** Not the timeline. Execs need to know what's true RIGHT NOW.\n- **What we know vs. what we suspect.** Always distinguish.\n- **Commit to the next update time, not the resolution time.** Resolution is uncertain; the next update is a commitment you can hold.\n\n---\n\n## Part 1: First exec notification\n\n> Sent within 15–30 minutes of P0/P1 declaration. The exec hears from you BEFORE they hear from a customer or the press.\n\n### Template\n\n**Subject**: [SEV1] [Service / area] — first notice\n\n**Body**:\n\n```\nStatus: SEV1 declared at [time UTC] — incident in progress.\n\nCurrent scope:\n- Affected: [user count / geography / service]\n- Customer-visible impact: [what users experience right now]\n\nWhat we know:\n- [Confirmed fact 1]\n- [Confirmed fact 2]\n\nWhat we don't yet know:\n- Root cause is still being determined\n- Full scope of impact is being assessed\n\nWhat we're doing:\n- [Active mitigation, in plain language]\n- Incident commander: [name]\n\nNext update: [specific time, typically 30–60 min later]\n\n[Your name], [Your role]\n```\n\n### Distribution\n\n- Direct line manager (typically VP of Eng → CTO → CEO chain)\n- Customer-facing leadership (Sales VP, CS VP, Support lead)\n- Comms / PR if customer-visible\n- Legal if data is involved\n\n---\n\n## Part 2: Periodic updates (every 30–60 minutes during active incident)\n\n### Template\n\n**Subject**: [SEV1] [Service / area] — Update [N] at [time]\n\n**Body**:\n\n```\nStatus: SEV1 — [active / mitigating / monitoring]\nTime since start: [duration]\n\nCurrent scope:\n- Affected: [user count / geography / service — has this changed?]\n- Customer-visible impact: [current state]\n\nWhat we know now (changes from last update):\n- [New confirmation 1]\n- [Changed assessment]\n\nWhat's still unknown:\n- [Remaining unknowns]\n\nMitigation in progress:\n- [Specific actions, who's doing what]\n- [Expected timing for any in-flight action]\n\nCustomer comms status:\n- Status page: [current message + last updated]\n- Direct customer outreach: [tier-1 customers contacted: yes/no]\n- Public comms (PR/social): [needed: yes/no/escalating]\n\nNext update: [specific time]\n\n[Your name]\n```\n\n### Tone notes\n\n- If the situation is bad, say so. Not \"experiencing some issues\" when checkout is down for 60% of users.\n- If you don't know the cause yet, say so explicitly. Don't speculate as fact.\n- Avoid optimistic resolution timing. Commit to the next UPDATE, not the resolution.\n\n---\n\n## Part 3: Resolution comms\n\n> Sent when the incident is fully resolved (not just mitigated).\n\n### Template\n\n**Subject**: [SEV1 RESOLVED] [Service / area]\n\n**Body**:\n\n```\nStatus: RESOLVED at [time UTC]\nTotal duration: [start to fully resolved]\n\nWhat happened:\n[2–3 sentences in plain language]\n\nCustomer impact:\n- [Specific scope: # users, regions, services]\n- [Revenue / SLA implications if applicable]\n- [Customer comms sent: status page, direct outreach, public]\n\nInitial root cause (subject to postmortem):\n[What we know now; mark as initial]\n\nWhat's still open:\n- Postmortem due [date]\n- Action items (initial list): [3–5 highest-priority]\n- Customer follow-up: [what we owe customers]\n\n[Your name]\n```\n\n---\n\n## Part 4: Post-incident exec summary (24 hours after resolution)\n\n> A more detailed summary for execs who need the picture without reading the postmortem.\n\n### Template\n\n**Subject**: [SEV1 SUMMARY] [Service / area] — [date]\n\n**Headline** (2 sentences): What happened, current status, customer impact.\n\n**Timeline** (compressed, key events with timestamps):\n- [Detection]\n- [Escalation]\n- [Mitigation start]\n- [Mitigation effective]\n- [Full resolution]\n\n**Customer impact** (specific):\n- Users affected: \n- Geography: \n- Services: \n- SLA impact: \n- Revenue impact (if quantifiable): \n- Top-tier customers contacted: \n\n**Initial root cause**:\n[What we know now; postmortem will sharpen]\n\n**Why detection took [X] minutes**:\n[Honest about detection lag if material]\n\n**Why mitigation took [X] minutes**:\n[Honest about mitigation lag if material]\n\n**Immediate corrective actions taken**:\n1. \n2. \n3. \n\n**Postmortem**:\n- Scheduled: [date]\n- Lead: [name]\n- Will cover: full timeline, root cause, action items, patterns vs. recent incidents\n- Will be shared with: [audience]\n\n**What we're committing to**:\n- [Specific commitments to leadership / customers / board]\n\n**[Your name]**\n\n---\n\n## Part 5: Customer-facing comms (drafts for each channel)\n\n### Status page\n\n**During**:\n> [Service] — investigating elevated [error rate / latency] affecting [scope]. Updates every [N] minutes.\n\n**Resolved**:\n> [Service] — issue resolved at [time]. [One-sentence on cause]. Postmortem to follow within 7 days.\n\n### Tier-1 customer email (CSM-driven)\n\n> [Customer name],\n> \n> I wanted to reach out personally to let you know about an incident that affected [their use of the service] from [start] to [end]. \n> \n> Specifically: [what they experienced]. \n> \n> The cause was [plain-language summary]. We have [mitigated / fixed] this, and we're conducting a full postmortem this week. I will share that postmortem with you once complete and walk through the prevention work we're committing to.\n> \n> If you'd like a call to discuss, please let me know — I'm happy to set up time with [our engineering lead].\n> \n> [CSM / executive name]\n\n### Public comms (PR, social — only if customer-visible at scale)\n\nCoordinate with PR/Comms team. Default tone:\n- Acknowledge the issue specifically, not vaguely\n- Apologize for the impact, not for \"any inconvenience\"\n- State what you're doing to prevent recurrence\n- Don't over-promise\n\n---\n\n## Common failure modes\n\n- **Slow first notification**: execs hear about the incident from a customer, the press, or social media before they hear from engineering. Loss of trust is permanent.\n- **Speculation as fact**: stating a suspected cause as confirmed; later having to retract. Distinguish \"what we know\" from \"what we suspect\" every time.\n- **Optimistic resolution time**: \"We expect this resolved in 10 minutes\" — repeated three times across two hours. Commit to the next update, not the resolution.\n- **Update silence**: missing the committed next-update time without notice. If you can't update at the committed time, send a 1-line note that you're delaying the update.\n- **Different stories to different audiences**: tier-1 customer hears one thing, the board hears another. Single source of truth.\n- **No postmortem follow-through**: promised postmortem in 7 days; delivered in 28. Erodes the credibility of the original comms.\n\n---\n\n## Related artifacts\n\n- `incident-summary-pack` (prompts) — for drafting status updates and post-incident summaries\n- `incident-review-packet` — for the full postmortem after resolution\n- `escalation-brief` — for non-incident escalations\n- `postmortem-action-tracker` — for following through on the action items\n"
     },
     {
       "id": "tpl-operational-readiness-review",
@@ -4142,6 +5105,164 @@
       "template_body_markdown": "# Communication plan\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Purpose and context\nExplain why this artifact exists and what decision or conversation it supports.\n\n- **Situation**: \n- **Audience**: \n- **Decision or outcome needed**: \n- **Time horizon**: \n\n## Current state\nCapture the baseline facts, constraints, and relevant evidence.\n\n- **Baseline facts**: \n- **Signals or symptoms**: \n- **Constraints**: \n- **Known risks**: \n\n## Analysis\nTranslate raw evidence into implications, tradeoffs, and options.\n\n- **Key observations**: \n- **Options considered**: \n- **Tradeoffs**: \n- **Recommendation rationale**: \n\n## Execution and ownership\nDefine actions, owners, milestones, and review cadence.\n\n- **Actions**: \n- **Owners**: \n- **Timeline**: \n- **Review cadence**: \n\n## Risks and follow-up\nDocument unresolved issues, dependencies, and checks.\n\n- **Open risks**: \n- **Dependencies**: \n- **Escalation triggers**: \n- **Next review date**: \n",
       "practice_folder": "org-design-change",
       "practice_label": "Org Design & Change"
+    },
+    {
+      "id": "gold-layoff-comms-pack",
+      "entry_type": "template",
+      "title": "Layoff Comms Pack",
+      "slug": "layoff-comms-pack",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Org Design",
+        "Culture & Change",
+        "Executive Communication",
+        "People Management"
+      ],
+      "summary": "Comprehensive comms pack for an engineering layoff: manager day-of script with affected people, team comms within 1 hour, org-wide comms same day, all-hands Q&A, external comms coordination, and 30-day manager check-ins for the surviving team.",
+      "why_it_matters": "Layoffs are the most consequential people action a company takes. The comms cannot fix a bad decision but can prevent a bad decision from being made worse. Most layoff failures are comms failures: people learn from peers in Slack, rationale changes between audiences, the surviving team is left without information, public messaging contradicts what employees were told. This pack provides the structure to do it with discipline.",
+      "when_to_use": [
+        "When the layoff decision is made and approved (this is comms, not decision)",
+        "Day-of execution",
+        "Same-day org-wide comms",
+        "Following 30 days for the surviving team"
+      ],
+      "not_for": [
+        "Replacing legal / HR partner consultation — every layoff has jurisdictional, regulatory, and contractual requirements that vary",
+        "Deciding whether to do the layoff — that is a separate workstream",
+        "Performance-driven separations (use PIP framework + separation playbook instead)",
+        "M&A-driven role consolidation without HR/legal partnership"
+      ],
+      "source_inspiration": [
+        "Patty McCord — Powerful, on radical clarity",
+        "Lara Hogan — layoff comms blog posts",
+        "First Round Review — interviews on layoff execution",
+        "Standard HR/legal practice from US/UK enterprise tech (HR/legal review required)"
+      ],
+      "inputs_required": [
+        {
+          "name": "Decision approved and locked",
+          "description": "Scope, scope criteria, severance, support package.",
+          "required": true
+        },
+        {
+          "name": "HR partner aligned",
+          "description": "Briefed, available, owns process compliance.",
+          "required": true
+        },
+        {
+          "name": "Legal review",
+          "description": "Jurisdictional, regulatory, contractual compliance verified.",
+          "required": true
+        },
+        {
+          "name": "Comms sequence locked",
+          "description": "Order of comms tightly controlled to prevent leaks.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "Manager 1:1 script",
+        "Team comms script",
+        "Org-wide email",
+        "All-hands Q&A prep",
+        "External comms coordination",
+        "30-day surviving-team plan"
+      ],
+      "sections": [
+        {
+          "name": "Affected-IC notification (manager-led 1:1)",
+          "purpose": "The most consequential conversation. In person, in private, with HR available.",
+          "fields": [
+            "Pre-conversation prep",
+            "Manager script (opening, decision, severance, logistics, closing)",
+            "During the conversation rules (listen, don't negotiate, don't bad-mouth)",
+            "Common questions with honest answers"
+          ]
+        },
+        {
+          "name": "Team comms (within 1 hour)",
+          "purpose": "The remaining team hears from you within an hour. Voice, not Slack.",
+          "fields": [
+            "Opening script",
+            "The why at the right altitude",
+            "Honoring departed colleagues",
+            "What's true for those staying",
+            "Tone and don'ts"
+          ]
+        },
+        {
+          "name": "Org-wide comms (same day)",
+          "purpose": "Engineering exec broadcasts to broader org with consistent rationale.",
+          "fields": [
+            "Email template (why, what it means, what it does not mean, support, all-hands invitation)"
+          ]
+        },
+        {
+          "name": "All-hands Q&A (within 24–48 hours)",
+          "purpose": "Live, with HR present, anonymous questions accepted.",
+          "fields": [
+            "Format",
+            "Anticipated questions and prepared answers",
+            "Tone (don't filter to softballs, 'I don't know' acceptable)"
+          ]
+        },
+        {
+          "name": "External comms",
+          "purpose": "Customer and public comms, coordinated with PR.",
+          "fields": [
+            "Tier-1 customer notification template",
+            "Public comms (coordinated with PR; common patterns)"
+          ]
+        },
+        {
+          "name": "Manager check-ins for surviving team (next 30 days)",
+          "purpose": "Active management for those staying; layoffs damage the survivors most over time.",
+          "fields": [
+            "Week 1 cadence",
+            "Weeks 2–4 cadence",
+            "Day 30 pulse-check"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the predictable comms failures.",
+          "fields": [
+            "Layoff leaks before 1:1s",
+            "Different stories at different altitudes",
+            "Hiding the rationale",
+            "Promising what you can't hold",
+            "Performing optimism in team comms",
+            "Forgetting the surviving team",
+            "No follow-up on commitments"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "layoff",
+        "rif",
+        "crisis-comms",
+        "change-management",
+        "org-design"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "Days of preparation; comms execute over 24–48 hours; surviving-team work over 30+ days",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "org-design-change",
+      "practice_label": "Org Design & Change",
+      "template_body_markdown": "# Layoff Comms Pack\n\n## How to use\n\nThis is the comms pack for an engineering layoff. It covers the manager's day-of script with affected people, the comms cascade for the team that remains, and the executive comms for the broader org.\n\nA layoff is the most consequential people action a company takes. The comms cannot fix a bad decision; they can prevent a bad decision from being made worse. Most layoff failures are comms failures: people learn from their peers in Slack, the rationale changes between audiences, the surviving team is left without information, the public messaging contradicts what employees were told.\n\nThis pack assumes the layoff decision is made and approved. It does not address whether the layoff is the right call — that is a separate decision with separate inputs (financial pressure, strategic shift, performance management failure, M&A-driven). If you have not done that work, do it before opening this template.\n\n**Critical**: every layoff has legal, HR, and (often) jurisdictional requirements that vary by country, state, and company size. This template is comms structure, not legal compliance. Work with HR and legal partners on every step.\n\n---\n\n## Header\n\n- **Layoff scope**: # of people, % of org\n- **Date of action**: \n- **Decision-makers**: \n- **HR partner**: \n- **Legal review completed**: ☐ Date: \n- **Severance package**: [reference doc]\n- **Outplacement / support offered**: \n- **Comms sequence (locked)**: \n  1. Affected ICs notified by their managers\n  2. Team comms within 1 hour of last 1:1\n  3. Org-wide comms same day\n  4. External comms (if any) coordinated with PR\n  5. Customer comms (if applicable) coordinated with CSM/Sales\n\n---\n\n## Part 1: Affected-IC notification (manager-led 1:1)\n\n> The most consequential conversation. Held in person where possible (or video), in private, with HR partner available.\n\n### 1.1 Pre-conversation prep\n\n- [ ] HR partner briefed; available for joining if requested\n- [ ] Severance package ready to share in writing immediately after\n- [ ] Office logistics planned (building access, equipment return, escort if needed)\n- [ ] Manager script reviewed\n- [ ] Manager has done their own grief/discomfort processing in advance — DO NOT process it in the conversation\n\n### 1.2 Manager script\n\n> Hold the conversation in private. Do not start with chitchat. The person should know in the first 30 seconds why they're there.\n\n**Opening (verbatim)**:\n\n> \"[Name], thank you for making time. I have hard news to share. Your role is being eliminated as part of a workforce reduction we're announcing today. This decision is final. I want to walk you through what's happening and what support we're providing.\"\n\n**The decision**:\n\n> \"The company is reducing the [team / function / org] by [scope] effective [date]. This was a business decision based on [one-line: financial pressure / strategic shift / restructuring]. It is not a reflection of your performance or your contributions to this team.\"\n\n**Severance and support**:\n\n> \"I'm going to share a packet that has all the details. Here's the headline:\n> - Your last day on payroll is [date]\n> - Severance: [package summary]\n> - Healthcare: [continuation details]\n> - Outplacement: [services offered]\n> - Equity: [vesting / unvested treatment]\n> \n> [HR partner name] is your point of contact for any questions about the package itself.\"\n\n**Logistics**:\n\n> \"Here's what happens next:\n> - [Equipment return / access changes]\n> - [Final paychecks and timing]\n> - [References — what you can expect from me and from HR]\n> - You'll receive an email within the hour with the written details\"\n\n**Closing**:\n\n> \"I am going to be a reference for you. I will write you a recommendation. If there's anything I can do — introductions, advice, just to talk in a few weeks — please reach out.\n> \n> I'm sorry. This is hard, and I want you to know I see how hard.\"\n\n### 1.3 During the conversation\n\n- **Listen more than you talk.** After delivering the news, give silence.\n- **Do not over-explain or apologize repeatedly.** Be present, not defensive.\n- **Do not negotiate.** The decision is final; the conversation is not for changing it.\n- **Do not project optimism for them.** Don't say \"you'll find something great quickly\" — you don't know.\n- **Do answer questions honestly.** \"I don't know\" is acceptable when true. \"I can't share that\" is acceptable when true.\n- **Do not bad-mouth the company or the decision.** You have to live with what you say to them.\n\n### 1.4 Common questions and honest answers\n\n- **\"Why me?\"** — \"The decision was made by [decision-maker level] based on [scope criteria — role redundancy / function consolidation / etc.]. It was not a performance decision.\"\n- **\"Was this related to [last review / last project]?\"** — Honest answer: typically no, unless performance was the criterion (rare in true layoffs).\n- **\"Can I appeal?\"** — \"The decision is final. HR can answer any questions about process.\"\n- **\"Will you give me a reference?\"** — \"Yes.\" (Be willing to commit if it's true.)\n- **\"What about [colleague]?\"** — \"I can't share other people's status.\"\n\n---\n\n## Part 2: Team comms (within 1 hour of last 1:1)\n\n> The team that remains needs to hear from you within an hour. They will know something is wrong. Don't leave them to speculate.\n\n### Format\n\nIn-person team meeting (or video if remote). Voice, not Slack.\n\n### Script\n\n**Opening**:\n\n> \"I have hard news. Today we made workforce reductions affecting [scope]. On our team, [specific names if appropriate per HR guidance, or 'these colleagues': X, Y, Z] are no longer with us as of today.\n> \n> I have already met with each of them individually. They are receiving severance, healthcare continuation, and outplacement support.\"\n\n**The why**:\n\n> \"This decision was made because [honest reason at appropriate altitude — usually 'the company is restructuring [function/area] in response to [strategic shift / financial reality]']. It is not a reflection of the work this team has done.\"\n\n**For the people leaving**:\n\n> \"I want to take a moment to acknowledge [departed colleagues by name] and what they contributed. [Specific things — a project, a quality, an impact]. They are good people who did good work. They deserve our gratitude.\"\n\n**For the people staying**:\n\n> \"I know this raises questions for everyone here. Here's what I can tell you:\n> - The decisions affecting our team are complete; there are no further reductions planned [say only if true]\n> - The work we own is [continuing as-is / shifting in these specific ways]\n> - Your roles are [secure / changing in these specific ways]\n> - I will be available for 1:1s starting [time/day] for anyone who wants to talk\"\n\n**Closing**:\n\n> \"If you want to reach out to [departed colleagues] personally, please do — they are not leaving because of anything they did wrong. Their contact information will be in the email I'll send shortly.\n> \n> I am here. I will be here. Take the time you need this afternoon.\"\n\n### Tone and don'ts\n\n- **Do not lead with what's exciting going forward.** This is a moment of loss; honor it.\n- **Do not promise no further layoffs unless you genuinely know.** \"No further reductions planned\" is acceptable; \"we're done\" is acceptable only if you can hold it.\n- **Do not minimize.** Don't say \"it's just a few people\" or \"this is normal restructuring.\"\n- **Do not over-promise the future.** Don't paint a rosy picture; the team will see through it.\n\n---\n\n## Part 3: Org-wide comms (same day, after team comms)\n\n> Sent by the engineering exec (VP of Eng / CTO) to the broader org.\n\n### Email template\n\n**Subject**: Update on engineering organization\n\n**Body**:\n\n```\nTeam,\n\nToday we made the difficult decision to reduce our engineering organization by [scope]. This affected [count] of our colleagues across [scope]. By now, every affected person has been notified directly by their manager and is receiving severance, healthcare continuation, and outplacement support.\n\nWhy we're doing this:\n[2–3 paragraphs at the right altitude. Honest about the driver. Not generic 'difficult market conditions' — specific. If financial: name the financial reality. If strategic: name the strategic shift.]\n\nWhat this means going forward:\n[Brief: what work continues, what shifts, what stops. Concrete.]\n\nWhat it does not mean:\n- This is not a reflection of the work or quality of the people leaving — they did good work and we are sorry to see them go\n- This is [or is not, if not true] a precursor to further reductions\n- The strategic direction of [team/area X] is unchanged [if true]\n\nHow we're supporting people leaving:\n[Severance, healthcare, outplacement, references]\n\nHow we're supporting people staying:\n[Specific support — extra 1:1 time, surveys, all-hands Q&A, manager office hours]\n\nI will hold an all-hands at [time] to take questions. I commit to answering honestly, including 'I don't know' when true.\n\nFor [departed colleagues], you have my deep thanks for your contributions to this team. I am available as a reference. Please stay in touch.\n\n[VP/CTO name]\n```\n\n---\n\n## Part 4: All-hands Q&A (within 24–48 hours)\n\n### Format\n\nLive Q&A by the engineering exec, with HR partner present. Anonymous question submission encouraged.\n\n### Anticipated questions and prepared answers\n\n- **\"Are there more layoffs coming?\"** — Honest answer; do not promise what you don't know\n- **\"Why these people specifically?\"** — At the right altitude (role redundancy, function consolidation, scope shift); not by name\n- **\"Why not [alternative — pay cuts, hiring freeze, slower growth]?\"** — Honest about why this option was chosen\n- **\"What happens to [project / team / commitment]?\"** — Specific\n- **\"How are [departed colleagues] doing?\"** — Honest, respectful\n- **\"Are managers / leadership taking pay cuts too?\"** — Honest answer\n- **\"How is morale going to recover?\"** — Honest acknowledgment that recovery takes time and what you're committing to do\n\n### Tone\n\n- Take questions live; don't filter to softballs\n- \"I don't know\" is an acceptable answer when true\n- \"I can't share that\" is acceptable when true (for legal / privacy reasons), and explain why\n- Don't perform optimism; the room will see through it\n\n---\n\n## Part 5: External comms (PR, customers, partners)\n\n> Coordinate with PR/Comms team. Do not freelance.\n\n### Tier-1 customer notification (if customer-impacting)\n\nFor customers whose engineering account team or specific service team is materially affected:\n\n> \"I'm writing to let you know that [Company] today announced a workforce reduction that affects [scope]. Specifically for your [account / service / partnership]: [honest impact statement — your CSM / engineering lead is unchanged, OR your engineering team has changed and here's the new lead, OR roadmap commitments are being reviewed and we will share an updated commitment by X date].\n> \n> We are committed to [continued support / honoring commitments / new direction]. Your CSM [name] will reach out to discuss further.\"\n\n### Public comms\n\nCoordinated with PR. Do not draft alone. Common patterns:\n\n- Blog post or press release with company-wide announcement (only for material reductions)\n- Social media response if the layoff becomes public via an affected employee's post\n- Recruiter outreach to the broader market for affected employees (often facilitated by company)\n\n---\n\n## Part 6: Manager check-ins for the surviving team (next 30 days)\n\nThe most damaging long-term effect of a layoff is on the people who stay. They've watched colleagues lose jobs and they're worried they're next. Active management for the next 30 days matters.\n\n### Week 1\n\n- 1:1 with every direct report; ask \"how are you holding up?\"\n- Open office hours for cross-team conversations\n- Update on what work continues, shifts, stops\n- Honest about what you don't know yet\n\n### Weeks 2–4\n\n- Continue 1:1 cadence\n- Watch for signs of disengagement, attrition risk, performance dips\n- Be visible; do not retreat\n- Recommit to specific work to give the team forward motion\n\n### Day 30 pulse-check\n\n- Anonymous survey: how are people feeling, what do they need, what should we do differently\n- Synthesize and respond — don't survey without acting\n\n---\n\n## Common failure modes\n\n- **Layoff news leaks before manager 1:1s**: most damaging. People learn from peers in Slack. Tighten comms discipline before the day.\n- **Different stories at different altitudes**: the manager says one thing, the email says another, the all-hands says a third. Single source of truth; align before the day.\n- **Hiding the rationale**: vague \"difficult market conditions\" when the reality is specific. People see through vagueness.\n- **Promising what you can't hold**: \"no more layoffs\" when you don't know. Say \"no more planned\" if true.\n- **Performing optimism in the team comms**: \"this lets us refocus on our exciting future\" — read as cruel by people just laid off.\n- **Forgetting the surviving team**: they need active management for 30+ days. Burnout, disengagement, attrition risk.\n- **No follow-up on commitments**: promised survey not run; promised changes not made; promised 1:1 cadence dropped after week 2.\n\n---\n\n## Related artifacts\n\n- `change-management-plan` — for the broader change management around the org shift\n- `stakeholder-communication-pack` (prompts) — for drafting tier-1 customer comms\n- `manager-quality-review` — for honest assessment of manager support post-layoff\n- `org-design-proposal` — for the design that drove the layoff (if applicable)\n"
     },
     {
       "id": "tpl-leadership-operating-model",
@@ -5882,6 +7003,182 @@
       "template_body_markdown": "# Headcount business case\n\n## How to use\nDuplicate this template and replace each prompt with concrete evidence, decisions, and owners.\n\n## Business problem\nDefine the workload, opportunity, or risk driving the request.\n\n- **Problem statement**: \n- **Why now**: \n- **Business impact of status quo**: \n- **Affected teams/customers**: \n\n## Workload and evidence\nShow data that current staffing is insufficient.\n\n- **Demand trends**: \n- **Current capacity**: \n- **Missed commitments or risk signals**: \n- **Benchmark or ratio notes**: \n\n## Requested headcount\nSpecify the role and expected scope clearly.\n\n- **Role title**: \n- **Level**: \n- **Team placement**: \n- **Primary responsibilities**: \n- **Success in first 6-12 months**: \n\n## Options considered\nDemonstrate rigor by comparing alternatives.\n\n- **Do nothing**: \n- **Contractor or vendor**: \n- **Automation/process change**: \n- **Reprioritization**: \n- **Recommended option**: \n\n## Financial case\nExplain cost, ROI logic, and cost of delay.\n\n- **Salary and overhead**: \n- **Start date assumption**: \n- **Opportunity cost**: \n- **Expected productivity or risk reduction**: \n- **Payback logic**: \n\n## Implementation plan\nClarify hiring plan and measurement.\n\n- **Hiring timeline**: \n- **Interviewers**: \n- **Onboarding plan**: \n- **Success metrics**: \n- **Review checkpoints**: \n",
       "practice_folder": "finance-business-ops",
       "practice_label": "Finance & Business Ops"
+    },
+    {
+      "id": "gold-investment-roi-business-case",
+      "entry_type": "template",
+      "title": "Investment ROI Business Case",
+      "slug": "investment-roi-business-case",
+      "audience": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "career_paths": [
+        "Director of Engineering",
+        "VP of Engineering",
+        "CTO"
+      ],
+      "domains": [
+        "Finance & Operations",
+        "Strategy",
+        "Executive Communication"
+      ],
+      "summary": "Structured ROI business case for a substantial engineering investment (platform, capability build, multi-quarter strategic bet). Forces the four discipline questions: full cost, return (quant + qual), cost of NOT doing it, alternatives. Audience is CFO/CEO/board, not engineering.",
+      "why_it_matters": "Most engineering ROI cases lose because they're written by engineers as engineering documents — over-detailing what's being built, under-quantifying what it returns, skipping alternatives. This template inverts that: light on engineering detail, heavy on financial framing, explicit on cost-of-status-quo and alternatives, with pre-committed kill criteria.",
+      "when_to_use": [
+        "Substantial engineering investment ($1M+ over 3 years or 6+ engineer-quarters)",
+        "Platform / capability build that requires multi-quarter commitment",
+        "Strategic bet that needs CFO/CEO/board approval",
+        "Ongoing investment review (e.g., should we continue funding this in year 2?)"
+      ],
+      "not_for": [
+        "Small features or tactical work (use lighter framing)",
+        "Cases where status quo cannot be honestly costed",
+        "Replacing CFO/finance-partner involvement in cost modeling"
+      ],
+      "source_inspiration": [
+        "Standard FP&A business case formats",
+        "Will Larson — engineering org math",
+        "FinOps Foundation — cloud and tooling TCO discipline",
+        "Mark Suster — CFO/finance literacy for tech operators"
+      ],
+      "inputs_required": [
+        {
+          "name": "Investment scope",
+          "description": "What's being proposed in plain language; strategic context.",
+          "required": true
+        },
+        {
+          "name": "Honest cost data",
+          "description": "Fully-loaded HC, infrastructure, tooling, ongoing operating cost across 3 years.",
+          "required": true
+        },
+        {
+          "name": "Quantifiable returns",
+          "description": "Where you can connect to revenue, cost reduction, risk reduction, productivity.",
+          "required": true
+        },
+        {
+          "name": "Status quo cost data",
+          "description": "What we're already paying in workarounds, lost revenue, compounding debt.",
+          "required": true
+        },
+        {
+          "name": "Alternatives data",
+          "description": "Buy / partner option costs and returns.",
+          "required": true
+        }
+      ],
+      "outputs": [
+        "3-year cost model",
+        "Quantitative + qualitative return",
+        "Cost-of-status-quo analysis",
+        "Alternatives comparison",
+        "Kill criteria",
+        "Recommendation"
+      ],
+      "sections": [
+        {
+          "name": "The investment",
+          "purpose": "What we're proposing in plain language and full cost.",
+          "fields": [
+            "Investment in 2 sentences",
+            "Strategic context",
+            "Why now",
+            "Cost table (categories × years × 3-year total)",
+            "Cost assumptions (especially HC fully-loaded)"
+          ]
+        },
+        {
+          "name": "What it returns",
+          "purpose": "Quantify what you can; honest about qualitative.",
+          "fields": [
+            "Quantitative returns table (revenue, cost reduction, productivity, risk reduction)",
+            "Qualitative returns (strategic optionality, capability, talent, brand, defensibility)",
+            "Time-to-return (first measurable, break-even, full ramp)"
+          ]
+        },
+        {
+          "name": "Cost of NOT doing this",
+          "purpose": "Often the most important section. Status quo is not zero cost.",
+          "fields": [
+            "Direct costs of status quo (workarounds, lost deals, compounding)",
+            "Risk costs (security, compliance, reliability)",
+            "Opportunity costs (strategic, competitive)",
+            "Time-decay of opportunity"
+          ]
+        },
+        {
+          "name": "Alternatives considered",
+          "purpose": "Build, buy, status quo, smaller version. Show why this dominates.",
+          "fields": [
+            "Alternative 1: Build (this proposal)",
+            "Alternative 2: Buy / partner",
+            "Alternative 3: Status quo / defer",
+            "Alternative 4: Smaller / phased",
+            "Why the recommendation dominates"
+          ]
+        },
+        {
+          "name": "Implementation",
+          "purpose": "Phasing, success criteria, kill criteria.",
+          "fields": [
+            "Phasing (Phase 1, 2, 3, steady state)",
+            "Success criteria by year",
+            "Kill criteria (pre-committed; explicit conditions to stop)",
+            "Decision checkpoints"
+          ]
+        },
+        {
+          "name": "Risks and mitigations",
+          "purpose": "Per-risk likelihood, impact, mitigation, owner.",
+          "fields": [
+            "Risk table"
+          ]
+        },
+        {
+          "name": "Recommendation and ask",
+          "purpose": "What we're asking for and what's tied to approval.",
+          "fields": [
+            "Recommendation (approve / modify / defer / reject)",
+            "Funding ask",
+            "Approval conditions",
+            "Reporting cadence"
+          ]
+        },
+        {
+          "name": "Common failure modes",
+          "purpose": "Pre-empt the ways ROI cases fail.",
+          "fields": [
+            "Engineering-detail-heavy, business-light",
+            "Status quo not seriously costed",
+            "Returns in vanity units",
+            "No alternatives",
+            "Optimistic time-to-return",
+            "No kill criteria",
+            "Skipping qualitative return",
+            "HC under-counted"
+          ]
+        }
+      ],
+      "tags": [
+        "gold-standard",
+        "roi",
+        "business-case",
+        "investment",
+        "tco",
+        "finance"
+      ],
+      "difficulty": "Advanced",
+      "estimated_time": "8–24 hours over 1–3 weeks; CFO/finance-partner review before approval",
+      "format": "markdown+json",
+      "status": "gold",
+      "version": "1.0.0",
+      "updated_at": "2026-04-24",
+      "practice_folder": "finance-business-ops",
+      "practice_label": "Finance & Business Ops",
+      "template_body_markdown": "# Investment ROI Business Case\n\n## How to use\n\nThis template structures the business case for a substantial engineering investment — typically a platform initiative, a major capability build, or a multi-quarter strategic bet. The audience is the CFO, CEO, board, or other approver who needs the trade-off framed in financial and strategic terms, not engineering ones.\n\nA good ROI case answers four questions:\n1. What does the investment cost (fully loaded, multi-year)?\n2. What does it return (quantified where possible, qualitative where not)?\n3. What's the cost of NOT doing it?\n4. What are the alternatives, and why is this one better?\n\nMost engineering ROI cases lose because they're written by engineers as engineering documents. They over-detail what's being built, under-quantify what it returns, and skip the alternatives. This template inverts that.\n\n---\n\n## Header\n\n- **Investment**: \n- **Owner**: \n- **Approver**: \n- **Investment size** (3-year fully loaded $): \n- **Investment time horizon**: \n- **Decision deadline**: \n\n---\n\n## Part 1: The investment\n\n### 1.1 What we're proposing\n\n- **Investment in 2 sentences** (plain language, no jargon): \n- **Strategic context**: how this fits the company's priorities\n- **Why now**: what's triggering this proposal at this time\n\n### 1.2 What it costs (fully loaded, multi-year)\n\n| Cost category | Year 1 | Year 2 | Year 3 | 3-year total |\n|---------------|--------|--------|--------|--------------|\n| Engineering HC (fully loaded) |  |  |  |  |\n| Cloud / infrastructure |  |  |  |  |\n| Tooling / SaaS |  |  |  |  |\n| Vendors / contractors |  |  |  |  |\n| Training |  |  |  |  |\n| Operating cost ongoing |  |  |  |  |\n| **Total** |  |  |  |  |\n\n> Notes on assumptions, especially fully-loaded HC cost (typically 1.4–1.6× base salary).\n\n---\n\n## Part 2: What it returns\n\n### 2.1 Quantitative returns\n\n> Where you can quantify, do. Where you cannot, mark as qualitative and capture in the next section.\n\n| Return | Year 1 | Year 2 | Year 3 | 3-year total |\n|--------|--------|--------|--------|--------------|\n| Revenue enabled (specific deals, segments) |  |  |  |  |\n| Cost reduction (vendors retired, headcount avoided) |  |  |  |  |\n| Productivity gain (engineer-hours saved × loaded cost) |  |  |  |  |\n| Risk reduction (incidents avoided × cost) |  |  |  |  |\n| **Quantitative total** |  |  |  |  |\n\n> Show calculations and assumptions for each row.\n\n### 2.2 Qualitative returns\n\nFor returns that resist quantification, name them with as much specificity as possible:\n\n- **Strategic optionality**: what new options this enables (entering a market, building a partnership, pivoting)\n- **Capability building**: organizational capability that compounds\n- **Talent / morale**: ability to attract or retain key talent\n- **Brand / customer trust**: reputation effects\n- **Defensibility**: competitive moat created or maintained\n\n### 2.3 Time-to-return\n\n- **Time to first measurable return**: \n- **Time to break-even**: \n- **Time to full return ramp**: \n\n---\n\n## Part 3: Cost of NOT doing this\n\n> Often the most important section. The status quo is not zero cost.\n\n### 3.1 Direct costs of status quo\n\n- **What workarounds we're paying for** (engineering time, vendor cost, customer support):\n- **What we'd lose if we don't act** (deals, customers, capabilities):\n- **What's compounding** (technical debt accumulating, capability gap widening):\n\n### 3.2 Risk costs\n\n- **Risks growing** (security, compliance, reliability):\n- **What scenarios this prevents**:\n- **Probability × cost framing** for the major risks:\n\n### 3.3 Opportunity costs\n\n- **Strategic opportunities we'd be unable to pursue**:\n- **Competitive risks** (a competitor moving here while we don't):\n\n### 3.4 Time-decay of opportunity\n\n- **Does the investment get more expensive if delayed?** (often yes — capability compounds)\n- **Does the return shrink if delayed?** (often yes — market window, integration window):\n\n---\n\n## Part 4: Alternatives considered\n\n### Alternative 1: Build (this proposal)\n\n- Cost: [from Part 1]\n- Return: [from Part 2]\n- Net: \n\n### Alternative 2: Buy / partner\n\n- What we'd buy or who we'd partner with: \n- Cost (3-year TCO): \n- Return relative to build: \n- Reasons against (or for):\n\n### Alternative 3: Status quo / defer\n\n- Cost: [from Part 3]\n- Trigger to revisit: \n- Reasons against (or for):\n\n### Alternative 4: Smaller / phased version\n\n- Scope reduction: \n- Cost reduction: \n- Return reduction: \n- Reasons against (or for):\n\n### Why the recommendation dominates\n\nA direct comparison showing why the recommended option (this proposal) is better than each alternative on the criteria the approver cares about.\n\n---\n\n## Part 5: Implementation\n\n### 5.1 Phasing\n\n- **Phase 1** (months 1–6): \n- **Phase 2** (months 7–12): \n- **Phase 3** (months 13–24): \n- **Steady state** (months 24+): \n\n### 5.2 Success criteria\n\n- **Year 1**: what observable signals say the investment is on track\n- **Year 2**: what observable signals say it's working\n- **Year 3**: what observable signals say it has succeeded\n\n### 5.3 Kill criteria\n\n- **What would tell us to kill or pivot**: explicit conditions under which we'd stop\n- **Decision points**: when (which checkpoints) we'd evaluate kill criteria\n- **Sunk cost we'd accept losing** at each kill point\n\n> Pre-committing kill criteria is the discipline that prevents zombie investments.\n\n---\n\n## Part 6: Risks and mitigations\n\n| Risk | Likelihood | Impact | Mitigation | Owner |\n|------|-----------|--------|------------|-------|\n|      |           |        |            |       |\n|      |           |        |            |       |\n|      |           |        |            |       |\n\n---\n\n## Part 7: Recommendation and ask\n\n### 7.1 Recommendation\n\n- **Recommendation**: approve / approve with modifications / defer / reject\n- **Rationale**: tied to the analysis above\n\n### 7.2 What we're asking for\n\n- **Approval**: \n- **Funding amount**: \n- **Approval conditions** (any commitments tied to approval):\n- **Reporting cadence** (when we'll report progress):\n\n---\n\n## Common failure modes\n\n- **Engineering-detail-heavy, business-light**: the case explains what we're building (3 pages of architecture) and skims what it returns (one paragraph of \"improved velocity\"). Approver loses interest.\n- **Status quo not seriously costed**: every ROI case should make status quo look expensive; if it doesn't, the case isn't strong.\n- **Returns in vanity units**: \"ship 30% more features\" is vanity. \"Enable $X revenue from segment Y\" is concrete.\n- **No alternatives**: presenting one option as 'the' option signals weak analysis. Always show what was rejected.\n- **Optimistic time-to-return**: expecting return in year 1 of an investment that won't compound until year 2.\n- **No kill criteria**: investments without kill criteria become zombies. Pre-commit.\n- **Skipping qualitative return**: ALL the value in vanity numbers; none in 'this enables strategic optionality if we want to enter the X market'.\n- **HC under-counted**: forgetting the fully-loaded multiplier (benefits, equity, tooling, space). Double the salary number.\n\n---\n\n## Related artifacts\n\n- `headcount-business-case` — for the headcount portion of the investment\n- `build-vs-buy-decision-memo` — for the build-vs-buy analysis if relevant\n- `platform-investment-case` — for platform-specific framings\n- `vendor-evaluation-pack` (prompts) — for the buy-side analysis\n- `roi-narrative-pack` (prompts) — for drafting the qualitative narrative\n"
     },
     {
       "id": "tpl-tool-consolidation-review",
